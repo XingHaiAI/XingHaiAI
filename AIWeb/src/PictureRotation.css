@@ -1,0 +1,79 @@
+div{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+.lunbo{
+    height: 100vh;
+    width:100vw;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.imgGroup{
+    animation: ma 15s ease-out forwards infinite;
+    width: 550vw;
+    height: 100vh;
+}
+
+.img1{
+    background-image: url("pic_rotate/index_pic1.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img2{
+    background-image: url("pic_rotate/index_pic2.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    margin-left: 100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img3{
+    background-image: url("pic_rotate/index_pic3.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    margin-left: 100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img4{
+    background-image: url("pic_rotate/index_pic4.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    margin-left: 100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img5{
+    background-image: url("pic_rotate/index_pic5.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    margin-left: 100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes ma {
+    0%,15% {        margin-left: 0vw;       }
+    20%,35% {       margin-left: -100vw;    }
+    40%,55% {       margin-left: -200vw;    }
+    60%,75% {       margin-left: -300vw;       }
+    80%,95% {       margin-left: -400vw;    }
+}
+
+
+
+

@@ -1,0 +1,102 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+p{
+    margin: 0;
+}
+
+.Title{
+    margin-top: 10vh;
+    width: 100vw;
+    height: 10vh;
+    font-size: 2.5vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 10vh;
+}
+
+.content_group{
+    margin-top: 4vh;
+    background-color: green;
+    width: 100vw;
+    height: 76vh;
+}
+
+.item{
+    display: flex;
+    position: relative;
+    width: 25vw;
+    float: left;
+    background-color: red;
+    height: 76vh;
+}
+.pic1{
+    background-image: url("wisdom_park/pic1.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.pic2{
+    background-image: url("wisdom_park/pic2.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.pic3{
+    background-image: url("wisdom_park/pic3.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.pic4{
+    background-image: url("wisdom_park/pic4.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.word{
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+}
+
+.info_show{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    height: 0;
+    font-size: 1vw;
+    color: transparent;
+}
+
+.info_show_item_title{
+    margin-top: 20%;
+    font-size: 3vw;
+    align-self: center;
+    text-align: center;
+}
+
+.info_show_item_content{
+    font-size: 1.5vw;
+    width: 100%;
+    text-align: center;
+}
+
+
+@keyframes info_show_ani {
+    to {height: 100%}
+    to{color: white}
+}
+
+.item:hover .info_show{
+    animation: info_show_ani 0.6s forwards;
+}

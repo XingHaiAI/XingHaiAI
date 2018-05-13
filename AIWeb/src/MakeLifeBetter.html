@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>DRW</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="MakeLifeBetter.css">
+</head>
+
+<body>
+<div class="Title">兴海物联 让生活更美好</div>
+
+<div class="info_show_group">
+    <div class="info_item" id="info_item1" onmouseenter="changeBGto1()">
+        <div class="info_pic pic1"></div>
+        <div class="info_title">人脸识别</div>
+    </div>
+    <div class="info_item" id="info_item2" onmouseenter="changeBGto2()">
+        <div class="info_pic pic2"></div>
+        <div class="info_title">证件识别</div>
+    </div>
+    <div class="info_item" id="info_item3" onmouseenter="changeBGto3()">
+        <div class="info_pic pic3"></div>
+        <div class="info_title">语音识别</div>
+    </div>
+    <div class="info_item" id="info_item4" onmouseenter="changeBGto4()">
+        <div class="info_pic pic4"></div>
+        <div class="info_title">智能客服</div>
+    </div>
+
+</div>
+<div id="info_show_content" class="info_show_content_1">
+        <iframe id="frame" src="face_detect.html" scrolling="no" class="step_info_show_group"></iframe>
+    </div>
+</div>
+<script>
+    var info_show_content=document.getElementById("info_show_content");
+    var frame=document.getElementById("frame");
+    function changeBGto1() {
+        info_show_content.className="info_show_content_1";
+        frame.src="face_detect.html";
+    }
+    function changeBGto2() {
+        info_show_content.className="info_show_content_2";
+        frame.src="card_detect.html";
+    }
+    function changeBGto3() {
+        info_show_content.className="info_show_content_3";
+        frame.src="sound_detect.html";
+    }
+    function changeBGto4() {
+        info_show_content.className="info_show_content_4";
+        frame.src="smart_server.html";
+    }
+</script>
+</body>
+</html>
