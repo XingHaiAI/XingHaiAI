@@ -1,1 +1,2 @@
-兴海物联AI平台项目GIT仓库
+XingHaiWuLian AI Web
+XMU TEAM
