@@ -119,7 +119,7 @@ div{
 }
 
 .Title{
-    margin-top: 6vh;
+    padding-top: 6vh;
     width: 100vw;
     height: 10vh;
     font-size: 2.5vw;

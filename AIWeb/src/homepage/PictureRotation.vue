@@ -22,7 +22,7 @@ export default {
   data:  function (){
     return{
         slideList: [
-         {
+            {
                 "clickUrl": "#",
                 "desc": "nhwc",
                 "image": require("./pic_rotate/index_pic1.jpg")
@@ -47,10 +47,10 @@ export default {
                 "desc": "rsdh",
                 "image": require("./pic_rotate/index_pic5.jpg")
             }
-    ],
-    currentIndex: 0,
-    timer: ''
-    }
+        ],
+        currentIndex: 0,
+        timer: ''
+        }
     },
     methods: {
         go() {

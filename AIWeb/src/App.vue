@@ -5,12 +5,11 @@
 		    <div class="logo">兴海物联开发平台</div>
 		    <!--各个菜单项，鼠标点击时展开-->
 		    <div class="menu_group">
-		        <div class="menu_item">产品服务</div>
-		        <div class="menu_item">应用场景</div>
-		        <div class="menu_item">文档中心</div>
-		        <div class="menu_item">试用演示</div>
-		        <div class="menu_item">产品博客</div>
-
+		    	<transition-group name="slide">
+			        <div  v-for="(list,index) in navbarItems" :key="index" :id="list.desc" @mouseover="target" @mouseleave="normal" class="menu_item"> {{ list.name }}
+			        	<div v-show="index===currentOne" class="decoration"></div>
+			        </div>
+		    	</transition-group>
 		        <div class="login_sign_in">
 		            <div class="login">登陆</div>
 		            <div class="divider">|</div>
@@ -25,6 +24,33 @@
 <script>
 export default {
     name: 'app',
+    data:  function (){
+    return{
+        navbarItems: [
+            {
+                "name": "产品服务",
+                "desc": "cpfw",
+            },
+            {
+                "name": "应用场景",
+                "desc": "yycj",
+            },
+            {
+                "name": "文档中心",
+                "desc": "wdzx",
+            },
+            {
+                "name": "试用演示",
+                "desc": "syys",
+            },
+            {
+                "name": "产品博客",
+                "desc": "cpbk",
+            }
+        ],
+        currentOne:10
+    	}
+    },
     methods: {
     	showTechnologyMenuItemContent:function(){
     		var TechnologyMenuItemContent=document.getElementById("Technology_menu_item_content");
@@ -41,6 +67,23 @@ export default {
 	    hideSolutionMenuItemContent:function(){
 	    	var SolutionMenuItemContent=document.getElementById("Solution_menu_item_content");
         	SolutionMenuItemContent.className="solution_menu_item_content_hide";
+	    },
+	    target(event){
+	    	var el=event.currentTarget
+	    	if(el.id==='cpfw')
+	    		this.currentOne=0
+	    	else if(el.id==='yycj')
+	    		this.currentOne=1
+	    	else if(el.id==='wdzx')
+	    		this.currentOne=2
+	    	else if(el.id==='syys')
+	    		this.currentOne=3
+	    	else if(el.id==='cpbk')
+	    		this.currentOne=4
+
+	    },
+	    normal(){
+	    	this.currentOne=10
 	    }
     }
 }
@@ -63,6 +106,31 @@ div{
     vertical-align: top;
 }
 
+.decoration{
+	position: absolute;
+    bottom:0;
+	height:3.5px;
+	background-color:white;
+	width:55px;
+}
+
+.slide-enter-active{
+    transform:translateY(0);
+    transition:all 0.7s ease;
+}
+
+.slide-leave-active{
+    transform:translateY(200%);
+    transition:all 0.7s ease;
+}
+
+.slide-enter{
+    transform:translateY(100%);
+}
+
+.slide-leave{
+    transform:translateY(0);
+}
 
 @keyframes navbar_bg_color_ani {
     to {background-color: #262626}
@@ -98,10 +166,6 @@ div{
 }
 
 
-@keyframes menu_item_border_ani {
-    to {border-bottom: 3.5px white solid;}
-}
-
 .menu_item{
     margin-left: 5.5vw;
     margin-top: 0.5vh;
@@ -110,10 +174,6 @@ div{
     height: 7vh;
     font-size: 1vw;
     float: left;
-}
-
-.menu_item:hover{
-    animation: menu_item_border_ani 0.3s forwards;
 }
 
 @keyframes menu_btn_color_ani {
@@ -154,9 +214,6 @@ div{
 .sign_in:hover {
     animation: menu_btn_color_ani 0.3s forwards;
 }
-
-
-
 
 
 @keyframes menu_item_button_ani {
