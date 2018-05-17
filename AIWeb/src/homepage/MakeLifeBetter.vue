@@ -164,7 +164,7 @@ p{
 
 .MLBinfo_pic{
     width: 11vw;
-    height: 8vw;
+    height: 20vh;
     margin-left: 3.5vw;
 }
 
@@ -184,7 +184,7 @@ p{
     display: inline-block;
     margin-left: 8vw;
     width: 15vw;
-    height: 14vw;
+    height: 20vh;
 }
 .MLBpic1{
     background-image: url("make_life_pretty/main/pic1.png");
@@ -219,7 +219,7 @@ p{
     background-size: 100% 100%;
     background-position: center;
     width: 100vw;
-    height: 54vh;
+    height: 49vh;
 }
 
 .info_show_content_2{
@@ -273,7 +273,7 @@ p{
 
 .step_info_pic{
     width: 11vw;
-    height: 8vw;
+    height: 15vh;
     margin-left: 4vw;
 }
 
