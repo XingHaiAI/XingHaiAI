@@ -55,10 +55,9 @@ export default {
 .content3{
     position: relative;
     border: none;
-    margin-bottom:0;
     z-index: 5;
     width: 100vw;
-    height: 76vh;
+    height: 80vh;
 }
 
 .content4{

@@ -2,26 +2,26 @@
   <div id="MakeLifeBetter" class="MLBdiv">
     <div class="MLBTitle MLBdiv">兴海物联 让生活更美好</div>
 
-    <div class="MLBinfo_show_group MLBdiv">
-        <div class="MLBinfo_item MLBdiv" id="info_item1"  v-on:mouseover="changeBGto1() ">
-            <div class="MLBinfo_pic MLBpic1 MLBdiv"></div>
-            <div class="MLBinfo_title MLBdiv">人脸识别</div>
-        </div>
-        <div class="MLBinfo_item MLBdiv" id="info_item2" v-on:mouseover="changeBGto2()">
-            <div class="MLBinfo_pic MLBpic2 MLBdiv"></div>
-            <div class="MLBinfo_title MLBdiv">证件识别</div>
-        </div>
-        <div class="MLBinfo_item MLBdiv" id="info_item3"  v-on:mouseover="changeBGto3()">
-            <div class="MLBinfo_pic MLBpic3 MLBdiv"></div>
-            <div class="MLBinfo_title MLBdiv">语音识别</div>
-        </div>
-        <div class="MLBinfo_item MLBdiv" id="info_item4"  v-on:mouseover="changeBGto4()">
-            <div class="MLBinfo_pic MLBpic4 MLBdiv"></div>
-            <div class="MLBinfo_title MLBdiv">智能客服</div>
-        </div>
-    </div>
-    <div id="info_show_content" :is="currentTabComponent"></div>
-    </div>
+	<div class="MLBinfo_show_group MLBdiv">
+	    <div class="MLBinfo_item MLBdiv" id="info_item1"  v-on:mouseover="changeBGto1() ">
+	        <div class="MLBinfo_pic MLBpic1 MLBdiv"></div>
+	        <div class="MLBinfo_title MLBdiv">人脸识别</div>
+	    </div>
+	    <div class="MLBinfo_item MLBdiv" id="info_item2" v-on:mouseover="changeBGto2()">
+	        <div class="MLBinfo_pic MLBpic2 MLBdiv"></div>
+	        <div class="MLBinfo_title MLBdiv">证件识别</div>
+	    </div>
+	    <div class="MLBinfo_item MLBdiv" id="info_item3"  v-on:mouseover="changeBGto3()">
+	        <div class="MLBinfo_pic MLBpic3 MLBdiv"></div>
+	        <div class="MLBinfo_title MLBdiv">语音识别</div>
+	    </div>
+	    <div class="MLBinfo_item MLBdiv" id="info_item4"  v-on:mouseover="changeBGto4()">
+	        <div class="MLBinfo_pic MLBpic4 MLBdiv"></div>
+	        <div class="MLBinfo_title MLBdiv">智能客服</div>
+	    </div>
+	</div>
+	<div id="info_show_content" :is="currentTabComponent"></div>
+	</div>
 </template>
 
 <script>
@@ -164,7 +164,7 @@ p{
 
 .MLBinfo_pic{
     width: 11vw;
-    height: 20vh;
+    height: 8vw;
     margin-left: 3.5vw;
 }
 
@@ -184,7 +184,7 @@ p{
     display: inline-block;
     margin-left: 8vw;
     width: 15vw;
-    height: 20vh;
+    height: 14vw;
 }
 .MLBpic1{
     background-image: url("make_life_pretty/main/pic1.png");
@@ -219,7 +219,7 @@ p{
     background-size: 100% 100%;
     background-position: center;
     width: 100vw;
-    height: 49vh;
+    height: 54vh;
 }
 
 .info_show_content_2{
@@ -273,7 +273,7 @@ p{
 
 .step_info_pic{
     width: 11vw;
-    height: 15vh;
+    height: 8vw;
     margin-left: 4vw;
 }
 

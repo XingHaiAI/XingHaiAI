@@ -119,7 +119,7 @@ div{
 }
 
 .Title{
-    padding-top: 6vh;
+    margin-top: 6vh;
     width: 100vw;
     height: 10vh;
     font-size: 2.5vw;
@@ -217,7 +217,7 @@ div{
     margin-right: 2vw;
     background-color: white;
     width: 18vw;
-    height: 40vh;
+    height: 37vh;
     display: inline-block;
 }
 </style>

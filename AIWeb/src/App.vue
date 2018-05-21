@@ -5,17 +5,27 @@
 		    <div class="logo">兴海物联开发平台</div>
 		    <!--各个菜单项，鼠标点击时展开-->
 		    <div class="menu_group">
-		    	<transition-group name="slide">
-			        <div  v-for="(list,index) in navbarItems" :key="index" :id="list.desc" @mouseover="target" @mouseleave="normal" class="menu_item"> {{ list.name }}
-			        	<div v-show="index===currentOne" class="decoration"></div>
-			        </div>
-		    	</transition-group>
+		        <div class="menu_item" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">产品服务</div>
+		        <div class="menu_item">应用场景</div>
+		        <div class="menu_item"v-on:mouseover="documentOver" v-on:mouseout="documentOut">文档中心</div>
+		        <div class="menu_item">试用演示</div>
+		        <div class="menu_item">产品博客</div>
+
 		        <div class="login_sign_in">
 		            <div class="login">登陆</div>
 		            <div class="divider">|</div>
 		            <div class="sign_in">注册</div>
 		        </div>
 		    </div>
+      <ul id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
+        <router-link to="/ProductService/AIIntelligent" style="text-decoration: none"><li class="productService">AI智能</li></router-link>
+        <router-link to="/ProductService/TextSimilar" style="text-decoration: none"><li class="productService">短文本相似度</li></router-link>
+        <router-link to="/ProductService/Meaning" style="text-decoration: none"><li class="productService">词义相似度</li></router-link>
+        <router-link to="/ProductService/License" style="text-decoration: none"><li class="productService">车牌识别</li></router-link>
+      </ul>
+      <ul id="document" v-on:mouseover="documentOver" v-on:mouseout="documentOut">
+        <router-link to="/ContactUs" style="text-decoration: none"><li class="productService">联系我们</li></router-link>
+      </ul>
 		</div>
 		<router-view></router-view>
 	</div>
@@ -24,33 +34,6 @@
 <script>
 export default {
     name: 'app',
-    data:  function (){
-    return{
-        navbarItems: [
-            {
-                "name": "产品服务",
-                "desc": "cpfw",
-            },
-            {
-                "name": "应用场景",
-                "desc": "yycj",
-            },
-            {
-                "name": "文档中心",
-                "desc": "wdzx",
-            },
-            {
-                "name": "试用演示",
-                "desc": "syys",
-            },
-            {
-                "name": "产品博客",
-                "desc": "cpbk",
-            }
-        ],
-        currentOne:10
-    	}
-    },
     methods: {
     	showTechnologyMenuItemContent:function(){
     		var TechnologyMenuItemContent=document.getElementById("Technology_menu_item_content");
@@ -62,35 +45,69 @@ export default {
     	},
     	showSolutionMenuItemContent:function(){
 	        var SolutionMenuItemContent=document.getElementById("Solution_menu_item_content");
-	        SolutionMenuItemContent.className="solution_menu_item_content_show";    	
+	        SolutionMenuItemContent.className="solution_menu_item_content_show";
 	    },
 	    hideSolutionMenuItemContent:function(){
 	    	var SolutionMenuItemContent=document.getElementById("Solution_menu_item_content");
         	SolutionMenuItemContent.className="solution_menu_item_content_hide";
 	    },
-	    target(event){
-	    	var el=event.currentTarget
-	    	if(el.id==='cpfw')
-	    		this.currentOne=0
-	    	else if(el.id==='yycj')
-	    		this.currentOne=1
-	    	else if(el.id==='wdzx')
-	    		this.currentOne=2
-	    	else if(el.id==='syys')
-	    		this.currentOne=3
-	    	else if(el.id==='cpbk')
-	    		this.currentOne=4
-
-	    },
-	    normal(){
-	    	this.currentOne=10
-	    }
+      mouseOver()/*产品服务下拉框出现*/
+      {
+        var service=document.getElementById("service")
+        service.style.display='block';
+      },
+      mouseOut()/*产品服务下拉框消失*/
+      {
+        var service=document.getElementById("service")
+        service.style.display='none';
+      },
+      documentOver()/*文档中心下拉框出现*/
+      {
+        var service=document.getElementById("document")
+        service.style.display='block';
+      },
+      documentOut()/*文档中心下拉框消失*/
+      {
+        var service=document.getElementById("document")
+        service.style.display='none';
+      }
     }
 }
 
 </script>
 
 <style>
+  #document{
+    width: 6%;
+    position: relative;
+    margin-left: 35%;
+    margin-top:3.8%;
+    color: white;
+    background-color: #262626;
+    list-style: none;
+    text-align: center;
+    display: none;
+  }
+.productService{
+  position: relative;
+  right: 36%;
+  width: 120%;
+  padding-bottom: 20%;
+  padding-top: 15%;
+  color: white;
+}
+  #service{
+    width: 6%;
+    position: relative;
+    left: 16%;
+    margin-top:3.8%;
+    color: white;
+    background-color: #262626;
+    list-style: none;
+    text-align: center;
+    display: none;
+  }
+  /*上面是暂时的导航栏下拉框的属性*/
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -106,31 +123,6 @@ div{
     vertical-align: top;
 }
 
-.decoration{
-	position: absolute;
-    bottom:0;
-	height:3.5px;
-	background-color:white;
-	width:55px;
-}
-
-.slide-enter-active{
-    transform:translateY(0);
-    transition:all 0.7s ease;
-}
-
-.slide-leave-active{
-    transform:translateY(200%);
-    transition:all 0.7s ease;
-}
-
-.slide-enter{
-    transform:translateY(100%);
-}
-
-.slide-leave{
-    transform:translateY(0);
-}
 
 @keyframes navbar_bg_color_ani {
     to {background-color: #262626}
@@ -166,6 +158,10 @@ div{
 }
 
 
+@keyframes menu_item_border_ani {
+    to {border-bottom: 3.5px white solid;}
+}
+
 .menu_item{
     margin-left: 5.5vw;
     margin-top: 0.5vh;
@@ -174,6 +170,10 @@ div{
     height: 7vh;
     font-size: 1vw;
     float: left;
+}
+
+.menu_item:hover{
+    animation: menu_item_border_ani 0.3s forwards;
 }
 
 @keyframes menu_btn_color_ani {
@@ -214,6 +214,9 @@ div{
 .sign_in:hover {
     animation: menu_btn_color_ani 0.3s forwards;
 }
+
+
+
 
 
 @keyframes menu_item_button_ani {
