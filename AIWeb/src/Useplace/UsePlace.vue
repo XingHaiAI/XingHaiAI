@@ -2,7 +2,7 @@
   <div id="UsePlace">
     <div class="head_line">
 	    <div class="pic_left"></div>
-	    <div class="Title">使用场景</div>
+	    <div class="Title">应用场景</div>
 	    <div class="pic_right"></div>
 	</div>
 	<div class="line">
@@ -119,7 +119,8 @@ div{
 }
 
 .Title{
-    padding-top: 6vh;
+    padding-top: 10vh;
+    padding-bottom: 7vh;
     width: 100vw;
     height: 10vh;
     font-size: 2.5vw;
@@ -204,7 +205,7 @@ div{
     display: flex;
     flex-direction: column;
     margin-top: 1vw;
-    height: 40vh;
+    height: 50vh;
 }
 
 .step_line_center_control{

@@ -6,15 +6,15 @@
 		    <!--各个菜单项，鼠标点击时展开-->
 		    <div class="menu_group">
 		        <div class="menu_item" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">产品服务</div>
-		        <div class="menu_item">应用场景</div>
+		        <router-link to="/Useplace" class="menu_item" style="text-decoration: none">应用场景</router-link>
 		        <div class="menu_item"v-on:mouseover="documentOver" v-on:mouseout="documentOut">文档中心</div>
 		        <div class="menu_item">试用演示</div>
 		        <div class="menu_item">产品博客</div>
 
 		        <div class="login_sign_in">
-		            <div class="login">登陆</div>
+		            <div class="login">注册</div>
 		            <div class="divider">|</div>
-		            <div class="sign_in">注册</div>
+		            <div class="sign_in">登录</div>
 		        </div>
 		    </div>
       <ul id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
@@ -123,6 +123,11 @@ div{
     vertical-align: top;
 }
 
+router-link{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
 
 @keyframes navbar_bg_color_ani {
     to {background-color: #262626}

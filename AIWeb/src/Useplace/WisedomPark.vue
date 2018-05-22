@@ -2,6 +2,8 @@
   <div id="WisedomPark">
     <div class="Title">智慧园区</div>
 
+    <div class="description"> 在新建或已建成的企业/园区的基础硬件上汇集深度学习的能力，提供便捷安全的同行解决方案</div>
+
     <div class="content_group">
         <div class="item pic1" @mouseover="infoPop" @mouseleave="back" id="id1">
             <transition-group name="slide">
@@ -90,6 +92,17 @@ div{
     vertical-align: top;
 }
 
+.description{
+    margin-top: 0;
+    margin-bottom: 10vh;
+    width: 100vw;
+    height: 5vh;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 10vh;
+}
+
 .slide-enter-active{
     transform:translateY(0);
     transition:all 0.7s ease;
@@ -113,13 +126,14 @@ p{
 }
 
 .Title{
-    margin-top: 7vh;
+    margin-top: 9vh;
+    margin-bottom: 3vh;
     width: 100vw;
     height: 10vh;
     font-size: 2.5vw;
     font-weight: 500;
     text-align: center;
-    line-height: 10vh;
+    line-height: 15vh;
 }
 
 .content_group{
@@ -127,7 +141,7 @@ p{
     margin-bottom:0;
     background-color: green;
     width: 100vw;
-    height: 66vh;
+    height: 70vh;
 }
 
 .item{
@@ -136,7 +150,7 @@ p{
     width: 25vw;
     float: left;
     background-color: red;
-    height: 66vh;
+    height: 70vh;
 }
 .pic1{
     background-image: url("wisdom_park/pic1.jpg");

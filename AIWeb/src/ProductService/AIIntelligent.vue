@@ -5,7 +5,7 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../../assets/AI智能/AI客服滑页.png" class="background">
+    <img src="../assets/AI智能/AI客服滑页.png" class="background">
     <a id="title">AI智能</a>
     <textarea id="titlecontent" rows="2"cols="40" disabled>基于用户输入的文本内容，返回场景BOT理解与应答的信息</textarea>
     <button>技术文档</button>
@@ -14,21 +14,21 @@
     <a id="introduce">功能介绍</a>
   </div>
   <div id="AIbodysec">
-    <img src="../../assets/AI智能/AI功能介绍.png"class="background">
+    <img src="../assets/AI智能/AI功能介绍.png"class="background">
     <button class="functionButton" id="apply">接口申请</button>
     <button class="functionButton" id="download">SDK下载</button>
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../../assets/AI智能/AI智能客服.png" id="AIcar">
-    <img src="../../assets/AI智能/AI智能汽车.png" id="AIcustomer"><br/>
+    <img src="../assets/AI智能/AI智能客服.png" id="AIcar">
+    <img src="../assets/AI智能/AI智能汽车.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="30" id="serviceCaption" disabled>智能客服</textarea>
     <textarea rows="1" cols="30" id="carCaption"disabled>智能汽车</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>精确适配业务需求，帮助解答大量通用性较强的问题，大幅提升人效。可定制和持续学习，广泛用于网站，APP，电话的客服甚至线下业务窗口等场景</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>赋予汽车智能对话操作的能力，帮助驾驶者通过对话直接满足导航，查询地点，拨打电话，多媒体控制等驾车中的操作需求，保障驾驶安全</textarea>
   </div>
   <div id="AItail">
-    <img src="../../assets/联系我们.png" class="background">
+    <img src="../assets/联系我们.png" class="background">
   </div>
   </body>
 </template>

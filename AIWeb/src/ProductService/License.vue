@@ -4,7 +4,7 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../../assets/车牌识别/车牌识别滑页.png" class="background">
+    <img src="../assets/车牌识别/车牌识别滑页.png" class="background">
     <a id="title">车牌识别</a>
     <textarea id="titlecontent" rows="2"cols="40" disabled>对小客车的车牌进行识别</textarea>
     <button>技术文档</button>
@@ -14,21 +14,21 @@
     <a id="introducecontent">支持对中国大陆机动车车牌的识别，包括地域编号和车牌号</a>
   </div>
   <div id="AIbodysec">
-    <img src="../../assets/车牌识别/功能介绍.png"class="background">
+    <img src="../assets/车牌识别/功能介绍.png"class="background">
     <button class="functionButton" id="apply">接口申请</button>
     <button class="functionButton" id="download">SDK下载</button>
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../../assets/车牌识别/停车场闸机识别.png" id="AIcar">
-    <img src="../../assets/车牌识别/道路违章识别.png" id="AIcustomer"><br/>
+    <img src="../assets/车牌识别/停车场闸机识别.png" id="AIcar">
+    <img src="../assets/车牌识别/道路违章识别.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="30" id="serviceCaption" disabled>停车闸机识别</textarea>
     <textarea rows="1" cols="30" id="carCaption"disabled>道路违章识别</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>在停车场的闸机上使用车牌识别，自动识别车牌号码，实现无卡，无人的停车场管理，快捷方便</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>在交通道路的摄像头中加入车牌识别结合违章判断，对违章的车辆号码进行自动识别，实现自动化的违章审计</textarea>
   </div>
   <div id="AItail">
-    <img src="../../assets/联系我们.png" class="background">
+    <img src="../assets/联系我们.png" class="background">
   </div>
   </body>
 </template>

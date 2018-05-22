@@ -65,7 +65,7 @@ export default {
     border: none;
     z-index: 5;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
 }
 
 .content5{

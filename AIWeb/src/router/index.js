@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import homepage from '@/homepage/homepage.vue'
-import AIIntelligent from '@/homepage/ProductService/AIIntelligent.vue'
-import License from '@/homepage/ProductService/License.vue'
-import Meaning from '@/homepage/ProductService/Meaning.vue'
-import TextSimilar from '@/homepage/ProductService/TextSimilar.vue'
-import ContactUs from '@/homepage/Contact.vue'
+import AIIntelligent from '@/ProductService/AIIntelligent.vue'
+import License from '@/ProductService/License.vue'
+import Meaning from '@/ProductService/Meaning.vue'
+import TextSimilar from '@/ProductService/TextSimilar.vue'
+import ContactUs from '@/DocumentCenter/Contact.vue'
+import Application from '@/Useplace/Application.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -26,6 +27,9 @@ export default new Router({
     },
     {
       path:'/ProductService/TextSimilar',name:'TextSimilar',component:TextSimilar
+    },
+    {
+      path:'/Useplace',name:'Application',component:Application
     },
     {
       path:'/ContactUs',name:'ContactUs',component:ContactUs
