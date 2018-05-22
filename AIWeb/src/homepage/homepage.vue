@@ -57,7 +57,7 @@ export default {
     border: none;
     z-index: 5;
     width: 100vw;
-    height: 80vh;
+    height: 76vh;
 }
 
 .content4{
