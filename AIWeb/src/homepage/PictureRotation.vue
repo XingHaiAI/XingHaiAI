@@ -56,7 +56,7 @@ export default {
         go() {
             this.timer = setInterval(() => {
                 this.autoPlay()
-            }, 4000)
+            }, 6000)
         },
         stop() {
             clearInterval(this.timer)
@@ -76,7 +76,7 @@ export default {
         this.$nextTick(() => {
             this.timer = setInterval(() => {
                 this.autoPlay()
-            }, 4000)
+            }, 6000)
         })
     }
 
@@ -92,8 +92,8 @@ div{
 
 
 #PictureRotation{
-    height: 70vh;
-    width:100vw;
+    height: 80vh;
+    width:100%;
     margin: 0;
     padding:0;
     list-style: none;
@@ -118,8 +118,8 @@ div{
 }
 
 img{
-    height:70vh;
-    width:100vw;
+    height:80vh;
+    width:100%;
     display: inline-block;
 }
 .slide-ul,li,img {
@@ -129,7 +129,7 @@ img{
 }
 .carousel-wrap {
   position: relative;
-  height: 453px;
+  height: 533px;
   width: 100%;
   overflow: hidden;
   background-color: #fff;
@@ -150,7 +150,7 @@ li {
 .carousel-items {
   position: absolute;
   z-index: 10;
-  top: 420px;
+  top: 490px;
   width: 100%;
   height:7vh;
   margin: 0 auto;

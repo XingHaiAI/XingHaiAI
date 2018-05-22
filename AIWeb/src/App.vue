@@ -80,7 +80,7 @@ export default {
   #document{
     width: 6%;
     position: relative;
-    margin-left: 35%;
+    margin-left: 40%;
     margin-top:3.8%;
     color: white;
     background-color: #262626;
@@ -99,7 +99,7 @@ export default {
   #service{
     width: 6%;
     position: relative;
-    left: 16%;
+    left: 21%;
     margin-top:3.8%;
     color: white;
     background-color: #262626;
@@ -137,9 +137,12 @@ router-link{
     top:0;
     position: fixed;
     z-index: 10;
-    width: 100vw;
+    width: 100%;
     height: 8vh;
     background-color: transparent;
+    display:inline-block;
+    min-width: 900px;
+    width:expression(document.body.clientWidth < 900? "900px":"auto" );
 }
 
 .navbar:hover{
@@ -149,17 +152,17 @@ router-link{
 .logo{
     font-size: 1vw;
     color: white;
-    width: 10vw;
+    width: 15%;
     float: left;
     line-height: 8vh;
     text-align: center;
-    margin-left: 3vw;
+    margin-left: 3%;
 }
 
 
 .menu_group{
     float: left;
-    width: 82vw;
+    width: 72%;
 }
 
 

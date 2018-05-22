@@ -153,7 +153,7 @@ p{
 
 .MLBTitle{
     margin-top: 8vh;
-    width: 100vw;
+    width: 100%;
     height: 12vh;
     font-size: 2.5vw;
     font-weight: 500;
@@ -218,7 +218,7 @@ p{
     background-image: url("make_life_pretty/content/item1/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     height: 49vh;
 }
 
@@ -230,7 +230,7 @@ p{
     background-image: url("make_life_pretty/content/item2/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     height: 49vh;
 }
 .info_show_content_3{
@@ -241,7 +241,7 @@ p{
     background-image: url("make_life_pretty/content/item3/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     height: 49vh;
 }
 .info_show_content_4{
@@ -252,7 +252,7 @@ p{
     background-image: url("make_life_pretty/content/item4/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     height: 49vh;
 }
 
@@ -261,7 +261,7 @@ p{
     flex-direction: column;
     align-self: center;
     margin-top: 4vh;
-    width: 100vw;
+    width: 100%;
     border: none;
     height: 25vh;
 }

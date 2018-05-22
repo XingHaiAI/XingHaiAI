@@ -32,7 +32,7 @@ export default {
     background-color: blue;
     background-image: url("contact_us/bg.jpg");
     background-size: 100% 100%;
-    width: 100vw;
+    width: 100%;
     height: 25vh;
     margin: 0;
     padding: 0;

@@ -34,21 +34,28 @@ export default {
 </script>
 
 <style scoped>
+#homepage{
+    width:100%;
+    min-width: 900px;
+    width:expression(document.body.clientWidth < 900? "900px":"auto" );
+}
 .content{
     margin-top: -8vh;
     padding:0;
     position: relative;
     border: none;
     z-index: 5;
-    width: 100vw;
-    height: 70vh;
+    width: 100%;
+    height: 90vh;
+    min-width: 900px;
+    width:expression(document.body.clientWidth < 900? "900px":"auto" );
 }
 
 .content2{
     position: relative;
     border: none;
     z-index: 5;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -56,7 +63,7 @@ export default {
     position: relative;
     border: none;
     z-index: 5;
-    width: 100vw;
+    width: 100%;
     height: 76vh;
 }
 
@@ -64,7 +71,7 @@ export default {
     position: relative;
     border: none;
     z-index: 5;
-    width: 100vw;
+    width: 100%;
     height: 110vh;
 }
 
@@ -72,7 +79,7 @@ export default {
     position: relative;
     border: none;
     z-index: 5;
-    width: 100vw;
+    width: 100%;
     height: 65vh;
 }
 
@@ -80,7 +87,7 @@ export default {
     position: relative;
     border: none;
     z-index: 5;
-    width: 100vw;
+    width: 100%;
     height: 60vh;
 }
 
@@ -88,7 +95,7 @@ export default {
     position: relative;
     border: none;
     z-index: 5;
-    width: 100vw;
+    width: 100%;
     height: 25vh;
 }
 </style>

@@ -114,7 +114,7 @@ p{
 
 .Title{
     margin-top: 7vh;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     font-size: 2.5vw;
     font-weight: 500;
@@ -125,15 +125,15 @@ p{
 .content_group{
     margin-top:2vh;
     margin-bottom:0;
-    background-color: green;
-    width: 100vw;
+
+    width: 100%;
     height: 66vh;
 }
 
 .item{
     display: flex;
     position: relative;
-    width: 25vw;
+    width: 25%;
     float: left;
     background-color: red;
     height: 66vh;

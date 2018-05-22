@@ -120,7 +120,7 @@ div{
 
 .Title{
     padding-top: 6vh;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     font-size: 2.5vw;
     font-weight: 500;
@@ -209,6 +209,8 @@ div{
 
 .step_line_center_control{
     align-self: center;
+    display:flex;
+    justify-content:center;
 }
 
 
@@ -216,7 +218,7 @@ div{
     margin-left: 2vw;
     margin-right: 2vw;
     background-color: white;
-    width: 18vw;
+    width: 240px;
     height: 40vh;
     display: inline-block;
 }

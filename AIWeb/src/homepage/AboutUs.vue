@@ -55,7 +55,7 @@ div{
 .Title{
     opacity: 0.8;
     margin-top: 8vh;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     font-size: 3.3vw;
     font-weight: 300;
