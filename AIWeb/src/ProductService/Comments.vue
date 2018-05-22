@@ -1,31 +1,31 @@
 <!--这里是-->
-<!--AI智能的分页面-->
-
+<!--评论观点抽取分页面-->
 
 <template>
   <body>
   <div id="AIhead">
-    <img src="../../assets/AI智能/AI客服滑页.png" class="background">
-    <a id="title">AI智能</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>基于用户输入的文本内容，返回场景BOT理解与应答的信息</textarea>
+    <img src="../../assets/评论抽取/评论观点抽取滑页.png" class="background">
+    <a id="title">评论观点抽取</a>
+    <textarea id="titlecontent" rows="2"cols="40" disabled>评论观点抽取接口用来提取一条评论句子的关注点和评论观点，并输出评论观点标签及评论观点极性</textarea>
     <button>技术文档</button>
   </div>
   <div id="AIbodyfir">
-    <a id="introduce">功能介绍</a>
+    <a id="introduce">功能介绍</a><br/>
+    <a id="introducecontent">自动抽取和分析评论观点，帮助您实现舆情分析，用户理解，支持产品优化和营销决策</a>
   </div>
   <div id="AIbodysec">
-    <img src="../../assets/AI智能/AI功能介绍.png"class="background">
+    <img src="../../assets/评论抽取/功能介绍.png"class="background">
     <button class="functionButton" id="apply">接口申请</button>
     <button class="functionButton" id="download">SDK下载</button>
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../../assets/AI智能/AI智能客服.png" id="AIcar">
-    <img src="../../assets/AI智能/AI智能汽车.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="30" id="serviceCaption" disabled>智能客服</textarea>
-    <textarea rows="1" cols="30" id="carCaption"disabled>智能汽车</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>精确适配业务需求，帮助解答大量通用性较强的问题，大幅提升人效。可定制和持续学习，广泛用于网站，APP，电话的客服甚至线下业务窗口等场景</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>赋予汽车智能对话操作的能力，帮助驾驶者通过对话直接满足导航，查询地点，拨打电话，多媒体控制等驾车中的操作需求，保障驾驶安全</textarea>
+    <img src="../../assets/评论抽取/评论与决策分类.png" id="AIcar">
+    <img src="../../assets/评论抽取/舆情监控.png" id="AIcustomer"><br/>
+    <textarea rows="1" cols="30" id="serviceCaption" disabled>评论与决策分类</textarea>
+    <textarea rows="1" cols="30" id="carCaption"disabled>舆情监控</textarea><br/>
+    <textarea rows="5" cols="40" id="serviceContent" disabled>通过对产品多维度评论观点进行倾向型分析，给用户提供该产品全方位的评价，方便用户进行决策</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</textarea>
   </div>
   <div id="AItail">
     <img src="../../assets/联系我们.png" class="background">
@@ -35,7 +35,7 @@
 
 <script>
   export default {
-    name: "AIIntelligent"
+    name: "Comments"
   }
 </script>
 
@@ -61,7 +61,7 @@
     background: transparent;
     position: relative;
     bottom: 50%;
-    right: 13%;
+    right: 30%;
     border-color: white;
     color:white;
     font-size: 25px;
@@ -71,14 +71,18 @@
     background: transparent;
     color:white;
     position: relative;
-    left: 10%;
+    margin-right: 10%;
     bottom: 65%;
     overflow:auto;
   }
   #introduce{
     font-size: 30px;
     position: relative;
-    top: 30px;
+    margin-bottom:5%;
+  }
+  #introducecontent{
+    position: relative;
+    top: 8%;
   }
   #title{
     position: relative;

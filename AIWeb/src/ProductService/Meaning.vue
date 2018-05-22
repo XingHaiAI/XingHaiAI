@@ -4,7 +4,7 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/词义相似度/词义相似度滑页.png" class="background">
+    <img src="../../assets/词义相似度/词义相似度滑页.png" class="background">
     <a id="title">词义相似度</a>
     <textarea id="titlecontent" rows="2"cols="40" disabled>输入两个词，得到两个词的相似度结果</textarea>
     <button>技术文档</button>
@@ -14,21 +14,21 @@
     <a id="introducecontent">依托全网海量优质数据和深度神经网络技术，通过词语向量化来计算两个词之间的相似度</a>
   </div>
   <div id="AIbodysec">
-    <img src="../assets/词义相似度/功能介绍.png"class="background">
+    <img src="../../assets/词义相似度/功能介绍.png"class="background">
     <button class="functionButton" id="apply">接口申请</button>
     <button class="functionButton" id="download">SDK下载</button>
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../assets/词义相似度/搜索引擎.png" id="AIcar">
-    <img src="../assets/词义相似度/智能推荐.png" id="AIcustomer"><br/>
+    <img src="../../assets/词义相似度/搜索引擎.png" id="AIcar">
+    <img src="../../assets/词义相似度/智能推荐.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="30" id="serviceCaption" disabled>搜索引擎</textarea>
     <textarea rows="1" cols="30" id="carCaption"disabled>智能推荐</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>对用户输入的文本信息进行自动分类，实现内容的分类别智能管理</textarea>
   </div>
   <div id="AItail">
-    <img src="../assets/联系我们.png" class="background">
+    <img src="../../assets/联系我们.png" class="background">
   </div>
   </body>
 </template>
@@ -42,7 +42,7 @@
 <style scoped>
   #apply{
     position: relative;
-    left: 23%;
+    left: 25%;
     bottom: 15%;
   }
   #download{
@@ -71,17 +71,18 @@
     background: transparent;
     color:white;
     position: relative;
-    padding-left:5%;
+    margin-left:5%;
     bottom: 65%;
+    overflow:auto;
   }
   #introduce{
     font-size: 30px;
     position: relative;
-    top: 30px;
+    margin-bottom:5%;
   }
   #introducecontent{
     position: relative;
-    top: 30%;
+    top: 8%;
   }
   #title{
     position: relative;
@@ -100,24 +101,28 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 40%;
+    left: 37%;
+    overflow:auto;
   }
   #carCaption{
     position: relative;
     top: 5px;
-    left: 650px;
+    left: 45%;
     text-align: center;
+    overflow: auto;
   }
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 20%;
+    left: 18%;
+    overflow:auto;
   }
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 300px;
+    left: 20%;
     text-align: center;
+    overflow: auto;
   }
   #txtApp{;
     font-size: 30px;
@@ -139,15 +144,16 @@
     height: 250px;
     width: 300px;
     position: relative;
-    top: 30%;
-    left: 20%;
+    padding-top: 0%;
+    left: 18%;
+    overflow: auto;
   }
   #AIcustomer{
     height: 250px;
     width:300px;
     position: relative;
     left: 40%;
-    top: 30%;
+    padding-top: 0%;
   }
   #AIhead{
     width: 100%;

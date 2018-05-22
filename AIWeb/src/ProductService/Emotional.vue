@@ -1,31 +1,31 @@
 <!--这里是-->
-<!--车牌识别的分页面-->
+<!--情感倾向分析分页面-->
 
 <template>
   <body>
   <div id="AIhead">
-    <img src="../../assets/短文本相似度/短文本相似度滑页.png" class="background">
-    <a id="title">短文本相似度</a>
-    <textarea id="titlecontent" rows="3"cols="40" disabled>短文本相似度计算服务能够提供不同短文本之间相似度的计算，输出的相似度是一个介于0到1之间的实数值，越大则相似度越高。</textarea>
+    <img src="../../assets/情感倾向分析/情感倾向分析滑页.png" class="background">
+    <a id="title">情感倾向分析</a>
+    <textarea id="titlecontent" rows="2"cols="40" disabled>对包含主观观点信息的文本进行情感极性类别（积极，消极，中性）的判断，并给出相应的置信度。</textarea>
     <button>技术文档</button>
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">依托全网海量优质数据和深度神经网络技术，为您提供高精度的短文本相似度服务，帮助快速实现推荐，检索，排序等应用</a>
+    <a id="introducecontent">自动对包含主观信息的文本进行情感倾向性判断，为口碑分析，话题监控，舆情分析等应用提供基础技术支持</a>
   </div>
   <div id="AIbodysec">
-    <img src="../../assets/短文本相似度/功能介绍.png"class="background">
+    <img src="../../assets/情感倾向分析/功能介绍.png"class="background">
     <button class="functionButton" id="apply">接口申请</button>
     <button class="functionButton" id="download">SDK下载</button>
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../../assets/短文本相似度/搜索引擎.png" id="AIcar">
-    <img src="../../assets/短文本相似度/生活服务.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="30" id="serviceCaption" disabled>搜索引擎</textarea>
-    <textarea rows="1" cols="30" id="carCaption"disabled>生活服务</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>通过将同义词定义成一个标签，调用相应的服务功能，改善用户体验</textarea>
+    <img src="../../assets/情感倾向分析/口碑分析.png" id="AIcar">
+    <img src="../../assets/情感倾向分析/舆情监控.png" id="AIcustomer"><br/>
+    <textarea rows="1" cols="30" id="serviceCaption" disabled>口碑分析</textarea>
+    <textarea rows="1" cols="30" id="carCaption"disabled>舆情监控</textarea><br/>
+    <textarea rows="5" cols="40" id="serviceContent" disabled>整理提炼互联网中的海量口碑评价，多维分析，快速解读</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</textarea>
   </div>
   <div id="AItail">
     <img src="../../assets/联系我们.png" class="background">
@@ -35,7 +35,7 @@
 
 <script>
   export default {
-    name: "TextSimilar"
+    name: "Comments"
   }
 </script>
 
@@ -61,7 +61,7 @@
     background: transparent;
     position: relative;
     bottom: 50%;
-    right: 23%;
+    right: 30%;
     border-color: white;
     color:white;
     font-size: 25px;
@@ -71,7 +71,7 @@
     background: transparent;
     color:white;
     position: relative;
-    margin-left:2%;
+    margin-right: 10%;
     bottom: 65%;
     overflow:auto;
   }

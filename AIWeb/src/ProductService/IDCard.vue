@@ -1,31 +1,32 @@
 <!--这里是-->
-<!--词义相似度的分页面-->
+<!--身份证识别分页面-->
 
 <template>
   <body>
   <div id="AIhead">
-    <img src="../../assets/词义相似度/词义相似度滑页.png" class="background">
-    <a id="title">词义相似度</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>输入两个词，得到两个词的相似度结果</textarea>
+    <img src="../../assets/情感倾向分析/情感倾向分析滑页.png" class="background">
+    <a id="title">身份证识别</a>
+    <textarea id="titlecontent" rows="2"cols="40" disabled>识别身份证正反面的文字信息</textarea>
+    <button>演示</button>
     <button>技术文档</button>
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">依托全网海量优质数据和深度神经网络技术，通过词语向量化来计算两个词之间的相似度</a>
+    <a id="introducecontent">支持对二代居民身份证正反面的关键字段识别，包括姓名，性别，民族，出生日期，住址，身份证号，签发机关，有效日期。</a>
   </div>
   <div id="AIbodysec">
-    <img src="../../assets/词义相似度/功能介绍.png"class="background">
+    <img src="../../assets/情感倾向分析/功能介绍.png"class="background">
     <button class="functionButton" id="apply">接口申请</button>
     <button class="functionButton" id="download">SDK下载</button>
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../../assets/词义相似度/搜索引擎.png" id="AIcar">
-    <img src="../../assets/词义相似度/智能推荐.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="30" id="serviceCaption" disabled>搜索引擎</textarea>
-    <textarea rows="1" cols="30" id="carCaption"disabled>智能推荐</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>对用户输入的文本信息进行自动分类，实现内容的分类别智能管理</textarea>
+    <img src="../../assets/情感倾向分析/口碑分析.png" id="AIcar">
+    <img src="../../assets/情感倾向分析/舆情监控.png" id="AIcustomer"><br/>
+    <textarea rows="1" cols="30" id="serviceCaption" disabled>视频主播身份认证</textarea>
+    <textarea rows="1" cols="30" id="carCaption"disabled>远程身份认证</textarea><br/>
+    <textarea rows="5" cols="40" id="serviceContent" disabled>在视频直播场景，应用身份证OCR实现主播实名身份证识别和认证，减少人工录入成本，提高用户体验</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea>
   </div>
   <div id="AItail">
     <img src="../../assets/联系我们.png" class="background">
@@ -35,7 +36,7 @@
 
 <script>
   export default {
-    name: "Meaning"
+    name: "IDCard"
   }
 </script>
 
@@ -61,7 +62,8 @@
     background: transparent;
     position: relative;
     bottom: 50%;
-    right: 23%;
+    right: 27%;
+    margin-left: 3%;
     border-color: white;
     color:white;
     font-size: 25px;
@@ -71,7 +73,7 @@
     background: transparent;
     color:white;
     position: relative;
-    margin-left:5%;
+    margin-left: 5%;
     bottom: 65%;
     overflow:auto;
   }
