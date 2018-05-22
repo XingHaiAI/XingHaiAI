@@ -5,7 +5,7 @@ import AIIntelligent from '@/homepage/ProductService/AIIntelligent.vue'
 import License from '@/homepage/ProductService/License.vue'
 import Meaning from '@/homepage/ProductService/Meaning.vue'
 import TextSimilar from '@/homepage/ProductService/TextSimilar.vue'
-import ContactUs from '@/homepage/ContactUs.vue'
+import ContactUs from '@/homepage/Contact.vue'
 Vue.use(Router)
 
 export default new Router({
