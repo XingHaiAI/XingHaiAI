@@ -4,7 +4,7 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../../assets/短文本相似度/短文本相似度滑页.png" class="background">
+    <img src="../assets/短文本相似度/短文本相似度滑页.png" class="background">
     <a id="title">短文本相似度</a>
     <textarea id="titlecontent" rows="3"cols="40" disabled>短文本相似度计算服务能够提供不同短文本之间相似度的计算，输出的相似度是一个介于0到1之间的实数值，越大则相似度越高。</textarea>
     <button>技术文档</button>
@@ -14,21 +14,21 @@
     <a id="introducecontent">依托全网海量优质数据和深度神经网络技术，为您提供高精度的短文本相似度服务，帮助快速实现推荐，检索，排序等应用</a>
   </div>
   <div id="AIbodysec">
-    <img src="../../assets/短文本相似度/功能介绍.png"class="background">
+    <img src="../assets/短文本相似度/功能介绍.png"class="background">
     <button class="functionButton" id="apply">接口申请</button>
     <button class="functionButton" id="download">SDK下载</button>
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../../assets/短文本相似度/搜索引擎.png" id="AIcar">
-    <img src="../../assets/短文本相似度/生活服务.png" id="AIcustomer"><br/>
+    <img src="../assets/短文本相似度/搜索引擎.png" id="AIcar">
+    <img src="../assets/短文本相似度/生活服务.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="30" id="serviceCaption" disabled>搜索引擎</textarea>
     <textarea rows="1" cols="30" id="carCaption"disabled>生活服务</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>通过将同义词定义成一个标签，调用相应的服务功能，改善用户体验</textarea>
   </div>
   <div id="AItail">
-    <img src="../../assets/联系我们.png" class="background">
+    <img src="../assets/联系我们.png" class="background">
   </div>
   </body>
 </template>

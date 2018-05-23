@@ -91,7 +91,7 @@ export default {
    background-image: url("../assets/联系我们/bg.jpg");
    background-size: 100% 100%;
    width: 100vw;
-   height: 25vh;
+   height: 30vh;
    margin: 0;
    padding: 0;
    display: flex;
@@ -141,7 +141,7 @@ div{
   display: inline-block;
   text-align: center;
   color: black;
-  line-height: 2.5vh;
+  line-height: 3vh;
   font-size: 1.3vw;
 }
 .coloum_1{
@@ -149,6 +149,7 @@ div{
 }
 .coloum_2{
   margin-left: 3vw;
+  margin-bottom:5vh;
   background-image: url("../assets/联系我们/pic1.jpg");
   background-size: 100% 100%;
   display: inline-block;
@@ -165,7 +166,7 @@ div{
   vertical-align: 80%;
 }
 .bg{
-  height: 180vh;
+  height: 215vh;
   width: 100vw;
   background-image: url("../assets/pic/bg.png");
   background-size: 100% 100%;
@@ -173,6 +174,7 @@ div{
 }
 .head_content{
   width: 100%;
+  padding-top:10vh;
   border: 2px solid black;
   height: 50.5vh;
 }
@@ -256,24 +258,27 @@ div{
   margin-left: 0.8vw;
 }
 .icon_1{
-  width: 3vw;
-  height: 6vh;
+  width: 2vw;
+  height: 4vh;
+  margin-right:0.5vw;
   float: left;
   background-image: url("../assets/pic/icon1.png");
   background-size: 100% 100%;
   background-position: center;
 }
 .icon_2{
-  width: 3vw;
-  height: 6vh;
+  width: 2vw;
+  height: 4vh;
+  margin-right:0.5vw;
   float: left;
   background-image: url("../assets/pic/icon2.png");
   background-size: 100% 100%;
   background-position: center;
 }
 .icon_3{
-  width: 3vw;
-  height: 6vh;
+  width: 2vw;
+  height: 4vh;
+  margin-right:0.5vw;
   float: left;
   background-image: url("../assets/pic/icon3.png");
   background-size: 100% 100%;

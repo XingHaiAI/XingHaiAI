@@ -4,7 +4,7 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../../assets/评论抽取/评论观点抽取滑页.png" class="background">
+    <img src="../assets/评论抽取/评论观点抽取滑页.png" class="background">
     <a id="title">评论观点抽取</a>
     <textarea id="titlecontent" rows="2"cols="40" disabled>评论观点抽取接口用来提取一条评论句子的关注点和评论观点，并输出评论观点标签及评论观点极性</textarea>
     <button>技术文档</button>
@@ -14,21 +14,21 @@
     <a id="introducecontent">自动抽取和分析评论观点，帮助您实现舆情分析，用户理解，支持产品优化和营销决策</a>
   </div>
   <div id="AIbodysec">
-    <img src="../../assets/评论抽取/功能介绍.png"class="background">
+    <img src="../assets/评论抽取/功能介绍.png"class="background">
     <button class="functionButton" id="apply">接口申请</button>
     <button class="functionButton" id="download">SDK下载</button>
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../../assets/评论抽取/评论与决策分类.png" id="AIcar">
-    <img src="../../assets/评论抽取/舆情监控.png" id="AIcustomer"><br/>
+    <img src="../assets/评论抽取/评论与决策分类.png" id="AIcar">
+    <img src="../assets/评论抽取/舆情监控.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="30" id="serviceCaption" disabled>评论与决策分类</textarea>
     <textarea rows="1" cols="30" id="carCaption"disabled>舆情监控</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>通过对产品多维度评论观点进行倾向型分析，给用户提供该产品全方位的评价，方便用户进行决策</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</textarea>
   </div>
   <div id="AItail">
-    <img src="../../assets/联系我们.png" class="background">
+    <img src="../assets/联系我们.png" class="background">
   </div>
   </body>
 </template>

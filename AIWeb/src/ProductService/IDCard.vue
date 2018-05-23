@@ -4,7 +4,7 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../../assets/情感倾向分析/情感倾向分析滑页.png" class="background">
+    <img src="../assets/情感倾向分析/情感倾向分析滑页.png" class="background">
     <a id="title">身份证识别</a>
     <textarea id="titlecontent" rows="2"cols="40" disabled>识别身份证正反面的文字信息</textarea>
     <button>演示</button>
@@ -15,21 +15,21 @@
     <a id="introducecontent">支持对二代居民身份证正反面的关键字段识别，包括姓名，性别，民族，出生日期，住址，身份证号，签发机关，有效日期。</a>
   </div>
   <div id="AIbodysec">
-    <img src="../../assets/情感倾向分析/功能介绍.png"class="background">
+    <img src="../assets/情感倾向分析/功能介绍.png"class="background">
     <button class="functionButton" id="apply">接口申请</button>
     <button class="functionButton" id="download">SDK下载</button>
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../../assets/情感倾向分析/口碑分析.png" id="AIcar">
-    <img src="../../assets/情感倾向分析/舆情监控.png" id="AIcustomer"><br/>
+    <img src="../assets/情感倾向分析/口碑分析.png" id="AIcar">
+    <img src="../assets/情感倾向分析/舆情监控.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="30" id="serviceCaption" disabled>视频主播身份认证</textarea>
     <textarea rows="1" cols="30" id="carCaption"disabled>远程身份认证</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>在视频直播场景，应用身份证OCR实现主播实名身份证识别和认证，减少人工录入成本，提高用户体验</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea>
   </div>
   <div id="AItail">
-    <img src="../../assets/联系我们.png" class="background">
+    <img src="../assets/联系我们.png" class="background">
   </div>
   </body>
 </template>

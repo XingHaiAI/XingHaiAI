@@ -44,6 +44,8 @@ textarea{
     resize: none;
     background-color: white;
     color: black;
+    height:70px;
+    overflow:auto;
 }
 
 #title{
@@ -76,6 +78,7 @@ button{
     left: 3%;
     font-size: 13px;
     height:70px;
+
     width:350px;
     bottom: 51%;
 }
