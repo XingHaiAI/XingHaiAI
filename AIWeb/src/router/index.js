@@ -7,6 +7,11 @@ import Meaning from '@/ProductService/Meaning.vue'
 import TextSimilar from '@/ProductService/TextSimilar.vue'
 import ContactUs from '@/DocumentCenter/Contact.vue'
 import Application from '@/Useplace/Application.vue'
+import HandWritten from '@/ProductService/HandWritten.vue'
+import GeneralWord from '@/ProductService/GeneralWord.vue'
+import BankCard from '@/ProductService/BankCard.vue'
+import Speach from '@/ProductService/Speach.vue'
+import SpeachRecog from '@/ProductService/SpeachRecog.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +38,21 @@ export default new Router({
     },
     {
       path:'/ContactUs',name:'ContactUs',component:ContactUs
+    },
+    {
+      path:'/ProductService/HandWritten',name:'HandWritten',component:HandWritten
+    },
+    {
+      path:'/ProductService/GeneralWord',name:'GeneralWord',component:GeneralWord
+    },
+    {
+      path:'/ProductService/BankCard',name:'BankCard',component:BankCard
+    },
+    {
+      path:'/ProductService/Speach',name:'Speach',component:Speach
+    },
+    {
+      path:'/ProductService/SpeachRecog',name:'SpeachRecog',component:SpeachRecog
     }
   ]
 })

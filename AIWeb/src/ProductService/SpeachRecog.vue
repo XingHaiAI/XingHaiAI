@@ -1,0 +1,187 @@
+<!--这里是-->
+<!--语音分页面-->
+
+<template>
+  <body>
+  <div id="AIhead">
+    <img src="../assets/语音识别/语音识别滑页.png" class="background">
+    <a id="title">语音识别</a>
+    <textarea id="titlecontent" rows="2"cols="40" disabled>识别身份证正反面的文字信息</textarea>
+    <button>演示</button>
+    <button>技术文档</button>
+  </div>
+  <div id="AIbodyfir">
+    <a id="introduce">功能介绍</a><br/>
+    <a id="introducecontent">支持对二代居民身份证正反面的关键字段识别，包括姓名，性别，民族，出生日期，住址，身份证号，签发机关，有效日期。</a>
+  </div>
+  <div id="AIbodysec">
+    <img src="../assets/语音识别/语音识别-功能介绍.png"class="background">
+    <button class="functionButton" id="apply">接口申请</button>
+    <button class="functionButton" id="download">SDK下载</button>
+  </div>
+  <div id="AIbodythi">
+    <p id="txtApp">应用场景</p>
+    <img src="../assets/语音识别/语音输入法.png" id="AIcar">
+    <img src="../assets/语音识别/语音搜索.png" id="AIcustomer"><br/>
+    <textarea rows="1" cols="30" id="serviceCaption" disabled>视频主播身份认证</textarea>
+    <textarea rows="1" cols="30" id="carCaption"disabled>远程身份认证</textarea><br/>
+    <textarea rows="5" cols="40" id="serviceContent" disabled>在视频直播场景，应用身份证OCR实现主播实名身份证识别和认证，减少人工录入成本，提高用户体验</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea>
+  </div>
+  <div id="AItail">
+    <img src="../assets/联系我们.png" class="background">
+  </div>
+  </body>
+</template>
+
+<script>
+  export default {
+    name: "IDCard"
+  }
+</script>
+
+<style scoped>
+  #apply{
+    position: relative;
+    left: 22%;
+    bottom: 15%;
+  }
+  #download{
+    position: relative;
+    left: 39%;
+    bottom: 15%;
+  }
+  .functionButton{
+    color: black;
+    border-color: black;
+  }
+  button{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    bottom: 50%;
+    right: 27%;
+    margin-left: 3%;
+    border-color: white;
+    color:white;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+  #titlecontent{
+    background: transparent;
+    color:white;
+    position: relative;
+    margin-left: 5%;
+    bottom: 65%;
+    overflow:auto;
+  }
+  #introduce{
+    font-size: 30px;
+    position: relative;
+    margin-bottom:5%;
+  }
+  #introducecontent{
+    position: relative;
+    top: 8%;
+  }
+  #title{
+    position: relative;
+    bottom: 75%;
+    left: 18%;
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
+  }
+  textarea{
+    border: none;
+    resize: none;
+    background-color: white;
+    color: black;
+  }
+  #carContent{
+    position: relative;
+    top: 5px;
+    left: 37%;
+    overflow:auto;
+  }
+  #carCaption{
+    position: relative;
+    top: 5px;
+    left: 45%;
+    text-align: center;
+    overflow: auto;
+  }
+  #serviceContent{
+    position: relative;
+    top: 5px;
+    left: 18%;
+    overflow:auto;
+  }
+  #serviceCaption{
+    position: relative;
+    top: 5px;
+    left: 20%;
+    text-align: center;
+    overflow: auto;
+  }
+  #txtApp{;
+    font-size: 30px;
+    text-align: center;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 2300px;
+  }
+  .background {
+    width:100%;
+    height:100%;
+    /*display: inline;*/
+    /*position:absolute;*/
+    /*z-index:0;*/
+  }
+  #AIcar{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    padding-top: 0%;
+    left: 18%;
+    overflow: auto;
+  }
+  #AIcustomer{
+    height: 250px;
+    width:300px;
+    position: relative;
+    left: 37%;
+    padding-top: 0%;
+  }
+  #AIhead{
+    width: 100%;
+    height: calc(25.8/100*2300px);
+  }
+  #AIbodyfir{
+    width: 100%;
+    height: calc(13.3/100*2300px);
+    margin: 0;
+    padding: 0;
+    background-size: auto 50%;
+    text-align: center;
+  }
+  #AIbodysec{
+    height: calc(22.8/100*2300px);
+    margin: 0;
+    padding: 0;
+  }
+  #AIbodythi{
+    height: calc(27.6/100*2300px);
+    margin: 0;
+    padding: 0;
+  }
+  #AItail{
+    height: calc(10.5/100*2300px);
+    margin: 0;
+    padding: 0;
+  }
+</style>
