@@ -6,13 +6,13 @@
   <div id="AIhead">
     <img src="../assets/语音识别/语音识别滑页.png" class="background">
     <a id="title">语音识别</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>识别身份证正反面的文字信息</textarea>
+    <textarea id="titlecontent" rows="2"cols="40" disabled>将人类的语音中的词汇内容转换为计算机可读的输入，例如按键，二进制编码或者字符序列</textarea>
     <button>演示</button>
     <button>技术文档</button>
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">支持对二代居民身份证正反面的关键字段识别，包括姓名，性别，民族，出生日期，住址，身份证号，签发机关，有效日期。</a>
+    <a id="introducecontent">为您提供高精度的服务，融合兴海物联领先的自然语言处理系统，支持多场景只能语音交互</a>
   </div>
   <div id="AIbodysec">
     <img src="../assets/语音识别/语音识别-功能介绍.png"class="background">
@@ -23,10 +23,10 @@
     <p id="txtApp">应用场景</p>
     <img src="../assets/语音识别/语音输入法.png" id="AIcar">
     <img src="../assets/语音识别/语音搜索.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="30" id="serviceCaption" disabled>视频主播身份认证</textarea>
-    <textarea rows="1" cols="30" id="carCaption"disabled>远程身份认证</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>在视频直播场景，应用身份证OCR实现主播实名身份证识别和认证，减少人工录入成本，提高用户体验</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea>
+    <textarea rows="1" cols="30" id="serviceCaption" disabled>语音输入法</textarea>
+    <textarea rows="1" cols="30" id="carCaption"disabled>语音搜索</textarea><br/>
+    <textarea rows="5" cols="40" id="serviceContent" disabled>拜托生僻字和拼音障碍，将所输入文字，直接用语音的方式输入，让输入法更加便捷</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>搜索内容直接以语音的方式输入，让搜索更加高效</textarea>
   </div>
   <div id="AItail">
     <img src="../assets/联系我们.png" class="background">

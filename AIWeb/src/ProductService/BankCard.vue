@@ -24,8 +24,8 @@
     <img src="../assets/银行卡识别/电商支付绑卡.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="30" id="serviceCaption" disabled>金融远程身份认证</textarea>
     <textarea rows="1" cols="30" id="carCaption"disabled>电商支付绑卡</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>识别图像和内容中的违规文字内容，进行违规处理和风险管控</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</textarea>
+    <textarea rows="5" cols="40" id="serviceContent" disabled>使用身份证OCR，银行卡OCR实现用户信息的自动识别和录入，应用于金融场景用户远程的身份认证，识别速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>在支付绑卡缓解，使用银行卡OCR实现银行卡的拍照自动识别，提升数据录入的准确性和效率，提高用户体验</textarea>
   </div>
   <div id="AItail">
     <img src="../assets/联系我们.png" class="background">
