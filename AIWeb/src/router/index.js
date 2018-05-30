@@ -12,6 +12,8 @@ import GeneralWord from '@/ProductService/GeneralWord.vue'
 import BankCard from '@/ProductService/BankCard.vue'
 import Speach from '@/ProductService/Speach.vue'
 import SpeachRecog from '@/ProductService/SpeachRecog.vue'
+import ProductBlog from '@/ProductBlog/ProductBlog.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -38,6 +40,9 @@ export default new Router({
     },
     {
       path:'/ContactUs',name:'ContactUs',component:ContactUs
+    },
+    {
+      path:'/ProductBlog',name:'ProductBlog',component:ProductBlog
     },
     {
       path:'/ProductService/HandWritten',name:'HandWritten',component:HandWritten

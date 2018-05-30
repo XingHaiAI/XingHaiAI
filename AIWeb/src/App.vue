@@ -9,8 +9,7 @@
 		        <router-link to="/Useplace" class="menu_item" style="text-decoration: none">应用场景</router-link>
 		        <div class="menu_item"v-on:mouseover="documentOver" v-on:mouseout="documentOut">文档中心</div>
 		        <div class="menu_item">试用演示</div>
-		        <div class="menu_item">产品博客</div>
-
+		        <router-link to="/ProductBlog" class="menu_item" style="text-decoration: none">产品博客</router-link>
 		        <div class="login_sign_in">
 		            <div class="login">注册</div>
 		            <div class="divider">|</div>
