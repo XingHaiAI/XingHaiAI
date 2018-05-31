@@ -13,7 +13,9 @@ import BankCard from '@/ProductService/BankCard.vue'
 import Speach from '@/ProductService/Speach.vue'
 import SpeachRecog from '@/ProductService/SpeachRecog.vue'
 import ProductBlog from '@/ProductBlog/ProductBlog.vue'
-
+import Comments from '@/ProductService/Comments.vue'
+import Emotional from '@/ProductService/Emotional.vue'
+import IDCard from '@/ProductService/IDCard.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -58,6 +60,15 @@ export default new Router({
     },
     {
       path:'/ProductService/SpeachRecog',name:'SpeachRecog',component:SpeachRecog
+    },
+    {
+      path:'/ProductService/Comments',name:'Comments',component:Comments
+    },
+    {
+      path:'/ProductService/Emotional',name:'Emotional',component:Emotional
+    },
+    {
+      path:'/ProductService/IDCard',name:'IDCard',component:IDCard
     }
   ]
 })

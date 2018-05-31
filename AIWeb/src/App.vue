@@ -16,15 +16,36 @@
 		            <div class="sign_in">登录</div>
 		        </div>
 		    </div>
-      <ul id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
-        <router-link to="/ProductService/AIIntelligent" style="text-decoration: none"><li class="productService">AI智能</li></router-link>
-        <router-link to="/ProductService/TextSimilar" style="text-decoration: none"><li class="productService">短文本相似度</li></router-link>
-        <router-link to="/ProductService/Meaning" style="text-decoration: none"><li class="productService">词义相似度</li></router-link>
-        <router-link to="/ProductService/License" style="text-decoration: none"><li class="productService">车牌识别</li></router-link>
-      </ul>
-      <ul id="document" v-on:mouseover="documentOver" v-on:mouseout="documentOut">
-        <router-link to="/ContactUs" style="text-decoration: none"><li class="productService">联系我们</li></router-link>
-      </ul>
+      <div id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
+        <table style="width: 100%">
+      <tr>
+        <router-link to="/ProductService/AIIntelligent" style="text-decoration: none"><td class="productService">AI智能</td></router-link>
+        <router-link to="/ProductService/TextSimilar" style="text-decoration: none"><td class="productService">短文本相似度</td></router-link>
+        <router-link to="/ProductService/Meaning" style="text-decoration: none"><td class="productService">词义相似度</td></router-link>
+      </tr>
+        <tr>
+          <router-link to="/ProductService/License" style="text-decoration: none"><td class="productService">短文本相似度</td></router-link>
+        <router-link to="/ProductService/Comments" style="text-decoration: none"><td class="productService">评论观点抽取</td></router-link>
+        <router-link to="/ProductService/Emotional" style="text-decoration: none"><td class="productService">情感倾向分析</td></router-link>
+        </tr>
+        <tr>
+          <router-link to="/ProductService/IDCard" style="text-decoration: none"><td class="productService">身份证识别</td></router-link>
+          <router-link to="/ProductService/HandWritten" style="text-decoration: none"><td class="productService">手写识别</td></router-link>
+        <router-link to="/ProductService/GeneralWord" style="text-decoration: none"><td class="productService">通用文字识别</td></router-link>
+      </tr>
+          <tr>
+          <router-link to="/ProductService/BankCard" style="text-decoration: none"><td class="productService">银行卡识别</td></router-link>
+          <router-link to="/ProductService/Speach" style="text-decoration: none"><td class="productService">语音合成</td></router-link>
+          <router-link to="/ProductService/SpeachRecog" style="text-decoration: none"><td class="productService">语音识别</td></router-link>
+          </tr>
+        </table>
+      </div>
+      <div id="document" v-on:mouseover="documentOver" v-on:mouseout="documentOut">
+      <table style="position: relative;bottom: 100%">
+        <router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">联系我们</td></router-link>
+        <router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">入门教学</td></router-link>
+      </table>
+      </div>
 		</div>
 		<router-view></router-view>
 	</div>
@@ -76,35 +97,46 @@ export default {
 </script>
 
 <style>
+  .documentCenter{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
   #document{
-    width: 6%;
+    display: none;
+    width: 7%;
     position: relative;
-    margin-left: 40%;
-    margin-top:3.8%;
+    left: 42%;
+    top:100%;
     color: white;
     background-color: #2e3d4f;
-    list-style: none;
-    text-align: center;
-    display: none;
+
   }
 .productService{
-  position: relative;
-  right: 36%;
-  width: 120%;
-  padding-bottom: 20%;
-  padding-top: 15%;
+  display: inline-block;
   color: white;
+  font-size: 20px;
+  margin-right: 60px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width:20%;
+  align:left;
 }
   #service{
-    width: 6%;
-    position: relative;
-    left: 21%;
-    margin-top:3.8%;
+    display: none;
     color: white;
     background-color: #2e3d4f;
+    height:300px;
+    width: 800px;
+    position: relative;
+    left:10%;
+    top:100%;
+  }
+  ul{
     list-style: none;
-    text-align: center;
-    display: none;
   }
   /*上面是暂时的导航栏下拉框的属性*/
 #app {
