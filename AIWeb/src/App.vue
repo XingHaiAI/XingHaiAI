@@ -82,7 +82,7 @@ export default {
     margin-left: 40%;
     margin-top:3.8%;
     color: white;
-    background-color: #262626;
+    background-color: #2e3d4f;
     list-style: none;
     text-align: center;
     display: none;
@@ -101,7 +101,7 @@ export default {
     left: 21%;
     margin-top:3.8%;
     color: white;
-    background-color: #262626;
+    background-color: #2e3d4f;
     list-style: none;
     text-align: center;
     display: none;
@@ -129,7 +129,7 @@ router-link{
 }
 
 @keyframes navbar_bg_color_ani {
-    to {background-color: #262626}
+    to {background-color: #2e3d4f}
 }
 
 .navbar{

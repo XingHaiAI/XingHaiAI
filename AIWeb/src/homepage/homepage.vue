@@ -6,7 +6,9 @@
 		<usePlace class="content4"></usePlace>
         <aboutUs class="content5"></aboutUs>
         <Try class="content6"></Try>
-        <contactUs class="content7"></contactUs>
+        <div id="ContactUs">
+    		<img src="../assets/联系我们.png" class="background">
+  		</div>
 	</div>
 </template>
 
@@ -17,7 +19,6 @@ import usePlace from "./UsePlace.vue"
 import aboutUs from "./AboutUs.vue"
 import wisedomPark from "./WisedomPark.vue"
 import Try from "./Try.vue"
-import contactUs from "./ContactUs.vue"
 export default {
     name: 'homepage',
     components: {
@@ -26,8 +27,7 @@ export default {
     usePlace,
     aboutUs,
     wisedomPark,
-    Try,
-    contactUs
+    Try
   }
 
 }
@@ -39,6 +39,17 @@ export default {
     min-width: 900px;
     width:expression(document.body.clientWidth < 900? "900px":"auto" );
 }
+#ContactUs{
+   background-color: blue;
+   background-image: url("../assets/联系我们/bg.jpg");
+   background-size: 100% 100%;
+   width: 100vw;
+   height: 35vh;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+ }
 .content{
     margin-top: -8vh;
     padding:0;
@@ -90,12 +101,8 @@ export default {
     width: 100%;
     height: 60vh;
 }
-
-.content7{
-    position: relative;
-    border: none;
-    z-index: 5;
-    width: 100%;
-    height: 25vh;
+.background{
+  height:100%;
+  width:100%;
 }
 </style>

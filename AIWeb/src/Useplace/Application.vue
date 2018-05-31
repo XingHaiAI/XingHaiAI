@@ -8,20 +8,20 @@
         </div>
         <wisedomPark class="content1"></wisedomPark>
 		<usePlace class="content2"></usePlace>
-        <contactUs class="content3"></contactUs>
+        <div id="ContactUs">
+            <img src="../assets/联系我们.png" class="background">
+        </div>
 	</div>
 </template>
 
 <script>
 import usePlace from "./UsePlace.vue"
 import wisedomPark from "./WisedomPark.vue"
-import contactUs from "./ContactUs.vue"
 export default {
     name: 'application',
     components: {
     usePlace,
-    wisedomPark,
-    contactUs
+    wisedomPark
   }
 
 }
@@ -33,6 +33,18 @@ export default {
     width: 100%;
     height: calc(22.08/100*2300px);
 }
+
+#ContactUs{
+   background-color: blue;
+   background-image: url("../assets/联系我们/bg.jpg");
+   background-size: 100% 100%;
+   width: 100vw;
+   height: 35vh;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+ }
 
 .background {
     width:100%;
