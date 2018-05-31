@@ -46,6 +46,11 @@ export default {
                 "clickUrl": "#",
                 "desc": "rsdh",
                 "image": require("./pic_rotate/index_pic5.jpg")
+            },
+            {
+                "clickUrl": "#",
+                "desc": "rsdh",
+                "image": require("./pic_rotate/index_pic6.jpg")
             }
         ],
         currentIndex: 0,
