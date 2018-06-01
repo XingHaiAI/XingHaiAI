@@ -4,10 +4,10 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/短文本相似度/短文本相似度滑页.png" class="background">
-    <a id="title">短文本相似度</a>
-    <textarea id="titlecontent" rows="3"cols="40" disabled>短文本相似度计算服务能够提供不同短文本之间相似度的计算，输出的相似度是一个介于0到1之间的实数值，越大则相似度越高。</textarea>
-    <button>技术文档</button>
+    <img src="../assets/短文本相似度/短文本相似度.png" class="background">
+    <!--<a id="title">短文本相似度</a>-->
+    <!--<textarea id="titlecontent" rows="3"cols="40" disabled>短文本相似度计算服务能够提供不同短文本之间相似度的计算，输出的相似度是一个介于0到1之间的实数值，越大则相似度越高。</textarea>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>

@@ -4,10 +4,10 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/评论抽取/评论观点抽取滑页.png" class="background">
-    <a id="title">评论观点抽取</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>评论观点抽取接口用来提取一条评论句子的关注点和评论观点，并输出评论观点标签及评论观点极性</textarea>
-    <button>技术文档</button>
+    <img src="../assets/评论抽取/评论观点抽取.png" class="background">
+    <!--<a id="title">评论观点抽取</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>评论观点抽取接口用来提取一条评论句子的关注点和评论观点，并输出评论观点标签及评论观点极性</textarea>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>

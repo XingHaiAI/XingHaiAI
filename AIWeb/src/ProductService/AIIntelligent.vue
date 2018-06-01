@@ -5,10 +5,10 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/AI智能/AI客服滑页.png" class="background">
-    <a id="title">AI智能</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>基于用户输入的文本内容，返回场景BOT理解与应答的信息</textarea>
-    <button>技术文档</button>
+    <img src="../assets/AI智能/AI智能.png" class="background">
+    <!--<a id="title">AI智能</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>基于用户输入的文本内容，返回场景BOT理解与应答的信息</textarea>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a>
@@ -111,7 +111,7 @@
     position: relative;
     top: 5px;
     left: 18%;
-    overflow:auto;
+      overflow:auto;
   }
   #serviceCaption{
     position: relative;

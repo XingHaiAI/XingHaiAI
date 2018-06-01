@@ -4,11 +4,11 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/语音识别/语音识别滑页.png" class="background">
-    <a id="title">语音识别</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>将人类的语音中的词汇内容转换为计算机可读的输入，例如按键，二进制编码或者字符序列</textarea>
-    <button>演示</button>
-    <button>技术文档</button>
+    <img src="../assets/语音识别/语音识别.png" class="background">
+    <!--<a id="title">语音识别</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>将人类的语音中的词汇内容转换为计算机可读的输入，例如按键，二进制编码或者字符序列</textarea>-->
+    <!--<button>演示</button>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>

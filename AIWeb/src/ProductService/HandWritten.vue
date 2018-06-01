@@ -4,10 +4,10 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/手写识别/手写识别滑页.png" class="background">
-    <a id="title">手写识别</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>识别手写中文汉字</textarea>
-    <button>技术文档</button>
+    <img src="../assets/手写识别/手写识别.png" class="background">
+    <!--<a id="title">手写识别</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>识别手写中文汉字</textarea>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>

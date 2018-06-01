@@ -4,10 +4,10 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/词义相似度/词义相似度滑页.png" class="background">
-    <a id="title">词义相似度</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>输入两个词，得到两个词的相似度结果</textarea>
-    <button>技术文档</button>
+    <img src="../assets/词义相似度/词义相似度.png" class="background">
+    <!--<a id="title">词义相似度</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>输入两个词，得到两个词的相似度结果</textarea>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>

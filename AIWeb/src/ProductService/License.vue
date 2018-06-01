@@ -4,10 +4,10 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/车牌识别/车牌识别滑页.png" class="background">
-    <a id="title">车牌识别</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>对小客车的车牌进行识别</textarea>
-    <button>技术文档</button>
+    <img src="../assets/车牌识别/车牌识别.png" class="background">
+    <!--<a id="title">车牌识别</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>对小客车的车牌进行识别</textarea>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>

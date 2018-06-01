@@ -4,10 +4,10 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/情感倾向分析/情感倾向分析滑页.png" class="background">
-    <a id="title">情感倾向分析</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>对包含主观观点信息的文本进行情感极性类别（积极，消极，中性）的判断，并给出相应的置信度。</textarea>
-    <button>技术文档</button>
+    <img src="../assets/情感倾向分析/情感倾向分析.png" class="background">
+    <!--<a id="title">情感倾向分析</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>对包含主观观点信息的文本进行情感极性类别（积极，消极，中性）的判断，并给出相应的置信度。</textarea>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>

@@ -4,10 +4,10 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/银行卡识别/银行卡识别滑页.png" class="background">
-    <a id="title">银行卡识别</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>识别银行卡的卡号并返回发卡行和卡片性质中心</textarea>
-    <button>技术文档</button>
+    <img src="../assets/银行卡识别/银行卡识别.png" class="background">
+    <!--<a id="title">银行卡识别</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>识别银行卡的卡号并返回发卡行和卡片性质中心</textarea>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>

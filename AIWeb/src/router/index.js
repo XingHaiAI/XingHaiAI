@@ -16,7 +16,11 @@ import ProductBlog from '@/ProductBlog/ProductBlog.vue'
 import Comments from '@/ProductService/Comments.vue'
 import Emotional from '@/ProductService/Emotional.vue'
 import IDCard from '@/ProductService/IDCard.vue'
+import Teaching from '@/Useplace/Teaching.vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(Router)
+Vue.use(ElementUI)
 
 export default new Router({
   routes: [
@@ -69,6 +73,9 @@ export default new Router({
     },
     {
       path:'/ProductService/IDCard',name:'IDCard',component:IDCard
+    },
+    {
+      path:'/Teaching',name:'Teaching',component:Teaching
     }
   ]
 })

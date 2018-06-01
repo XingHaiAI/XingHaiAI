@@ -43,7 +43,7 @@
       <div id="document" v-on:mouseover="documentOver" v-on:mouseout="documentOut">
       <table style="position: relative;bottom: 100%">
         <router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">联系我们</td></router-link>
-        <router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">入门教学</td></router-link>
+        <router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">入门教学</td></router-link>
       </table>
       </div>
 		</div>

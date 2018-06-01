@@ -4,10 +4,10 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/语音合成/语音合成滑页.png" class="background">
-    <a id="title">语音合成</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>语音合成服务，基于HTTP请求的REST API接口，将文本转换为可以播放的MP3文件。</textarea>
-    <button>技术文档</button>
+    <img src="../assets/语音合成/语音合成.png" class="background">
+    <!--<a id="title">语音合成</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>语音合成服务，基于HTTP请求的REST API接口，将文本转换为可以播放的MP3文件。</textarea>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>

@@ -4,11 +4,11 @@
 <template>
   <body>
   <div id="AIhead">
-    <img src="../assets/情感倾向分析/情感倾向分析滑页.png" class="background">
-    <a id="title">身份证识别</a>
-    <textarea id="titlecontent" rows="2"cols="40" disabled>识别身份证正反面的文字信息</textarea>
-    <button>演示</button>
-    <button>技术文档</button>
+    <img src="../assets/情感倾向分析/情感倾向分析.png" class="background">
+    <!--<a id="title">身份证识别</a>-->
+    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>识别身份证正反面的文字信息</textarea>-->
+    <!--<button>演示</button>-->
+    <!--<button>技术文档</button>-->
   </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>
