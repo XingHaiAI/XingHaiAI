@@ -48,21 +48,19 @@
     <div id="main">
       <div id="search">
         <div>
-        <input style="width: 70%;height:25%;margin: 0" />
-        <el-button type="primary" icon="el-icon-search" id="find"></el-button>
+          <input style="width: 70%;height:25%;margin: 0" />
+          <el-button type="primary" icon="el-icon-search" id="find"></el-button>
         </div>
         <p class="route"><router-link to="" class="linkto">文档中心</router-link>&lt<router-link to="" class="linkto">产品文档</router-link>&ltAPI调用规则</p>
       </div>
       <div id="text">
-        <p style="font-size: 30px;margin-bottom: 10%">API调用规则</p>
-        <p style="font-size: 25px">API调用-----原理</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">FACE++人工真能开放平台API是HTTP API。常用的编程语言都能发起HTTP请求（通过第三方库或自带API），使用者向我们的服务器发起HTTP请求，并加上合适的参数，服务器将会对请求进行处理，得到结果将会返回给使用者</textarea>
-        <p style="font-size: 25px">API调用----鉴权</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">账号下每创建一个应用就会生成一组对应的API_KEY和API_SECRET,并用以识别用户是否有权限调用API，所有的API调用必须提供对应的一组API_KEY和API_SELECT参数</textarea>
-        <p style="font-size: 25px">API调用----参数</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">调用每个API需要根据需求传不同的参数，每个API参数的详细定义请查看人脸识别。所有API的嗲用都要使用POST请求，用户可以以QUERY STRING的形式将参数写进请求体中，传图片文件参数时需要在请求体中使用MULTIPART/FORM-DATA格式来编码</textarea>
-        <p style="font-size: 25px">API调用--提示</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">为了避免因网络问题而造成的阻塞，建议将API调用放进异步线程里执行。</textarea>
+        <p style="font-size: 30px;margin-bottom: 10%">如何使用SDK</p>
+        <p style="font-size: 25px">1. 注册账号并创建 API Key</p>
+        <textarea rows="5"cols="70"disabled style="font-size: 20px">如果您希望采用联网授权模式，则需要通过调用 SDK Auth API 进行联网授权与计费，因此您需要先在兴海物联 网站上创建账号，并创建一个 API Key。注意：在创建应用时请选择正确的 API Key 类型。如果您希望免费测试 SDK，请使用“免费 API Key”；如您希望进行正式的联网授权，请使用“正式 API Key”。</textarea>
+        <p style="font-size: 25px">2. 下载SDK</p>
+        <textarea rows="5"cols="70"disabled style="font-size: 20px">在控制台，展开“SDK\联网授权SDK”这个组，并点击“SDK下载”页。</textarea>
+        <p style="font-size: 25px">3. 集成开发</p>
+        <textarea rows="5"cols="70"disabled style="font-size: 20px">下载 SDK 包文件后，您就可以根据包中的文档说明，开始集成开发了。如果您在开发过程中遇到任何问题，欢迎、在官网联系技术支持</textarea>
         <p style="font-size: 25px">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
       </div>
     </div>
@@ -75,7 +73,7 @@
 
 <script>
   export default {
-    name:"Teaching",
+    name:"TechGuideSDK",
     data() {
       return {
         isCollapse: true

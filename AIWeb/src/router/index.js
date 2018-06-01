@@ -19,6 +19,8 @@ import IDCard from '@/ProductService/IDCard.vue'
 import Teaching from '@/Useplace/Teaching.vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import TechGuideAPI from '@/Useplace/TechGuide.vue'
+import TechGuideSDK from '@/Useplace/TechGuideSDK.vue'
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -76,6 +78,12 @@ export default new Router({
     },
     {
       path:'/Teaching',name:'Teaching',component:Teaching
+    },
+    {
+      path:'/TechGuideAPI',name:'TechGuideAPI',component:TechGuideAPI
+    },
+    {
+      path:'/TechGuideSDK',name:'TechGuideSDK',component:TechGuideSDK
     }
   ]
 })
