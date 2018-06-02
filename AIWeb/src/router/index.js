@@ -21,7 +21,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import TechGuideAPI from '@/Useplace/TechGuide.vue'
 import TechGuideSDK from '@/Useplace/TechGuideSDK.vue'
-// import PreSpeachRecg from '@/PresentDoc/SpeachRecg.vue'
+import PreSpeachRecg from '@/PresentDoc/SpeachRecg/SpeachRecg.vue'
+import FaceRecg from '@/PresentDoc/FaceRecg/FaceRecg.vue'
+import PicRecg from '@/PresentDoc/PicRecg/PicRecg.vue'
+import WordRecg from '@/PresentDoc/WordRecg/WordRecg.vue'
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -86,9 +89,18 @@ export default new Router({
     {
       path:'/TechGuideSDK',name:'TechGuideSDK',component:TechGuideSDK
     }
-    // ,
-    // {
-    //   path:'/PresentDoc/SpeachRecg',name:'SpeachRecg',component:PreSpeachRecg
-    // }
+     ,
+    {
+       path:'/PresentDoc/SpeachRecg',name:'SpeachRecg',component:PreSpeachRecg
+    },
+    {
+       path:'/PresentDoc/FaceRecg',name:'FaceRecg',component:FaceRecg
+    },
+    {
+       path:'/PresentDoc/PicRecg',name:'PicRecg',component:PicRecg
+    },
+    {
+       path:'/PresentDoc/WordRecg',name:'WordRecg',component:WordRecg
+    }
   ]
 })

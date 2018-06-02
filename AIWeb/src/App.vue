@@ -8,7 +8,7 @@
 		        <div class="menu_item" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">产品服务</div>
 		        <router-link to="/Useplace" class="menu_item" style="text-decoration: none">应用场景</router-link>
 		        <div class="menu_item"v-on:mouseover="documentOver" v-on:mouseout="documentOut">文档中心</div>
-		        <div class="menu_item">试用演示</div>
+		        <div class="menu_item"v-on:mouseover="presentOver" v-on:mouseout="presentOut">试用演示</div>
 		        <router-link to="/ProductBlog" class="menu_item" style="text-decoration: none">产品博客</router-link>
 		        <div class="login_sign_in">
 		            <div class="login">注册</div>
@@ -44,6 +44,14 @@
       <table style="position: relative;bottom: 100%">
         <router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">联系我们</td></router-link>
         <router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">入门教学</td></router-link>
+      </table>
+      </div>
+      <div id="present" v-on:mouseover="presentOver" v-on:mouseout="presentOut">
+        <table style="position: relative;bottom: 100%">
+        <router-link to="/PresentDoc/SpeachRecg" style="text-decoration: none"><td class="documentCenter">语音识别</td></router-link>
+        <router-link to="/PresentDoc/PicRecg" style="text-decoration: none"><td class="documentCenter">图像识别</td></router-link>
+        <router-link to="/PresentDoc/WordRecg" style="text-decoration: none"><td class="documentCenter">文字识别</td></router-link>
+        <router-link to="/PresentDoc/FaceRecg" style="text-decoration: none"><td class="documentCenter">人脸识别</td></router-link>
       </table>
       </div>
 		</div>
@@ -90,6 +98,16 @@ export default {
       {
         var service=document.getElementById("document")
         service.style.display='none';
+      },
+      presentOver()/*文档中心下拉框出现*/
+      {
+        var service=document.getElementById("present")
+        service.style.display='block';
+      },
+      presentOut()/*文档中心下拉框消失*/
+      {
+        var service=document.getElementById("present")
+        service.style.display='none';
       }
     }
 }
@@ -109,6 +127,16 @@ export default {
     width: 7%;
     position: relative;
     left: 42%;
+    top:100%;
+    color: white;
+    background-color: #2e3d4f;
+
+  }
+  #present{
+    display: none;
+    width: 7%;
+    position: relative;
+    left: 51%;
     top:100%;
     color: white;
     background-color: #2e3d4f;
