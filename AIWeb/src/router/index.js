@@ -21,6 +21,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import TechGuideAPI from '@/Useplace/TechGuide.vue'
 import TechGuideSDK from '@/Useplace/TechGuideSDK.vue'
+// import PreSpeachRecg from '@/PresentDoc/SpeachRecg.vue'
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -85,5 +86,9 @@ export default new Router({
     {
       path:'/TechGuideSDK',name:'TechGuideSDK',component:TechGuideSDK
     }
+    // ,
+    // {
+    //   path:'/PresentDoc/SpeachRecg',name:'SpeachRecg',component:PreSpeachRecg
+    // }
   ]
 })
