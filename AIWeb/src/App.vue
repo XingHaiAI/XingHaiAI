@@ -2,7 +2,7 @@
 	<div id="app">
 		<div class="navbar">
 		    <!--LOGO-->
-		    <div class="logo">兴海物联开发平台</div>
+		    <router-link to="/" class="logo" style="text-decoration: none">兴海物联开发平台</router-link>
 		    <!--各个菜单项，鼠标点击时展开-->
 		    <div class="menu_group">
 		        <div class="menu_item" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">产品服务</div>
