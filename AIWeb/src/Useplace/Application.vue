@@ -51,6 +51,10 @@ export default {
     height:100%;
 }
 
+button{
+    cursor:pointer;
+}
+
 textarea{
     border: none;
     resize: none;
@@ -58,6 +62,7 @@ textarea{
     color: black;
     height:70px;
     overflow:auto;
+    cursor:default;
 }
 
 #title{
@@ -90,9 +95,9 @@ button{
     left: 3%;
     font-size: 13px;
     height:70px;
-
     width:350px;
     bottom: 51%;
+    cursor:default;
 }
 
 .content1{

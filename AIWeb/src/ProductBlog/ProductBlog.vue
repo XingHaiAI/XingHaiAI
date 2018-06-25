@@ -204,6 +204,7 @@ div{
   width:58vw;
   height:30vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  cursor:default;
 }
 .bolg_title{
   margin-top:3vh;
@@ -242,6 +243,7 @@ div{
   font-size:15px;
   color:#3399FF;
   letter-spacing:2px;
+  cursor:pointer;
 }
 .decorate_bar{
   margin-top: 5vh;
@@ -291,6 +293,7 @@ div{
   font-weight: 300;
   margin-left:8vw;
   display:inline-block;
+  cursor:pointer;
 }
 .icon_1{
   width: 2vw;

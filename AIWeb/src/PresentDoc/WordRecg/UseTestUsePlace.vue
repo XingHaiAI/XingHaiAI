@@ -59,27 +59,36 @@ div{
 .UseTestUsePlace_Item_Group_Item_Left{
     margin-right: 5vw;
     display: inline-block;
-    width: 30vw;
+    width: 25vw;
     background-color: white;
-    height: 40vw;
+    height: 32vw;
+    cursor:default;
 }
 
-
+.UseTestUsePlace_Item_Group_Item_Left:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .UseTestUsePlace_Item_Group_Item_Right{
     display: inline-block;
     margin-left: 5vw;
-    width: 30vw;
+    width: 25vw;
     background-color: white;
-    height: 40vw;
+    height: 32vw;
+    cursor:default;
 }
+
+.UseTestUsePlace_Item_Group_Item_Right:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 .UseTestUsePlace_Item_Group_Item_Img_Left{
     background-image: url("word/item_1.jpg");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 70%;
+    height: 65%;
 }
 
 .UseTestUsePlace_Item_Group_Item_Img_Right{
@@ -87,20 +96,22 @@ div{
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 70%;
+    height: 65%;
 }
 
 .UseTestUsePlace_Item_Group_Item_Word_Title{
     font-size: 1.6vw;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 3%;
     height: 9%;
 }
 
 .UseTestUsePlace_Item_Group_Item_Word_Content{
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     font-weight: 300;
     height: 17%;
     margin-top: 3%;
+    padding-left:4%;
+    padding-right:4%;
 }
 </style>

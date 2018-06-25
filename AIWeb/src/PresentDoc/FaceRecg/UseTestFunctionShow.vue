@@ -104,6 +104,7 @@ p{
     height: 28%;
     float: left;
     background-color: #BDBDBD;
+    cursor:pointer;
 }
 
 .UseTestFunctionShow_Left_Group_Center_Center{
@@ -124,6 +125,7 @@ p{
     height: 28%;
     float: left;
     background-color: #BDBDBD;
+    cursor:pointer;
 }
 
 .UseTestFunctionShow_Left_Group_Bottom{
@@ -140,6 +142,7 @@ p{
     width: 30%;
     height: 8%;
     margin-left: 11%;
+    cursor:pointer;
 }
 
 .UseTestFunctionShow_Left_Group_Bottom_Center{
@@ -151,6 +154,7 @@ p{
     float: left;
     height: 8%;
     margin-left: 1%;
+    cursor:pointer;
 }
 
 .UseTestFunctionShow_Left_Group_Bottom_Right{
@@ -182,6 +186,7 @@ p{
     height: 4vh;
     border: 1px black solid;
     background-color: white;
+    cursor:pointer;
 }
 
 .UseTestFunctionShow_Right_Group_Top_Right{
@@ -192,6 +197,7 @@ p{
     height: 4vh;
     border: 1px black solid;
     background-color: white;
+    cursor:pointer;
 }
 
 .UseTestFunctionShow_Right_Group_Bottom{

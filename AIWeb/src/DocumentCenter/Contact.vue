@@ -105,6 +105,7 @@ div{
 }
 .icon_1{
   background-image: url("../assets/联系我们/icon1.png");
+  margin-top:0.7vh;
   background-size: 100% 100%;
   display: inline-block;
   width: 2.5vh;
@@ -113,6 +114,7 @@ div{
 .icon_2{
   background-image: url("../assets/联系我们/icon2.png");
   background-size: 100% 100%;
+  margin-top:0.7vh;
   display: inline-block;
   width: 2.5vh;
   height: 2.5vh;
@@ -120,6 +122,7 @@ div{
 .icon_3{
   background-image: url("../assets/联系我们/icon3.png");
   background-size: 100% 100%;
+  margin-top:0.7vh;
   display: inline-block;
   width: 2.5vh;
   height: 2.5vh;
@@ -130,6 +133,7 @@ div{
   color: black;
   line-height: 3vh;
   font-size: 1.3vw;
+  cursor:default;
 }
 .coloum_1{
   display: inline-block;
@@ -170,6 +174,7 @@ div{
   color: white;
   margin-top: 7vh;
   margin-left: 12vw;
+  cursor:default;
 }
 .head_content .content{
   font-size: 1.2vw;
@@ -177,6 +182,7 @@ div{
   margin-left: 12vw;
   width: 40vw;
   margin-top: 5vh;
+  cursor:default;
 }
 .link_group{
   float: left;
@@ -204,12 +210,15 @@ div{
   font-size: 1.5vw;
   font-weight: 300;
   margin-top: 10vh;
+
 }
 .link_group .title{
   text-align: center;
+  cursor:default;
 }
 .link_content{
   text-align: left;
+  cursor:default;
 }
 .link_content .title{
   margin-left: -3vw;
@@ -217,9 +226,11 @@ div{
   margin-top: 3vh;
   margin-bottom: 2vh;
   font-weight: 300;
+  cursor:pointer;
 }
 .link_content .content{
   margin-left: 7.1vw;
+  cursor:pointer;
 }
 .link_content .word{
   margin-top: 2vh;
@@ -227,6 +238,7 @@ div{
   margin-left: -1vw;
   font-size: 1vw;
   font-weight: 300;
+  cursor:pointer;
 }
 .from_group .decorate_bar{
   width: 50vw;
@@ -297,7 +309,7 @@ div{
 }
 .input{
   border: none;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   border: #D1D1D1 1px solid;
   border-radius: 5%;
   margin-bottom: 3vh;
@@ -311,7 +323,7 @@ div{
   border: #D1D1D1 1px solid;
   border-radius: 5%;
   margin-left: 2vw;
-  height: 30vh;
+  height: 27.5vh;
   width: 35vw;
 }
 .check_box{
@@ -340,6 +352,7 @@ div{
   height: 6vh;
   border-radius: 5%;
   background-color: #3765d5;
+  cursor:pointer;
 }
 .content{
   width: 100vw;

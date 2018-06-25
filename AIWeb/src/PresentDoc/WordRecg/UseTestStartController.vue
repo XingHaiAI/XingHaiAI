@@ -58,6 +58,7 @@ div{
     color: white;
     border: solid 1px white;
     display: inline-block;
+    cursor:pointer;
 }
 
 .UseTestStartController_Button_Center{
@@ -69,6 +70,7 @@ div{
     color: white;
     border: solid 1px white;
     display: inline-block;
+    cursor:pointer;
 }
 
 .UseTestStartController_Button_Right{
@@ -81,5 +83,6 @@ div{
     color: white;
     border: solid 1px white;
     display: inline-block;
+    cursor:pointer;
 }
 </style>

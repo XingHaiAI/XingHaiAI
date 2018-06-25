@@ -48,10 +48,10 @@
     <div id="main">
       <div id="search">
         <div>
-          <input style="width: 70%;height:25%;margin: 0" />
+          <input style="width: 70%;height:25%;margin-right:0.7%" />
           <el-button type="primary" icon="el-icon-search" id="find"></el-button>
         </div>
-        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&lt<router-link to="" class="linkto">产品文档</router-link>&ltAPI调用规则</p>
+        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gtAPI调用规则</p>
       </div>
       <div id="text">
         <p style="font-size: 30px;margin-bottom: 10%">如何使用SDK</p>
@@ -103,10 +103,8 @@
     text-decoration: none
   }
   #text{
-    text-align: left;
-    position: relative;
+    text-align: center;
     top: 5%;
-    padding-left:7%;
   }
   textarea{
     overflow:auto;
@@ -175,5 +173,10 @@
     margin: 0;
     padding: 0;
   }
-
+.el-menu-vertical-demo{
+	height:260vh;
+}
+span{
+  font-size:17px;
+}
 </style>

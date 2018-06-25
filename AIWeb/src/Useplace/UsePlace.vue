@@ -189,6 +189,7 @@ div{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
+    text-align: center;
     color: black;
 }
 
@@ -199,6 +200,7 @@ div{
     margin-right: 10%;
     margin-top: 2%;
     color: grey;
+
 }
 
 .line{
@@ -220,6 +222,7 @@ div{
     width: 18vw;
     height: 40vh;
     display: inline-block;
+    cursor:default;
 }
 
 .Item_content_coloum:hover{
