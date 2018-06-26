@@ -34,9 +34,11 @@
               <template slot="title">
                 <span>API接口</span>
               </template>
-              <el-menu-item index="2-1" class="teach"popper-append-to-body="true">API调用规则</el-menu-item>
-              <el-menu-item index="2-2" class="teach"popper-append-to-body="true">调用返回值</el-menu-item>
-              <el-menu-item index="2-3" class="teach"popper-append-to-body="true">代码示例</el-menu-item>
+              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"><router-link to="/SpeachAPI" style="text-decoration: none;color: black">语音处理</router-link></el-menu-item>
+             <el-menu-item index="2-2" class="teach"popper-append-to-body="true"><router-link to="/WordAPI" style="text-decoration: none;color: black">文字识别</router-link></el-menu-item>
+              <el-menu-item index="2-3" class="teach"popper-append-to-body="true"><router-link to="/FaceAPI" style="text-decoration: none;color: black">人脸识别</router-link></el-menu-item>
+              <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/PictureAPI" style="text-decoration: none;color: black">图像识别</router-link></el-menu-item>
+              <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/NPLAPI" style="text-decoration: none;color: black">自然语言处理</router-link></el-menu-item>
             </el-submenu>
             <el-menu-item index="5" style="text-align: center">
               <span slot="title">SDK下载</span>
@@ -51,7 +53,7 @@
           <input style="width: 70%;height:25%;margin: 0" />
           <el-button type="primary" icon="el-icon-search" id="find"></el-button>
         </div>
-        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&lt<router-link to="" class="linkto">产品文档</router-link>&ltAPI调用规则</p>
+        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gtAPI调用规则</p>
       </div>
       <div id="text">
         <p style="font-size: 30px;margin-bottom: 10%">如何使用API</p>
@@ -107,10 +109,9 @@
     text-decoration: none
   }
   #text{
-    text-align: left;
+    text-align: center;
     position: relative;
-    top: 5%;
-    padding-left:7%;
+
   }
   textarea{
     overflow:auto;
@@ -179,5 +180,10 @@
     margin: 0;
     padding: 0;
   }
-
+.el-menu-vertical-demo{
+  height:260vh;
+}
+span{
+  font-size:17px;
+}
 </style>

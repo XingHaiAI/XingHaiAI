@@ -35,7 +35,7 @@
                 <span>API接口</span>
               </template>
               <el-menu-item index="2-1" class="teach"popper-append-to-body="true"><router-link to="/SpeachAPI" style="text-decoration: none;color: black">语音处理</router-link></el-menu-item>
-             <el-menu-item index="2-2" class="teach"popper-append-to-body="true"><router-link to="/WordAPI" style="text-decoration: none;color: black">文字识别</router-link></el-menu-item>
+              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"><router-link to="/WordAPI" style="text-decoration: none;color: black">文字识别</router-link></el-menu-item>
               <el-menu-item index="2-3" class="teach"popper-append-to-body="true"><router-link to="/FaceAPI" style="text-decoration: none;color: black">人脸识别</router-link></el-menu-item>
               <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/PictureAPI" style="text-decoration: none;color: black">图像识别</router-link></el-menu-item>
               <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/NPLAPI" style="text-decoration: none;color: black">自然语言处理</router-link></el-menu-item>
@@ -50,22 +50,22 @@
     <div id="main">
       <div id="search">
         <div>
-        <input style="width: 70%;height:25%;margin-right:0.7%" />
-        <el-button type="primary" icon="el-icon-search" id="find"></el-button>
+          <input style="width: 70%;height:25%;margin: 0" />
+          <el-button type="primary" icon="el-icon-search" id="find"></el-button>
         </div>
-        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gtAPI调用规则</p>
+        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">API接口</router-link>&gtAPI调用规则</p>
       </div>
-      <div id="text">
-        <p style="font-size: 30px;margin-bottom: 10%;text-align: center">API调用规则</p>
-        <p style="font-size: 25px;text-align: center;">API调用-----原理</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">FACE++人工真能开放平台API是HTTP API。常用的编程语言都能发起HTTP请求（通过第三方库或自带API），使用者向我们的服务器发起HTTP请求，并加上合适的参数，服务器将会对请求进行处理，得到结果将会返回给使用者</textarea>
-        <p style="font-size: 25px">API调用----鉴权</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">账号下每创建一个应用就会生成一组对应的API_KEY和API_SECRET,并用以识别用户是否有权限调用API，所有的API调用必须提供对应的一组API_KEY和API_SELECT参数</textarea>
-        <p style="font-size: 25px">API调用----参数</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">调用每个API需要根据需求传不同的参数，每个API参数的详细定义请查看人脸识别。所有API的嗲用都要使用POST请求，用户可以以QUERY STRING的形式将参数写进请求体中，传图片文件参数时需要在请求体中使用MULTIPART/FORM-DATA格式来编码</textarea>
-        <p style="font-size: 25px">API调用--提示</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">为了避免因网络问题而造成的阻塞，建议将API调用放进异步线程里执行。</textarea>
-        <p style="font-size: 25px">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
+       <div class="from_group">
+        <div class="blog">
+          <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/></img>自然语言处理</div>
+          <div class="outline">语音合成服务，基于HTTP请求的REST API 接口，将文本转换为可以播放的MP3文件。将人类语言词汇内容转换为计算机可读输入。</div>
+          <div class="more"><button class="APIbutton">API文档</button></div>
+        </div>
+        <div class="blog">
+          <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/></img>自然语言处理</div>
+          <div class="outline">语音合成服务，基于HTTP请求的REST API 接口，将文本转换为可以播放的MP3文件。将人类语言词汇内容转换为计算机可读输入。</div>
+          <div class="more"><button>API文档</button></div>
+        </div>
       </div>
     </div>
   </div>
@@ -77,7 +77,7 @@
 
 <script>
   export default {
-    name:"Teaching",
+    name:"TechGuide",
     data() {
       return {
         isCollapse: true
@@ -108,7 +108,8 @@
   }
   #text{
     text-align: center;
-    margin-right:5%;
+    position: relative;
+
   }
   textarea{
     overflow:auto;
@@ -177,10 +178,65 @@
     margin: 0;
     padding: 0;
   }
+.from_group{
+  display: flex;
+  flex-direction: column;
+  width: 74%;
+  height: 180vh;
+}
+.blog{
+  margin-top:6vh;
+  margin-bottom:3vh;
+  margin-left:6vw;
+  width:58vw;
+  height:30vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  cursor:default;
+}
+.bolg_title{
+  margin-top:3vh;
+  margin-bottom:1.5vh;
+  margin-left:1vw;
+  font-size:23px;
+  letter-spacing:3px;
+}
+.icon{
+  margin-right:1.2vw;
+  height:2vh;
+  width:2vh;
+}
+.outline{
+  margin-top:3vh;
+  margin-left:3vw;
+  font-size:15px;
+  font-weight:900;
+  color:  #303030;
+  font-weight:450;
+  line-height:4vh;
+}
+.more{
+  margin-top:2vh;
+  margin-left:3vw;
+  font-size:15px;
+  color:#3399FF;
+  letter-spacing:2px;
+  cursor:pointer;
+}
 .el-menu-vertical-demo{
   height:260vh;
 }
 span{
   font-size:17px;
+}
+button{
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    border-color: #99FFCC;
+    color:#4096ff;
+    font-size: 15px;
+    cursor:pointer;
 }
 </style>

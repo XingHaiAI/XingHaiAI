@@ -17,6 +17,11 @@ import Comments from '@/ProductService/Comments.vue'
 import Emotional from '@/ProductService/Emotional.vue'
 import IDCard from '@/ProductService/IDCard.vue'
 import Teaching from '@/Useplace/Teaching.vue'
+import SpeachAPI from '@/Useplace/SpeachAPI.vue'
+import FaceAPI from '@/Useplace/FaceAPI.vue'
+import WordAPI from '@/Useplace/WordAPI.vue'
+import PictureAPI from '@/Useplace/PictureAPI.vue'
+import NPLAPI from '@/Useplace/NPLAPI.vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import TechGuideAPI from '@/Useplace/TechGuide.vue'
@@ -88,6 +93,21 @@ export default new Router({
     },
     {
       path:'/TechGuideSDK',name:'TechGuideSDK',component:TechGuideSDK
+    },
+    {
+      path:'/SpeachAPI',name:'SpeachAPI',component:SpeachAPI
+    },
+    {
+      path:'/FaceAPI',name:'FaceAPI',component:FaceAPI
+    },
+    {
+      path:'/WordAPI',name:'WordAPI',component:WordAPI
+    },
+    {
+      path:'/PictureAPI',name:'PictureAPI',component:PictureAPI
+    },
+    {
+      path:'/NPLAPI',name:'NPLAPI',component:NPLAPI
     }
      ,
     {
