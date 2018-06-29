@@ -11,9 +11,9 @@
 		        <div class="menu_item"v-on:mouseover="presentOver" v-on:mouseout="presentOut">试用演示</div>
 		        <router-link to="/ProductBlog" class="menu_item" style="text-decoration: none">产品博客</router-link>
 		        <div class="login_sign_in">
-		            <div class="login">注册</div>
+		            <div class="login"><router-link to="" class="login_item" style="text-decoration: none">注册</router-link></div>
 		            <div class="divider">|</div>
-		            <div class="sign_in">登录</div>
+		            <div class="sign_in"><router-link to="/login" class="login_item" style="text-decoration: none">登录</router-link></div>
 		        </div>
 		    </div>
       <div id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
@@ -132,7 +132,7 @@ export default {
     top:100%;
     color: white;
     background-color: #060606;
-
+    cursor:pointer;
   }
   #present{
     display: none;
@@ -143,7 +143,7 @@ export default {
     top:100%;
     color: white;
     background-color: #060606;
-
+    cursor:pointer;
   }
 .productService{
   display: inline-block;
@@ -161,12 +161,13 @@ export default {
     margin-left: 5vw;
     color: white;
     background-color: #2e3d4f;
-    height:250px;
+    height:290px;
     background-color: #060606;
-    height:300px;
+    height:270px;
     width: 800px;
     left:10%;
     top:100%;
+    cursor:pointer;
   }
   ul{
     list-style: none;
@@ -243,6 +244,17 @@ router-link{
     height: 7vh;
     font-size: 1vw;
     float: left;
+    cursor:pointer;
+}
+
+.login_item{
+    margin-left: 1.5vw;
+    margin-top: 0.5vh;
+    color: white;
+    line-height: 7vh;
+    height: 7vh;
+    float: left;
+    cursor:pointer;
 }
 
 .menu_item:hover{
@@ -255,12 +267,13 @@ router-link{
 
 .login{
     margin-top: 0.5vh;
-  margin-right: -7vw;
+  margin-right: 0vw;
     color: white;
     line-height: 7vh;
     height: 7vh;
     font-size: 1.2vw;
     float: right;
+    cursor:pointer;
 }
 
 .login:hover {
@@ -270,7 +283,7 @@ router-link{
 .divider{
 
     margin-top: 0.5vh;
-  margin-right: -4vw;
+  margin-right: 0vw;
     color: white;
     line-height: 7vh;
     height: 7vh;
@@ -280,12 +293,13 @@ router-link{
 
 .sign_in{
     margin-top: 0.5vh;
-  margin-right: -3vw;
+  margin-right: 1vw;
     color: white;
     line-height: 7vh;
     height: 7vh;
     font-size: 1.2vw;
     float: right;
+    cursor:pointer;
 }
 .sign_in:hover {
     animation: menu_btn_color_ani 0.3s forwards;
@@ -381,4 +395,5 @@ router-link{
 .menu_item_group_block:hover{
     background-color: grey;
 }
+
 </style>

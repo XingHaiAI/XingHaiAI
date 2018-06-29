@@ -31,6 +31,7 @@ import PreSpeachRecg from '@/PresentDoc/SpeachRecg/SpeachRecg.vue'
 import FaceRecg from '@/PresentDoc/FaceRecg/FaceRecg.vue'
 import PicRecg from '@/PresentDoc/PicRecg/PicRecg.vue'
 import WordRecg from '@/PresentDoc/WordRecg/WordRecg.vue'
+import login from '@/login/login.vue'
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -125,6 +126,9 @@ export default new Router({
     },
     {
       path:'/CommonProblems',name:'TechGuideSDK',component:CommonProblems
+    },
+    {
+      path:'/login',name:'login',component:login
     }
   ]
 })

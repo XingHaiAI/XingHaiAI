@@ -97,7 +97,7 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 39%;
+    left: 40%;
     overflow:auto;
   }
   #carCaption{
@@ -110,7 +110,7 @@
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 23%;
+    left: 23.5%;
       overflow:auto;
   }
   #serviceCaption{
@@ -127,7 +127,7 @@
   body {
     margin: 0;
     padding: 0;
-    height: 2300px;
+    height: 2200px;
   }
   .background {
     width:100%;
@@ -157,8 +157,8 @@
   }
   #AIbodyfir{
     width: 1817px;
-    height: calc(13.3/100*2300px);
-    margin: 0;
+    height: calc(6.3/100*2300px);
+    margin-top:5vh;
     padding: 0;
     background-size: auto 50%;
     text-align: center;

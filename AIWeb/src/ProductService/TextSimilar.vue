@@ -101,7 +101,7 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 37%;
+    left: 38%;
     overflow:auto;
   }
   #carCaption{
@@ -161,8 +161,8 @@
   }
   #AIbodyfir{
     width: 100%;
-    height: calc(13.3/100*2300px);
-    margin: 0;
+    height: calc(6.3/100*2300px);
+    margin-top:10vh;
     padding: 0;
     background-size: auto 50%;
     text-align: center;
@@ -174,7 +174,7 @@
   }
   #AIbodythi{
     height: calc(27.6/100*2300px);
-    margin: 0;
+    margin-top:10vh;
     padding: 0;
   }
   #AItail{
