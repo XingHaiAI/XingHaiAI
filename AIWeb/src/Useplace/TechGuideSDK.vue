@@ -28,7 +28,9 @@
               <el-menu-item index="2-2" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideAPI" style="text-decoration: none;color: black">如何使用API</router-link></el-menu-item>
             </el-submenu>
             <el-menu-item index="3" style="text-align: center">
-              <span slot="title">常见问题</span>
+               <span slot="title">
+                 <router-link to="/CommonProblems" style="text-decoration: none;color: black">常见问题</router-link>
+               </span>
             </el-menu-item>
             <el-submenu index="4" style="text-align: center">
               <template slot="title">

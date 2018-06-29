@@ -26,6 +26,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import TechGuideAPI from '@/Useplace/TechGuide.vue'
 import TechGuideSDK from '@/Useplace/TechGuideSDK.vue'
+import CommonProblems from '@/Useplace/CommonProblems.vue'
 import PreSpeachRecg from '@/PresentDoc/SpeachRecg/SpeachRecg.vue'
 import FaceRecg from '@/PresentDoc/FaceRecg/FaceRecg.vue'
 import PicRecg from '@/PresentDoc/PicRecg/PicRecg.vue'
@@ -109,18 +110,21 @@ export default new Router({
     {
       path:'/NPLAPI',name:'NPLAPI',component:NPLAPI
     }
-     ,
+    ,
     {
-       path:'/PresentDoc/SpeachRecg',name:'SpeachRecg',component:PreSpeachRecg
+      path:'/PresentDoc/SpeachRecg',name:'SpeachRecg',component:PreSpeachRecg
     },
     {
-       path:'/PresentDoc/FaceRecg',name:'FaceRecg',component:FaceRecg
+      path:'/PresentDoc/FaceRecg',name:'FaceRecg',component:FaceRecg
     },
     {
-       path:'/PresentDoc/PicRecg',name:'PicRecg',component:PicRecg
+      path:'/PresentDoc/PicRecg',name:'PicRecg',component:PicRecg
     },
     {
-       path:'/PresentDoc/WordRecg',name:'WordRecg',component:WordRecg
+      path:'/PresentDoc/WordRecg',name:'WordRecg',component:WordRecg
+    },
+    {
+      path:'/CommonProblems',name:'TechGuideSDK',component:CommonProblems
     }
   ]
 })
