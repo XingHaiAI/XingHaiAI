@@ -118,34 +118,37 @@ export default {
   .documentCenter{
     display: inline-block;
     color: white;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 1vw;
+    margin-left: 1.1vw;
+    margin-bottom: 1vw;
     width: 100%;
   }
   #document{
     display: none;
     width: 7%;
-    position: relative;
+    margin-top: 3vw;
+    margin-left: 41vw;
     left: 42%;
     top:100%;
     color: white;
-    background-color: #2e3d4f;
+    background-color: #060606;
 
   }
   #present{
     display: none;
     width: 7%;
-    position: relative;
+    margin-top: 3vw;
+    margin-left: 50.5vw;
     left: 51%;
     top:100%;
     color: white;
-    background-color: #2e3d4f;
+    background-color: #060606;
 
   }
 .productService{
   display: inline-block;
   color: white;
-  font-size: 20px;
+  font-size: 1vw;
   margin-right: 60px;
   margin-left: 40px;
   margin-bottom: 20px;
@@ -155,11 +158,11 @@ export default {
 }
   #service{
     display: none;
+    margin-left: 5vw;
     color: white;
-    background-color: #2e3d4f;
+    background-color: #060606;
     height:300px;
     width: 800px;
-    position: relative;
     left:10%;
     top:100%;
   }
@@ -189,7 +192,8 @@ router-link{
 }
 
 @keyframes navbar_bg_color_ani {
-    to {background-color: #2e3d4f}
+    to {background-color: #060606
+    }
 }
 
 .navbar{
@@ -249,6 +253,7 @@ router-link{
 
 .login{
     margin-top: 0.5vh;
+  margin-right: -7vw;
     color: white;
     line-height: 7vh;
     height: 7vh;
@@ -263,6 +268,7 @@ router-link{
 .divider{
 
     margin-top: 0.5vh;
+  margin-right: -4vw;
     color: white;
     line-height: 7vh;
     height: 7vh;
@@ -272,6 +278,7 @@ router-link{
 
 .sign_in{
     margin-top: 0.5vh;
+  margin-right: -3vw;
     color: white;
     line-height: 7vh;
     height: 7vh;
