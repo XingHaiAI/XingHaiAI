@@ -23,8 +23,8 @@
     <p id="txtApp">应用场景</p>
     <img src="../assets/语音识别/语音输入法.png" id="AIcar">
     <img src="../assets/语音识别/语音搜索.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="30" id="serviceCaption" disabled>语音输入法</textarea>
-    <textarea rows="1" cols="30" id="carCaption"disabled>语音搜索</textarea><br/>
+    <textarea rows="1" cols="40" id="serviceCaption" disabled>语音输入法</textarea>
+    <textarea rows="1" cols="40" id="carCaption"disabled>语音搜索</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>拜托生僻字和拼音障碍，将所输入文字，直接用语音的方式输入，让输入法更加便捷</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>搜索内容直接以语音的方式输入，让搜索更加高效</textarea>
   </div>
@@ -43,12 +43,12 @@
 <style scoped>
   #apply{
     position: relative;
-    left: 22%;
+    left: 29%;
     bottom: 15%;
   }
   #download{
     position: relative;
-    left: 39%;
+    left: 47%;
     bottom: 15%;
   }
   .functionButton{
@@ -62,8 +62,7 @@
     background: transparent;
     position: relative;
     bottom: 50%;
-    right: 27%;
-    margin-left: 3%;
+    right: 13%;
     border-color: white;
     color:white;
     font-size: 25px;
@@ -73,23 +72,23 @@
     background: transparent;
     color:white;
     position: relative;
-    margin-left: 5%;
+    left: 10%;
     bottom: 65%;
     overflow:auto;
   }
   #introduce{
     font-size: 30px;
     position: relative;
-    margin-bottom:5%;
+    top: 30px;
   }
   #introducecontent{
-    position: relative;
-    top: 8%;
+    position:relative;
+    top: 15%;
   }
   #title{
     position: relative;
     bottom: 75%;
-    left: 18%;
+    left: 20%;
     font-size: 40px;
     color: white;
     font-weight: lighter;
@@ -103,26 +102,26 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 37%;
+    left: 39%;
     overflow:auto;
   }
   #carCaption{
     position: relative;
     top: 5px;
-    left: 45%;
+    left: 39%;
     text-align: center;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 18%;
+    left: 23%;
     overflow:auto;
   }
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 20%;
+    left: 23%;
     text-align: center;
     overflow: auto;
   }
@@ -147,22 +146,22 @@
     width: 300px;
     position: relative;
     padding-top: 0%;
-    left: 18%;
+    left: 24%;
     overflow: auto;
   }
   #AIcustomer{
     height: 250px;
     width:300px;
     position: relative;
-    left: 37%;
+    left: 41.5%;
     padding-top: 0%;
   }
   #AIhead{
-    width: 100%;
+    width: 1817px;
     height: calc(25.8/100*2300px);
   }
   #AIbodyfir{
-    width: 100%;
+    width: 1817px;
     height: calc(13.3/100*2300px);
     margin: 0;
     padding: 0;
@@ -170,16 +169,19 @@
     text-align: center;
   }
   #AIbodysec{
+    width: 1817px;
     height: calc(22.8/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AIbodythi{
+    width: 1817px;
     height: calc(27.6/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AItail{
+    width:1817px;
     height: calc(10.5/100*2300px);
     margin: 0;
     padding: 0;

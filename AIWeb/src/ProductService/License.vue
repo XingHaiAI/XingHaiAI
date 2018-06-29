@@ -22,8 +22,8 @@
     <p id="txtApp">应用场景</p>
     <img src="../assets/车牌识别/停车场闸机识别.png" id="AIcar">
     <img src="../assets/车牌识别/道路违章识别.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="30" id="serviceCaption" disabled>停车闸机识别</textarea>
-    <textarea rows="1" cols="30" id="carCaption"disabled>道路违章识别</textarea><br/>
+    <textarea rows="1" cols="40" id="serviceCaption" disabled>停车闸机识别</textarea>
+    <textarea rows="1" cols="40" id="carCaption"disabled>道路违章识别</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>在停车场的闸机上使用车牌识别，自动识别车牌号码，实现无卡，无人的停车场管理，快捷方便</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>在交通道路的摄像头中加入车牌识别结合违章判断，对违章的车辆号码进行自动识别，实现自动化的违章审计</textarea>
   </div>
@@ -42,7 +42,7 @@
 <style scoped>
   #apply{
     position: relative;
-    left: 25%;
+    left: 29%;
     bottom: 15%;
   }
   #download{
@@ -61,7 +61,7 @@
     background: transparent;
     position: relative;
     bottom: 50%;
-    right: 24%;
+    right: 13%;
     border-color: white;
     color:white;
     font-size: 25px;
@@ -71,18 +71,18 @@
     background: transparent;
     color:white;
     position: relative;
-    margin-left:7%;
+    left: 10%;
     bottom: 65%;
     overflow:auto;
   }
   #introduce{
     font-size: 30px;
     position: relative;
-    margin-bottom:5%;
+    top: 30px;
   }
   #introducecontent{
-    position: relative;
-    top: 8%;
+    position:relative;
+    top: 15%;
   }
   #title{
     position: relative;
@@ -101,26 +101,26 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 37%;
+    left: 39%;
     overflow:auto;
   }
   #carCaption{
     position: relative;
     top: 5px;
-    left: 45%;
+    left: 39%;
     text-align: center;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 18%;
+    left: 23%;
     overflow:auto;
   }
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 20%;
+    left: 23%;
     text-align: center;
     overflow: auto;
   }
@@ -145,22 +145,22 @@
     width: 300px;
     position: relative;
     padding-top: 0%;
-    left: 18%;
+    left: 24%;
     overflow: auto;
   }
   #AIcustomer{
     height: 250px;
     width:300px;
     position: relative;
-    left: 40%;
+    left: 41.5%;
     padding-top: 0%;
   }
   #AIhead{
-    width: 100%;
+    width: 1817px;
     height: calc(25.8/100*2300px);
   }
   #AIbodyfir{
-    width: 100%;
+    width: 1817px;
     height: calc(13.3/100*2300px);
     margin: 0;
     padding: 0;
@@ -168,16 +168,19 @@
     text-align: center;
   }
   #AIbodysec{
+    width: 1817px;
     height: calc(22.8/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AIbodythi{
+    width: 1817px;
     height: calc(27.6/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AItail{
+    width:1817px;
     height: calc(10.5/100*2300px);
     margin: 0;
     padding: 0;

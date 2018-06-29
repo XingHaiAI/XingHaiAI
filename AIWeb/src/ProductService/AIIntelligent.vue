@@ -22,8 +22,8 @@
     <p id="txtApp">应用场景</p>
     <img src="../assets/AI智能/AI智能客服.png" id="AIcar">
     <img src="../assets/AI智能/AI智能汽车.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="30" id="serviceCaption" disabled>智能客服</textarea>
-    <textarea rows="1" cols="30" id="carCaption"disabled>智能汽车</textarea><br/>
+    <textarea rows="1" cols="40" id="serviceCaption" disabled>智能客服</textarea>
+    <textarea rows="1" cols="40" id="carCaption"disabled>智能汽车</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>精确适配业务需求，帮助解答大量通用性较强的问题，大幅提升人效。可定制和持续学习，广泛用于网站，APP，电话的客服甚至线下业务窗口等场景</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>赋予汽车智能对话操作的能力，帮助驾驶者通过对话直接满足导航，查询地点，拨打电话，多媒体控制等驾车中的操作需求，保障驾驶安全</textarea>
   </div>
@@ -42,7 +42,7 @@
 <style scoped>
   #apply{
     position: relative;
-    left: 25%;
+    left: 29%;
     bottom: 15%;
   }
   #download{
@@ -97,26 +97,26 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 37%;
+    left: 39%;
     overflow:auto;
   }
   #carCaption{
     position: relative;
     top: 5px;
-    left: 45%;
+    left: 39%;
     text-align: center;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 18%;
+    left: 23%;
       overflow:auto;
   }
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 20%;
+    left: 23%;
     text-align: center;
     overflow: auto;
   }
@@ -141,22 +141,22 @@
     width: 300px;
     position: relative;
     padding-top: 0%;
-    left: 18%;
+    left: 24%;
     overflow: auto;
   }
   #AIcustomer{
     height: 250px;
     width:300px;
     position: relative;
-    left: 40%;
+    left: 41.5%;
     padding-top: 0%;
   }
   #AIhead{
-    width: 100%;
+    width: 1817px;
     height: calc(25.8/100*2300px);
   }
   #AIbodyfir{
-    width: 100%;
+    width: 1817px;
     height: calc(13.3/100*2300px);
     margin: 0;
     padding: 0;
@@ -164,16 +164,19 @@
     text-align: center;
   }
   #AIbodysec{
+    width: 1817px;
     height: calc(22.8/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AIbodythi{
+    width: 1817px;
     height: calc(27.6/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AItail{
+    width:1817px;
     height: calc(10.5/100*2300px);
     margin: 0;
     padding: 0;

@@ -22,8 +22,8 @@
     <p id="txtApp">应用场景</p>
     <img src="../assets/银行卡识别/金融远程身份认证.png" id="AIcar">
     <img src="../assets/银行卡识别/电商支付绑卡.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="30" id="serviceCaption" disabled>金融远程身份认证</textarea>
-    <textarea rows="1" cols="30" id="carCaption"disabled>电商支付绑卡</textarea><br/>
+    <textarea rows="1" cols="40" id="serviceCaption" disabled>金融远程身份认证</textarea>
+    <textarea rows="1" cols="40" id="carCaption"disabled>电商支付绑卡</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>使用身份证OCR，银行卡OCR实现用户信息的自动识别和录入，应用于金融场景用户远程的身份认证，识别速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>在支付绑卡缓解，使用银行卡OCR实现银行卡的拍照自动识别，提升数据录入的准确性和效率，提高用户体验</textarea>
   </div>
@@ -42,7 +42,7 @@
 <style scoped>
   #apply{
     position: relative;
-    left: 25%;
+    left: 29%;
     bottom: 15%;
   }
   #download{
@@ -61,7 +61,7 @@
     background: transparent;
     position: relative;
     bottom: 50%;
-    right: 23%;
+    right: 13%;
     border-color: white;
     color:white;
     font-size: 25px;
@@ -71,18 +71,18 @@
     background: transparent;
     color:white;
     position: relative;
-    margin-left:5%;
+    left: 10%;
     bottom: 65%;
     overflow:auto;
   }
   #introduce{
     font-size: 30px;
     position: relative;
-    margin-bottom:5%;
+    top: 30px;
   }
   #introducecontent{
-    position: relative;
-    top: 8%;
+    position:relative;
+    top: 15%;
   }
   #title{
     position: relative;
@@ -101,26 +101,26 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 37%;
+    left: 39%;
     overflow:auto;
   }
   #carCaption{
     position: relative;
     top: 5px;
-    left: 45%;
+    left: 39%;
     text-align: center;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 18%;
+    left: 23%;
     overflow:auto;
   }
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 20%;
+    left: 23%;
     text-align: center;
     overflow: auto;
   }
@@ -145,22 +145,22 @@
     width: 300px;
     position: relative;
     padding-top: 0%;
-    left: 18%;
+    left: 24%;
     overflow: auto;
   }
   #AIcustomer{
     height: 250px;
     width:300px;
     position: relative;
-    left: 37%;
+    left: 41.5%;
     padding-top: 0%;
   }
   #AIhead{
-    width: 100%;
+    width: 1817px;
     height: calc(25.8/100*2300px);
   }
   #AIbodyfir{
-    width: 100%;
+    width: 1817px;
     height: calc(13.3/100*2300px);
     margin: 0;
     padding: 0;
@@ -168,18 +168,22 @@
     text-align: center;
   }
   #AIbodysec{
+    width: 1817px;
     height: calc(22.8/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AIbodythi{
+    width: 1817px;
     height: calc(27.6/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AItail{
+    width:1817px;
     height: calc(10.5/100*2300px);
     margin: 0;
     padding: 0;
   }
 </style>
+

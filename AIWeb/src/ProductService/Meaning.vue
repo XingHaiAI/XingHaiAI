@@ -22,8 +22,8 @@
     <p id="txtApp">应用场景</p>
     <img src="../assets/词义相似度/搜索引擎.png" id="AIcar">
     <img src="../assets/词义相似度/智能推荐.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="30" id="serviceCaption" disabled>搜索引擎</textarea>
-    <textarea rows="1" cols="30" id="carCaption"disabled>智能推荐</textarea><br/>
+    <textarea rows="1" cols="40" id="serviceCaption" disabled>搜索引擎</textarea>
+    <textarea rows="1" cols="40" id="carCaption"disabled>智能推荐</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>对用户输入的文本信息进行自动分类，实现内容的分类别智能管理</textarea>
   </div>
@@ -42,7 +42,7 @@
 <style scoped>
   #apply{
     position: relative;
-    left: 25%;
+    left: 29%;
     bottom: 15%;
   }
   #download{
@@ -61,7 +61,7 @@
     background: transparent;
     position: relative;
     bottom: 50%;
-    right: 23%;
+    right: 13%;
     border-color: white;
     color:white;
     font-size: 25px;
@@ -71,18 +71,18 @@
     background: transparent;
     color:white;
     position: relative;
-    margin-left:5%;
+    left: 10%;
     bottom: 65%;
     overflow:auto;
   }
   #introduce{
     font-size: 30px;
     position: relative;
-    margin-bottom:5%;
+    top: 30px;
   }
   #introducecontent{
-    position: relative;
-    top: 8%;
+    position:relative;
+    top: 15%;
   }
   #title{
     position: relative;
@@ -101,26 +101,26 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 37%;
+    left: 39%;
     overflow:auto;
   }
   #carCaption{
     position: relative;
     top: 5px;
-    left: 45%;
+    left: 39%;
     text-align: center;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 18%;
+    left: 23%;
     overflow:auto;
   }
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 20%;
+    left: 23%;
     text-align: center;
     overflow: auto;
   }
@@ -145,22 +145,22 @@
     width: 300px;
     position: relative;
     padding-top: 0%;
-    left: 18%;
+    left: 24%;
     overflow: auto;
   }
   #AIcustomer{
     height: 250px;
     width:300px;
     position: relative;
-    left: 40%;
+    left: 41.5%;
     padding-top: 0%;
   }
   #AIhead{
-    width: 100%;
+    width: 1817px;
     height: calc(25.8/100*2300px);
   }
   #AIbodyfir{
-    width: 100%;
+    width: 1817px;
     height: calc(13.3/100*2300px);
     margin: 0;
     padding: 0;
@@ -168,16 +168,19 @@
     text-align: center;
   }
   #AIbodysec{
+    width: 1817px;
     height: calc(22.8/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AIbodythi{
+    width: 1817px;
     height: calc(27.6/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AItail{
+    width:1817px;
     height: calc(10.5/100*2300px);
     margin: 0;
     padding: 0;
