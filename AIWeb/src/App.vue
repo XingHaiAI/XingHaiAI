@@ -17,7 +17,7 @@
 		        </div>
 		    </div>
       <div id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
-        <table style="width: 100%;position:absolute">
+        <table style="width: 100%;">
       <tr>
         <router-link to="/ProductService/AIIntelligent" style="text-decoration: none"><td class="productService">AI智能</td></router-link>
         <router-link to="/ProductService/TextSimilar" style="text-decoration: none"><td class="productService">短文本相似度</td></router-link>
@@ -160,13 +160,10 @@ export default {
     display: none;
     margin-left: 5vw;
     color: white;
-<<<<<<< HEAD
     background-color: #2e3d4f;
     height:250px;
-=======
     background-color: #060606;
     height:300px;
->>>>>>> ceaf3eebf4591584520e8a040d70b804b2c1c700
     width: 800px;
     left:10%;
     top:100%;
