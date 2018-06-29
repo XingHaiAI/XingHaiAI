@@ -86,6 +86,7 @@ button{
     color:black;
     font-size: 25px;
     font-weight: lighter;
+    outline:0 none !important; blr:expression(this.onFocus=this.blur());
 }
 
 #titlecontent{
@@ -93,7 +94,9 @@ button{
     color:black;
     position: relative;
     left: 3%;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight:520;
+    line-height:22px;
     height:70px;
     width:350px;
     bottom: 51%;

@@ -207,7 +207,7 @@ div{
     display: flex;
     flex-direction: column;
     margin-top: 1vw;
-    height: 50vh;
+    height: 45vh;
 }
 
 .step_line_center_control{
