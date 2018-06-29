@@ -111,21 +111,27 @@ div{
 }
 
 .name_email{
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     margin-top: 4vh;
     width: 84%;
     margin-left: 8%;
     height: 5vh;
-    border-radius: 3%;
+    border:1px solid;
+    border-color:#C8C8C8;
+    border-radius:5px;
+    padding-left:5px;
 }
 
 .npassword{
     margin-top: 3vh;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     width: 84%;
     margin-left: 8%;
     height: 5vh;
-    border-radius: 3%;
+    border:1px solid;
+    border-color:#C8C8C8;
+    border-radius:5px;
+    padding-left:5px;
 }
 
 .btn{
@@ -166,4 +172,7 @@ div{
     font-weight: 300;
     float: left;
 }
+.name_email::-webkit-input-placeholder { color: #B0B0B0;}
+.name_email:after{content:"*";color:red}
+.npassword::-webkit-input-placeholder { color: #B0B0B0;}
 </style>
