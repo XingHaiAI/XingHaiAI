@@ -11,7 +11,7 @@
 		        <div class="menu_item"v-on:mouseover="presentOver" v-on:mouseout="presentOut">试用演示</div>
 		        <router-link to="/ProductBlog" class="menu_item" style="text-decoration: none">产品博客</router-link>
 		        <div class="login_sign_in">
-		            <div class="login"><router-link to="" class="login_item" style="text-decoration: none">注册</router-link></div>
+		            <div class="login"><router-link to="/signIn" class="login_item" style="text-decoration: none">注册</router-link></div>
 		            <div class="divider">|</div>
 		            <div class="sign_in"><router-link to="/login" class="login_item" style="text-decoration: none">登录</router-link></div>
 		        </div>
@@ -161,9 +161,8 @@ export default {
     margin-left: 5vw;
     color: white;
     background-color: #2e3d4f;
-    height:290px;
     background-color: #060606;
-    height:270px;
+    height:290px;
     width: 800px;
     left:10%;
     top:100%;

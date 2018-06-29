@@ -1,6 +1,6 @@
 
 <template>
-    <div id="login">
+    <div id="signIn">
   <div class="left_cube">
     <div class="big_word1">
         专注人工智能算法研究
@@ -14,8 +14,15 @@
         <div class="title_left"></div>
         <div class="title_right"> 欢迎使用兴海物联AI平台</div>
     </div>
-    <input type="text" class="name_email" placeholder="请输入用户名/邮箱"/>
-    <input type="text" class="npassword" placeholder="密码"/>
+    <input type="text" class="name_email" placeholder="请输入用户名 *"/></input>
+    <input type="text" class="npassword" placeholder="请输入邮箱地址 *"/>
+    <input type="text" class="npassword" placeholder="请输入手机号码"/>
+    <input type="text" class="npassword" placeholder="密码 *"/>
+    <input type="text" class="npassword" placeholder="确认密码 *"/>
+    <div class="check_box">
+        <input class="box" type="checkbox"/>
+        <div class="choose">我已阅读并同意兴海物联隐私政策</div>
+    </div>
     <div class="btn">登录</div>
     <div class="footer">
         <div class="forget_password">忘记密码</div>
@@ -30,12 +37,12 @@
 
 <script>
   export default {
-    name: "login"
+    name: "signIn"
   }
 </script>
 
 <style scoped>
-#login{
+#signIn{
     background-color: white;
     margin: 0;
     padding: 0;
@@ -57,6 +64,23 @@ div{
 .big_word1{
     color: skyblue;
     font-size: 1.7vw;
+}
+
+.check_box{
+  font-size: 1.3vw;
+  font-weight: 100;
+  margin-top: 1vh;
+  height:5vh;
+
+}
+.box{
+  margin-top: 2.5vh;
+  margin-left: 3vw;
+  float: left;
+}
+.check_box .choose{
+  float: left;
+  color:black;
 }
 
 .big_word2{
@@ -81,9 +105,9 @@ div{
     box-shadow: 5px 5px 5px #F2F2F2;
     border: solid #CDCDC1 0.1px;
     border-radius: 2%;
-    margin-top: 14vh;
+    margin-top: 10vh;
     width: 30vw;
-    height: 50vh;
+    height: 80vh;
     background-color: white;
 }
 
@@ -111,21 +135,28 @@ div{
 }
 
 .name_email{
-    font-size: 1.5vw;
-    margin-top: 4vh;
+    font-size: 1.25vw;
+    margin-top: 3vh;
     width: 84%;
     margin-left: 8%;
     height: 5vh;
-    border-radius: 3%;
+    border:1px solid;
+    border-color:#C8C8C8;
+    border-radius:5px;
+    padding-left:5px;
+
 }
 
 .npassword{
-    margin-top: 3vh;
-    font-size: 1.5vw;
+    margin-top: 2vh;
+    font-size: 1.25vw;
     width: 84%;
     margin-left: 8%;
     height: 5vh;
-    border-radius: 3%;
+    border:1px solid;
+    border-color:#C8C8C8;
+    border-radius:5px;
+    padding-left:5px;
 }
 
 .btn{
@@ -166,4 +197,8 @@ div{
     font-weight: 300;
     float: left;
 }
+
+.name_email::-webkit-input-placeholder { color: #B0B0B0;}
+.name_email:after{content:"*";color:red}
+.npassword::-webkit-input-placeholder { color: #B0B0B0;}
 </style>

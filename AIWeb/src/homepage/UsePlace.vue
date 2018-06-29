@@ -105,19 +105,16 @@ export default {
 </script>
 
 <style scoped>
-
 div{
     margin: 0;
     padding: 0;
     vertical-align: top;
 }
-
 #UsePlace{
     background-color: #F2F2F2;
     margin: 0;
     padding: 0;
 }
-
 .Title{
     padding-top: 6vh;
     width: 100%;
@@ -127,28 +124,24 @@ div{
     text-align: center;
     line-height: 10vh;
 }
-
 .pic_1{
     background-image: url("use_place/pic1.jpg");
     background-size: 100% 100%;
     width: 100%;
     height: 60%;
 }
-
 .pic_2{
     background-image: url("use_place/pic2.jpg");
     background-size: 100% 100%;
     width: 100%;
     height: 60%;
 }
-
 .pic_3{
     background-image: url("use_place/pic3.jpg");
     background-size: 100% 100%;
     width: 100%;
     height: 60%;
 }
-
 .pic_4{
     background-image: url("use_place/pic4.jpg");
     background-size: 100% 100%;
@@ -161,21 +154,18 @@ div{
     width: 100%;
     height: 60%;
 }
-
 .pic_6{
     background-image: url("use_place/pic6.jpg");
     background-size: 100% 100%;
     width: 100%;
     height: 60%;
 }
-
 .pic_7{
     background-image: url("use_place/pic7.jpg");
     background-size: 100% 100%;
     width: 100%;
     height: 60%;
 }
-
 .pic_8{
     background-image: url("use_place/pic8.jpg");
     background-size: 100% 100%;
@@ -190,7 +180,6 @@ div{
     margin-top: 5%;
     color: black;
 }
-
 .info_item_content{
     font-size: 0.8vw;
     font-weight: 300;
@@ -199,21 +188,17 @@ div{
     margin-top: 2%;
     color: grey;
 }
-
 .line{
     display: flex;
     flex-direction: column;
     margin-top: 1vw;
     height: 40vh;
 }
-
 .step_line_center_control{
     align-self: center;
     display:flex;
     justify-content:center;
 }
-
-
 .Item_content_coloum {
     margin-left: 2vw;
     margin-right: 2vw;
@@ -222,7 +207,6 @@ div{
     height: 40vh;
     display: inline-block;
 }
-
 .Item_content_coloum:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

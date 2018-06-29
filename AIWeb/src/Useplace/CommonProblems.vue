@@ -181,7 +181,7 @@
     padding: 0;
   }
   .el-menu-vertical-demo{
-    height:260vh;
+    height:240vh;
   }
   span{
     font-size:17px;

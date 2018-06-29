@@ -16,7 +16,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'PictureRotation',
   data:  function (){
@@ -84,18 +83,14 @@ export default {
             }, 6000)
         })
     }
-
 }
 </script>
 
 <style scoped>
-
 div{
     margin: 0;
     padding: 0;
 }
-
-
 #PictureRotation{
     height: 80vh;
     width:100%;
@@ -103,25 +98,20 @@ div{
     padding:0;
     list-style: none;
 }
-
 .image-enter-active{
     transform:translateX(0);
     transition:all 1s ease;
 }
-
 .image-leave-active{
     transform:translateX(-100%);
     transition:all 1s ease;
 }
-
 .image-enter{
     transform:translateX(100%);
 }
-
 .image-leave{
     transform:translateX(0);
 }
-
 img{
     height:80vh;
     width:100%;
@@ -139,19 +129,15 @@ img{
   overflow: hidden;
   background-color: #fff;
 }
-
 .slide-ul {
   width: 100%;
   height: 100%;
-
 }
-
 li {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-
 .carousel-items {
   position: absolute;
   z-index: 10;
@@ -162,7 +148,6 @@ li {
   text-align: center;
   font-size: 0;
 }
-
 span {
     display: inline-block;
     height: 0.7vh;

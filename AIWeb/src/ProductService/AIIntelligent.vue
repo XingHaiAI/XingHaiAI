@@ -131,7 +131,7 @@
   }
   .background {
     width:100%;
-    height:100%;
+    height:120%;
     /*display: inline;*/
     /*position:absolute;*/
     /*z-index:0;*/
@@ -158,7 +158,7 @@
   #AIbodyfir{
     width: 1817px;
     height: calc(6.3/100*2300px);
-    margin-top:5vh;
+    margin-top:25vh;
     padding: 0;
     background-size: auto 50%;
     text-align: center;
@@ -172,7 +172,7 @@
   #AIbodythi{
     width: 1817px;
     height: calc(27.6/100*2300px);
-    margin: 0;
+    margin-top: 20vh;
     padding: 0;
   }
   #AItail{

@@ -1,5 +1,5 @@
 <template>
-	<div id="application">
+    <div id="application">
         <div id="AIhead">
             <img src="../assets/应用场景/banner.jpg" class="background">
             <a id="title">应用场景</a>
@@ -7,11 +7,11 @@
             <button>商务咨询</button>
         </div>
         <wisedomPark class="content1"></wisedomPark>
-		<usePlace class="content2"></usePlace>
+        <usePlace class="content2"></usePlace>
         <div id="ContactUs">
             <img src="../assets/联系我们.png" class="background">
         </div>
-	</div>
+    </div>
 </template>
 
 <script>
@@ -23,17 +23,14 @@ export default {
     usePlace,
     wisedomPark
   }
-
 }
 </script>
 
 <style scoped>
-
 #AIhead{
     width: 100%;
     height: calc(22.08/100*2300px);
 }
-
 #ContactUs{
    background-color: blue;
    background-image: url("../assets/联系我们/bg.jpg");
@@ -45,16 +42,13 @@ export default {
    display: flex;
    flex-direction: column;
  }
-
 .background {
     width:100%;
     height:100%;
 }
-
 button{
     cursor:pointer;
 }
-
 textarea{
     border: none;
     resize: none;
@@ -64,7 +58,6 @@ textarea{
     overflow:auto;
     cursor:default;
 }
-
 #title{
     position: relative;
     bottom: 70%;
@@ -73,7 +66,6 @@ textarea{
     color: black;
     font-weight: lighter;
 }
-
 button{
     width: 200px;
     height: 50px;
@@ -88,7 +80,6 @@ button{
     font-weight: lighter;
     outline:0 none !important; blr:expression(this.onFocus=this.blur());
 }
-
 #titlecontent{
     background: transparent;
     color:black;
@@ -102,7 +93,6 @@ button{
     bottom: 51%;
     cursor:default;
 }
-
 .content1{
     position: relative;
     border: none;
@@ -111,7 +101,6 @@ button{
     width: 100vw;
     height: 95vh;
 }
-
 .content2{
     position: relative;
     border: none;
@@ -119,7 +108,6 @@ button{
     width: 100vw;
     height: 140vh;
 }
-
 .content3{
     position: relative;
     border: none;
