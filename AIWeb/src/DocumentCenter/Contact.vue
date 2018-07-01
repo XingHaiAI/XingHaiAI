@@ -16,7 +16,7 @@
             <div class="content">
                 <div class="word">如何接入API？</div><br/>
                 <div class="word">API如何收费？</div><br/>
-                <div class="word">返回值b报错怎么办？</div>
+                <div class="word">返回值报错怎么办？</div>
             </div>
             <div class="title">商务咨询</div>
             <div class="content">
@@ -312,7 +312,7 @@ div{
   border: none;
   font-size: 1.3vw;
   border: #D1D1D1 1px solid;
-  border-radius: 5%;
+  border-radius: 5px;
   margin-bottom: 3vh;
   height: 4.5vh;
   width: 15vw;
@@ -361,5 +361,5 @@ div{
   border: none;
 }
 .input_textarea::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
-.input::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
+.input::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;padding-left:0.5vw;}
 </style>

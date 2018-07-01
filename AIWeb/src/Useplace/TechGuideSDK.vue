@@ -52,7 +52,7 @@
     <div id="main">
       <div id="search">
         <div>
-          <input style="width: 70%;height:25%;margin-right:0.7%" />
+          <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 1px solid;border-radius: 5px;" />
           <el-button type="primary" icon="el-icon-search" id="find"></el-button>
         </div>
         <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gtAPI调用规则</p>
@@ -185,5 +185,9 @@
 }
 span{
   font-size:17px;
+}
+.searchInput{
+  font-size:16px;
+  padding-left:1vw;
 }
 </style>
