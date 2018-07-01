@@ -91,7 +91,7 @@ div{
     padding: 0;
     vertical-align: top;
 }
-
+body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 .description{
     margin-top: 0;
     margin-bottom: 10vh;

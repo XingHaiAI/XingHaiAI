@@ -62,7 +62,7 @@
         <p style="font-size: 25px">1. 注册账号并创建 API Key</p>
         <textarea rows="5"cols="70"disabled style="font-size: 20px">如果您希望采用联网授权模式，则需要通过调用 SDK Auth API 进行联网授权与计费，因此您需要先在兴海物联 网站上创建账号，并创建一个 API Key。注意：在创建应用时请选择正确的 API Key 类型。如果您希望免费测试 SDK，请使用“免费 API Key”；如您希望进行正式的联网授权，请使用“正式 API Key”。</textarea>
         <p style="font-size: 25px">2. 下载SDK</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">在控制台，展开“SDK\联网授权SDK”这个组，并点击“SDK下载”页。</textarea>
+        <textarea rows="3"cols="70"disabled style="font-size: 20px">在控制台，展开“SDK\联网授权SDK”这个组，并点击“SDK下载”页。</textarea>
         <p style="font-size: 25px">3. 集成开发</p>
         <textarea rows="5"cols="70"disabled style="font-size: 20px">下载 SDK 包文件后，您就可以根据包中的文档说明，开始集成开发了。如果您在开发过程中遇到任何问题，欢迎、在官网联系技术支持</textarea>
         <p style="font-size: 25px">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
@@ -110,12 +110,15 @@
     text-align: center;
     top: 5%;
   }
+  body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
   textarea{
     overflow:auto;
     background: transparent;
     color: black;
     border: none;
     resize: none;
+    font-weight:lighter;
+    margin-bottom:5vh;
   }
   .route{
     float: left;

@@ -34,9 +34,9 @@
 </template>
 
 <style scoped>
-  #apply{
+#apply{
     position: relative;
-    left: 29%;
+    left: 25%;
     bottom: 15%;
   }
   #download{
@@ -55,7 +55,7 @@
     background: transparent;
     position: relative;
     bottom: 50%;
-    right: 13%;
+    right: 23%;
     border-color: white;
     color:white;
     font-size: 25px;
@@ -65,18 +65,18 @@
     background: transparent;
     color:white;
     position: relative;
-    left: 10%;
+    margin-left:2%;
     bottom: 65%;
     overflow:auto;
   }
   #introduce{
     font-size: 30px;
     position: relative;
-    top: 30px;
+    margin-bottom:5%;
   }
   #introducecontent{
-    position:relative;
-    top: 25%;
+    position: relative;
+    top: 8%;
   }
   #title{
     position: relative;
@@ -95,26 +95,26 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 39%;
+    left: 38%;
     overflow:auto;
   }
   #carCaption{
     position: relative;
     top: 5px;
-    left: 39%;
+    left: 38%;
     text-align: center;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 23%;
+    left: 17.3%;
     overflow:auto;
   }
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 23%;
+    left: 18%;
     text-align: center;
     overflow: auto;
   }
@@ -139,22 +139,22 @@
     width: 300px;
     position: relative;
     padding-top: 0%;
-    left: 24%;
+    left: 18%;
     overflow: auto;
   }
   #AIcustomer{
     height: 250px;
     width:300px;
     position: relative;
-    left: 41.5%;
+    left: 40%;
     padding-top: 0%;
   }
   #AIhead{
-    width: 1817px;
+    width: 100%;
     height: calc(25.8/100*2300px);
   }
   #AIbodyfir{
-    width: 1817px;
+    width: 100%;
     height: calc(6.3/100*2300px);
     margin-top:10vh;
     padding: 0;
@@ -162,19 +162,16 @@
     text-align: center;
   }
   #AIbodysec{
-    width: 1817px;
     height: calc(22.8/100*2300px);
     margin: 0;
     padding: 0;
   }
   #AIbodythi{
-    width: 1817px;
     height: calc(27.6/100*2300px);
     margin-top:10vh;
     padding: 0;
   }
   #AItail{
-    width:1817px;
     height: calc(10.5/100*2300px);
     margin: 0;
     padding: 0;

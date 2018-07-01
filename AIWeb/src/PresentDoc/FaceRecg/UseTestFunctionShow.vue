@@ -51,7 +51,7 @@ body{
     flex-direction: column;
     background-color: #F2F2F2;
 }
-
+body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 div{
     padding: 0;
     margin: 0;

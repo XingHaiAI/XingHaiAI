@@ -80,6 +80,7 @@ export default {
    display: flex;
    flex-direction: column;
  }
+ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
  .background {
     width:100%;
     height:100%;
@@ -359,4 +360,6 @@ div{
   height: 29.5vh;
   border: none;
 }
+.input_textarea::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
+.input::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
 </style>

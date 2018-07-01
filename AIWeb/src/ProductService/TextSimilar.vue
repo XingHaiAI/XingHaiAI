@@ -40,7 +40,7 @@
 </script>
 
 <style scoped>
-  #apply{
+#apply{
     position: relative;
     left: 25%;
     bottom: 15%;
@@ -107,20 +107,20 @@
   #carCaption{
     position: relative;
     top: 5px;
-    left: 45%;
+    left: 45.5%;
     text-align: center;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 18%;
+    left: 17.3%;
     overflow:auto;
   }
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 20%;
+    left: 18%;
     text-align: center;
     overflow: auto;
   }

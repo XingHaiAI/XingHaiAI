@@ -122,13 +122,15 @@ div{
     float:left;
     width: 4vh;
     height:4vh;
+    margin-top:2vh;
+    margin-right:1vw;
     background-image: url("icon.png");
     background-size: 100% 100%;
 }
 
 .title_right{
     margin-left: 3vh;
-    font-size: 1.8vw;
+    font-size: 1.7vw;
     color:black;
     letter-spacing:4px;
     font-weight:400;
@@ -198,7 +200,7 @@ div{
     float: left;
 }
 
-.name_email::-webkit-input-placeholder { color: #B0B0B0;}
+.name_email::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
 .name_email:after{content:"*";color:red}
-.npassword::-webkit-input-placeholder { color: #B0B0B0;}
+.npassword::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
 </style>

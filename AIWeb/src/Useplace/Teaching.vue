@@ -104,6 +104,7 @@
     position: relative;
     right:0.5%;
   }
+  body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
   .linkto{
     color: #4096ff;
     text-decoration: none
@@ -118,6 +119,8 @@
     color: black;
     border: none;
     resize: none;
+    font-weight:lighter;
+    margin-bottom:2vh;
   }
   .route{
     float: left;

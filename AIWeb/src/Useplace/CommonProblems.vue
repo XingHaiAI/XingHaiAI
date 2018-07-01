@@ -57,13 +57,11 @@
       </div>
       <div id="text">
         <p style="font-size: 25px">注册账号都需要哪些条件？</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">注册账号时需要提供您真实有效的邮箱和手机号，我们会在验证过程中向您的邮箱或手机号发送验证码，只有验证通过才能使用我们的 API & SDK 。</textarea>
+        <textarea rows="5"cols="70"disabled style="font-size: 20px">注册账号时需要提供您真实有效的邮箱和手机号，我们会在验证过程中向您的邮箱或手机号发送验证码，只有验证通过才能使用我们的 API & SDK </textarea>
         <p style="font-size: 25px">收不到邮件验证码怎么办？</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">可能被邮箱判断为垃圾邮件，请您打开垃圾邮件所在文件夹查看是否收到。
-          如果仍然无法收到验证码，您可尝试换用手机号进行验证</textarea>
+        <textarea rows="5"cols="70"disabled style="font-size: 20px">可能被邮箱判断为垃圾邮件，请您打开垃圾邮件所在文件夹查看是否收到。如果仍然无法收到验证码，您可尝试换用手机号进行验证</textarea>
         <p style="font-size: 25px">收不到短信验证码怎么办？</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">可能会由于手机停机、存储信息已满、信号网络延迟等原因没有及时收到验证码，这时请检查您的手机，保证手机可正常接收短信后，尝试重新获取验证码。
-          如果仍然无法收到验证码，您可尝试换用邮箱进行验证</textarea>
+        <textarea rows="5"cols="70"disabled style="font-size: 20px">可能会由于手机停机、存储信息已满、信号网络延迟等原因没有及时收到验证码，这时请检查您的手机，保证手机可正常接收短信后，尝试重新获取验证码。如果仍然无法收到验证码，您可尝试换用邮箱进行验证</textarea>
         <p style="font-size: 25px">想要支付的金额超过了网银每日支持的上限怎么办？</p>
         <textarea rows="5"cols="70"disabled style="font-size: 20px">一部分银行支持用户设置每日网上支付上限，可以登录银行网站进行支付限额调整。另一个方法是先每日充值支付宝余额，再使用支付宝余额进行支付。</textarea>
         <p style="font-size: 25px">订单创建后多长时间会被关闭?</p>
@@ -98,6 +96,7 @@
 </script>
 
 <style scoped>
+body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
   #find{
     width: 10%;
     height: 25%;
@@ -119,6 +118,8 @@
     color: black;
     border: none;
     resize: none;
+    font-weight:lighter;
+    margin-bottom:5vh;
   }
   .route{
     float: left;
