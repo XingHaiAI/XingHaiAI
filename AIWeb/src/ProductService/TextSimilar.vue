@@ -107,7 +107,7 @@
   #carCaption{
     position: relative;
     top: 5px;
-    left: 40%;
+    left: 48%;
     text-align: center;
     overflow: auto;
   }
@@ -120,7 +120,7 @@
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 18%;
+    left: 20%;
     text-align: center;
     overflow: auto;
   }

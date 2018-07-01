@@ -50,7 +50,7 @@
     <div id="main">
       <div id="search">
         <div>
-          <input style="width: 70%;height:25%;margin-right:0.7%" />
+          <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 1px solid;border-radius: 5px;" />
           <el-button type="primary" icon="el-icon-search" id="find"></el-button>
         </div>
         <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gt常见问题</p>
@@ -150,6 +150,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     height: 100%;
     width: 26%;
     margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
   }
   #body{
     height:73.42%;
@@ -187,4 +188,8 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
   span{
     font-size:17px;
   }
+  .searchInput{
+  font-size:16px;
+  padding-left:1vw;
+}
 </style>

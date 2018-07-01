@@ -52,8 +52,8 @@
     <div id="main">
       <div id="search">
         <div>
-          <input style="width: 70%;height:25%;margin: 0" />
-          <el-button type="primary" icon="el-icon-search" id="find"></el-button>
+          <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 1px solid;border-radius: 5px;" />
+          <el-button type="primary" icon="el-icon-search" id="find" style="background-color: #409EFF;    border-color: #409EFF;color: #fff;"></el-button>
         </div>
         <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">API接口</router-link>&gtAPI调用规则</p>
       </div>
@@ -150,6 +150,7 @@
     height: 100%;
     width: 26%;
     margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
   }
   #body{
     height:73.42%;
@@ -241,5 +242,9 @@ button{
     color:#4096ff;
     font-size: 15px;
     cursor:pointer;
+}
+.searchInput{
+  font-size:16px;
+  padding-left:1vw;
 }
 </style>
