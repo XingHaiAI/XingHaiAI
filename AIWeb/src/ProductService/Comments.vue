@@ -76,7 +76,7 @@
   }
   #introducecontent{
     position: relative;
-    top: 8%;
+    top: 12%;
   }
   #title{
     position: relative;
@@ -95,20 +95,20 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 38%;
+    left: 40%;
     overflow:auto;
   }
   #carCaption{
     position: relative;
     top: 5px;
-    left: 38%;
+    left: 40%;
     text-align: center;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
     top: 5px;
-    left: 17.3%;
+    left: 18%;
     overflow:auto;
   }
   #serviceCaption{
@@ -125,7 +125,7 @@
   body {
     margin: 0;
     padding: 0;
-    height: 2300px;
+    height: 2200px;
   }
   .background {
     width:100%;

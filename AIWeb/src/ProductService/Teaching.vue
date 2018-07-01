@@ -92,81 +92,146 @@
 </script>
 
 <style scoped>
-  #find{
-    width: 10%;
-    height: 25%;
-    margin: 0;
+ #apply{
     position: relative;
-    right:0.6%;
+    left: 25%;
+    bottom: 15%;
   }
-  .linkto{
-    color: #4096ff;
-    text-decoration: none
-  }
-  #text{
+  #download{
     position: relative;
-    top: 5%;
-    padding-left:7%;
+    left: 47%;
+    bottom: 15%;
+  }
+  .functionButton{
+    color: black;
+    border-color: black;
+  }
+  button{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    bottom: 50%;
+    right: 23%;
+    border-color: white;
+    color:white;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+  #titlecontent{
+    background: transparent;
+    color:white;
+    position: relative;
+    margin-left:2%;
+    bottom: 65%;
+    overflow:auto;
+  }
+  #introduce{
+    font-size: 30px;
+    position: relative;
+    margin-bottom:5%;
+  }
+  #introducecontent{
+    position: relative;
+    top: 12%;
+  }
+  #title{
+    position: relative;
+    bottom: 75%;
+    left: 20%;
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
   }
   textarea{
-    overflow:auto;
-    background: transparent;
-    color: black;
     border: none;
     resize: none;
+    background-color: white;
+    color: black;
   }
-  .route{
-    float: left;
+  #carContent{
     position: relative;
-    top: 40%;
+    top: 5px;
+    left: 40%;
+    overflow:auto;
   }
-  #search{
-    height: 10%;
-    padding-top:3%;
-    padding-left: 5%;
-    padding-bottom: 0;
-
+  #carCaption{
+    position: relative;
+    top: 5px;
+    left: 40%;
+    text-align: center;
+    overflow: auto;
   }
-  .tac{
-    height: 100%;
-    width: 100%;
+  #serviceContent{
+    position: relative;
+    top: 5px;
+    left: 18%;
+    overflow:auto;
   }
-  .teach{
-    width: 100%;
+  #serviceCaption{
+    position: relative;
+    top: 5px;
+    left: 18%;
+    text-align: center;
+    overflow: auto;
   }
-  #main{
-    float: left;
-    height:100%;
-    width: 74%;
-
+  #txtApp{;
+    font-size: 30px;
+    text-align: center;
   }
-  #aside{
-    float: left;
-    height: 100%;
-    width: 26%;
-  }
-  #body{
-    height:73.42%;
+  body {
     margin: 0;
-  }
-  img{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-  }
-  #header{
-    height:16.18%;
-    width: 100%;
-    background-color: black;
-    margin: 0;
-  }
-  #all{
+    padding: 0;
     height: 2200px;
+  }
+  .background {
+    width:100%;
+    height:100%;
+    /*display: inline;*/
+    /*position:absolute;*/
+    /*z-index:0;*/
+  }
+  #AIcar{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    padding-top: 0%;
+    left: 18%;
+    overflow: auto;
+  }
+  #AIcustomer{
+    height: 250px;
+    width:300px;
+    position: relative;
+    left: 40%;
+    padding-top: 0%;
+  }
+  #AIhead{
+    width: 100%;
+    height: calc(25.8/100*2300px);
+  }
+  #AIbodyfir{
+    width: 100%;
+    height: calc(6.3/100*2300px);
+    margin-top:10vh;
+    padding: 0;
+    background-size: auto 50%;
+    text-align: center;
+  }
+  #AIbodysec{
+    height: calc(22.8/100*2300px);
+    margin: 0;
     padding: 0;
   }
-  #end{
-    height: 10.4%;
-    margin: 0;
+  #AIbodythi{
+    height: calc(27.6/100*2300px);
+    margin-top:10vh;
+    padding: 0;
   }
-
+  #AItail{
+    height: calc(10.5/100*2300px);
+    margin: 0;
+    padding: 0;
+  }
 </style>
