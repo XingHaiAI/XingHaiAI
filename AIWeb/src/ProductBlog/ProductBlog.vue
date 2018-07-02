@@ -168,8 +168,10 @@ div{
 .head_content{
   background-image: url("../assets/产品博客/pic.png");
   width: 100%;
-  padding-top:10vh;
-  height: 30.5vh;
+  padding-top:50vh;
+  background-size: 100% 50vh;
+  background-repeat: no-repeat;
+  min-width: 1200px;
 }
 .head_content .title{
   font-size: 3vw;
