@@ -139,6 +139,7 @@ export default {
 #MakeLifeBetter{
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
 }
 body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 MLBdiv{
@@ -154,8 +155,8 @@ p{
 .MLBTitle{
     margin-top: 8vh;
     width: 100%;
-    height: 12vh;
-    font-size: 2.5vw;
+    height: 15vh;
+    font-size: 4em;
     font-weight: 500;
     color:black;
     text-align: center;
@@ -170,7 +171,7 @@ p{
 
 .MLBinfo_title{
     margin-top: 0.8vw;
-    font-size: 1.5vw;
+    font-size: 2em;
     text-align: center;
     width: 18vw;
 }
@@ -219,7 +220,7 @@ p{
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 49vh;
+    height: 53vh;
 }
 
 .info_show_content_2{
@@ -231,7 +232,7 @@ p{
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 49vh;
+    height: 53vh;
 }
 .info_show_content_3{
     opacity: 0.8;
@@ -242,7 +243,7 @@ p{
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 49vh;
+    height: 53vh;
 }
 .info_show_content_4{
     opacity: 0.8;
@@ -253,7 +254,7 @@ p{
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 49vh;
+    height: 53vh;
 }
 
 .step_info_show_group{
@@ -279,13 +280,13 @@ p{
 
 .step_info_content{
     color: white;
-    font-size: 0.9vw;
+    font-size: 1.5em;
 }
 
 .step_info_title{
     color: white;
     margin-top: 0.6vw;
-    font-size: 1.1vw;
+    font-size: 2em;
     text-align: center;
     width: 19vw;
 }

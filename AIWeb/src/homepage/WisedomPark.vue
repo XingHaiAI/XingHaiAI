@@ -82,6 +82,7 @@ export default {
     background-color: white;
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
 }
 body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 div{
@@ -115,8 +116,8 @@ p{
 .Title{
     margin-top: 7vh;
     width: 100%;
-    height: 10vh;
-    font-size: 2.5vw;
+    height: 14vh;
+    font-size: 4em;
     font-weight: 500;
     text-align: center;
     line-height: 10vh;
@@ -166,7 +167,7 @@ p{
     justify-content:center;
     align-items:center;
     color: white;
-    font-size: 3vw;
+    font-size: 5em;
 }
 
 .info_show{
@@ -181,13 +182,13 @@ p{
 
 .info_show_item_title{
     margin-top: 20%;
-    font-size: 3vw;
+    font-size: 5em;
     align-self: center;
     text-align: center;
 }
 
 .info_show_item_content{
-    font-size: 1.5vw;
+    font-size: 2em;
     width: 100%;
     text-align: center;
 }
