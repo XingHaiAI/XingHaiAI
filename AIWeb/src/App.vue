@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div id="app":style="{minWidth: 1200 + 'px'}">
 		<div class="navbar">
 		    <!--LOGO-->
 		    <router-link to="/" class="logo" style="text-decoration: none">兴海物联开发平台</router-link>
