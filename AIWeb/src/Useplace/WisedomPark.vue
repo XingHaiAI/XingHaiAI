@@ -2,8 +2,6 @@
   <div id="WisedomPark">
     <div class="Title">智慧园区</div>
 
-    <div class="description"> 在新建或已建成的企业/园区的基础硬件上汇集深度学习的能力，提供便捷安全的同行解决方案</div>
-
     <div class="content_group">
         <div class="item pic1" @mouseover="infoPop" @mouseleave="back" id="id1">
             <transition-group name="slide">
@@ -84,23 +82,13 @@ export default {
     background-color: white;
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
 }
-
+body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 div{
     margin: 0;
     padding: 0;
     vertical-align: top;
-}
-body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
-.description{
-    margin-top: 0;
-    margin-bottom: 10vh;
-    width: 100vw;
-    height: 5vh;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 10vh;
 }
 
 .slide-enter-active{
@@ -126,31 +114,30 @@ p{
 }
 
 .Title{
-    margin-top: 9vh;
-    margin-bottom: 3vh;
-    width: 100vw;
-    height: 10vh;
-    font-size: 2.5vw;
+    margin-top: 7vh;
+    width: 100%;
+    height: 14vh;
+    font-size: 4em;
     font-weight: 500;
     text-align: center;
-    line-height: 15vh;
+    line-height: 10vh;
 }
 
 .content_group{
     margin-top:2vh;
     margin-bottom:0;
-    background-color: green;
-    width: 100vw;
-    height: 70vh;
+
+    width: 100%;
+    height: 66vh;
 }
 
 .item{
     display: flex;
     position: relative;
-    width: 25vw;
+    width: 25%;
     float: left;
     background-color: red;
-    height: 70vh;
+    height: 66vh;
 }
 .pic1{
     background-image: url("wisdom_park/pic1.jpg");
@@ -180,7 +167,7 @@ p{
     justify-content:center;
     align-items:center;
     color: white;
-    font-size: 3vw;
+    font-size: 5em;
 }
 
 .info_show{
@@ -190,18 +177,18 @@ p{
     color:white;
     background-color: rgba(112,112,112,0.75);
     height:100%;
-    
+
 }
 
 .info_show_item_title{
     margin-top: 20%;
-    font-size: 3vw;
+    font-size: 5em;
     align-self: center;
     text-align: center;
 }
 
 .info_show_item_content{
-    font-size: 1.5vw;
+    font-size: 2em;
     width: 100%;
     text-align: center;
 }

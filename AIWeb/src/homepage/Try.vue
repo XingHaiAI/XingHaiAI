@@ -22,6 +22,7 @@ export default {
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-size: 62.5%;
 }
 body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 div{
@@ -35,7 +36,7 @@ div{
     margin-top: 8vh;
     width: 100vw;
     height: 8vh;
-    font-size: 2.5vw;
+    font-size: 4em;
     font-weight: 500;
     text-align: center;
     line-height: 8vh;
@@ -46,7 +47,7 @@ div{
     margin-top: 2vh;
     width: 100vw;
     height: 6vh;
-    font-size: 1.5vw;
+    font-size: 2em;
     text-align: center;
     line-height: 6vh;
 }
@@ -59,8 +60,8 @@ div{
 .btn_coloum{
     text-align: center;
     line-height: 8vw;
-    font-size: 2vw;
-    font-weight: 300;
+    font-size: 2.5em;
+    font-weight: normal;
     opacity: 0.7;
     width: 25vw;
     margin-left: 3vw;
@@ -68,5 +69,6 @@ div{
     height: 8vw;
     border: 1px black solid;
     display: inline-block;
+    cursor:pointer;
 }
 </style>

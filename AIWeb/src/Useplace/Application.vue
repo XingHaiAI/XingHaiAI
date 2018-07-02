@@ -31,6 +31,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
 #AIhead{
     width: 100%;
     height: calc(22.08/100*2300px);
+    font-size: 62.5%;
 }
 #ContactUs{
    background-color: blue;
@@ -42,6 +43,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
    padding: 0;
    display: flex;
    flex-direction: column;
+
  }
 .background {
     width:100%;
@@ -63,7 +65,7 @@ textarea{
     position: relative;
     bottom: 70%;
     left: 15%;
-    font-size: 40px;
+    font-size: 5em;
     color: black;
     font-weight: lighter;
 }
@@ -74,7 +76,7 @@ button{
     background: transparent;
     position: relative;
     bottom: 45%;
-    right: 23%;
+    right: 26%;
     border-color: white;
     color:black;
     font-size: 25px;
@@ -85,9 +87,8 @@ button{
     background: transparent;
     color:black;
     position: relative;
-    left: 3%;
-    font-size: 15px;
-    font-weight:520;
+
+    font-size: 1.5em;
     line-height:22px;
     height:70px;
     width:350px;
@@ -100,14 +101,14 @@ button{
     z-index: 5;
     margin-top:15vh;
     width: 100vw;
-    height: 95vh;
+    height: 80vh;
 }
 .content2{
     position: relative;
     border: none;
     z-index: 5;
     width: 100vw;
-    height: 140vh;
+    height: 150vh;
 }
 .content3{
     position: relative;

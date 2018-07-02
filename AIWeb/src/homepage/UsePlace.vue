@@ -114,12 +114,13 @@
     background-color: #F2F2F2;
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
   }
   .Title{
     padding-top: 6vh;
     width: 100%;
-    height: 10vh;
-    font-size: 2.5vw;
+    height: 15vh;
+    font-size: 4em;
     font-weight: 500;
     text-align: center;
     line-height: 10vh;
@@ -173,15 +174,16 @@
     height: 60%;
   }
   .info_item_title{
-    font-size: 0.9vw;
-    font-weight: 600;
+    text-align:center;
+    font-size: 2em;
+    font-weight: normal;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
     color: black;
   }
   .info_item_content{
-    font-size: 0.8vw;
+    font-size: 1.5em;
     font-weight: 300;
     margin-left: 10%;
     margin-right: 10%;
@@ -192,7 +194,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 1vw;
-    height: 40vh;
+    height: 59vh;
   }
   .step_line_center_control{
     align-self: center;
@@ -204,8 +206,9 @@
     margin-right: 2vw;
     background-color: white;
     width: 100%;
-    height: 40vh;
+    height: 56vh;
     display: inline-block;
+    cursor:pointer;
   }
   .Item_content_coloum:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

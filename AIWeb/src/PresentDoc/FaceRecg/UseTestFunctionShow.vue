@@ -50,6 +50,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
+    font-size: 62.5%;
 }
 body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 div{
@@ -67,7 +68,7 @@ p{
     width: 100vw;
     height: 5vh;
     text-align: center;
-    font-size: 2vw;
+    font-size: 4em;
     margin-top: 6vh;
 }
 
@@ -137,10 +138,11 @@ p{
     margin-top: 6%;
     display: flex;
     flex-direction: column;
+    font-size:2em;
     border: 1px black solid;
     float: left;
     width: 30%;
-    height: 8%;
+    height:12%;
     margin-left: 11%;
     cursor:pointer;
 }
@@ -148,11 +150,12 @@ p{
 .UseTestFunctionShow_Left_Group_Bottom_Center{
     margin-top: 6%;
     display: flex;
+    font-size:2em;
     flex-direction: column;
     border: 1px black solid;
     width: 46%;
     float: left;
-    height: 8%;
+    height: 12%;
     margin-left: 1%;
     cursor:pointer;
 }
@@ -161,6 +164,7 @@ p{
     margin-top: 6%;
     display: flex;
     flex-direction: column;
+    font-size:2em;
     float: left;
     height: 8%;
     margin-left: 1%;
@@ -184,6 +188,7 @@ p{
     text-align: center;
     width: 18%;
     height: 4vh;
+    font-size:2em;
     border: 1px black solid;
     background-color: white;
     cursor:pointer;
@@ -194,6 +199,7 @@ p{
     float: left;
     line-height: 4vh;
     width: 18%;
+    font-size:2em;
     height: 4vh;
     border: 1px black solid;
     background-color: white;

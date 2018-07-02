@@ -34,9 +34,10 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-size: 62.5%;
     background-color: #F2F2F2;
 }
-
+body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 div{
     padding: 0;
     margin: 0;
@@ -46,7 +47,7 @@ div{
     width: 100vw;
     height: 5vh;
     text-align: center;
-    font-size: 2vw;
+    font-size: 4em;
     margin-top: 6vh;
 }
 
@@ -66,7 +67,7 @@ div{
 }
 
 .UseTestUsePlace_Item_Group_Item_Left:hover{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .UseTestUsePlace_Item_Group_Item_Right{
@@ -79,7 +80,7 @@ div{
 }
 
 .UseTestUsePlace_Item_Group_Item_Right:hover{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .UseTestUsePlace_Item_Group_Item_Img_Left{
@@ -99,14 +100,14 @@ div{
 }
 
 .UseTestUsePlace_Item_Group_Item_Word_Title{
-    font-size: 1.6vw;
+    font-size: 2em;
     text-align: center;
     margin-top: 3%;
     height: 9%;
 }
 
 .UseTestUsePlace_Item_Group_Item_Word_Content{
-    font-size: 1.25vw;
+    font-size: 1.5em;
     font-weight: 300;
     height: 17%;
     margin-top: 3%;

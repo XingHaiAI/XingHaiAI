@@ -40,6 +40,9 @@
 </script>
 
 <style scoped>
+body{
+  font-size: 62.5%;
+}
 #apply{
     position: relative;
     left: 25%;
@@ -53,6 +56,7 @@
   .functionButton{
     color: black;
     border-color: black;
+    font-size:2em;
   }
   button{
     width: 200px;
@@ -76,7 +80,7 @@
     overflow:auto;
   }
   #introduce{
-    font-size: 30px;
+    font-size: 4em;
     position: relative;
     margin-bottom:5%;
   }
@@ -101,31 +105,41 @@
   #carContent{
     position: relative;
     top: 5px;
-    left: 40%;
+    left: 37.5%;
+    width:24%;
+    font-size:1.5em;
     overflow:auto;
   }
   #carCaption{
     position: relative;
     top: 5px;
-    left: 40%;
+    left: 28%;
+    margin-bottom:1vh;
+    margin-top:0.5vh;
     text-align: center;
+    font-size:2em;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
+    font-size:1.5em;
     top: 5px;
-    left: 18%;
+    left: 17.3%;
+    width:24%;
     overflow:auto;
   }
   #serviceCaption{
     position: relative;
     top: 5px;
-    left: 18%;
+    left: 14%;
+    margin-bottom:1vh;
+    margin-top:0.5vh;
     text-align: center;
     overflow: auto;
+    font-size:2em;
   }
   #txtApp{;
-    font-size: 30px;
+    font-size: 4em;
     text-align: center;
   }
   body {
@@ -158,6 +172,7 @@
   #AIhead{
     width: 100%;
     height: calc(25.8/100*2300px);
+    font-size: 62.5%;
   }
   #AIbodyfir{
     width: 100%;

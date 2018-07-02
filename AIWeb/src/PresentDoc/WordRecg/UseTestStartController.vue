@@ -28,15 +28,16 @@ body{
     background-position: center;
     display: flex;
     flex-direction: column;
+    font-size: 62.5%;
 }
-
+body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 div{
     margin: 0;
     padding: 0;
 }
 
 .UseTestStartController_Title{
-    font-size: 3vw;
+    font-size: 4em;
     color: white;
     text-align: center;
     margin-top: 35vh;
@@ -54,7 +55,7 @@ div{
     line-height: 9vh;
     width:20vw;
     margin-right: 4vw;
-    font-size: 2vw;
+    font-size: 2em;
     color: white;
     border: solid 1px white;
     display: inline-block;
@@ -66,7 +67,7 @@ div{
     height: 9vh;
     line-height: 9vh;
     width: 20vw;
-    font-size: 2vw;
+    font-size: 2em;
     color: white;
     border: solid 1px white;
     display: inline-block;
@@ -79,7 +80,7 @@ div{
     line-height: 9vh;
     width: 20vw;
     margin-left: 4vw;
-    font-size: 2vw;
+    font-size: 2em;
     color: white;
     border: solid 1px white;
     display: inline-block;

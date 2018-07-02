@@ -41,6 +41,7 @@ export default {
     height: 65vh;
     display: flex;
     flex-direction: column;
+    font-size: 62.5%;
 }
 
 body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
@@ -59,7 +60,7 @@ div{
     margin-top: 8vh;
     width: 100%;
     height: 10vh;
-    font-size: 3.3vw;
+    font-size: 4em;
     font-weight: 300;
     text-align: center;
     color: white;
@@ -92,7 +93,7 @@ div{
     font-weight: 300;
     color: white;
     text-align: center;
-    font-size: 1.7vw;
+    font-size: 2em;
     margin-top: 20%;
 }
 
