@@ -176,7 +176,7 @@ p{
     color:white;
     background-color: rgba(112,112,112,0.75);
     height:100%;
-    
+
 }
 
 .info_show_item_title{

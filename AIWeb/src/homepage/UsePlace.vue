@@ -119,7 +119,7 @@
     padding-top: 6vh;
     width: 100%;
     height: 10vh;
-    font-size: 45px;
+    font-size: 2.5vw;
     font-weight: 500;
     text-align: center;
     line-height: 10vh;
@@ -173,7 +173,7 @@
     height: 60%;
   }
   .info_item_title{
-    font-size: 14px;
+    font-size: 0.9vw;
     font-weight: 600;
     margin-left: 10%;
     margin-right: 10%;
@@ -181,7 +181,7 @@
     color: black;
   }
   .info_item_content{
-    font-size: 12px;
+    font-size: 0.8vw;
     font-weight: 300;
     margin-left: 10%;
     margin-right: 10%;
