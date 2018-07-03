@@ -4,7 +4,7 @@
 <div class="bg">
     <div class="head_content">
         <div class="title">联系我们</div>
-        <div class="content">如果看完了指南和API文档后还是无法解决您的问题，请点击下方"售前咨询"。填写问题，我们会回答您的问题。<p></p>如果您需要商务上的合作以及咨询，请点击下方"售前咨询"，填写以下表单，我们会立即与您联系</div>
+        <div class="content">CONTACT  WITH  US</div>
     </div>
     <div class="link_group">
         <div class="title">
@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="from_group">
-        <div class="decorate_bar"></div>
+        <div class="decorate_bar">提交反馈</div>
         <div class="item_group">
             <div class="before_buy">
                 <div class="icon_1"></div>
@@ -40,18 +40,21 @@
                 <div class="word">问题反馈</div>
             </div>
         </div>
+        <div class="inro">
+        	客服人员将解答您在购买产品前的一切疑问。请您在下方提供<br/>您的联系方式，并描述您的问题。
+        </div>
         <div class="input_group">
             <div class="input_item_left">
-                <input class="input" type="text" placeholder="姓名"/>
-                <input class="input" type="text" placeholder="联系电话"/>
-                <input class="input" type="text" placeholder="电子邮箱"/>
+                <input class="input" type="text" placeholder="姓名"/><span style="color:red;"> *</span>
+                <input class="input" type="text" placeholder="联系电话"/><span style="color:red;"> *</span>
+                <input class="input" type="text" placeholder="电子邮箱"/><span style="color:red;"> *</span>
                 <input class="input" type="text" placeholder="所属公司机构"/>
             </div>
             <textarea class="input_textarea" placeholder="请描述您的问题。"></textarea>
         </div>
         <div class="check_box">
             <input class="box" type="checkbox"/>
-            <div class="word">我已阅读并同意兴海物联隐私政策</div>
+            <div class="word">我已阅读并同意<span class="xinghai"> 《兴海物联隐私政策》 </span></div>
         </div>
         <div class="submit">提交</div>
     </div>
@@ -79,6 +82,7 @@ export default {
    padding: 0;
    display: flex;
    flex-direction: column;
+   font-size: 62.5%;
  }
  body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
  .background {
@@ -109,24 +113,24 @@ div{
   margin-top:0.7vh;
   background-size: 100% 100%;
   display: inline-block;
-  width: 2.5vh;
-  height: 2.5vh;
+  width: 3.5vh;
+  height: 3.5vh;
 }
 .icon_2{
   background-image: url("../assets/联系我们/icon2.png");
   background-size: 100% 100%;
   margin-top:0.7vh;
   display: inline-block;
-  width: 2.5vh;
-  height: 2.5vh;
+  width: 3.5vh;
+  height: 3.5vh;
 }
 .icon_3{
   background-image: url("../assets/联系我们/icon3.png");
   background-size: 100% 100%;
   margin-top:0.7vh;
   display: inline-block;
-  width: 2.5vh;
-  height: 2.5vh;
+  width: 3.5vh;
+  height: 3.5vh;
 }
 .word{
   display: inline-block;
@@ -148,9 +152,23 @@ div{
   width: 10vh;
   height: 10vh;
 }
+.inro{
+	height:10vh;
+	line-height:4vh;
+	font-size:1.2em;
+	letter-spacing:0.2em;
+	margin-top:1vh;
+	margin-bottom:1vh;
+	background-image: url("../assets/pic/气泡.png");
+    background-size: 100% 100%;
+	align-self:center;
+}
 body{
   margin: 0;
   padding: 0;
+}
+.xinghai{
+	color:#2285ea;
 }
 div{
   margin: 0;
@@ -158,59 +176,64 @@ div{
   vertical-align: 80%;
 }
 .bg{
-  height: 215vh;
+  height: 221vh;
   width: 100vw;
   background-image: url("../assets/pic/bg.png");
-  background-size: 100% 100%;
+  background-size: 100vw 221vh;
   background-position: center;
 }
 .head_content{
   width: 100%;
   padding-top:10vh;
-  border: 2px solid black;
+  border: 2px solid white;
   height: 50.5vh;
 }
 .head_content .title{
-  font-size: 3vw;
+  font-size: 3em;
+  font-weight:lighter;
   color: white;
-  margin-top: 7vh;
+  margin-top: 9vh;
   margin-left: 12vw;
   cursor:default;
 }
 .head_content .content{
-  font-size: 1.2vw;
+  font-size: 1.5em;
+  font-weight:lighter;
   color: white;
   margin-left: 12vw;
   width: 40vw;
-  margin-top: 5vh;
+  margin-top: 2vh;
   cursor:default;
 }
 .link_group{
   float: left;
-  width: 20vw;
-  height: 100vh;
-  background-color: #f6faff;
+  width: 25vw;
+  height: 159.5vh;
+  background-color: #fefeff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .from_group{
   display: flex;
   flex-direction: column;
   float: left;
-  width: 80vw;
+  width: 75vw;
   height: 100vh;
 }
 .link_group .decorate_bar{
   margin-top: 10vh;
-  height: 3.5vh;
+  padding-top:0.5vh;
+  height: 3vh;
   display: inline-block;
-  width: 0.5vw;
-  background-color: blue;
+  width: 0.3vw;
+  background-color: #2285ea;
 }
 .link_group .title .word{
-  line-height: 3.5vh;
+  line-height: 4vh;
   display: inline-block;
-  font-size: 1.5vw;
-  font-weight: 300;
-  margin-top: 10vh;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 9vh;
+  padding-bottom:1vh;
 
 }
 .link_group .title{
@@ -220,42 +243,48 @@ div{
 .link_content{
   text-align: left;
   cursor:default;
+  margin-left:1vw;
 }
 .link_content .title{
   margin-left: -3vw;
-  font-size: 1.2vw;
+  text-decoration:underline;
+  font-size: 1.2em;
   margin-top: 3vh;
   margin-bottom: 2vh;
-  font-weight: 300;
+  font-weight: 400;
   cursor:pointer;
 }
 .link_content .content{
-  margin-left: 7.1vw;
+  margin-left: 8.7vw;
   cursor:pointer;
 }
 .link_content .word{
   margin-top: 2vh;
   margin-bottom: 2vh;
   margin-left: -1vw;
-  font-size: 1vw;
-  font-weight: 300;
+  font-size: 1.2em;
+  font-weight: 400;
   cursor:pointer;
 }
 .from_group .decorate_bar{
   width: 50vw;
-  height: 0.6vh;
+  height: 5vh;
   margin-top: 10vh;
-  background-color: black;
+  font-size:1.5em;
+  text-align:center;
   align-self: center;
 }
 .from_group .item_group{
-  margin-top: 10vh;
+  margin-top: 5vh;
+  margin-left:13vw;
   align-self: center;
+  width:70vw;
 }
 .item_group .word{
   float: left;
   line-height: 6vh;
   margin-left: 0.8vw;
+  font-size:1.2em;
 }
 .icon_1{
   width: 2vw;
@@ -285,18 +314,18 @@ div{
   background-position: center;
 }
 .from_group .item_group .before_buy{
-  margin-right: 7vw;
-  margin-left: 7vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
   display: inline-block;
 }
 .from_group .item_group .business{
-  margin-right: 7vw;
-  margin-left: 7vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
   display: inline-block;
 }
 .from_group .item_group .question{
-  margin-right: 7vw;
-  margin-left: 7vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
   display: inline-block;
 }
 .input_group {
@@ -306,7 +335,7 @@ div{
 .input_item_left{
   font-size: 2vw;
   float: left;
-  width: 15vw;
+  width: 20vw;
 }
 .input{
   border: none;
@@ -315,7 +344,7 @@ div{
   border-radius: 5px;
   margin-bottom: 3vh;
   height: 4.5vh;
-  width: 15vw;
+  width: 17vw;
 }
 .input_textarea{
   border: none;
@@ -323,16 +352,16 @@ div{
   font-size: 1.5vw;
   border: #D1D1D1 1px solid;
   border-radius: 5%;
-  margin-left: 2vw;
-  height: 27.5vh;
-  width: 35vw;
+  margin-left: 1vw;
+  height: 35.5vh;
+  width: 25vw;
 }
 .check_box{
   font-size: 1.3vw;
   font-weight: 100;
-  margin-top: 3vh;
+  margin-top: 7vh;
   align-self: center;
-  margin-left: -33vw;
+  margin-left: -21.5vw;
 }
 .box{
   margin-right: 1vw;
