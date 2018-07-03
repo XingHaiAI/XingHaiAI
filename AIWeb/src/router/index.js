@@ -6,6 +6,8 @@ import License from '@/ProductService/License.vue'
 import Meaning from '@/ProductService/Meaning.vue'
 import TextSimilar from '@/ProductService/TextSimilar.vue'
 import ContactUs from '@/DocumentCenter/Contact.vue'
+import ContactProblem from '@/DocumentCenter/ContactProblem.vue'
+import ContactBussiness from '@/DocumentCenter/ContactBussiness.vue'
 import Application from '@/Useplace/Application.vue'
 import HandWritten from '@/ProductService/HandWritten.vue'
 import GeneralWord from '@/ProductService/GeneralWord.vue'
@@ -60,6 +62,12 @@ export default new Router({
     },
     {
       path:'/ContactUs',name:'ContactUs',component:ContactUs
+    },
+    {
+      path:'/ContactBussiness',name:'ContactBussiness',component:ContactBussiness
+    },
+    {
+      path:'/ContactProblem',name:'ContactProblem',component:ContactProblem
     },
     {
       path:'/ProductBlog',name:'ProductBlog',component:ProductBlog

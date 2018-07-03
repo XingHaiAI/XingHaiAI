@@ -67,7 +67,7 @@
 </template>
 <script>
 export default {
-  name: 'ContactUs'
+  name: 'ContactBussiness'
 }
 </script>
 
@@ -386,7 +386,6 @@ div{
   background-color: #3765d5;
   cursor:pointer;
 }
-
 .input_textarea::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
 .input::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;padding-left:0.5vw;}
 </style>

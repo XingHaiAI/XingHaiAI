@@ -67,7 +67,7 @@
 </template>
 <script>
 export default {
-  name: 'ContactUs'
+  name: 'ContactProblem'
 }
 </script>
 
@@ -256,6 +256,7 @@ div{
   cursor:pointer;
 }
 .link_content .content{
+  width:25vw;
   margin-left: 6.7vw;
   cursor:pointer;
   margin-bottom:10vh;
@@ -389,4 +390,7 @@ div{
 
 .input_textarea::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
 .input::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;padding-left:0.5vw;}
+input{
+  cursor:text;
+}
 </style>
