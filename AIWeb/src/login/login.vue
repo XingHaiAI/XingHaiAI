@@ -94,9 +94,10 @@
 <style lang="less">
 
 #login{
+    height:120vh;
     /*background-color: white;*/
     background-image: url("bg.png");
-    background-size: 100% 100%;
+    background-size: 100vw 120vh;
     background-repeat: repeat-y;
 }
 
@@ -162,7 +163,7 @@
   height:440px;
   width:500px;
   margin-right: 150px;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
   .el-input__inner{
@@ -186,6 +187,8 @@
   .buttons{
     margin-top: 40px;
   }
-
+#login #footer{
+  display:none;
+}
 
 </style>

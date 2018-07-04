@@ -27,9 +27,6 @@
     <textarea rows="5" cols="40" id="serviceContent" disabled>可以准确地实现输入法的手写功能，提高用户的使用体验</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</textarea>
   </div>
-  <div id="AItail">
-    <img src="../assets/联系我们.png" class="background">
-  </div>
   </body>
 </template>
 

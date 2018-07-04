@@ -67,9 +67,6 @@
     </div>
   </div>
 </body>
-  <div id="ContactUs">
-    <img src="../assets/联系我们.png" class="background">
-  </div>
   </html>
 </template>
 <script>

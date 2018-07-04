@@ -27,9 +27,6 @@
     <textarea rows="5" cols="40" id="serviceContent" disabled>准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>通过将同义词定义成一个标签，调用相应的服务功能，改善用户体验</textarea>
   </div>
-  <div id="AItail">
-    <img src="../assets/联系我们.png" class="background">
-  </div>
   </body>
 </template>
 

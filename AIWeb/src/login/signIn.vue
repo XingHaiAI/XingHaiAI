@@ -129,11 +129,11 @@
 
 <style lang="less" scoped>
 #signIn{
-
+    height:120vh;
     margin: 0;
     padding: 0;
     background-image: url("bg.png");
-    background-size: 100% 110%;
+    background-size: 100vw 120vh;
     /*width: 100%;*/
     /*height: 100%;*/
 }
@@ -219,15 +219,6 @@ p{
 
   width:78%
 }
-
-
-
-
-
-
-
-
-
 .name_email{
     font-size: 1.25vw;
     margin-top: 3vh;
@@ -240,6 +231,8 @@ p{
     padding-left:5px;
 
 }
-
+#footer{
+  display:none;
+}
 
 </style>

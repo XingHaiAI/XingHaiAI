@@ -6,9 +6,7 @@
 		<usePlace class="content4"></usePlace>
         <aboutUs class="content5"></aboutUs>
         <Try class="content6"></Try>
-        <div id="ContactUs">
-    		<img height="3.5rem" width="100vw" src="../assets/联系我们.png" class="background">
-  		</div>
+        
 	</div>
 </template>
 

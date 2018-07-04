@@ -72,9 +72,6 @@
       </div>
     </div>
   </div>
-  <div id="end">
-    <img src="../assets/联系我们.png">
-  </div>
   </body>
 </template>
 

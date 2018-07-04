@@ -3,9 +3,6 @@
     <UseTestFunctionShow class="content"></UseTestFunctionShow>
     <UseTestStartController class="content2"></UseTestStartController>
     <UseTestUsePlace class="content3"></UseTestUsePlace>
-    <div id="ContactUs">
-        <img src="../../assets/联系我们.png" class="background">
-    </div>
   </div>
 </template>
 

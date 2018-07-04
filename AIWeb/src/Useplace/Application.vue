@@ -8,9 +8,6 @@
         </div>
         <wisedomPark class="content1"></wisedomPark>
         <usePlace class="content2"></usePlace>
-        <div id="ContactUs">
-            <img src="../assets/联系我们.png" class="background">
-        </div>
     </div>
 </template>
 

@@ -27,9 +27,6 @@
     <textarea rows="5" cols="40" id="serviceContent" disabled>精确适配业务需求，帮助解答大量通用性较强的问题，大幅提升人效。可定制和持续学习，广泛用于网站，APP，电话的客服甚至线下业务窗口等场景</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>赋予汽车智能对话操作的能力，帮助驾驶者通过对话直接满足导航，查询地点，拨打电话，多媒体控制等驾车中的操作需求，保障驾驶安全</textarea>
   </div>
-  <div id="AItail">
-    <img src="../assets/联系我们.png" class="background">
-  </div>
   </body>
 </template>
 
@@ -148,8 +145,10 @@ body{
     height: 2200px;
   }
   .background {
-    width:100%;
+    width:100vw;
     height:100%;
+    margin:0;
+    padding:0;
     /*display: inline;*/
     /*position:absolute;*/
     /*z-index:0;*/

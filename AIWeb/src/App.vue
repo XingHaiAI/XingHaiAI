@@ -68,7 +68,7 @@
       </el-main>
       <el-footer>
         <div id="footer" style="margin: 0px;padding: 0px;width: 100%">
-          <img style="width: 100%;margin: 0px;padding: 0px" src="./assets/联系我们.jpg"/>
+          <img style="width: 100vw;margin: 0px;padding: 0px" src="./assets/联系我们.jpg"/>
         </div>
       </el-footer>
     </el-container>
@@ -384,4 +384,12 @@
     background-color: grey;
   }
 
+.el-header{
+  height:0;
+}
+
+.el-main{
+  margin:0;
+  padding:0;
+}
 </style>

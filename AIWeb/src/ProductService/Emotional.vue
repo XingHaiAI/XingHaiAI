@@ -27,9 +27,6 @@
     <textarea rows="5" cols="40" id="serviceContent" disabled>整理提炼互联网中的海量口碑评价，多维分析，快速解读</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</textarea>
   </div>
-  <div id="AItail">
-    <img src="../assets/联系我们.png" class="background">
-  </div>
   </body>
 </template>
 
