@@ -76,7 +76,7 @@ button{
     background: transparent;
     position: relative;
     bottom: 45%;
-    right: 26%;
+    right: 26.5%;
     border-color: white;
     color:black;
     font-size: 0.2rem;
@@ -87,8 +87,8 @@ button{
     background: transparent;
     color:black;
     position: relative;
-
-    font-size: 0.13rem;
+    margin-left:0.2rem;
+    font-size: 0.15rem;
     line-height:0.22rem;
     height:0.7rem;
     width:3.50rem;
