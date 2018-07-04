@@ -65,7 +65,7 @@ textarea{
     position: relative;
     bottom: 70%;
     left: 15%;
-    font-size: 5em;
+    font-size: 0.43rem;
     color: black;
     font-weight: lighter;
 }
@@ -79,7 +79,7 @@ button{
     right: 26%;
     border-color: white;
     color:black;
-    font-size: 25px;
+    font-size: 0.2rem;
     font-weight: lighter;
     outline:0 none !important; blr:expression(this.onFocus=this.blur());
 }
@@ -88,7 +88,7 @@ button{
     color:black;
     position: relative;
 
-    font-size: 1.5em;
+    font-size: 0.13rem;
     line-height:22px;
     height:70px;
     width:350px;

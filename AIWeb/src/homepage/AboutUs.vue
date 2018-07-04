@@ -60,7 +60,7 @@ div{
     margin-top: 8vh;
     width: 100%;
     height: 10vh;
-    font-size: 4em;
+    font-size: 0.36rem;
     font-weight: 300;
     text-align: center;
     color: white;
@@ -93,12 +93,12 @@ div{
     font-weight: 300;
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 0.2rem;
     margin-top: 20%;
 }
 
 .info_item_content{
-    font-size: 1vw;
+    font-size: 0.2rem;
     font-weight: 300;
     margin-left: 10%;
     margin-right: 10%;

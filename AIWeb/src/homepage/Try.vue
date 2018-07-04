@@ -36,7 +36,7 @@ div{
     margin-top: 8vh;
     width: 100vw;
     height: 8vh;
-    font-size: 4em;
+    font-size: 0.36rem;
     font-weight: 500;
     text-align: center;
     line-height: 8vh;
@@ -47,7 +47,7 @@ div{
     margin-top: 2vh;
     width: 100vw;
     height: 6vh;
-    font-size: 2em;
+    font-size: 0.2rem;
     text-align: center;
     line-height: 6vh;
 }
@@ -60,7 +60,7 @@ div{
 .btn_coloum{
     text-align: center;
     line-height: 8vw;
-    font-size: 2.5em;
+    font-size: 0.24rem;
     font-weight: normal;
     opacity: 0.7;
     width: 25vw;

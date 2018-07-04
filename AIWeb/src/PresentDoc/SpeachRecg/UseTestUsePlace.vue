@@ -47,7 +47,7 @@ div{
     width: 100vw;
     height: 5vh;
     text-align: center;
-    font-size: 4em;
+    font-size: 0.4rem;
     margin-top: 6vh;
 }
 
@@ -100,14 +100,14 @@ div{
 }
 
 .UseTestUsePlace_Item_Group_Item_Word_Title{
-    font-size: 2em;
+    font-size: 0.2rem;
     text-align: center;
     margin-top: 3%;
     height: 9%;
 }
 
 .UseTestUsePlace_Item_Group_Item_Word_Content{
-    font-size: 1.5em;
+    font-size: 0.15rem;
     font-weight: 300;
     height: 17%;
     margin-top: 3%;

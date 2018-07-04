@@ -36,15 +36,15 @@ export default {
 <style scoped>
 #homepage{
     width:100%;
-    min-width: 900px;
-    width:expression(document.body.clientWidth < 900? "900px":"auto" );
+    min-width: 9rem;
+    /*width:expression(document.body.clientWidth < 900? "900px":"auto" );*/
 }
 body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 #ContactUs{
    background-color: blue;
    background-image: url("../assets/联系我们/bg.jpg");
    background-size: 100% 100%;
-   width: 100vw;
+   width: 13.6rem;
    height: 35vh;
    margin: 0;
    padding: 0;
@@ -59,8 +59,8 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     z-index: 5;
     width: 100%;
     height: 90vh;
-    min-width: 900px;
-    width:expression(document.body.clientWidth < 900? "900px":"auto" );
+    min-width: 9rem;
+    /*width:expression(document.body.clientWidth < 900? "900px":"auto" );*/
 }
 
 .content2{

@@ -117,7 +117,7 @@ p{
     margin-top: 7vh;
     width: 100%;
     height: 14vh;
-    font-size: 4em;
+    font-size: 0.36rem;
     font-weight: 500;
     text-align: center;
     line-height: 10vh;
@@ -162,12 +162,12 @@ p{
 
 .word{
     height:100%;
-    width: 25vw;
+    width: 3.415rem;
     display:flex;
     justify-content:center;
     align-items:center;
     color: white;
-    font-size: 5em;
+    font-size: 0.42rem;
 }
 
 .info_show{
@@ -182,13 +182,13 @@ p{
 
 .info_show_item_title{
     margin-top: 20%;
-    font-size: 5em;
+    font-size: 0.42rem;
     align-self: center;
     text-align: center;
 }
 
 .info_show_item_content{
-    font-size: 2em;
+    font-size: 0.2rem;
     width: 100%;
     text-align: center;
 }

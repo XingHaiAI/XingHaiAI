@@ -14,7 +14,7 @@
         <div class="title_left"></div>
         <div class="title_right"> 欢迎使用兴海物联AI平台</div>
     </div>
-    <input type="text" class="name_email" placeholder="请输入用户名 *"/></input>
+    <input type="text" class="name_email" placeholder="请输入用户名 *"/>
     <input type="text" class="npassword" placeholder="请输入邮箱地址 *"/>
     <input type="text" class="npassword" placeholder="请输入手机号码"/>
     <input type="text" class="npassword" placeholder="密码 *"/>

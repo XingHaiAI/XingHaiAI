@@ -171,7 +171,7 @@ div{
   padding-top:50vh;
   background-size: 100% 50vh;
   background-repeat: no-repeat;
-  min-width: 1200px;
+  min-width: 12rem;
 }
 .head_content .title{
   font-size: 3vw;
@@ -191,7 +191,7 @@ div{
   width: 25vw;
   height: 180vh;
   background-color: #f6faff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.19);
 }
 .from_group{
   display: flex;
@@ -205,15 +205,15 @@ div{
   margin-left:6vw;
   width:58vw;
   height:30vh;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.02rem 0.1rem 0 rgba(0, 0, 0, 0.1);
   cursor:default;
 }
 .bolg_title{
   margin-top:3vh;
   margin-bottom:1.5vh;
   margin-left:1vw;
-  font-size:23px;
-  letter-spacing:3px;
+  font-size:0.23rem;
+  letter-spacing:0.03rem;
 }
 .icon{
   margin-right:1.2vw;
@@ -223,28 +223,28 @@ div{
     margin-bottom:1.5vh;
 }
 .time{
-  font-size:15px;
+  font-size:0.15rem;
   color:grey;
   margin-left:3vw;
 }
 .tip{
-  font-size:15px;
+  font-size:0.15rem;
   color:red;
   margin-left:3vw;
 }
 .outline{
   margin-top:3vh;
   margin-left:3vw;
-  font-size:15px;
+  font-size:0.15rem;
   color:  #303030;
   font-weight:300;
 }
 .read_more{
   margin-top:4vh;
   margin-left:3vw;
-  font-size:15px;
+  font-size:0.15rem;
   color:#3399FF;
-  letter-spacing:2px;
+  letter-spacing:0.02rem;
   cursor:pointer;
 }
 .decorate_bar{

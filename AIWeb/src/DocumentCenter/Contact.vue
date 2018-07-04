@@ -137,7 +137,7 @@ div{
   text-align: center;
   color: black;
   line-height: 3vh;
-  font-size: 1.3vw;
+  font-size: 0.24rem;
   cursor:default;
 }
 .coloum_1{
@@ -155,7 +155,7 @@ div{
 .inro{
 	height:10vh;
 	line-height:4vh;
-	font-size:1.2em;
+	font-size:0.2rem;
 	letter-spacing:0.2em;
 	margin-top:1vh;
 	margin-bottom:1vh;
@@ -190,7 +190,7 @@ div{
   background-position: center;
 }
 .head_content .title{
-  font-size: 3em;
+  font-size: 0.46rem;
   font-weight:lighter;
   color: white;
   margin-top: 14vh;
@@ -198,7 +198,7 @@ div{
   cursor:default;
 }
 .head_content .content{
-  font-size: 1.5em;
+  font-size: 0.19rem;
   font-weight:lighter;
   color: white;
   margin-left: 12vw;
@@ -249,7 +249,7 @@ div{
 .link_content .title{
   margin-left: 6vw;
   text-decoration:underline;
-  font-size: 1.2em;
+  font-size: 0.24rem;
   margin-top: 3vh;
   margin-bottom: 2vh;
   font-weight: 400;
@@ -272,7 +272,7 @@ div{
   width: 50vw;
   height: 5vh;
   margin-top: 10vh;
-  font-size:1.5em;
+  font-size:0.3rem;
   text-align:center;
   align-self: center;
 }
@@ -286,7 +286,7 @@ div{
   float: left;
   line-height: 6vh;
   margin-left: 0.8vw;
-  font-size:1.2em;
+  font-size:0.24rem;
 }
 .icon_1{
   width: 2vw;
