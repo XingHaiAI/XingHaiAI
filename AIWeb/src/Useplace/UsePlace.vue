@@ -194,6 +194,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 0.136rem;
+    margin-left:0.2rem;
     height: 3.5rem;
   }
   .step_line_center_control{

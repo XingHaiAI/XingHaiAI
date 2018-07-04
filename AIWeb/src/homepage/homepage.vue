@@ -7,7 +7,7 @@
         <aboutUs class="content5"></aboutUs>
         <Try class="content6"></Try>
         <div id="ContactUs">
-    		<img src="../assets/联系我们.png" class="background">
+    		<img height="3.5rem" width="100vw" src="../assets/联系我们.png" class="background">
   		</div>
 	</div>
 </template>
@@ -92,7 +92,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     border: none;
     z-index: 5;
     width: 100%;
-    height: 7rem;
+    height: 6rem;
 }
 
 .content6{
@@ -103,7 +103,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     height: 4rem;
 }
 .background{
-  height:100%;
+  height:3.5rem;
   width:100%;
 }
 </style>

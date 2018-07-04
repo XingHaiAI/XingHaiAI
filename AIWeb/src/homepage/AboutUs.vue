@@ -38,7 +38,7 @@ export default {
     background-image: url("./about_us/bg.jpg");
     background-size: 100% 100%;
     width: 100%;
-    height: 6rem;
+    height: 5.7rem;
     display: flex;
     flex-direction: column;
     font-size: 62.5%;
@@ -60,8 +60,8 @@ div{
     margin-top: 0.8rem;
     width: 100%;
     height: 1rem;
-    font-size: 0.36rem;
-    font-weight: 300;
+    font-size: 0.4rem;
+    font-weight: 500;
     text-align: center;
     color: white;
     line-height: 1rem;
