@@ -1,4 +1,5 @@
 <template>
+
   <div id="app":style="{minWidth: 12 + 'rem'}">
     <div class="navbar">
       <!--LOGO-->
@@ -19,6 +20,7 @@
         <div class="divider">|</div>
         <div class="sign_in"><router-link to="/login" class="login_item" style="text-decoration: none">登录</router-link></div>
       </div>
+
       <div id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
         <table style="width: 100%;">
           <tr>
