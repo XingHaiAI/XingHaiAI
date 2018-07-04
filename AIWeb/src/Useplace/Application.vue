@@ -30,15 +30,15 @@ export default {
 body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 #AIhead{
     width: 100%;
-    height: calc(22.08/100*2300px);
+    height: calc(22.08/100*23rem);
     font-size: 62.5%;
 }
 #ContactUs{
    background-color: blue;
    background-image: url("../assets/联系我们/bg.jpg");
    background-size: 100% 100%;
-   width: 100vw;
-   height: 35vh;
+   width: 13.66rem;
+   height: 2.44rem;
    margin: 0;
    padding: 0;
    display: flex;
@@ -57,7 +57,7 @@ textarea{
     resize: none;
     background-color: white;
     color: black;
-    height:70px;
+    height:0.70rem;
     overflow:auto;
     cursor:default;
 }
@@ -70,8 +70,8 @@ textarea{
     font-weight: lighter;
 }
 button{
-    width: 200px;
-    height: 50px;
+    width: 2rem;
+    height: 0.5rem;
     text-align: center;
     background: transparent;
     position: relative;
@@ -89,9 +89,9 @@ button{
     position: relative;
 
     font-size: 0.13rem;
-    line-height:22px;
-    height:70px;
-    width:350px;
+    line-height:0.22rem;
+    height:0.7rem;
+    width:3.50rem;
     bottom: 51%;
     cursor:default;
 }
@@ -99,22 +99,22 @@ button{
     position: relative;
     border: none;
     z-index: 5;
-    margin-top:15vh;
-    width: 100vw;
-    height: 80vh;
+    /*margin-top:15vh;*/
+    width: 13.66rem;
+    height: 6.5rem;
 }
 .content2{
     position: relative;
     border: none;
     z-index: 5;
-    width: 100vw;
-    height: 150vh;
+    width: 13.66rem;
+    height: 10rem;
 }
 .content3{
     position: relative;
     border: none;
     z-index: 5;
-    width: 100vw;
-    height: 25vh;
+    width: 13.66rem;
+    height: 2rem;
 }
 </style>

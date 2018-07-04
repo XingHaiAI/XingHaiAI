@@ -114,30 +114,30 @@ p{
 }
 
 .Title{
-    margin-top: 7vh;
-    width: 100%;
-    height: 14vh;
-    font-size: 0.38rem;
-    font-weight: 500;
-    text-align: center;
-    line-height: 10vh;
+  margin-top: 0.6rem;
+  width: 100%;
+  height: 1.4rem;
+  font-size: 0.36rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.0rem;
 }
 
 .content_group{
-    margin-top:2vh;
-    margin-bottom:0;
+  margin-top:0.2rem;
+  margin-bottom:0;
 
-    width: 100%;
-    height: 66vh;
+  width: 100%;
+  height: 5rem;
 }
 
 .item{
-    display: flex;
-    position: relative;
-    width: 25%;
-    float: left;
-    background-color: red;
-    height: 66vh;
+  display: flex;
+  position: relative;
+  width: 25%;
+  float: left;
+  background-color: red;
+  height:  5rem;
 }
 .pic1{
     background-image: url("wisdom_park/pic1.jpg");
@@ -162,12 +162,12 @@ p{
 
 .word{
     height:100%;
-    width: 25vw;
+    width: 3.41rem;
     display:flex;
     justify-content:center;
     align-items:center;
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.42rem;
 }
 
 .info_show{
@@ -182,7 +182,7 @@ p{
 
 .info_show_item_title{
     margin-top: 20%;
-    font-size: 0.5rem;
+    font-size: 0.42rem;
     align-self: center;
     text-align: center;
 }
