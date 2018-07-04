@@ -171,14 +171,14 @@ p{
 
 .MLBinfo_title{
     margin-top: 0.11rem;
-    font-size: 0.18rem;
+    font-size: 0.2rem;
     text-align: center;
     width: 2.46rem;
 }
 
 .MLBinfo_show_group{
     margin-top: 0.3rem;
-    height: 2rem;
+    height: 1.7rem;
 }
 
 .MLBinfo_item{
@@ -280,7 +280,7 @@ p{
 
 .step_info_content{
     color: white;
-    font-size: 0.14rem;
+    font-size: 0.15rem;
 }
 
 .step_info_title{
