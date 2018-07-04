@@ -56,7 +56,7 @@ body{
   .functionButton{
     color: black;
     border-color: black;
-    font-size:2em;
+    font-size:0.2rem;
   }
   button{
     width: 200px;
@@ -68,7 +68,7 @@ body{
     right: 23%;
     border-color: white;
     color:white;
-    font-size: 25px;
+    font-size: 0.25rem;
     font-weight: lighter;
   }
   #titlecontent{
@@ -80,20 +80,20 @@ body{
     overflow:auto;
   }
   #introduce{
-    font-size: 4em;
+    font-size: 0.4rem;
     position: relative;
     margin-bottom:5%;
   }
   #introducecontent{
     position: relative;
-    font-size:1.5em;
+    font-size:0.15rem;
     top: 12%;
   }
   #title{
     position: relative;
     bottom: 75%;
     left: 20%;
-    font-size: 40px;
+    font-size: 0.4px;
     color: white;
     font-weight: lighter;
   }
@@ -108,7 +108,7 @@ body{
     top: 5px;
     left: 37.5%;
     width:24%;
-    font-size:1.5em;
+    font-size:0.15rem;
     overflow:auto;
   }
   #carCaption{
@@ -118,12 +118,12 @@ body{
     margin-bottom:1vh;
     margin-top:0.5vh;
     text-align: center;
-    font-size:2em;
+    font-size:0.2rem;
     overflow: auto;
   }
   #serviceContent{
     position: relative;
-    font-size:1.5em;
+    font-size:0.15rem;
     top: 5px;
     left: 17.3%;
     width:24%;
@@ -137,10 +137,10 @@ body{
     margin-top:0.5vh;
     text-align: center;
     overflow: auto;
-    font-size:2em;
+    font-size:0.2rem;
   }
   #txtApp{;
-    font-size: 4em;
+    font-size: 0.4rem;
     text-align: center;
   }
   body {

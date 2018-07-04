@@ -37,7 +37,7 @@ div{
 }
 
 .UseTestStartController_Title{
-    font-size: 4em;
+    font-size: 0.4rem;
     color: white;
     text-align: center;
     margin-top: 35vh;
@@ -55,7 +55,7 @@ div{
     line-height: 9vh;
     width:20vw;
     margin-right: 4vw;
-    font-size: 2em;
+    font-size: 0.2rem;
     color: white;
     border: solid 1px white;
     display: inline-block;
@@ -67,7 +67,7 @@ div{
     height: 9vh;
     line-height: 9vh;
     width: 20vw;
-    font-size: 2em;
+    font-size: 0.2rem;
     color: white;
     border: solid 1px white;
     display: inline-block;
@@ -80,7 +80,7 @@ div{
     line-height: 9vh;
     width: 20vw;
     margin-left: 4vw;
-    font-size: 2em;
+    font-size: 0.2rem;
     color: white;
     border: solid 1px white;
     display: inline-block;

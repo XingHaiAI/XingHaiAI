@@ -153,39 +153,39 @@ p{
 
 
 .MLBTitle{
-    margin-top: 8vh;
+    margin-top: 0.6rem;
     width: 100%;
-    height: 15vh;
-    font-size: 4em;
+    height: 1.0rem;
+    font-size: 0.4rem;
     font-weight: 500;
     color:black;
     text-align: center;
-    line-height: 10vh;
+    line-height: 0.6rem;
 }
 
 .MLBinfo_pic{
-    width: 11vw;
-    height: 8vw;
-    margin-left: 3.5vw;
+    width: 1.5rem;
+    height: 1.1rem;
+    margin-left: 0.48rem;
 }
 
 .MLBinfo_title{
-    margin-top: 0.8vw;
-    font-size: 2em;
+    margin-top: 0.11rem;
+    font-size: 0.18rem;
     text-align: center;
-    width: 18vw;
+    width: 2.46rem;
 }
 
 .MLBinfo_show_group{
-    margin-top: 4vh;
-    height: 25vh;
+    margin-top: 0.3rem;
+    height: 2rem;
 }
 
 .MLBinfo_item{
     display: inline-block;
-    margin-left: 8vw;
-    width: 15vw;
-    height: 14vw;
+    margin-left: 1.1rem;
+    width: 2.05rem;
+    height: 1.91rem;
 }
 .MLBpic1{
     background-image: url("make_life_pretty/main/pic1.png");
@@ -215,56 +215,56 @@ p{
     opacity: 0.8;
     display: flex;
     justify-content:center;
-    margin-top: 5vh;
+    margin-top: 0.5rem;
     background-image: url("make_life_pretty/content/item1/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 53vh;
+    height: 5rem;
 }
 
 .info_show_content_2{
     opacity: 0.8;
     display: flex;
     justify-content:center;
-    margin-top: 5vh;
+    margin-top: 0.5rem;
     background-image: url("make_life_pretty/content/item2/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 53vh;
+    height: 5rem;
 }
 .info_show_content_3{
     opacity: 0.8;
     display: flex;
     justify-content:center;
-    margin-top: 5vh;
+    margin-top: 0.5rem;
     background-image: url("make_life_pretty/content/item3/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 53vh;
+    height: 5rem;
 }
 .info_show_content_4{
     opacity: 0.8;
     display: flex;
     justify-content:center;
-    margin-top: 5vh;
+    margin-top: 0.5rem;
     background-image: url("make_life_pretty/content/item4/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 53vh;
+    height: 5rem;
 }
 
 .step_info_show_group{
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin-top: 4vh;
+    margin-top: 0.4rem;
     width: 100%;
     border: none;
-    height: 25vh;
+    height: 2.5rem;
 }
 
 .step_info_show_step_group{
@@ -273,32 +273,32 @@ p{
 }
 
 .step_info_pic{
-    width: 11vw;
-    height: 8vw;
-    margin-left: 4vw;
+    width: 1.5rem;
+    height: 1.1rem;
+    margin-left: 0.546rem;
 }
 
 .step_info_content{
     color: white;
-    font-size: 1.5em;
+    font-size: 0.14rem;
 }
 
 .step_info_title{
     color: white;
-    margin-top: 0.6vw;
-    font-size: 2em;
+    margin-top: 0.082rem;
+    font-size: 0.18rem;
     text-align: center;
-    width: 19vw;
+    width: 2.6rem;
 }
 
 .step_info_item{
     vertical-align: top;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    padding-top:15vh;
+    margin-left: 0.273rem;
+    margin-right: 0.273rem;
+    padding-top:1.5rem;
     display: inline-block;
-    width: 19vw;
-    height: 17vw;
+    width: 2.6rem;
+    height: 2.32rem;
 }
 
 .step_pic1_1{

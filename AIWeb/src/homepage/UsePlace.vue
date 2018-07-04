@@ -117,13 +117,13 @@
     font-size: 62.5%;
   }
   .Title{
-    padding-top: 6vh;
+    padding-top: 0.6rem;
     width: 100%;
-    height: 15vh;
-    font-size: 4em;
+    height: 2rem;
+    font-size: 0.36rem;
     font-weight: 500;
     text-align: center;
-    line-height: 10vh;
+    line-height: 1.0rem;
   }
   .pic_1{
     background-image: url("use_place/pic1.jpg");
@@ -175,7 +175,7 @@
   }
   .info_item_title{
     text-align:center;
-    font-size: 2em;
+    font-size: 0.18rem;
     font-weight: normal;
     margin-left: 10%;
     margin-right: 10%;
@@ -183,7 +183,7 @@
     color: black;
   }
   .info_item_content{
-    font-size: 1.5em;
+    font-size: 0.11rem;
     font-weight: 300;
     margin-left: 10%;
     margin-right: 10%;
@@ -193,8 +193,8 @@
   .line{
     display: flex;
     flex-direction: column;
-    margin-top: 1vw;
-    height: 59vh;
+    margin-top: 0.136rem;
+    height: 3.5rem;
   }
   .step_line_center_control{
     align-self: center;
@@ -202,15 +202,15 @@
     justify-content:center;
   }
   .Item_content_coloum {
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 0.273rem;
+    margin-right: 0.273rem;
     background-color: white;
     width: 100%;
-    height: 56vh;
+    height: 3.2rem;
     display: inline-block;
     cursor:pointer;
   }
   .Item_content_coloum:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.19);
   }
 </style>

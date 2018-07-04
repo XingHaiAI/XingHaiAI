@@ -33,41 +33,41 @@ div{
 
 .Title{
     opacity: 0.8;
-    margin-top: 8vh;
-    width: 100vw;
-    height: 8vh;
-    font-size: 4em;
+    margin-top: 0.6rem;
+    width: 13.6rem;
+    height: 0.6rem;
+    font-size: 0.36rem;
     font-weight: 500;
     text-align: center;
-    line-height: 8vh;
+    line-height: 0.6rem;
 }
 
 .info{
     opacity: 0.8;
-    margin-top: 2vh;
-    width: 100vw;
-    height: 6vh;
-    font-size: 2em;
+    margin-top: 0.15rem;
+    width: 13.6rem;
+    height: 0.45rem;
+    font-size: 0.2rem;
     text-align: center;
-    line-height: 6vh;
+    line-height: 0.45rem;
 }
 
 .line{
-    margin-top: 5vh;
+    margin-top: 0.375rem;
     align-self: center;
 }
 
 .btn_coloum{
     text-align: center;
-    line-height: 8vw;
-    font-size: 2.5em;
+    line-height: 1.09rem;
+    font-size: 0.24rem;
     font-weight: normal;
     opacity: 0.7;
-    width: 25vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    height: 8vw;
-    border: 1px black solid;
+    width: 3.41rem;
+    margin-left: 0.41rem;
+    margin-right: 0.41rem;
+    height: 1.09rem;
+    border: 0.01rem black solid;
     display: inline-block;
     cursor:pointer;
 }

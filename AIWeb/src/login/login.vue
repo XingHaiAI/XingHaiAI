@@ -7,6 +7,7 @@
     <div class="big_word2">
         一站式算法服务平台
     </div>
+
   </div>
     <div class="login">
       <el-card class="box-card">
@@ -29,12 +30,14 @@
             <el-button class="button4register" @click="gotoRegister">注册</el-button>
         </div>
       </el-card>
+
     </div>
   </div>
 </template>
 
 <script>
   export default {
+
     name: "login",
     data(){
       return{
@@ -84,6 +87,7 @@
         xmlhttp.send();
       }
     }
+
   }
 </script>
 
@@ -153,6 +157,7 @@
     height: 50vh;
 }
 
+
 .box-card{
   height:440px;
   width:500px;
@@ -172,6 +177,7 @@
     height:50px;
     transition:all 0.7s;
   }
+
 
   .el-input__inner:hover{
     transform: scale(1.05);

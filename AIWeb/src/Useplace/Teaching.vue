@@ -58,16 +58,16 @@
         <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gtAPI调用规则</p>
       </div>
       <div id="text">
-        <p style="font-size: 30px;margin-bottom: 10%;text-align: center">API调用规则</p>
-        <p style="font-size: 25px;text-align: center;">API调用-----原理</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">FACE++人工真能开放平台API是HTTP API。常用的编程语言都能发起HTTP请求（通过第三方库或自带API），使用者向我们的服务器发起HTTP请求，并加上合适的参数，服务器将会对请求进行处理，得到结果将会返回给使用者</textarea>
-        <p style="font-size: 25px">API调用----鉴权</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">账号下每创建一个应用就会生成一组对应的API_KEY和API_SECRET,并用以识别用户是否有权限调用API，所有的API调用必须提供对应的一组API_KEY和API_SELECT参数</textarea>
-        <p style="font-size: 25px">API调用----参数</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">调用每个API需要根据需求传不同的参数，每个API参数的详细定义请查看人脸识别。所有API的嗲用都要使用POST请求，用户可以以QUERY STRING的形式将参数写进请求体中，传图片文件参数时需要在请求体中使用MULTIPART/FORM-DATA格式来编码</textarea>
-        <p style="font-size: 25px">API调用--提示</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 20px">为了避免因网络问题而造成的阻塞，建议将API调用放进异步线程里执行。</textarea>
-        <p style="font-size: 25px">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
+        <p style="font-size: 0.30rem;margin-bottom: 10%;text-align: center">API调用规则</p>
+        <p style="font-size: 0.25rem;text-align: center;">API调用-----原理</p>
+        <textarea rows="5"cols="70"disabled style="font-size: 0.20rem">FACE++人工真能开放平台API是HTTP API。常用的编程语言都能发起HTTP请求（通过第三方库或自带API），使用者向我们的服务器发起HTTP请求，并加上合适的参数，服务器将会对请求进行处理，得到结果将会返回给使用者</textarea>
+        <p style="font-size: 0.25rem">API调用----鉴权</p>
+        <textarea rows="5"cols="70"disabled style="font-size: 0.20rem">账号下每创建一个应用就会生成一组对应的API_KEY和API_SECRET,并用以识别用户是否有权限调用API，所有的API调用必须提供对应的一组API_KEY和API_SELECT参数</textarea>
+        <p style="font-size: 0.25rem">API调用----参数</p>
+        <textarea rows="5"cols="70"disabled style="font-size: 0.20rem">调用每个API需要根据需求传不同的参数，每个API参数的详细定义请查看人脸识别。所有API的嗲用都要使用POST请求，用户可以以QUERY STRING的形式将参数写进请求体中，传图片文件参数时需要在请求体中使用MULTIPART/FORM-DATA格式来编码</textarea>
+        <p style="font-size: 0.25rem">API调用--提示</p>
+        <textarea rows="5"cols="70"disabled style="font-size: 0.2rem">为了避免因网络问题而造成的阻塞，建议将API调用放进异步线程里执行。</textarea>
+        <p style="font-size: 0.25rem">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
       </div>
     </div>
   </div>
@@ -144,6 +144,7 @@
     height:100%;
     width: 74%;
     margin: 0;
+    font-size: 0.21rem;
   }
   #aside{
     float: left;
@@ -186,10 +187,10 @@
   height:240vh;
 }
 span{
-  font-size:17px;
+  font-size:0.17rem;
 }
 .searchInput{
-  font-size:16px;
+  font-size:0.16rem;
   padding-left:1vw;
 }
 </style>

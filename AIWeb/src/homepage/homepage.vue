@@ -36,31 +36,31 @@ export default {
 <style scoped>
 #homepage{
     width:100%;
-    min-width: 900px;
-    width:expression(document.body.clientWidth < 900? "900px":"auto" );
+    min-width: 9rem;
+    /*width:expression(document.body.clientWidth < 900? "900px":"auto" );*/
 }
 body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
 #ContactUs{
    background-color: blue;
    background-image: url("../assets/联系我们/bg.jpg");
    background-size: 100% 100%;
-   width: 100vw;
-   height: 35vh;
+   width: 13.66rem;
+   height: 2.44rem;
    margin: 0;
    padding: 0;
    display: flex;
    flex-direction: column;
  }
 .content{
-    margin-top: -8vh;
+    margin-top: -0.6rem;
     padding:0;
     position: relative;
     border: none;
     z-index: 5;
     width: 100%;
-    height: 90vh;
-    min-width: 900px;
-    width:expression(document.body.clientWidth < 900? "900px":"auto" );
+    height: 6.7rem;
+    min-width: 9rem;
+    /*width:expression(document.body.clientWidth < 900? "900px":"auto" );*/
 }
 
 .content2{
@@ -68,7 +68,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     border: none;
     z-index: 5;
     width: 100%;
-    height: 100vh;
+    height: 8rem;
 }
 
 .content3{
@@ -76,7 +76,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     border: none;
     z-index: 5;
     width: 100%;
-    height: 76vh;
+    height: 6.5rem;
 }
 
 .content4{
@@ -84,7 +84,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     border: none;
     z-index: 5;
     width: 100%;
-    height: 145vh;
+    height: 10rem;
 }
 
 .content5{
@@ -92,7 +92,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     border: none;
     z-index: 5;
     width: 100%;
-    height: 65vh;
+    height: 7rem;
 }
 
 .content6{
@@ -100,7 +100,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     border: none;
     z-index: 5;
     width: 100%;
-    height: 60vh;
+    height: 4rem;
 }
 .background{
   height:100%;

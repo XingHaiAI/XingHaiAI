@@ -68,7 +68,7 @@ p{
     width: 100vw;
     height: 5vh;
     text-align: center;
-    font-size: 4em;
+    font-size: 0.4rem;
     margin-top: 6vh;
 }
 
@@ -100,7 +100,7 @@ p{
     color: white;
     display: flex;
     flex-direction: column;
-    font-size: 4vw;
+    font-size: 0.2rem;
     width: 10%;
     height: 28%;
     float: left;
@@ -121,7 +121,7 @@ p{
     color: white;
     display: flex;
     flex-direction: column;
-    font-size: 4vw;
+    font-size: 0.2rem;
     width: 10%;
     height: 28%;
     float: left;
@@ -138,7 +138,7 @@ p{
     margin-top: 6%;
     display: flex;
     flex-direction: column;
-    font-size:2em;
+    font-size:0.2rem;
     border: 1px black solid;
     float: left;
     width: 30%;
@@ -150,7 +150,7 @@ p{
 .UseTestFunctionShow_Left_Group_Bottom_Center{
     margin-top: 6%;
     display: flex;
-    font-size:2em;
+    font-size:0.2rem;
     flex-direction: column;
     border: 1px black solid;
     width: 46%;
@@ -164,7 +164,7 @@ p{
     margin-top: 6%;
     display: flex;
     flex-direction: column;
-    font-size:2em;
+    font-size:0.2rem;
     float: left;
     height: 8%;
     margin-left: 1%;
@@ -188,7 +188,7 @@ p{
     text-align: center;
     width: 18%;
     height: 4vh;
-    font-size:2em;
+    font-size:0.2rem;
     border: 1px black solid;
     background-color: white;
     cursor:pointer;
@@ -199,7 +199,7 @@ p{
     float: left;
     line-height: 4vh;
     width: 18%;
-    font-size:2em;
+    font-size:0.2rem;
     height: 4vh;
     border: 1px black solid;
     background-color: white;

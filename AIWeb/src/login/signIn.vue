@@ -13,6 +13,7 @@
     <div class="title4register">
       <span>欢迎使用兴海物联AI平台</span>
     </div>
+
     <div class="form4register">
       <el-form :model="formRegister" ref="formRegister" :rules="rulesRegister" label-width="18%">
         <el-form-item prop="username" label="用户名" >
@@ -40,6 +41,7 @@
           <el-checkbox :checked="agree" @change="agree=!agree">我已阅读并同意兴海物联私政策</el-checkbox>
         </el-form-item>
       </el-form>
+
     </div>
     <div class="buttons">
       <el-button class="button4register" :disabled="!agree">注册</el-button>
