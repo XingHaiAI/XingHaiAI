@@ -16,6 +16,8 @@
     "cssnano": "^3.10.0",
     "element": "^0.1.4",
     "element-ui": "^2.4.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
     "postcss-aspect-ratio-mini": "0.0.2",
     "postcss-cssnext": "^3.1.0",
     "postcss-px-to-viewport": "0.0.3",
