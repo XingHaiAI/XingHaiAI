@@ -38,7 +38,7 @@ export default {
     background-image: url("./about_us/bg.jpg");
     background-size: 100% 100%;
     width: 100%;
-    height: 65vh;
+    height: 6rem;
     display: flex;
     flex-direction: column;
     font-size: 62.5%;
@@ -57,14 +57,14 @@ div{
 
 .Title{
     opacity: 0.8;
-    margin-top: 8vh;
+    margin-top: 0.8rem;
     width: 100%;
-    height: 10vh;
+    height: 1rem;
     font-size: 0.36rem;
     font-weight: 300;
     text-align: center;
     color: white;
-    line-height: 10vh;
+    line-height: 1rem;
 }
 
 .pic_1{
@@ -111,11 +111,11 @@ div{
 }
 
 .Item_content_coloum {
-    margin-top: 8vh;
-    width: 13vw;
-    height: 30vh;
+    margin-top: 0.8rem;
+    width: 1.776rem;
+    height: 3rem;
     display: inline-block;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 1.09rem;
+    margin-right: 1.09rem;
 }
 </style>

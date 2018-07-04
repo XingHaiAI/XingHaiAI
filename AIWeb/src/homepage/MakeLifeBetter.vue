@@ -153,14 +153,14 @@ p{
 
 
 .MLBTitle{
-    margin-top: 8vh;
+    margin-top: 0.6rem;
     width: 100%;
-    height: 15vh;
+    height: 1.0rem;
     font-size: 0.4rem;
     font-weight: 500;
     color:black;
     text-align: center;
-    line-height: 10vh;
+    line-height: 0.6rem;
 }
 
 .MLBinfo_pic{
@@ -177,8 +177,8 @@ p{
 }
 
 .MLBinfo_show_group{
-    margin-top: 4vh;
-    height: 25vh;
+    margin-top: 0.3rem;
+    height: 2rem;
 }
 
 .MLBinfo_item{
@@ -215,56 +215,56 @@ p{
     opacity: 0.8;
     display: flex;
     justify-content:center;
-    margin-top: 5vh;
+    margin-top: 0.5rem;
     background-image: url("make_life_pretty/content/item1/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 53vh;
+    height: 5rem;
 }
 
 .info_show_content_2{
     opacity: 0.8;
     display: flex;
     justify-content:center;
-    margin-top: 5vh;
+    margin-top: 0.5rem;
     background-image: url("make_life_pretty/content/item2/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 53vh;
+    height: 5rem;
 }
 .info_show_content_3{
     opacity: 0.8;
     display: flex;
     justify-content:center;
-    margin-top: 5vh;
+    margin-top: 0.5rem;
     background-image: url("make_life_pretty/content/item3/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 53vh;
+    height: 5rem;
 }
 .info_show_content_4{
     opacity: 0.8;
     display: flex;
     justify-content:center;
-    margin-top: 5vh;
+    margin-top: 0.5rem;
     background-image: url("make_life_pretty/content/item4/bg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 53vh;
+    height: 5rem;
 }
 
 .step_info_show_group{
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin-top: 4vh;
+    margin-top: 0.4rem;
     width: 100%;
     border: none;
-    height: 25vh;
+    height: 2.5rem;
 }
 
 .step_info_show_step_group{
@@ -295,7 +295,7 @@ p{
     vertical-align: top;
     margin-left: 0.273rem;
     margin-right: 0.273rem;
-    padding-top:15vh;
+    padding-top:1.5rem;
     display: inline-block;
     width: 2.6rem;
     height: 2.32rem;
