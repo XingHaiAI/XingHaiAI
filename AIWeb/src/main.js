@@ -8,14 +8,19 @@ import qs from 'qs'
 
 
 Vue.config.productionTip = false
-Vue.prototype.$axios=axios
+
+Vue.prototype.$axios = axios
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   render: h => h(App),
   router,
-  created(){
-  	this.$axios.defaults.baseURL='http://localhost:8080'
+
+  created () {
+    this.$axios.defaults.baseURL='http://localhost:8080'
+
   },
   components: { App },
   template: '<App/>'

@@ -27,9 +27,7 @@
     <textarea rows="5" cols="40" id="serviceContent" disabled>在停车场的闸机上使用车牌识别，自动识别车牌号码，实现无卡，无人的停车场管理，快捷方便</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>在交通道路的摄像头中加入车牌识别结合违章判断，对违章的车辆号码进行自动识别，实现自动化的违章审计</textarea>
   </div>
-  <div id="AItail">
-    <img src="../assets/联系我们.png" class="background">
-  </div>
+
   </body>
 </template>
 

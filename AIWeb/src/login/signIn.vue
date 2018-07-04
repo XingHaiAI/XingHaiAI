@@ -10,10 +10,9 @@
 </div>
 <div class="login">
   <el-card style="height: 100%">
-    <div class="title4register">
-      <span>欢迎使用兴海物联AI平台</span>
+    <div class="title4register" style="margin-top: 20px;">
+      <span style="font-size: 30px;">欢迎使用兴海物联AI平台</span>
     </div>
-
     <div class="form4register">
       <el-form :model="formRegister" ref="formRegister" :rules="rulesRegister" label-width="18%">
         <el-form-item prop="username" label="用户名" >
