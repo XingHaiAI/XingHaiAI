@@ -45,7 +45,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
    background-image: url("../assets/联系我们/bg.jpg");
    background-size: 100% 100%;
    width: 13.66rem;
-   height: 2.62rem;
+   height: 2.44rem;
    margin: 0;
    padding: 0;
    display: flex;
