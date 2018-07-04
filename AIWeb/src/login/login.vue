@@ -1,37 +1,66 @@
-
 <template>
-    <div id="login">
+  <div id="login">
   <div class="left_cube">
     <div class="big_word1">
         专注人工智能算法研究
     </div>
-    <div class="big_word2"d>
+    <div class="big_word2">
         一站式算法服务平台
     </div>
-</div>
-<div class="login">
-    <div class="title">
-        <div class="title_left"></div>
-        <div class="title_right"> 欢迎使用兴海物联AI平台</div>
+  </div>
+    <div class="login">
+      <el-card class="box-card">
+
+        <div class="title4login" style="margin-top: 20px;">
+          <span style="font-size: 32px;">欢迎使用兴海物联AI平台</span>
+        </div>
+        <div class="form4login">
+          <el-form :model="formLogin" ref="formLogin" :rules="rules" :status-icon="true">
+            <el-form-item prop="username">
+              <el-input placeholder="请输入账号" style="width: 79%" v-model="formLogin.username"></el-input>
+            </el-form-item>
+            <el-form-item prop="password">
+              <el-input placeholder="请输入密码" type="password" style="width: 79%" v-model="formLogin.password"></el-input>
+            </el-form-item>
+          </el-form>
+        </div>
+        <div class="buttons">
+            <el-button class="button4login" type="primary" @click="login">登录</el-button>
+            <el-button class="button4register" @click="gotoRegister">注册</el-button>
+        </div>
+      </el-card>
     </div>
-    <input type="text" class="name_email"id="account" placeholder="请输入用户名/邮箱"/>
-    <input type="text" class="npassword"id="password" placeholder="密码"/>
-    <div class="btn" @click="test">登录</div>
-    <div class="footer">
-        <div class="forget_password">忘记密码</div>
-        <div class="word">还没有账号？</div>
-        <div class="sign_in">点击注册</div>
-    </div>
-</div>
-<body>
-</body>
-</div>
+  </div>
 </template>
 
 <script>
   export default {
     name: "login",
+    data(){
+      return{
+        formLogin:{
+          username:'',
+          password:''
+        },
+        rules:{
+          username:[
+            {required:true,message:'请输入账号',trigger:'change'}
+          ],
+          password:[
+            {required:true,message:'请输入密码',trigger:'change'}
+          ]
+        }
+      }
+    },
     methods:{
+
+      gotoRegister(){
+        this.$router.push({path:'/signin'})
+      },
+      login(){
+
+
+      },
      test:function () {
         var account=document.getElementById("account").value;
         var password=document.getElementById("password").value;
@@ -58,24 +87,50 @@
   }
 </script>
 
-<style scoped>
+<style lang="less">
+
 #login{
-    background-color: white;
-    margin: 0;
-    padding: 0;
+    /*background-color: white;*/
     background-image: url("bg.png");
-    background-size: 100% 110%;
-    width: 100%;
-    height: 100%;
-}
-p{
-    margin: 0;
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
 }
 
-div{
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
+
+
+
+.button4register{
+  background-color: white;
+  width: 120px;
+  font-size: 19px;
+  font-weight: bold;
+  border-width: 1.7px;
+  color: darkgray;
+  border-color: darkgray;
+}
+
+.button4login{
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+  width: 230px;
+  border-width: 1.7px;
+  font-weight: bold;
+  color: white;
+  font-size: 19px;
+  /*font-weight: inherit;*/
+  transition: all 0.7s;
+}
+
+.button4login:hover{
+  background-color: cornflowerblue;
+  transform: scale(1.05);
+  color: white;
+
+}
+
+.form4login{
+  margin-top: 30px;
+
 }
 
 .big_word1{
@@ -98,105 +153,33 @@ div{
     height: 50vh;
 }
 
-.login{
-    display: inline-block;
-    margin-left: 0vw;
-    margin-right:10vw;
-    box-shadow: 5px 5px 5px #F2F2F2;
-    border: solid #CDCDC1 0.1px;
-    border-radius: 2%;
-    margin-top: 14vh;
-    width: 30vw;
-    height: 50vh;
-    background-color: white;
+.box-card{
+  height:440px;
+  width:500px;
+  margin-right: 150px;
+  margin-top: 100px;
 }
 
-.title{
-    width:84%;
-    height: 4vh;
-    margin-top: 5vh;
-    margin: 8%;
-}
+  .el-input__inner{
+    /*border-top: none;*/
+    /*border-left: none;*/
+    /*border-right: none;*/
+    /*border-bottom-color: darkgray;*/
+    /*border-bottom-width: 1.7px;*/
+    border-color: darkgray;
+    border-width: 1.5px;
+    font-size:16px;
+    height:50px;
+    transition:all 0.7s;
+  }
 
-.title_left{
-    float:left;
-    width: 4vh;
-    height:4vh;
-    background-image: url("icon.png");
-    background-size: 100% 100%;
-}
+  .el-input__inner:hover{
+    transform: scale(1.05);
+  }
 
-.title_right{
-    margin-left: 3vh;
-    font-size: 1.8vw;
-    color:black;
-    letter-spacing:4px;
-    font-weight:400;
-}
+  .buttons{
+    margin-top: 40px;
+  }
 
-.name_email{
-    font-size: 1.25vw;
-    margin-top: 4vh;
-    width: 84%;
-    margin-left: 8%;
-    height: 5vh;
-    border:1px solid;
-    border-color:#C8C8C8;
-    border-radius:5px;
-    padding-left:5px;
-}
 
-.npassword{
-    margin-top: 3vh;
-    font-size: 1.25vw;
-    width: 84%;
-    margin-left: 8%;
-    height: 5vh;
-    border:1px solid;
-    border-color:#C8C8C8;
-    border-radius:5px;
-    padding-left:5px;
-}
-
-.btn{
-    background-color: deepskyblue;
-    height: 5vh;
-    line-height: 5vh;
-    margin-top: 3vh;
-    margin-left: 8%;
-    font-size: 1.5vw;
-    border-radius: 5%;
-    color: white;
-    text-align: center;
-    width: 84%;
-}
-
-.footer{
-    margin-left: 8%;
-    margin-top: 1vh;
-    width: 84%;
-    height: 4vh;
-}
-
-.forget_password{
-    font-weight: 300;
-    float: left;
-    color:black;
-}
-
-.word{
-    font-weight: 300;
-    margin-left: 30%;
-    float: left;
-    color:black;
-}
-
-.sign_in{
-    color: skyblue;
-    font-weight: 300;
-    float: left;
-}
-.name_email::-webkit-input-placeholder { color: #B0B0B0;}
-.name_email:after{content:"*";color:red}
-.npassword::-webkit-input-placeholder { color: #B0B0B0;}
 </style>

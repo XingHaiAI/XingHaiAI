@@ -1,64 +1,160 @@
-
 <template>
     <div id="signIn">
   <div class="left_cube">
     <div class="big_word1">
         专注人工智能算法研究
     </div>
-    <div class="big_word2"d>
+    <div class="big_word2">
         一站式算法服务平台
     </div>
 </div>
 <div class="login">
-    <div class="title">
-        <div class="title_left"></div>
-        <div class="title_right"> 欢迎使用兴海物联AI平台</div>
+  <el-card style="height: 100%">
+    <div class="title4register">
+      <span>欢迎使用兴海物联AI平台</span>
     </div>
-    <input type="text" class="name_email" placeholder="请输入用户名 *"/></input>
-    <input type="text" class="npassword" placeholder="请输入邮箱地址 *"/>
-    <input type="text" class="npassword" placeholder="请输入手机号码"/>
-    <input type="text" class="npassword" placeholder="密码 *"/>
-    <input type="text" class="npassword" placeholder="确认密码 *"/>
-    <div class="check_box">
-        <input class="box" type="checkbox"/>
-        <div class="choose">我已阅读并同意兴海物联隐私政策</div>
+    <div class="form4register">
+      <el-form :model="formRegister" ref="formRegister" :rules="rulesRegister" label-width="18%">
+        <el-form-item prop="username" label="用户名" >
+          <el-input v-model="formRegister.username" placeholder="请输入用户名"></el-input>
+        </el-form-item>
+        <el-form-item prop="email" label="邮箱" >
+          <el-input v-model="formRegister.email" placeholder="请输入邮箱"></el-input>
+        </el-form-item>
+        <el-form-item prop="identity" label="验证码" >
+          <el-input v-model="formRegister.identity" placeholder="请输入邮箱验证码">
+            <el-button slot="append" >
+              <span v-show="timeShow" @click="getCode">获取验证码</span>
+              <span v-show="!timeShow" class="count">{{timeCount}} s</span>
+            </el-button>
+          </el-input>
+
+        </el-form-item>
+        <el-form-item prop="password" label="密码" >
+          <el-input v-model="formRegister.password" type="password" placeholder="请输入密码"></el-input>
+        </el-form-item>
+        <el-form-item prop="passwordRepeat" label="重复密码">
+          <el-input v-model="formRegister.passwordRepeat" type="password"  placeholder="请再次输入密码"></el-input>
+        </el-form-item>
+        <el-form-item>
+          <el-checkbox :checked="agree" @change="agree=!agree">我已阅读并同意兴海物联私政策</el-checkbox>
+        </el-form-item>
+      </el-form>
     </div>
-    <div class="btn">登录</div>
-    <div class="footer">
-        <div class="forget_password">忘记密码</div>
-        <div class="word">还没有账号？</div>
-        <div class="sign_in">点击注册</div>
+    <div class="buttons">
+      <el-button class="button4register" :disabled="!agree">注册</el-button>
+      <el-button class="button4log" @click="gotoLogin">登录</el-button>
     </div>
+  </el-card>
 </div>
-<body>
-</body>
+
 </div>
 </template>
 
 <script>
   export default {
-    name: "signIn"
+    name: "signIn",
+    data(){
+      let checkPassword=(rule,value,callback)=>{
+        if(!value){
+          callback(new Error('请再次输入密码'))
+        }else {
+          if (value !== this.$data.formRegister.password) {
+              callback(new Error('两次密码输入不一致'))
+          }else{
+            callback();
+          }
+        }
+      };
+      return{
+        timer:null,
+        timeCount:'',
+        timeShow:true,
+        agree:false,
+        formRegister:{
+          username:'',
+          password:'',
+          passwordRepeat:'',
+          email:'',
+          identity:''
+        },
+        rulesRegister:{
+          username:[
+            {required:true,message:'请输入用户名',trigger:'change'}
+          ],
+          password:[
+            {required:true,min:6,max:18,message:'请输入6-18位密码',trigger:'change'}
+          ],
+          email:[
+            {required:true,pattern:/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\\.[a-zA-Z0-9]{2,6}$/,message:'请输入正确的邮箱格式',trigger:'change'}
+          ],
+          passwordRepeat:[
+            {required:true,validator:checkPassword,trigger:'change'}
+          ],
+          identity:[
+            {required:true,message:'请输入验证码',trigger:'change'}
+          ]
+        }
+      }
+    },
+    methods:{
+      gotoLogin(){
+        this.$router.push({path:'/login'})
+      },
+      getCode() {
+        let _this=this;
+        const TIME_COUNT = 60;    //验证码获取时间间隔
+        if (!_this.timer) {
+          _this.timeCount = TIME_COUNT;
+          _this.timeShow = false;
+          _this.timer = setInterval(() => {
+            if (_this.timeCount > 0 && _this.timeCount <= TIME_COUNT) {
+              _this.timeCount--;
+            } else {
+              _this.timeShow = true;
+              clearInterval(_this.timer);
+              _this.timer = null;
+            }
+          }, 1000)
+        }
+        this.$message({
+          message: '发送验证码成功！请注意查收',
+          type: 'success'
+        })
+      }
+    }
   }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 #signIn{
-    background-color: white;
+
     margin: 0;
     padding: 0;
     background-image: url("bg.png");
     background-size: 100% 110%;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
 }
 p{
     margin: 0;
 }
 
-div{
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
+.buttons{
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.button4register{
+
+  background-color: cornflowerblue;
+  width: 200px;
+  height:45px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-color: cornflowerblue;
 }
 
 .big_word1{
@@ -66,13 +162,27 @@ div{
     font-size: 1.7vw;
 }
 
-.check_box{
-  font-size: 1.3vw;
-  font-weight: 100;
-  margin-top: 1vh;
-  height:5vh;
+.form4register{
+    margin-top: 40px;
+}
+
+.title4register{
 
 }
+
+
+.button4log{
+  background-color: white;
+  border-color: darkgray;
+  border-width: 1.7px;
+  font-size: 18px;
+  width: 100px;
+  height:45px;
+  color: darkgray;
+  font-weight: bold;
+
+}
+
 .box{
   margin-top: 2.5vh;
   margin-left: 3vw;
@@ -97,44 +207,25 @@ div{
     width: 30vw;
     height: 50vh;
 }
-
 .login{
-    display: inline-block;
-    margin-left: 0vw;
-    margin-right:10vw;
-    box-shadow: 5px 5px 5px #F2F2F2;
-    border: solid #CDCDC1 0.1px;
-    border-radius: 2%;
-    margin-top: 10vh;
-    width: 30vw;
-    height: 80vh;
-    background-color: white;
+  height:650px;
+  width:500px;
+  margin-top: 110px;
+  margin-right: 160px;
 }
 
-.title{
-    width:84%;
-    height: 4vh;
-    margin-top: 5vh;
-    margin: 8%;
+.el-input{
+
+  width:78%
 }
 
-.title_left{
-    float:left;
-    width: 4vh;
-    height:4vh;
-    margin-top:2vh;
-    margin-right:1vw;
-    background-image: url("icon.png");
-    background-size: 100% 100%;
-}
 
-.title_right{
-    margin-left: 3vh;
-    font-size: 1.7vw;
-    color:black;
-    letter-spacing:4px;
-    font-weight:400;
-}
+
+
+
+
+
+
 
 .name_email{
     font-size: 1.25vw;
@@ -149,58 +240,5 @@ div{
 
 }
 
-.npassword{
-    margin-top: 2vh;
-    font-size: 1.25vw;
-    width: 84%;
-    margin-left: 8%;
-    height: 5vh;
-    border:1px solid;
-    border-color:#C8C8C8;
-    border-radius:5px;
-    padding-left:5px;
-}
 
-.btn{
-    background-color: deepskyblue;
-    height: 5vh;
-    line-height: 5vh;
-    margin-top: 3vh;
-    margin-left: 8%;
-    font-size: 1.5vw;
-    border-radius: 5%;
-    color: white;
-    text-align: center;
-    width: 84%;
-}
-
-.footer{
-    margin-left: 8%;
-    margin-top: 1vh;
-    width: 84%;
-    height: 4vh;
-}
-
-.forget_password{
-    font-weight: 300;
-    float: left;
-    color:black;
-}
-
-.word{
-    font-weight: 300;
-    margin-left: 30%;
-    float: left;
-    color:black;
-}
-
-.sign_in{
-    color: skyblue;
-    font-weight: 300;
-    float: left;
-}
-
-.name_email::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
-.name_email:after{content:"*";color:red}
-.npassword::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
 </style>

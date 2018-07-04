@@ -13,7 +13,7 @@
 		        <div class="login_sign_in">
 		            <div class="login"><router-link to="/signIn" class="login_item" style="text-decoration: none">注册</router-link></div>
 		            <div class="divider">|</div>
-		            <div class="sign_in"><router-link to="/login" class="login_item" style="text-decoration: none">登录</router-link></div>
+		            <div class="sign_in"><router-link to="/login" class="login_item" style="text-decoration: none" >登录</router-link></div>
 		        </div>
 		    </div>
       <div id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
