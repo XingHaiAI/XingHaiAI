@@ -52,21 +52,21 @@
     <div id="main">
       <div id="search">
         <div>
-        <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 1px solid;border-radius: 5px;" />
+        <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;" />
         <el-button type="primary" icon="el-icon-search" id="find"></el-button>
         </div>
         <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gtAPI调用规则</p>
       </div>
       <div id="text">
-        <p style="font-size: 0.30rem;margin-bottom: 10%;text-align: center">API调用规则</p>
+        <p style="font-size: 0.30rem;margin-bottom: 10%;text-align: center;margin-top: 0.3">API调用规则</p>
         <p style="font-size: 0.25rem;text-align: center;">API调用-----原理</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 0.20rem">FACE++人工真能开放平台API是HTTP API。常用的编程语言都能发起HTTP请求（通过第三方库或自带API），使用者向我们的服务器发起HTTP请求，并加上合适的参数，服务器将会对请求进行处理，得到结果将会返回给使用者</textarea>
+        <textarea rows="5"cols="70"disabled style="font-size: 0.18rem">FACE++人工真能开放平台API是HTTP API。常用的编程语言都能发起HTTP请求（通过第三方库或自带API），使用者向我们的服务器发起HTTP请求，并加上合适的参数，服务器将会对请求进行处理，得到结果将会返回给使用者</textarea>
         <p style="font-size: 0.25rem">API调用----鉴权</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 0.20rem">账号下每创建一个应用就会生成一组对应的API_KEY和API_SECRET,并用以识别用户是否有权限调用API，所有的API调用必须提供对应的一组API_KEY和API_SELECT参数</textarea>
+        <textarea rows="5"cols="70"disabled style="font-size: 0.18rem">账号下每创建一个应用就会生成一组对应的API_KEY和API_SECRET,并用以识别用户是否有权限调用API，所有的API调用必须提供对应的一组API_KEY和API_SELECT参数</textarea>
         <p style="font-size: 0.25rem">API调用----参数</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 0.20rem">调用每个API需要根据需求传不同的参数，每个API参数的详细定义请查看人脸识别。所有API的嗲用都要使用POST请求，用户可以以QUERY STRING的形式将参数写进请求体中，传图片文件参数时需要在请求体中使用MULTIPART/FORM-DATA格式来编码</textarea>
+        <textarea rows="5"cols="70"disabled style="font-size: 0.18rem">调用每个API需要根据需求传不同的参数，每个API参数的详细定义请查看人脸识别。所有API的嗲用都要使用POST请求，用户可以以QUERY STRING的形式将参数写进请求体中，传图片文件参数时需要在请求体中使用MULTIPART/FORM-DATA格式来编码</textarea>
         <p style="font-size: 0.25rem">API调用--提示</p>
-        <textarea rows="5"cols="70"disabled style="font-size: 0.2rem">为了避免因网络问题而造成的阻塞，建议将API调用放进异步线程里执行。</textarea>
+        <textarea rows="5"cols="70"disabled style="font-size: 0.18rem">为了避免因网络问题而造成的阻塞，建议将API调用放进异步线程里执行。</textarea>
         <p style="font-size: 0.25rem">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
       </div>
     </div>
@@ -119,7 +119,7 @@
     border: none;
     resize: none;
     font-weight:lighter;
-    margin-bottom:2vh;
+    margin-bottom:0.3rem;
   }
   .route{
     float: left;
@@ -138,6 +138,7 @@
   }
   .teach{
     width: 100%;
+    font-size: 0.13rem;
   }
   #main{
     float: left;
@@ -151,7 +152,7 @@
     height: 100%;
     width: 26%;
     margin: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);
   }
   #body{
     height:73.42%;
@@ -172,25 +173,25 @@
     padding: 0;
   }
   #all{
-    height: 2200px;
+    height: 18rem;
     width: 100%;
     margin: 0;
     padding: 0;
   }
   #end{
-    height: 10.4%;
+    height: 2.47rem;
     width: 100%;
     margin: 0;
     padding: 0;
   }
 .el-menu-vertical-demo{
-  height:240vh;
+  height:1rem;
 }
 span{
   font-size:0.17rem;
 }
 .searchInput{
   font-size:0.16rem;
-  padding-left:1vw;
+  padding-left:0.137rem;
 }
 </style>

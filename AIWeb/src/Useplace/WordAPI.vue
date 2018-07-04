@@ -52,7 +52,7 @@
     <div id="main">
       <div id="search">
         <div>
-          <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 1px solid;border-radius: 5px;" />
+          <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;" />
           <el-button type="primary" icon="el-icon-search" id="find" style="background-color: #409EFF;    border-color: #409EFF;color: #fff;"></el-button>
         </div>
         <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">API接口</router-link>&gtAPI调用规则</p>
@@ -144,13 +144,14 @@
     height:100%;
     width: 74%;
     margin: 0;
+    font-size: 0.21rem;
   }
   #aside{
     float: left;
     height: 100%;
     width: 26%;
     margin: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);
   }
   #body{
     height:73.42%;
@@ -171,13 +172,13 @@
     padding: 0;
   }
   #all{
-    height: 2200px;
+    height: 18rem;
     width: 100%;
     margin: 0;
     padding: 0;
   }
   #end{
-    height: 10.4%;
+    height: 2.47rem;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -186,62 +187,65 @@
   display: flex;
   flex-direction: column;
   width: 74%;
-  height: 180vh;
+  height: 12rem;
 }
 .blog{
-  margin-top:6vh;
-  margin-bottom:3vh;
-  margin-left:6vw;
-  width:58vw;
-  height:30vh;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  margin-top:0.4rem;
+  margin-bottom:0.2rem;
+  margin-left:0.820rem;
+  width:7.92rem;
+  height:2rem;
+  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.02rem 0.1rem 0 rgba(0, 0, 0, 0.1);
   cursor:default;
 }
 .bolg_title{
-  margin-top:3vh;
-  margin-bottom:1.5vh;
-  margin-left:1vw;
-  font-size:23px;
-  letter-spacing:3px;
+  margin-top:0.2rem;
+  margin-bottom:0.1rem;
+  margin-left:0.137rem;
+  font-size:0.23rem;
+  letter-spacing:0.03rem;
 }
 .icon{
-  margin-right:1.2vw;
-  height:2vh;
-  width:2vh;
+  margin-right:0.164rem;
+  height:0.133rem;
+  width:0.133rem;
 }
 .outline{
-  margin-top:3vh;
-  margin-left:3vw;
-  font-size:15px;
+  margin-top:0.2rem;
+  margin-left:0.41rem;
+  font-size:0.15rem;
   font-weight:900;
   color:  #303030;
   font-weight:450;
-  line-height:4vh;
+  line-height:0.267rem;
 }
 .more{
-  margin-top:2vh;
-  margin-left:3vw;
-  font-size:15px;
+  margin-top:0.133rem;
+  margin-left:0.41rem;
+  font-size:0.15rem;
   color:#3399FF;
-  letter-spacing:2px;
+  letter-spacing:0.02rem;
   cursor:pointer;
 }
 .el-menu-vertical-demo{
-  height:240vh;
+  height:1rem;
 }
 span{
-  font-size:17px;
+  font-size:0.17rem;
 }
 button{
-    width: 120px;
-    height: 25px;
-    text-align: center;
-    background: transparent;
-    position: relative;
-    border-color: #99FFCC;
-    color:#4096ff;
-    font-size: 15px;
-    cursor:pointer;
+  width: 1.20rem;
+  height: 0.25rem;
+  text-align: center;
+  background: transparent;
+  position: relative;
+  border-color: #99FFCC;
+  color:#4096ff;
+  font-size: 0.15rem;
+  cursor:pointer;
 }
-
+.searchInput{
+  font-size:0.16rem;
+  padding-left:0.137rem;
+}
 </style>
