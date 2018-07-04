@@ -1,22 +1,22 @@
 <template>
   <div id="UseTestFunctionShow">
-  	<body>
    		<div class="UseTestFunctionShow_Title">功能演示</div>
-		<div class="UseTestFunctionShow_Group">
 
-		    <div class="UseTestFunctionShow_Left_Group">
+		<div class="UseTestFunctionShow_Group" style="margin-top: 50px;">
 
-		        <div class="UseTestFunctionShow_Left_Group_Top">
-		            <div class="UseTestFunctionShow_Left_Group_Top_Content"></div>
+		    <div class="UseTestFunctionShow_Left_Group" style="background-color: tomato;margin-left: 100px;">
+
+		        <div class="UseTestFunctionShow_Left_Group_Top" >
+		            <div class="UseTestFunctionShow_Left_Group_Top_Content" style="background-color: cornflowerblue"></div>
 		        </div>
 
-		        <div class="UseTestFunctionShow_Left_Group_Center">
-		            <div class="UseTestFunctionShow_Left_Group_Center_Left"><p><</p></div>
+		        <div class="UseTestFunctionShow_Left_Group_Center" >
+		            <div class="UseTestFunctionShow_Left_Group_Center_Left" style="background-color: yellow"><p><</p></div>
 		            <div class="UseTestFunctionShow_Left_Group_Center_Center"></div>
 		            <div class="UseTestFunctionShow_Left_Group_Center_Right"><p>></p></div>
 		        </div>
 
-		        <div class="UseTestFunctionShow_Left_Group_Bottom">
+		        <div class="UseTestFunctionShow_Left_Group_Bottom" >
 		            <div class="UseTestFunctionShow_Left_Group_Bottom_Left"><p>本地上传</p></div>
 		            <div class="UseTestFunctionShow_Left_Group_Bottom_Center"><p>语音URL</p></div>
 		            <div class="UseTestFunctionShow_Left_Group_Bottom_Right"><p>检测</p></div>
@@ -24,16 +24,20 @@
 
 		    </div>
 
-		    <div class="UseTestFunctionShow_Right_Group">
-		        <div class="UseTestFunctionShow_Right_Group_Top">
+		    <div class="UseTestFunctionShow_Right_Group" >
+          <el-tabs type="border-card">
+            <el-tab-pane label="用户管理" style="width: 100%;height: 80%">用户管理</el-tab-pane>
+            <el-tab-pane label="配置管理" style="width: 100%;height: 80%">配置管理</el-tab-pane>
+          </el-tabs>
+		        <!--<div class="UseTestFunctionShow_Right_Group_Top">
 		            <div class="UseTestFunctionShow_Right_Group_Top_Left">分析结果</div>
 		            <div class="UseTestFunctionShow_Right_Group_Top_Right">JSON</div>
 		        </div>
-		        <div class="UseTestFunctionShow_Right_Group_Bottom">
-		        </div>
+		        <!--<div class="UseTestFunctionShow_Right_Group_Bottom">
+		        </div>-->
 		    </div>
 		</div>
-	</body>
+
   </div>
 </template>
 

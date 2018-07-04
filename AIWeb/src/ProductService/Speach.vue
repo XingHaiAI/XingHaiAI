@@ -27,9 +27,7 @@
     <textarea rows="5" cols="40" id="serviceContent" disabled>将文字转变为语音，让您闭上眼睛也能徜徉书海</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>地图语音导航，不用盯着GPS显示屏也能够清晰地了解路况</textarea>
   </div>
-  <div id="AItail">
-    <img src="../assets/联系我们.png" class="background">
-  </div>
+
   </body>
 </template>
 

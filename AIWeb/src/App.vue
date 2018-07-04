@@ -1,6 +1,8 @@
 <template>
 
   <div id="app":style="{minWidth: 12 + 'rem'}">
+    <el-container>
+      <el-header>
     <div class="navbar">
       <!--LOGO-->
       <div class="logo">
@@ -10,8 +12,8 @@
       <div class="menu_group">
         <div class="menu_item" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">产品服务</div>
         <router-link class="menu_item" to="/Useplace"  style="text-decoration: none">应用场景</router-link>
-        <div class="menu_item"v-on:mouseover="documentOver" v-on:mouseout="documentOut">文档中心</div>
-        <div class="menu_item"v-on:mouseover="presentOver" v-on:mouseout="presentOut">试用演示</div>
+        <div class="menu_item" v-on:mouseover="documentOver" v-on:mouseout="documentOut">文档中心</div>
+        <div class="menu_item" v-on:mouseover="presentOver" v-on:mouseout="presentOut">试用演示</div>
         <router-link to="/ProductBlog" class="menu_item" style="text-decoration: none">产品博客</router-link>
       </div>
       <!-- 登录注册 -->
@@ -60,7 +62,16 @@
         </table>
       </div>
     </div>
+      </el-header>
+      <el-main>
     <router-view></router-view>
+      </el-main>
+      <el-footer>
+        <div id="footer" style="margin: 0px;padding: 0px;width: 100%">
+          <img style="width: 100%;margin: 0px;padding: 0px" src="./assets/联系我们.jpg"/>
+        </div>
+      </el-footer>
+    </el-container>
   </div>
 </template>
 
@@ -177,6 +188,11 @@
     list-style: none;
   }
   /*上面是暂时的导航栏下拉框的属性*/
+  body{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -208,11 +224,17 @@
     height: 0.5rem;
     line-height: 0.5rem;
     position: fixed;
-    background-color: #060606;
+    background-color: rgba(6,6,6,0);
     top:0;
     left: 0;
     z-index: 10;
+    transition: background-color 0.7s;
   }
+  .navbar:hover{
+    background-color: rgba(6,6,6,1);
+  }
+
+
   .navbar .logo{
     width: 18%;
     height: 0.5rem;

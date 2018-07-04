@@ -4,7 +4,7 @@
             <img src="../assets/应用场景/banner.jpg" class="background">
             <a id="title">应用场景</a>
             <textarea id="titlecontent" rows="2"cols="40" disabled>在面临人力成本高、服务同质化的现代产业中，深度学习技术能有效地减少人工成本、提高企业竞争力。</textarea>
-            <button>商务咨询</button>
+            <el-button class="button4contact" style="border-color: white;border-width: 3px;color:white;font-weight: bold">商务咨询</el-button>
         </div>
         <wisedomPark class="content1"></wisedomPark>
         <usePlace class="content2"></usePlace>
@@ -43,12 +43,16 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
    padding: 0;
    display: flex;
    flex-direction: column;
-
  }
 .background {
     width:100%;
     height:100%;
 }
+
+
+
+
+
 button{
     cursor:pointer;
 }
