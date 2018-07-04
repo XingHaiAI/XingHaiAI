@@ -73,21 +73,21 @@ export default {
 
 <style scoped>
 #ContactUs{
-   background-color: blue;
-   background-image: url("../assets/联系我们/bg.jpg");
-   background-size: 100% 100%;
-   width: 100vw;
-   height: 35vh;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   flex-direction: column;
-   font-size: 62.5%;
- }
- body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
- .background {
-    width:100%;
-    height:100%;
+  background-color: blue;
+  background-image: url("../assets/联系我们/bg.jpg");
+  background-size: 100% 100%;
+  width: 13.66rem;
+  height: 35vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+}
+body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
+.background {
+  width:100%;
+  height:100%;
 }
 div{
   margin: 0;
@@ -96,7 +96,7 @@ div{
 }
 .word_head{
   margin-top: 3vh;
-  margin-left: -6.5vw;
+  margin-left: -0.888rem;
   text-align: center;
   color: white;
   font-size: 0.2rem;
@@ -144,7 +144,7 @@ div{
   display: inline-block;
 }
 .coloum_2{
-  margin-left: 3vw;
+  margin-left: 0.41rem;
   margin-bottom:5vh;
   background-image: url("../assets/联系我们/pic1.jpg");
   background-size: 100% 100%;
@@ -153,22 +153,22 @@ div{
   height: 10vh;
 }
 .inro{
-	height:10vh;
-	line-height:4vh;
-	font-size:0.2rem;
-	letter-spacing:0.2em;
-	margin-top:1vh;
-	margin-bottom:1vh;
-	background-image: url("../assets/pic/气泡.png");
-    background-size: 100% 100%;
-	align-self:center;
+  height:10vh;
+  line-height:4vh;
+  font-size:0.2rem;
+  letter-spacing:0.2em;
+  margin-top:1vh;
+  margin-bottom:1vh;
+  background-image: url("../assets/pic/气泡.png");
+  background-size: 100% 100%;
+  align-self:center;
 }
 body{
   margin: 0;
   padding: 0;
 }
 .xinghai{
-	color:#2285ea;
+  color:#2285ea;
 }
 div{
   margin: 0;
@@ -177,13 +177,13 @@ div{
 }
 .bg{
   height: 221vh;
-  width: 100vw;
+  width: 13.66rem;
 
 }
 .head_content{
   width: 100%;
   padding-top:10vh;
-  border: 2px solid white;
+  border: 0.02rem solid white;
   height: 70.5vh;
   background-image: url("../assets/pic/contact.png");
   background-size: auto;
@@ -194,30 +194,30 @@ div{
   font-weight:lighter;
   color: white;
   margin-top: 14vh;
-  margin-left: 12vw;
+  margin-left: 1.639rem;
   cursor:default;
 }
 .head_content .content{
   font-size: 0.19rem;
   font-weight:lighter;
   color: white;
-  margin-left: 12vw;
-  width: 40vw;
+  margin-left: 1.639rem;
+  width: 5.464rem;
   margin-top: 2vh;
   cursor:default;
 }
 .link_group{
   float: left;
-  width: 25vw;
+  width: 3.415rem;
   height: 159.5vh;
   background-color: #fefeff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.2rem 0 rgba(0, 0, 0, 0.19);
 }
 .from_group{
   display: flex;
   flex-direction: column;
   float: left;
-  width: 75vw;
+  width: 10.245rem;
   height: 100vh;
 }
 .link_group .decorate_bar{
@@ -225,7 +225,7 @@ div{
   padding-top:0.5vh;
   height: 3vh;
   display: inline-block;
-  width: 0.3vw;
+  width: 0.041rem;
   background-color: #2285ea;
 }
 .link_group .title .word{
@@ -238,16 +238,16 @@ div{
 
 }
 .link_group .title{
-	margin-left:7vw;
+  margin-left:0.956rem;
   cursor:default;
 }
 .link_content{
   text-align: left;
   cursor:default;
-  margin-left:1vw;
+  margin-left:0.137rem;
 }
 .link_content .title{
-  margin-left: 6vw;
+  margin-left: 0.82rem;
   text-decoration:underline;
   font-size: 0.24rem;
   margin-top: 3vh;
@@ -256,21 +256,20 @@ div{
   cursor:pointer;
 }
 .link_content .content{
-  width:25vw;
-  margin-left: 6.7vw;
+  margin-left: 0.915rem;
   cursor:pointer;
   margin-bottom:10vh;
 }
 .link_content .word{
   margin-top: 2vh;
   margin-bottom: 2vh;
-  margin-left: -1vw;
+  margin-left: -0.137rem;
   font-size: 0.22rem;
   font-weight: 400;
   cursor:pointer;
 }
 .from_group .decorate_bar{
-  width: 50vw;
+  width: 6.83rem;
   height: 5vh;
   margin-top: 10vh;
   font-size:0.3rem;
@@ -279,56 +278,56 @@ div{
 }
 .from_group .item_group{
   margin-top: 5vh;
-  margin-left:13vw;
+  margin-left:1.776rem;
   align-self: center;
-  width:70vw;
+  width:9.56rem;
 }
 .item_group .word{
   float: left;
   line-height: 6vh;
-  margin-left: 0.8vw;
+  margin-left: 0.11rem;
   font-size:0.24rem;
 }
 .icon_1{
-  width: 2vw;
+  width: 0.273rem;
   height: 4vh;
-  margin-right:0.5vw;
+  margin-right:0.0683rem;
   float: left;
   background-image: url("../assets/pic/icon1.png");
   background-size: 100% 100%;
   background-position: center;
 }
 .icon_2{
-  width: 2vw;
+  width: 0.273rem;
   height: 4vh;
-  margin-right:0.5vw;
+  margin-right:0.0683rem;
   float: left;
   background-image: url("../assets/pic/icon2.png");
   background-size: 100% 100%;
   background-position: center;
 }
 .icon_3{
-  width: 2vw;
+  width: 0.273rem;
   height: 4vh;
-  margin-right:0.5vw;
+  margin-right:0.0683rem;
   float: left;
   background-image: url("../assets/pic/icon3.png");
   background-size: 100% 100%;
   background-position: center;
 }
 .from_group .item_group .before_buy{
-  margin-right: 5vw;
-  margin-left: 5vw;
+  margin-right: 0.683rem;
+  margin-left: 0.683rem;
   display: inline-block;
 }
 .from_group .item_group .business{
-  margin-right: 5vw;
-  margin-left: 5vw;
+  margin-right: 0.683rem;
+  margin-left: 0.683rem;
   display: inline-block;
 }
 .from_group .item_group .question{
-  margin-right: 5vw;
-  margin-left: 5vw;
+  margin-right: 0.683rem;
+  margin-left: 0.683rem;
   display: inline-block;
 }
 .input_group {
@@ -338,36 +337,36 @@ div{
 .input_item_left{
   font-size: 0.2rem;
   float: left;
-  width: 20vw;
+  width: 2.732rem;
 }
 .input{
   border: none;
   font-size: 0.2rem;
-  border: #D1D1D1 1px solid;
-  border-radius: 5px;
+  border: #D1D1D1 0.01rem solid;
+  border-radius: 0.05rem;
   margin-bottom: 3vh;
   height: 4.5vh;
-  width: 17vw;
+  width: 2.322rem;
 }
 .input_textarea{
   border: none;
   padding: 1.5vh;
   font-size: 0.2rem;
-  border: #D1D1D1 1px solid;
+  border: #D1D1D1 0.01rem solid;
   border-radius: 5%;
-  margin-left: 1vw;
+  margin-left: 0.137rem;
   height: 35.5vh;
-  width: 25vw;
+  width: 3.415rem;
 }
 .check_box{
   font-size: 0.2rem;
   font-weight: 100;
   margin-top: 7vh;
   align-self: center;
-  margin-left: -21.5vw;
+  margin-left: -2.94rem;
 }
 .box{
-  margin-right: 1vw;
+  margin-right: 0.137rem;
   float: left;
 }
 .check_box .word{
@@ -381,7 +380,7 @@ div{
   font-weight: 200;
   margin-top: 7vh;
   align-self: center;
-  width: 10vw;
+  width: 1.367rem;
   height: 6vh;
   border-radius: 5%;
   background-color: #3765d5;
@@ -389,8 +388,5 @@ div{
 }
 
 .input_textarea::-webkit-input-placeholder { color: #B0B0B0;font-size:0.18rem;}
-.input::-webkit-input-placeholder { color: #B0B0B0;font-size:0.18rem;padding-left:0.5vw;}
-input{
-  cursor:text;
-}
+.input::-webkit-input-placeholder { color: #B0B0B0;font-size:0.18rem;padding-left:0.068rem;}
 </style>
