@@ -99,7 +99,7 @@ div{
   margin-left: -6.5vw;
   text-align: center;
   color: white;
-  font-size: 1.5vw;
+  font-size: 0.2rem;
 }
 .line{
   align-self: center;
@@ -137,7 +137,7 @@ div{
   text-align: center;
   color: black;
   line-height: 3vh;
-  font-size: 0.24rem;
+  font-size: 0.2rem;
   cursor:default;
 }
 .coloum_1{
@@ -231,7 +231,7 @@ div{
 .link_group .title .word{
   line-height: 4vh;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 0.32rem;
   font-weight: 500;
   margin-top: 9vh;
   padding-bottom:1vh;
@@ -264,7 +264,7 @@ div{
   margin-top: 2vh;
   margin-bottom: 2vh;
   margin-left: -1vw;
-  font-size: 1.2em;
+  font-size: 0.22rem;
   font-weight: 400;
   cursor:pointer;
 }
@@ -335,13 +335,13 @@ div{
   align-self: center;
 }
 .input_item_left{
-  font-size: 2vw;
+  font-size: 0.2rem;
   float: left;
   width: 20vw;
 }
 .input{
   border: none;
-  font-size: 1.3vw;
+  font-size: 0.2rem;
   border: #D1D1D1 1px solid;
   border-radius: 5px;
   margin-bottom: 3vh;
@@ -351,7 +351,7 @@ div{
 .input_textarea{
   border: none;
   padding: 1.5vh;
-  font-size: 1.5vw;
+  font-size: 0.2rem;
   border: #D1D1D1 1px solid;
   border-radius: 5%;
   margin-left: 1vw;
@@ -359,7 +359,7 @@ div{
   width: 25vw;
 }
 .check_box{
-  font-size: 1.3vw;
+  font-size: 0.2rem;
   font-weight: 100;
   margin-top: 7vh;
   align-self: center;
@@ -376,7 +376,7 @@ div{
   text-align: center;
   line-height: 6vh;
   color: white;
-  font-size: 1.5vw;
+  font-size: 0.2rem;
   font-weight: 200;
   margin-top: 7vh;
   align-self: center;
@@ -387,6 +387,6 @@ div{
   cursor:pointer;
 }
 
-.input_textarea::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;}
-.input::-webkit-input-placeholder { color: #B0B0B0;font-size:18px;padding-left:0.5vw;}
+.input_textarea::-webkit-input-placeholder { color: #B0B0B0;font-size:0.18rem;}
+.input::-webkit-input-placeholder { color: #B0B0B0;font-size:0.18rem;padding-left:0.5vw;}
 </style>
