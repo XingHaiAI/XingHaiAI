@@ -85,8 +85,13 @@
     border-color: #262626;
     background-color: rgba(0,0,0,0);
     font-weight: 500;
+    transition: all 0.3s;
   }
 
+  .button4doc:hover{
+    color: white;
+    background-color: #262626;
+  }
 
   .card4footer{
     background-image: url("../assets/AI智能/AI智能客服.png");
