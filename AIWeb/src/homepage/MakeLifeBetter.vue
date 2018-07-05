@@ -179,7 +179,7 @@ p{
 .MLBinfo_show_group{
     margin-top: 0.3rem;
     height: 1.7rem;
-  min-width: 13.66rem;
+    min-width: 13.6rem;
 }
 
 .MLBinfo_item{

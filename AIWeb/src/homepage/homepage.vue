@@ -6,7 +6,7 @@
 		<usePlace class="content4"></usePlace>
         <aboutUs class="content5"></aboutUs>
         <Try class="content6"></Try>
-        
+
 	</div>
 </template>
 
@@ -42,7 +42,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
    background-color: blue;
    background-image: url("../assets/联系我们/bg.jpg");
    background-size: 100% 100%;
-   width: 13.66rem;
+   width: s;
    height: 2.44rem;
    margin: 0;
    padding: 0;

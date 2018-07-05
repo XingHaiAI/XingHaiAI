@@ -65,8 +65,8 @@
 
     <router-view></router-view>
 
-        <div id="footer" style="margin: 0px;padding: 0px;width: 100%">
-          <img style="width: 100vw;margin: 0px;padding: 0px" src="./assets/联系我们.jpg"/>
+        <div id="footer" style="margin: 0px;padding: 0px;width: 100%" v-if="$route.path!='/login'&&$route.path!='/signin'">
+          <img style="width: 100%;margin: 0px;padding: 0px" src="./assets/联系我们.jpg"/>
         </div>
 
   </div>
