@@ -25,7 +25,9 @@
           <el-input v-model="formRegister.identity" placeholder="请输入邮箱验证码">
             <el-button slot="append" >
               <span v-show="timeShow" @click="getCode">获取验证码</span>
+              <el-tooltip class="item" effect="dark" content="不能在60s内重复申请验证码哦" placement="top-start">
               <span v-show="!timeShow" class="count">{{timeCount}} s</span>
+              </el-tooltip>
             </el-button>
           </el-input>
 
