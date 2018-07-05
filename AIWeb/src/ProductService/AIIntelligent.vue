@@ -29,7 +29,7 @@
         <div style="margin-right: auto;margin-left: auto">
         <el-row :gutter="180" >
           <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px" :body-style="{padding:'0px'}">
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
             <div class="card4footer">
             </div>
             <div>
@@ -66,6 +66,12 @@
     </div>
 
   </div>
+</el-card>
+</div>
+</el-col>
+</el-row>
+</div>
+</div>
 </template>
 
 <script>

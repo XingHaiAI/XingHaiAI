@@ -3,12 +3,17 @@
 
 <template>
   <body>
-  <div id="AIhead">
-    <img src="../assets/评论抽取/评论观点抽取.png" class="background">
-    <!--<a id="title">评论观点抽取</a>-->
-    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>评论观点抽取接口用来提取一条评论句子的关注点和评论观点，并输出评论观点标签及评论观点极性</textarea>-->
-    <!--<button>技术文档</button>-->
-  </div>
+  <div id="AIhead" class="firstBackground">
+      <div style="height: 150px;"></div>
+      <div class="table4this" style="margin-left: 20%">
+        <tr style="font-size: 60px;letter-spacing: 6px;">AI客服</tr>
+        <div style="height: 20px;"></div>
+        <tr style="font-size: 22px">自动抽取和分析评论观点，帮助您实现舆情分析，</tr>
+        <tr style="font-size: 22px">用户理解，支持产品优化和营销决策</tr>
+        <div style="height: 20px;"></div>
+        <tr><el-button class="button4doc">技术文档</el-button></tr>
+      </div>
+    </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>
     <a id="introducecontent">自动抽取和分析评论观点，帮助您实现舆情分析，用户理解，支持产品优化和营销决策</a>
@@ -20,12 +25,47 @@
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../assets/评论抽取/评论与决策分类.png" id="AIcar">
+          <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left:0px;margin-top:40px;">
+        <el-row :gutter="180" >
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+            <div class="card4footer">
+            </div>
+            <div>
+              <div class="title4card">
+              <span>评论与决策分类</span>
+              </div>
+              <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">通过对产品多维度评论观点进行倾向型分析，给用户提供该产品全方位的评价，方便用户进行决策</p>
+              </div>
+            </div>
+          </el-card> </div></el-col>
+          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px" :body-style="{padding:'0px'}">
+            <div class="card4footer2">
+            </div>
+            <div class="title4card">
+              <span>舆情监控</span>
+            </div>
+            <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</p>
+            </div>
+          </el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+        </el-row>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</el-card>
+ <!--   <img src="../assets/评论抽取/评论与决策分类.png" id="AIcar">
     <img src="../assets/评论抽取/舆情监控.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="40" id="serviceCaption" disabled>评论与决策分类</textarea>
     <textarea rows="1" cols="40" id="carCaption"disabled>舆情监控</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>通过对产品多维度评论观点进行倾向型分析，给用户提供该产品全方位的评价，方便用户进行决策</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</textarea>
+  !-->
   </div>
   </body>
 </template>
@@ -44,10 +84,63 @@ body{
     left: 47%;
     bottom: 15%;
   }
+
+.firstBackground{
+    background-position: right bottom,left top;
+    width: 100%;
+    height: 50%;
+    background-image: url("../assets/AI智能/AI客服.jpg");
+    background-size: 100% 130%;
+  }
   .functionButton{
     color: black;
     border-color: black;
     font-size:0.2rem;
+  }
+
+    .button4doc{
+    margin-left:50px;
+    height: 50px;
+    width: 150px;
+    font-size: 22px;
+    color: #262626;border-width: 1.5px;
+    border-color: #262626;
+    background-color: rgba(0,0,0,0);
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .button4doc:hover{
+    color: white;
+    background-color: #262626;
+  }
+
+  .card4footer{
+    background-image: url("../assets/评论抽取/评论与决策分类.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .card4footer2{
+    background-image: url("../assets/评论抽取/舆情监控.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .title4card{
+    margin-top: 14px;
+    font-size:30px;
+    text-align: center;
+  }
+
+  .content4card{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    color: grey;
   }
   button{
     width: 200px;

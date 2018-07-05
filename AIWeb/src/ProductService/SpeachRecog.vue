@@ -3,13 +3,16 @@
 
 <template>
   <body>
-  <div id="AIhead">
-    <img src="../assets/语音识别/语音识别.png" class="background">
-    <!--<a id="title">语音识别</a>-->
-    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>将人类的语音中的词汇内容转换为计算机可读的输入，例如按键，二进制编码或者字符序列</textarea>-->
-    <!--<button>演示</button>-->
-    <!--<button>技术文档</button>-->
-  </div>
+  <div id="AIhead" class="firstBackground">
+      <div style="height: 150px;"></div>
+      <div class="table4this" style="margin-left: 34%;margin-top:7%;">
+        <div style="height: 20px;"></div>
+        <tr style="font-size: 22px;color:white;">语音合成服务，基于HTTP请求的REST API接</tr>
+        <tr style="font-size: 22px;color:white;">口，将文本转换为可以播放的MP3文件</tr>
+        <div style="height: 20px;"></div>
+        <tr class="buttons"><el-button class="button4doc">演示</el-button><el-button class="button4doc">技术文档</el-button></tr>
+      </div>
+    </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>
     <a id="introducecontent">为您提供高精度的服务，融合兴海物联领先的自然语言处理系统，支持多场景只能语音交互</a>
@@ -21,12 +24,51 @@
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../assets/语音识别/语音输入法.png" id="AIcar">
+          <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left: auto;margin-top:50px;">
+        <el-row :gutter="180" >
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+            <div class="card4footer">
+            </div>
+            <div>
+              <div class="title4card">
+              <span>语音输入法</span>
+              </div>
+              <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">摆脱生僻字和拼音障碍，将所输入文字，直接用语音的方式输入，让输入法更加便捷</p>
+              </div>
+            </div>
+          </el-card> </div></el-col>
+          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px" :body-style="{padding:'0px'}">
+            <div class="card4footer2">
+            </div>
+            <div class="title4card">
+              <span>语音搜索</span>
+            </div>
+            <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">搜索内容直接以语音的方式输入，让搜索更加高效</p>
+            </div>
+          </el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+        </el-row>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</el-card>
+</div>
+</el-col>
+</el-row>
+</div>
+</div>
+  <!--  <img src="../assets/语音识别/语音输入法.png" id="AIcar">
     <img src="../assets/语音识别/语音搜索.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="40" id="serviceCaption" disabled>语音输入法</textarea>
     <textarea rows="1" cols="40" id="carCaption"disabled>语音搜索</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>拜托生僻字和拼音障碍，将所输入文字，直接用语音的方式输入，让输入法更加便捷</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>搜索内容直接以语音的方式输入，让搜索更加高效</textarea>
+    <textarea rows="5" cols="40" id="serviceContent" disabled>摆脱生僻字和拼音障碍，将所输入文字，直接用语音的方式输入，让输入法更加便捷</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>搜索内容直接以语音的方式输入，让搜索更加高效</textarea> -->
   </div>
 
   </body>
@@ -41,6 +83,7 @@
 <style scoped>
 body{
   font-size: 62.5%;
+
 }
 #apply{
     position: relative;
@@ -52,10 +95,63 @@ body{
     left: 47%;
     bottom: 15%;
   }
+.firstBackground{
+    background-position: right bottom,left top;
+    width: 100%;
+    height: 50%;
+    background-image: url("../assets/banner/语音识别.jpg");
+    background-size: 100% 130%;
+  }
   .functionButton{
     color: black;
     border-color: black;
     font-size:0.2rem;
+  }
+
+    .button4doc{
+    left:20%;
+    margin-right:10px;
+    height: 50px;
+    width: 150px;
+    font-size: 22px;
+    color: white;border-width: 1.5px;
+    border-color: white;
+    background-color: rgba(0,0,0,0);
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .button4doc:hover{
+    color: white;
+    background-color: #262626;
+  }
+
+  .card4footer{
+    background-image: url("../assets/语音识别/语音输入法.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .card4footer2{
+    background-image: url("../assets/语音识别/语音搜索.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .title4card{
+    margin-top: 14px;
+    font-size:30px;
+    text-align: center;
+  }
+
+  .content4card{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    color: grey;
   }
   button{
     width: 200px;

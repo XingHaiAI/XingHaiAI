@@ -3,12 +3,17 @@
 
 <template>
   <body>
-  <div id="AIhead">
-    <img src="../assets/短文本相似度/短文本相似度.png" class="background">
-    <!--<a id="title">短文本相似度</a>-->
-    <!--<textarea id="titlecontent" rows="3"cols="40" disabled>短文本相似度计算服务能够提供不同短文本之间相似度的计算，输出的相似度是一个介于0到1之间的实数值，越大则相似度越高。</textarea>-->
-    <!--<button>技术文档</button>-->
-  </div>
+  <div id="AIhead" class="firstBackground">
+      <div style="height: 150px;"></div>
+      <div class="table4this" style="margin-left: 20%">
+        <tr style="font-size: 60px;letter-spacing: 6px;">短文本相似度</tr>
+        <div style="height: 20px;"></div>
+        <tr style="font-size: 22px">提供不同文本之间相似度的计算，输出一个</tr>
+        <tr style="font-size: 22px">介于0与1之间的实数值，越大则相似度越高。</tr>
+        <div style="height: 20px;"></div>
+        <tr><el-button class="button4doc">技术文档</el-button></tr>
+      </div>
+    </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>
     <a id="introducecontent">依托全网海量优质数据和深度神经网络技术，为您提供高精度的短文本相似度服务，帮助快速实现推荐，检索，排序等应用</a>
@@ -20,12 +25,51 @@
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../assets/短文本相似度/搜索引擎.png" id="AIcar">
+          <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left: auto ;margin-top:50px;">
+        <el-row :gutter="180" >
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+            <div class="card4footer">
+            </div>
+            <div>
+              <div class="title4card">
+              <span>搜索引擎</span>
+              </div>
+              <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</p>
+              </div>
+            </div>
+          </el-card> </div></el-col>
+          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px" :body-style="{padding:'0px'}">
+            <div class="card4footer2">
+            </div>
+            <div class="title4card">
+              <span>生活服务</span>
+            </div>
+            <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">通过将同义词定义成一个标签，调用相应的服务功能，改善用户体验</p>
+            </div>
+          </el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+        </el-row>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</el-card>
+</div>
+</el-col>
+</el-row>
+</div>
+</div>
+  <!--  <img src="../assets/短文本相似度/搜索引擎.png" id="AIcar">
     <img src="../assets/短文本相似度/生活服务.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="30" id="serviceCaption" disabled>搜索引擎</textarea>
     <textarea rows="1" cols="30" id="carCaption"disabled>生活服务</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>通过将同义词定义成一个标签，调用相应的服务功能，改善用户体验</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>通过将同义词定义成一个标签，调用相应的服务功能，改善用户体验</textarea>  -->
   </div>
   </body>
 </template>
@@ -50,10 +94,62 @@ body{
     left: 47%;
     bottom: 15%;
   }
+.firstBackground{
+    background-position: right bottom,left top;
+    width: 100%;
+    height: 50%;
+    background-image: url("../assets/AI智能/AI客服.jpg");
+    background-size: 100% 130%;
+  }
   .functionButton{
     color: black;
     border-color: black;
     font-size:0.2rem;
+  }
+
+    .button4doc{
+    margin-left:50px;
+    height: 50px;
+    width: 150px;
+    font-size: 22px;
+    color: #262626;border-width: 1.5px;
+    border-color: #262626;
+    background-color: rgba(0,0,0,0);
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .button4doc:hover{
+    color: white;
+    background-color: #262626;
+  }
+
+  .card4footer{
+    background-image: url("../assets/短文本相似度/搜索引擎.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .card4footer2{
+    background-image: url("../assets/短文本相似度/生活服务.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .title4card{
+    margin-top: 14px;
+    font-size:30px;
+    text-align: center;
+  }
+
+  .content4card{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    color: grey;
   }
   button{
     width: 200px;

@@ -3,12 +3,17 @@
 
 <template>
   <body>
-  <div id="AIhead">
-    <img src="../assets/词义相似度/词义相似度.png" class="background">
-    <!--<a id="title">词义相似度</a>-->
-    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>输入两个词，得到两个词的相似度结果</textarea>-->
-    <!--<button>技术文档</button>-->
-  </div>
+  <div id="AIhead" class="firstBackground">
+      <div style="height: 150px;"></div>
+      <div class="table4this" style="margin-left: 20%">
+        <tr style="font-size: 60px;letter-spacing: 6px;">词义相似度</tr>
+        <div style="height: 20px;"></div>
+        <tr style="font-size: 22px">输入两个词，得到两个词的相似结果</tr>
+        <tr style="font-size: 22px"> </tr>
+        <div style="height: 20px;"></div>
+        <tr><el-button class="button4doc">技术文档</el-button></tr>
+      </div>
+    </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>
     <a id="introducecontent">依托全网海量优质数据和深度神经网络技术，通过词语向量化来计算两个词之间的相似度</a>
@@ -20,12 +25,52 @@
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../assets/词义相似度/搜索引擎.png" id="AIcar">
+          <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left: auto;margin-top:50px;">
+        <el-row :gutter="180" >
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+            <div class="card4footer">
+            </div>
+            <div>
+              <div class="title4card">
+              <span>搜索引擎</span>
+              </div>
+              <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</p>
+              </div>
+            </div>
+          </el-card> </div></el-col>
+          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px" :body-style="{padding:'0px'}">
+            <div class="card4footer2">
+            </div>
+            <div class="title4card">
+              <span>智能推荐</span>
+            </div>
+            <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">对用户输入的文本信息进行自动分类，实现内容的分类别智能管理</p>
+            </div>
+          </el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+        </el-row>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</el-card>
+</div>
+</el-col>
+</el-row>
+</div>
+</div>
+  <!--  <img src="../assets/词义相似度/搜索引擎.png" id="AIcar">
     <img src="../assets/词义相似度/智能推荐.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="40" id="serviceCaption" disabled>搜索引擎</textarea>
     <textarea rows="1" cols="40" id="carCaption"disabled>智能推荐</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>对用户输入的文本信息进行自动分类，实现内容的分类别智能管理</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>对用户输入的文本信息进行自动分类，实现内容的分类别智能管理</textarea>  -->
   </div>
 
   </body>
@@ -51,10 +96,62 @@ body{
     left: 47%;
     bottom: 15%;
   }
+.firstBackground{
+    background-position: right bottom,left top;
+    width: 100%;
+    height: 50%;
+    background-image: url("../assets/banner/词义相似度.jpg");
+    background-size: 100% 130%;
+  }
   .functionButton{
     color: black;
     border-color: black;
     font-size:0.2rem;
+  }
+
+    .button4doc{
+    margin-left:50px;
+    height: 50px;
+    width: 150px;
+    font-size: 22px;
+    color: #262626;border-width: 1.5px;
+    border-color: #262626;
+    background-color: rgba(0,0,0,0);
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .button4doc:hover{
+    color: white;
+    background-color: #262626;
+  }
+
+  .card4footer{
+    background-image: url("../assets/词义相似度/搜索引擎.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .card4footer2{
+    background-image: url("../assets/词义相似度/智能推荐.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .title4card{
+    margin-top: 14px;
+    font-size:30px;
+    text-align: center;
+  }
+
+  .content4card{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    color: grey;
   }
   button{
     width: 200px;

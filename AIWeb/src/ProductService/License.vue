@@ -3,12 +3,17 @@
 
 <template>
   <body>
-  <div id="AIhead">
-    <img src="../assets/车牌识别/车牌识别.png" class="background">
-    <!--<a id="title">车牌识别</a>-->
-    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>对小客车的车牌进行识别</textarea>-->
-    <!--<button>技术文档</button>-->
-  </div>
+ <div id="AIhead" class="firstBackground">
+      <div style="height: 150px;"></div>
+      <div class="table4this" style="margin-left: 20%">
+        <tr style="font-size: 60px;letter-spacing: 6px;color:white;">车牌识别</tr>
+        <div style="height: 20px;"></div>
+        <tr style="font-size: 22px;color:white">对小客车的车牌进行识别</tr>
+        <tr style="font-size: 22px"> </tr>
+        <div style="height: 20px;"></div>
+        <tr><el-button class="button4doc">技术文档</el-button></tr>
+      </div>
+    </div>
   <div id="AIbodyfir">
     <a id="introduce">功能介绍</a><br/>
     <a id="introducecontent">支持对中国大陆机动车车牌的识别，包括地域编号和车牌号</a>
@@ -20,12 +25,51 @@
   </div>
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
-    <img src="../assets/车牌识别/停车场闸机识别.png" id="AIcar">
+          <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left: auto;margin-top:50px;">
+        <el-row :gutter="180" >
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+            <div class="card4footer">
+            </div>
+            <div>
+              <div class="title4card">
+              <span>智能客服</span>
+              </div>
+              <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">精确适配业务需求，帮助解答大量通用性较强的问题，大幅提升人效。可定制和持续学习，广泛用于网站，APP，电话的客服甚至线下业务窗口等场景</p>
+              </div>
+            </div>
+          </el-card> </div></el-col>
+          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px" :body-style="{padding:'0px'}">
+            <div class="card4footer2">
+            </div>
+            <div class="title4card">
+              <span>智能汽车</span>
+            </div>
+            <div class="content4card">
+              <p style="font-size: 16px;font-weight: 330">赋予汽车智能对话操作的能力，帮助驾驶者通过对话直接满足导航，查询地点，拨打电话，多媒体控制等驾车中的操作需求，保障驾驶安全</p>
+            </div>
+          </el-card></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+        </el-row>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</el-card>
+</div>
+</el-col>
+</el-row>
+</div>
+</div>
+  <!--  <img src="../assets/车牌识别/停车场闸机识别.png" id="AIcar">
     <img src="../assets/车牌识别/道路违章识别.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="40" id="serviceCaption" disabled>停车闸机识别</textarea>
     <textarea rows="1" cols="40" id="carCaption"disabled>道路违章识别</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>在停车场的闸机上使用车牌识别，自动识别车牌号码，实现无卡，无人的停车场管理，快捷方便</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>在交通道路的摄像头中加入车牌识别结合违章判断，对违章的车辆号码进行自动识别，实现自动化的违章审计</textarea>
+    <textarea rows="5" cols="40" id="carContent" disabled>在交通道路的摄像头中加入车牌识别结合违章判断，对违章的车辆号码进行自动识别，实现自动化的违章审计</textarea> -->
   </div>
 
   </body>
@@ -51,10 +95,62 @@ body{
     left: 47%;
     bottom: 15%;
   }
+.firstBackground{
+    background-position: right bottom,left top;
+    width: 100%;
+    height: 50%;
+    background-image: url("../assets/banner/车牌识别.jpg");
+    background-size: 100% 130%;
+  }
   .functionButton{
     color: black;
     border-color: black;
     font-size:0.2rem;
+  }
+
+    .button4doc{
+    margin-left:50px;
+    height: 50px;
+    width: 150px;
+    font-size: 22px;
+    color: white;border-width: 1.5px;
+    border-color: white;
+    background-color: rgba(0,0,0,0);
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .button4doc:hover{
+    color: white;
+    background-color: #262626;
+  }
+
+  .card4footer{
+    background-image: url("../assets/车牌识别/停车场闸机识别.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .card4footer2{
+    background-image: url("../assets/车牌识别/道路违章识别.png");
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .title4card{
+    margin-top: 14px;
+    font-size:30px;
+    text-align: center;
+  }
+
+  .content4card{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    color: grey;
   }
   button{
     width: 200px;

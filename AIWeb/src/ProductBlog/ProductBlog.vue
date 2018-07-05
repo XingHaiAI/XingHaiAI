@@ -216,12 +216,14 @@ div{
   margin-right:1.2vw;
 }
 .blog_info{
-    margin-top:1.5vh;
-    margin-bottom:1.5vh;
+    margin-top:10px;
+    margin-bottom:10px;
+    height:20px;
 }
 .time{
   font-size:0.15rem;
   color:grey;
+  margin-top:0;
   margin-left:3vw;
 }
 .tip{
