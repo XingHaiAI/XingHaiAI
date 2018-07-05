@@ -5,7 +5,7 @@
     <div id="AIhead" class="firstBackground">
       <div style="height: 150px;"></div>
       <div class="table4this" style="margin-left: 20%">
-        <tr style="font-size: 60px">AI客服</tr>
+        <tr style="font-size: 60px;letter-spacing: 6px;">AI客服</tr>
         <div style="height: 20px;"></div>
         <tr style="font-size: 22px">基于用户输入的文本内容，返回场景BOT</tr>
         <tr style="font-size: 22px">理解与应答的信息</tr>

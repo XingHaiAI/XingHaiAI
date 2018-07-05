@@ -10,7 +10,7 @@
     <!--<button>技术文档</button>-->
     <div style="height: 150px;"></div>
     <div class="table4this" style="margin-left: 20%">
-      <tr style="font-size: 60px;color: white">AI客服</tr>
+      <tr style="font-size: 60px;color: white;letter-spacing: 6px;">银行卡识别</tr>
       <div style="height: 20px;color: white"></div>
       <tr style="font-size: 22px;color: white">基于用户输入的文本内容，返回场景BOT</tr>
       <tr style="font-size: 22px;color: white;">理解与应答的信息</tr>
@@ -125,6 +125,7 @@
     margin-top: 14px;
     font-size:30px;
     text-align: center;
+
   }
 
   .content4card{
