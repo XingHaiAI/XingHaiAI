@@ -101,14 +101,14 @@ button{
     border: none;
     z-index: 5;
     /*margin-top:15vh;*/
-    width: 13.66rem;
+    width: 100%;
     height: 6.5rem;
 }
 .content2{
     position: relative;
     border: none;
     z-index: 5;
-    width: 13.66rem;
+    width: 100%;
     height: 10rem;
 }
 .content3{
