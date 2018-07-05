@@ -1,8 +1,7 @@
 <template>
 
   <div id="app":style="{minWidth: 12 + 'rem'}">
-    <el-container>
-      <el-header>
+
     <div class="navbar">
       <!--LOGO-->
       <div class="logo">
@@ -62,16 +61,14 @@
         </table>
       </div>
     </div>
-      </el-header>
-      <el-main>
+
+
     <router-view></router-view>
-      </el-main>
-      <el-footer>
+
         <div id="footer" style="margin: 0px;padding: 0px;width: 100%">
           <img style="width: 100vw;margin: 0px;padding: 0px" src="./assets/联系我们.jpg"/>
         </div>
-      </el-footer>
-    </el-container>
+
   </div>
 </template>
 
@@ -188,11 +185,13 @@
     list-style: none;
   }
   /*上面是暂时的导航栏下拉框的属性*/
+
   body{
-    margin-left: 0;
-    margin-right: 0;
     padding: 0;
+    margin: 0;
+    width: 100%;
   }
+
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
