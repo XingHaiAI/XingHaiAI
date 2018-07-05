@@ -12,7 +12,7 @@
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose">
-            <el-submenu index="1" style="text-align: center">
+            <el-submenu index="1" style="text-align: center;min-height:0.6rem">
               <template slot="title">
                 <span>入门教学</span>
               </template>
@@ -20,19 +20,19 @@
               <el-menu-item index="1-2" class="teach"popper-append-to-body="true">调用返回值</el-menu-item>
               <el-menu-item index="1-3" class="teach"popper-append-to-body="true">代码示例</el-menu-item>
             </el-submenu>
-            <el-submenu index="2"style="text-align: center">
+            <el-submenu index="2"style="text-align: center;min-height:0.6rem">
               <template slot="title"style="mode:horizontal;collapse-transition:false">
                 <span>技术指南</span>
               </template>
               <el-menu-item index="2-1" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideSDK" style="text-decoration: none;color: black">如何使用SDK</router-link></el-menu-item>
               <el-menu-item index="2-2" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideAPI" style="text-decoration: none;color: black">如何使用API</router-link></el-menu-item>
             </el-submenu>
-            <el-menu-item index="3" style="text-align: center">
+            <el-menu-item index="3" style="text-align: center;min-height:0.6rem">
                <span slot="title">
                  <router-link to="/CommonProblems" style="text-decoration: none;color: black">常见问题</router-link>
                </span>
             </el-menu-item>
-            <el-submenu index="4" style="text-align: center">
+            <el-submenu index="4" style="text-align: center;min-height:0.6rem">
               <template slot="title">
                 <span>API接口</span>
               </template>
@@ -42,7 +42,7 @@
               <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/PictureAPI" style="text-decoration: none;color: black">图像识别</router-link></el-menu-item>
               <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/NPLAPI" style="text-decoration: none;color: black">自然语言处理</router-link></el-menu-item>
             </el-submenu>
-            <el-menu-item index="5" style="text-align: center">
+            <el-menu-item index="5" style="text-align: center;min-height:0.6rem">
               <span slot="title">SDK下载</span>
             </el-menu-item>
           </el-menu>
@@ -118,6 +118,8 @@
     color: black;
     border: none;
     resize: none;
+    font-weight:lighter;
+    margin-bottom:0.3rem;
   }
   .route{
     float: left;
@@ -136,6 +138,8 @@
   }
   .teach{
     width: 100%;
+    font-size: 0.15rem;
+    margin-top: 0.1rem;
   }
   #main{
     float: left;
@@ -181,69 +185,69 @@
     margin: 0;
     padding: 0;
   }
-.from_group{
-  display: flex;
-  flex-direction: column;
-  width: 74%;
-  height: 12rem;
-}
-.blog{
-  margin-top:0.4rem;
-  margin-bottom:0.2rem;
-  margin-left:0.820rem;
-  width:7.92rem;
-  height:2rem;
-  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.02rem 0.1rem 0 rgba(0, 0, 0, 0.1);
-  cursor:default;
-}
-.bolg_title{
-  margin-top:0.2rem;
-  margin-bottom:0.1rem;
-  margin-left:0.137rem;
-  font-size:0.23rem;
-  letter-spacing:0.03rem;
-}
-.icon{
-  margin-right:0.164rem;
-  height:0.133rem;
-  width:0.133rem;
-}
-.outline{
-  margin-top:0.2rem;
-  margin-left:0.41rem;
-  font-size:0.15rem;
-  font-weight:900;
-  color:  #303030;
-  font-weight:450;
-  line-height:0.267rem;
-}
-.more{
-  margin-top:0.133rem;
-  margin-left:0.41rem;
-  font-size:0.15rem;
-  color:#3399FF;
-  letter-spacing:0.02rem;
-  cursor:pointer;
-}
-.el-menu-vertical-demo{
-  height:1rem;
-}
-span{
-  font-size:0.17rem;
-}
-button{
-  width: 1.20rem;
-  height: 0.25rem;
-  text-align: center;
-  background: transparent;
-  position: relative;
-  border-color: #99FFCC;
-  color:#4096ff;
-  font-size: 0.15rem;
-  cursor:pointer;
-}
-.searchInput{
-  font-size:0.16rem;
-  padding-left:0.137rem;
-}
+  .from_group{
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    height: 12rem;
+  }
+  .blog{
+    margin-top:0.4rem;
+    margin-bottom:0.2rem;
+    margin-left:0.820rem;
+    width:7.92rem;
+    height:2rem;
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.02rem 0.1rem 0 rgba(0, 0, 0, 0.1);
+    cursor:default;
+  }
+  .bolg_title{
+    margin-top:0.2rem;
+    margin-bottom:0.1rem;
+    margin-left:0.137rem;
+    font-size:0.23rem;
+    letter-spacing:0.03rem;
+  }
+  .icon{
+    margin-right:0.164rem;
+    height:0.133rem;
+    width:0.133rem;
+  }
+  .outline{
+    margin-top:0.2rem;
+    margin-left:0.41rem;
+    font-size:0.15rem;
+    font-weight:900;
+    color:  #303030;
+    font-weight:450;
+    line-height:0.267rem;
+  }
+  .more{
+    margin-top:0.133rem;
+    margin-left:0.41rem;
+    font-size:0.15rem;
+    color:#3399FF;
+    letter-spacing:0.02rem;
+    cursor:pointer;
+  }
+  .el-menu-vertical-demo{
+    height:15rem;
+  }
+  span{
+    font-size:0.22rem;
+  }
+  button{
+    width: 1.20rem;
+    height: 0.25rem;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    border-color: #99FFCC;
+    color:#4096ff;
+    font-size: 0.15rem;
+    cursor:pointer;
+  }
+  .searchInput{
+    font-size:0.16rem;
+    padding-left:0.137rem;
+  }
 </style>

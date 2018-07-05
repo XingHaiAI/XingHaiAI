@@ -12,7 +12,7 @@
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose">
-            <el-submenu index="1" style="text-align: center">
+            <el-submenu index="1" style="text-align: center;min-height:0.6rem">
               <template slot="title">
                 <span>入门教学</span>
               </template>
@@ -20,17 +20,17 @@
               <el-menu-item index="1-2" class="teach"popper-append-to-body="true">调用返回值</el-menu-item>
               <el-menu-item index="1-3" class="teach"popper-append-to-body="true">代码示例</el-menu-item>
             </el-submenu>
-            <el-submenu index="2"style="text-align: center">
+            <el-submenu index="2"style="text-align: center;min-height:0.6rem">
               <template slot="title"style="mode:horizontal;collapse-transition:false">
                 <span>技术指南</span>
               </template>
               <el-menu-item index="2-1" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideSDK" style="text-decoration: none;color: black">如何使用SDK</router-link></el-menu-item>
               <el-menu-item index="2-2" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideAPI" style="text-decoration: none;color: black">如何使用API</router-link></el-menu-item>
             </el-submenu>
-            <el-menu-item index="3" style="text-align: center">
+            <el-menu-item index="3" style="text-align: center;min-height:0.6rem">
               <span slot="title">常见问题</span>
             </el-menu-item>
-            <el-submenu index="4" style="text-align: center">
+            <el-submenu index="4" style="text-align: center;min-height:0.6rem">
               <template slot="title">
                 <span>API接口</span>
               </template>
@@ -40,7 +40,7 @@
               <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/PictureAPI" style="text-decoration: none;color: black">图像识别</router-link></el-menu-item>
               <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/NPLAPI" style="text-decoration: none;color: black">自然语言处理</router-link></el-menu-item>
             </el-submenu>
-            <el-menu-item index="5" style="text-align: center">
+            <el-menu-item index="5" style="text-align: center;min-height:0.6rem">
               <span slot="title">SDK下载</span>
             </el-menu-item>
           </el-menu>
@@ -93,21 +93,20 @@
 </script>
 
 <style scoped>
-body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
   #find{
     width: 10%;
     height: 25%;
-    margin: 0;
     position: relative;
     right:0.5%;
   }
+  body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
   .linkto{
     color: #4096ff;
     text-decoration: none
   }
   #text{
     text-align: center;
-    top: 5%;
+    margin-right:5%;
   }
   textarea{
     overflow:auto;
@@ -135,7 +134,8 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
   }
   .teach{
     width: 100%;
-    font-size: 0.13rem;
+    font-size: 0.15rem;
+    margin-top: 0.1rem;
   }
   #main{
     float: left;
@@ -149,7 +149,7 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     height: 100%;
     width: 26%;
     margin: 0;
-    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.2rem 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);
   }
   #body{
     height:73.42%;
@@ -182,13 +182,13 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     padding: 0;
   }
   .el-menu-vertical-demo{
-    height:1rem;
+    height:15.0rem;
   }
   span{
-    font-size:0.17rem;
+    font-size:0.22rem;
   }
   .searchInput{
-  font-size:0.16rem;
-  padding-left:0.137rem;
-}
+    font-size:0.16rem;
+    padding-left:0.137rem;
+  }
 </style>
