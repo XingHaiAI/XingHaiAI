@@ -5,7 +5,7 @@
     <div id="AIhead" class="firstBackground">
       <div style="height: 150px;"></div>
       <div class="table4this" style="margin-left: 20%">
-        <tr style="font-size: 60px">AI客服</tr>
+        <tr style="font-size: 60px;letter-spacing: 6px;">AI客服</tr>
         <div style="height: 20px;"></div>
         <tr style="font-size: 22px">基于用户输入的文本内容，返回场景BOT</tr>
         <tr style="font-size: 22px">理解与应答的信息</tr>
@@ -85,8 +85,13 @@
     border-color: #262626;
     background-color: rgba(0,0,0,0);
     font-weight: 500;
+    transition: all 0.3s;
   }
 
+  .button4doc:hover{
+    color: white;
+    background-color: #262626;
+  }
 
   .card4footer{
     background-image: url("../assets/AI智能/AI智能客服.png");
