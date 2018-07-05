@@ -2,7 +2,7 @@
 <!--身份证识别分页面-->
 
 <template>
-  <body>
+  <div>
   <div id="AIhead" class="firstBackground">
       <div style="height: 150px;"></div>
       <div class="table4this" style="margin-left: 20%">
@@ -26,10 +26,11 @@
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
           <div class="card4this" style="width: 100%;">
-        <div style="margin-right: auto;margin-left: auto;margin-top:50px;">
-        <el-row :gutter="180" >
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+        <div style="margin-right: auto;margin-left: auto;margin-top:50px;width: 50%">
+        <el-row :gutter="600" >
+
+          <el-col :span="6"><div class="grid-content bg-purple">
+            <el-card style="width: 336px;height: 400px;" :body-style="{padding:'0px'}">
             <div class="card4footer">
             </div>
             <div>
@@ -51,29 +52,23 @@
               <p style="font-size: 16px;font-weight: 330">使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</p>
             </div>
           </el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+
         </el-row>
         </div>
       </div>
-      
+
     </div>
 
-  </div>
-</el-card>
-</div>
-</el-col>
-</el-row>
-</div>
-</div>
+
   <!--  <img src="../assets/情感倾向分析/口碑分析.png" id="AIcar">
     <img src="../assets/情感倾向分析/舆情监控.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="40" id="serviceCaption" disabled>视频主播身份认证</textarea>
     <textarea rows="1" cols="40" id="carCaption"disabled>远程身份认证</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>在视频直播场景，应用身份证OCR实现主播实名身份证识别和认证，减少人工录入成本，提高用户体验</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea> -->
-  </div>
 
-  </body>
+
+  </div>
 </template>
 
 <script>

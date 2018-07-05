@@ -2,7 +2,7 @@
 <!--车牌识别的分页面-->
 
 <template>
-  <body>
+  <div>
  <div id="AIhead" class="firstBackground">
       <div style="height: 150px;"></div>
       <div class="table4this" style="margin-left: 20%">
@@ -26,10 +26,10 @@
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
           <div class="card4this" style="width: 100%;">
-        <div style="margin-right: auto;margin-left: auto;margin-top:50px;">
-        <el-row :gutter="180" >
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+        <div style="margin-right: auto;margin-left: auto;margin-top:50px;width: 50%">
+        <el-row :gutter="600" >
+          <el-col :span="6"><div class="grid-content bg-purple">
+            <el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
             <div class="card4footer">
             </div>
             <div>
@@ -51,28 +51,21 @@
               <p style="font-size: 16px;font-weight: 330">赋予汽车智能对话操作的能力，帮助驾驶者通过对话直接满足导航，查询地点，拨打电话，多媒体控制等驾车中的操作需求，保障驾驶安全</p>
             </div>
           </el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+
         </el-row>
         </div>
       </div>
     </div>
 
   </div>
-</el-card>
-</div>
-</el-col>
-</el-row>
-</div>
-</div>
+
   <!--  <img src="../assets/车牌识别/停车场闸机识别.png" id="AIcar">
     <img src="../assets/车牌识别/道路违章识别.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="40" id="serviceCaption" disabled>停车闸机识别</textarea>
     <textarea rows="1" cols="40" id="carCaption"disabled>道路违章识别</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>在停车场的闸机上使用车牌识别，自动识别车牌号码，实现无卡，无人的停车场管理，快捷方便</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>在交通道路的摄像头中加入车牌识别结合违章判断，对违章的车辆号码进行自动识别，实现自动化的违章审计</textarea> -->
-  </div>
 
-  </body>
 </template>
 
 <script>

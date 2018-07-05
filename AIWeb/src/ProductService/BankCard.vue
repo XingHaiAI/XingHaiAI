@@ -2,7 +2,7 @@
 <!--银行卡识别的分页面-->
 
 <template>
-  <body>
+  <div>
   <div id="AIhead" class="firstBackground">
     <!--<img src="../assets/银行卡识别/银行卡识别.png" class="background">-->
     <!--<a id="title">银行卡识别</a>-->
@@ -30,10 +30,10 @@
     <p id="txtApp">应用场景</p>
     <div style="height: 50px;"></div>
     <div class="card4this" style="width: 100%;">
-      <div style="margin-right: auto;margin-left: auto">
-        <el-row :gutter="180" >
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+      <div style="margin-right: auto;margin-left: auto;width: 50%">
+        <el-row :gutter="600" >
+          <el-col :span="6"><div class="grid-content bg-purple">
+            <el-card style="width: 336px;height: 400px;" :body-style="{padding:'0px'}">
             <div class="card4footer">
             </div>
             <div>
@@ -45,7 +45,8 @@
               </div>
             </div>
           </el-card> </div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px" :body-style="{padding:'0px'}">
+          <el-col :span="10"><div class="grid-content bg-purple">
+            <el-card style="width: 336px;height: 400px" :body-style="{padding:'0px'}">
             <div class="card4footer2">
             </div>
             <div class="title4card">
@@ -55,7 +56,7 @@
               <p style="font-size: 16px;font-weight: 330">在支付绑卡缓解，使用银行卡OCR实现银行卡的拍照自动识别，提升数据录入的准确性和效率，提高用户体验</p>
             </div>
           </el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+
         </el-row>
       </div>
     </div>
@@ -68,7 +69,7 @@
     <textarea rows="5" cols="40" id="carContent" disabled>在支付绑卡缓解，使用银行卡OCR实现银行卡的拍照自动识别，提升数据录入的准确性和效率，提高用户体验</textarea>
     -->
   </div>
-  </body>
+  </div>
 </template>
 
 <script>
