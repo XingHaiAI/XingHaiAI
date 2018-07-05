@@ -2,7 +2,7 @@
 <!--词义相似度的分页面-->
 
 <template>
-  <body>
+  <div>
   <div id="AIhead" class="firstBackground">
       <div style="height: 150px;"></div>
       <div class="table4this" style="margin-left: 20%">
@@ -26,10 +26,10 @@
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
           <div class="card4this" style="width: 100%;">
-        <div style="margin-right: auto;margin-left: auto;margin-top:50px;">
-        <el-row :gutter="180" >
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+        <div style="margin-right: auto;margin-left: auto;margin-top:50px;width: 50%">
+        <el-row :gutter="600">
+          <el-col :span="6"><div class="grid-content bg-purple">
+            <el-card style="width: 336px;height: 400px;" :body-style="{padding:'0px'}">
             <div class="card4footer">
             </div>
             <div>
@@ -51,7 +51,7 @@
               <p style="font-size: 16px;font-weight: 330">对用户输入的文本信息进行自动分类，实现内容的分类别智能管理</p>
             </div>
           </el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+
         </el-row>
         </div>
       </div>
@@ -59,21 +59,14 @@
     </div>
 
   </div>
-</el-card>
-</div>
-</el-col>
-</el-row>
-</div>
-</div>
+
   <!--  <img src="../assets/词义相似度/搜索引擎.png" id="AIcar">
     <img src="../assets/词义相似度/智能推荐.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="40" id="serviceCaption" disabled>搜索引擎</textarea>
     <textarea rows="1" cols="40" id="carCaption"disabled>智能推荐</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>准确的分词结果提高搜索准确率，同时可以替换同义词提高搜索结果的多样性</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>对用户输入的文本信息进行自动分类，实现内容的分类别智能管理</textarea>  -->
-  </div>
 
-  </body>
 </template>
 
 <script>

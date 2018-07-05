@@ -2,7 +2,7 @@
 <!--语音合成的分页面-->
 
 <template>
-  <body>
+  <div>
   <div id="AIhead" class="firstBackground">
       <div style="height: 150px;"></div>
       <div class="table4this" style="margin-left: 34%;margin-top:7%;">
@@ -25,10 +25,11 @@
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
           <div class="card4this" style="width: 100%;">
-        <div style="margin-right: auto;margin-left: auto;margin-top:50px;">
-        <el-row :gutter="180" >
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+        <div style="margin-right: auto;margin-left: auto;margin-top:50px;width: 50%">
+        <el-row :gutter="600" >
+
+          <el-col :span="6"><div class="grid-content bg-purple">
+            <el-card style="width: 336px;height: 400px;" :body-style="{padding:'0px'}">
             <div class="card4footer">
             </div>
             <div>
@@ -50,28 +51,21 @@
               <p style="font-size: 16px;font-weight: 330">地图语音导航，不用盯着GPS显示屏也能够清晰地了解路况</p>
             </div>
           </el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+
         </el-row>
         </div>
       </div>
     </div>
 
-  </div>
-</el-card>
-</div>
-</el-col>
-</el-row>
-</div>
-</div>
+
   <!--  <img src="../assets/语音合成/文字阅读.png" id="AIcar">
     <img src="../assets/语音合成/智能交通.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="40" id="serviceCaption" disabled>文字阅读</textarea>
     <textarea rows="1" cols="40" id="carCaption"disabled>智能交通</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>将文字转变为语音，让您闭上眼睛也能徜徉书海</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>地图语音导航，不用盯着GPS显示屏也能够清晰地了解路况</textarea>  -->
-  </div>
 
-  </body>
+  </div>
 </template>
 
 <script>

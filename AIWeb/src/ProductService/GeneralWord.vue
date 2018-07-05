@@ -2,7 +2,7 @@
 <!--通用文字识别的分页面-->
 
 <template>
-  <body>
+  <div>
   <div id="AIhead" class="firstBackground">
       <div style="height: 150px;"></div>
       <div class="table4this" style="margin-left: 20%">
@@ -26,10 +26,10 @@
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
           <div class="card4this" style="width: 100%;">
-        <div style="margin-right: auto;margin-left: auto;margin-top:50px;">
-        <el-row :gutter="180" >
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+        <div style="margin-right: auto;margin-left: auto;width: 50%;margin-top: 50px;">
+        <el-row :gutter="600" >
+
+          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;" :body-style="{padding:'0px'}">
             <div class="card4footer">
             </div>
             <div>
@@ -51,19 +51,14 @@
               <p style="font-size: 16px;font-weight: 330">在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</p>
             </div>
           </el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+
         </el-row>
         </div>
       </div>
     </div>
 
   </div>
-</el-card>
-</div>
-</el-col>
-</el-row>
-</div>
-</div>
+
     <!--
     <img src="../assets/通用文字识别/内容审查.png" id="AIcar">
     <img src="../assets/通用文字识别/拍照识别.png" id="AIcustomer"><br/>
@@ -71,8 +66,7 @@
     <textarea rows="1" cols="40" id="carCaption"disabled>拍照识别</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>识别图像和内容中的违规文字内容，进行违规处理和风险管控</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</textarea> -->
-  </div>
-  </body>
+
 </template>
 
 <script>

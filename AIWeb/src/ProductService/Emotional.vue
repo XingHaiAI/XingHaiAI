@@ -2,7 +2,7 @@
 <!--情感倾向分析分页面-->
 
 <template>
-  <body>
+  <div>
   <div id="AIhead" class="firstBackground">
       <div style="height: 150px;"></div>
       <div class="table4this" style="margin-left: 20%">
@@ -26,10 +26,10 @@
   <div id="AIbodythi">
     <p id="txtApp">应用场景</p>
           <div class="card4this" style="width: 100%;">
-        <div style="margin-right: auto;margin-left: auto;margin-top:50px;">
-        <el-row :gutter="180" >
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
+        <div style="margin-right: auto;margin-left: auto;margin-top:50px;width: 50%">
+        <el-row :gutter="600" >
+          <el-col :span="6"><div class="grid-content bg-purple">
+            <el-card style="width: 336px;height: 400px;" :body-style="{padding:'0px'}">
             <div class="card4footer">
             </div>
             <div>
@@ -51,27 +51,21 @@
               <p style="font-size: 16px;font-weight: 330">通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</p>
             </div>
           </el-card></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"><el-card style="opacity: 0"></el-card></div></el-col>
+
         </el-row>
         </div>
       </div>
     </div>
 
-  </div>
-</el-card>
-</div>
-</el-col>
-</el-row>
-</div>
-</div>
+
   <!--  <img src="../assets/情感倾向分析/口碑分析.png" id="AIcar">
     <img src="../assets/情感倾向分析/舆情监控.png" id="AIcustomer"><br/>
     <textarea rows="1" cols="40" id="serviceCaption" disabled>口碑分析</textarea>
     <textarea rows="1" cols="40" id="carCaption"disabled>舆情监控</textarea><br/>
     <textarea rows="5" cols="40" id="serviceContent" disabled>整理提炼互联网中的海量口碑评价，多维分析，快速解读</textarea>
     <textarea rows="5" cols="40" id="carContent" disabled>通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</textarea> -->
+
   </div>
-  </body>
 </template>
 
 <style scoped>
