@@ -16,7 +16,7 @@
               <template slot="title">
                 <span>入门教学</span>
               </template>
-              <el-menu-item index="1-1" class="teach" popper-append-to-body="true">API调用规则</el-menu-item>
+              <el-menu-item index="1-1" class="teach" popper-append-to-body="true"><router-link to="/Teaching" style="text-decoration: none;color: black">API调用规则</router-link></el-menu-item>
               <el-menu-item index="1-2" class="teach"popper-append-to-body="true">调用返回值</el-menu-item>
               <el-menu-item index="1-3" class="teach"popper-append-to-body="true">代码示例</el-menu-item>
             </el-submenu>
@@ -55,7 +55,7 @@
           <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;" />
           <el-button type="primary" icon="el-icon-search" id="find" style="background-color: #409EFF;    border-color: #409EFF;color: #fff;"></el-button>
         </div>
-        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">API接口</router-link>&gtAPI调用规则</p>
+        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">API接口</router-link>&gt人脸识别</p>
       </div>
        <div class="from_group">
         <div class="blog">
