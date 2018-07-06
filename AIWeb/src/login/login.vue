@@ -26,7 +26,7 @@
           </el-form>
         </div>
         <div class="buttons">
-            <el-button class="button4login" type="primary" @click="login">登录</el-button>
+            <el-button class="button4login" type="primary" @click="login"><router-link to="/Console/SDK" class="linkto">登录</router-link></el-button>
             <el-button class="button4register" @click="gotoRegister">注册</el-button>
         </div>
       </el-card>
@@ -138,6 +138,10 @@
 
 }
 
+.linkto{
+    color: white;
+    text-decoration: none
+  }
 .big_word1{
     color: skyblue;
     font-size: 1.7vw;

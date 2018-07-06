@@ -35,6 +35,12 @@ import PicRecg from '@/PresentDoc/PicRecg/PicRecg.vue'
 import WordRecg from '@/PresentDoc/WordRecg/WordRecg.vue'
 import login from '@/login/login.vue'
 import signIn from '@/login/signIn.vue'
+import ConsoleSDK from '@/Console/SDK.vue'
+import ConsoleFaceRec from '@/Console/FaceRec.vue'
+import ConsolePicRec from '@/Console/PicRec.vue'
+import ConsoleWordRec from '@/Console/WordRec.vue'
+import ConsoleSpeach from '@/Console/Speach.vue'
+import ConsoleNPL from '@/Console/NPL.vue'
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -141,6 +147,24 @@ export default new Router({
     },
     {
       path:'/signIn',name:'signIn',component:signIn
+    },
+    {
+      path:'/Console/SDK',name:'ConsoleSDK',component:ConsoleSDK
+    },
+    {
+      path:'/Console/FaceRec',name:'ConsoleFaceRec',component:ConsoleFaceRec
+    },
+    {
+      path:'/Console/PicRec',name:'ConsolePicRec',component:ConsolePicRec
+    },
+    {
+      path:'/Console/WordRec',name:'ConsoleWordRec',component:ConsoleWordRec
+    },
+    {
+      path:'/Console/Speach',name:'ConsoleSpeach',component:ConsoleSpeach
+    },
+    {
+      path:'/Console/NPL',name:'ConsoleNPL',component:ConsoleNPL
     }
   ]
 })
