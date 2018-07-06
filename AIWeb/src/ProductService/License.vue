@@ -3,56 +3,56 @@
 
 <template>
   <div>
- <div id="AIhead" class="firstBackground">
-      <div style="height: 150px;"></div>
+    <div id="AIhead" class="firstBackground">
+      <div style="height: 1.50rem;"></div>
       <div class="table4this" style="margin-left: 20%">
-        <tr style="font-size: 60px;letter-spacing: 6px;color:white;">车牌识别</tr>
-        <div style="height: 20px;"></div>
-        <tr style="font-size: 22px;color:white">对小客车的车牌进行识别</tr>
-        <tr style="font-size: 22px"> </tr>
-        <div style="height: 20px;"></div>
+        <tr style="font-size: 0.60rem;letter-spacing: 0.6rem;color:white;">车牌识别</tr>
+        <div style="height: 0.20rem;"></div>
+        <tr style="font-size: 0.22rem;color:white">对小客车的车牌进行识别</tr>
+        <tr style="font-size: 0.22rem"> </tr>
+        <div style="height: 0.20rem;"></div>
         <tr><el-button class="button4doc">技术文档</el-button></tr>
       </div>
     </div>
-  <div id="AIbodyfir">
-    <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">支持对中国大陆机动车车牌的识别，包括地域编号和车牌号</a>
-  </div>
-  <div id="AIbodysec">
-    <img src="../assets/车牌识别/功能介绍.png"class="background">
-    <button class="functionButton" id="apply">接口申请</button>
-    <button class="functionButton" id="download">SDK下载</button>
-  </div>
-  <div id="AIbodythi">
-    <p id="txtApp">应用场景</p>
-          <div class="card4this" style="width: 100%;">
-        <div style="margin-right: auto;margin-left: auto;margin-top:50px;width: 50%">
-        <el-row :gutter="600" >
-          <el-col :span="6"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-left:-105px;" :body-style="{padding:'0px'}">
-            <div class="card4footer">
-            </div>
-            <div>
+    <div id="AIbodyfir">
+      <a id="introduce">功能介绍</a><br/>
+      <a id="introducecontent">支持对中国大陆机动车车牌的识别，包括地域编号和车牌号</a>
+    </div>
+    <div id="AIbodysec"class="secondBackground">
+      <!--<img src="../assets/车牌识别/功能介绍.png"class="background">-->
+      <button class="functionButton" id="apply">接口申请</button>
+      <button class="functionButton" id="download">SDK下载</button>
+    </div>
+    <div id="AIbodythi">
+      <p id="txtApp">应用场景</p>
+      <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
+          <el-row :gutter="550" style="width: 13rem">
+            <el-col :span="6"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
+                <div class="card4footer">
+                </div>
+                <div>
+                  <div class="title4card">
+                    <span>停车场闸机识别</span>
+                  </div>
+                  <div class="content4card">
+                    <p style="font-size: 0.16rem;font-weight: 330">在停车场的闸机上使用车牌识别，自动识别车牌号码，实现无卡，无人的停车场管理，快捷方便</p>
+                  </div>
+                </div>
+              </el-card> </div></el-col>
+            <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
+              <div class="card4footer2">
+              </div>
               <div class="title4card">
-              <span>智能客服</span>
+                <span>道路违章识别</span>
               </div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">精确适配业务需求，帮助解答大量通用性较强的问题，大幅提升人效。可定制和持续学习，广泛用于网站，APP，电话的客服甚至线下业务窗口等场景</p>
+                <p style="font-size: 0.16rem;font-weight: 330">在交通道路的摄像头中加入车牌识别结合违章判断，对违章的车辆号码进行自动识别，实现自动化的违章审计</p>
               </div>
-            </div>
-          </el-card> </div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 336px;height: 400px" :body-style="{padding:'0px'}">
-            <div class="card4footer2">
-            </div>
-            <div class="title4card">
-              <span>智能汽车</span>
-            </div>
-            <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">赋予汽车智能对话操作的能力，帮助驾驶者通过对话直接满足导航，查询地点，拨打电话，多媒体控制等驾车中的操作需求，保障驾驶安全</p>
-            </div>
-          </el-card></div></el-col>
+            </el-card></div></el-col>
 
-        </el-row>
+          </el-row>
         </div>
       </div>
     </div>
@@ -75,10 +75,10 @@
 </script>
 
 <style scoped>
-body{
-  font-size: 62.5%;
-}
-#apply{
+  body{
+    font-size: 62.5%;
+  }
+  #apply{
     position: relative;
     left: 25%;
     bottom: 15%;
@@ -88,25 +88,33 @@ body{
     left: 47%;
     bottom: 15%;
   }
-.firstBackground{
+  .firstBackground{
     background-position: right bottom,left top;
     width: 100%;
     height: 50%;
     background-image: url("../assets/banner/车牌识别.jpg");
-    background-size: 100% 130%;
+    background-size: 100% 100%;
+  }
+  .secondBackground{
+    background-position: right bottom,left top;
+    width: 100%;
+    height: 50%;
+    background-image: url("../assets/车牌识别/功能介绍.png");
+    background-size: 100% 100%;
   }
   .functionButton{
     color: black;
     border-color: black;
-    font-size:0.2rem;
+    font-size:0.21rem;
+    margin-top: 5.2rem;
   }
 
-    .button4doc{
-    margin-left:50px;
-    height: 50px;
-    width: 150px;
-    font-size: 22px;
-    color: white;border-width: 1.5px;
+  .button4doc{
+    margin-left:0.50rem;
+    height: 0.50rem;
+    width: 1.50rem;
+    font-size: 0.22rem;
+    color: white;border-width: 0.015rem;
     border-color: white;
     background-color: rgba(0,0,0,0);
     font-weight: 500;
@@ -118,10 +126,12 @@ body{
     background-color: #262626;
   }
 
+
   .card4footer{
     background-image: url("../assets/车牌识别/停车场闸机识别.png");
     width: 100%;
     height: 50%;
+    background-size: 100% 100%;
     padding: 0;
   }
 
@@ -129,25 +139,26 @@ body{
     background-image: url("../assets/车牌识别/道路违章识别.png");
     width: 100%;
     height: 50%;
+    background-size: 100% 100%;
     padding: 0;
   }
 
   .title4card{
-    margin-top: 14px;
-    font-size:30px;
+    margin-top: 0.14rem;
+    font-size:0.30rem;
     text-align: center;
   }
 
   .content4card{
-    width: 300px;
+    width: 3rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 21px;
+    margin-top: 0.21rem;
     color: grey;
   }
   button{
-    width: 200px;
-    height: 50px;
+    width: 2rem;
+    height: 0.50rem;
     text-align: center;
     background: transparent;
     position: relative;
@@ -192,7 +203,7 @@ body{
   }
   #carContent{
     position: relative;
-    top: 5px;
+    top: 0.05rem;
     left: 37.5%;
     width:24%;
     font-size:0.15rem;
@@ -200,10 +211,10 @@ body{
   }
   #carCaption{
     position: relative;
-    top: 5px;
-    left: 27%;
-    margin-bottom:1vh;
-    margin-top:0.5vh;
+    top: 0.05rem;
+    left: 28%;
+    margin-bottom:0.1rem;
+    margin-top:0.05rem;
     text-align: center;
     font-size:0.2rem;
     overflow: auto;
@@ -211,17 +222,17 @@ body{
   #serviceContent{
     position: relative;
     font-size:0.15rem;
-    top: 5px;
+    top: 0.05rem;
     left: 17.3%;
     width:24%;
     overflow:auto;
   }
   #serviceCaption{
     position: relative;
-    top: 5px;
+    top: 0.05rem;
     left: 14%;
-    margin-bottom:1vh;
-    margin-top:0.5vh;
+    margin-bottom:0.1rem;
+    margin-top:0.05rem;
     text-align: center;
     overflow: auto;
     font-size:0.2rem;
@@ -233,7 +244,7 @@ body{
   body {
     margin: 0;
     padding: 0;
-    height: 2200px;
+    height: 22rem;
   }
   .background {
     width:100%;
@@ -243,45 +254,45 @@ body{
     /*z-index:0;*/
   }
   #AIcar{
-    height: 250px;
-    width: 300px;
+    height: 2.50rem;
+    width: 3rem;
     position: relative;
     padding-top: 0%;
     left: 18%;
     overflow: auto;
   }
   #AIcustomer{
-    height: 250px;
-    width:300px;
+    height: 2.5rem;
+    width:3rem;
     position: relative;
     left: 40%;
     padding-top: 0%;
   }
   #AIhead{
     width: 100%;
-    height: calc(25.8/100*2300px);
-    font-size: 62.5%;
+    height: calc(25.8/100*23rem);
+
   }
   #AIbodyfir{
     width: 100%;
-    height: calc(6.3/100*2300px);
-    margin-top:10vh;
+    height: calc(6.3/100*20rem);
+    margin-top:0.5rem;
     padding: 0;
     background-size: auto 50%;
     text-align: center;
   }
   #AIbodysec{
-    height: calc(22.8/100*2300px);
+    height: calc(22.8/100*23rem);
     margin: 0;
     padding: 0;
   }
   #AIbodythi{
-    height: calc(27.6/100*2300px);
-    margin-top:10vh;
+    height: calc(27.6/100*23rem);
+    margin-top:0.5rem;
     padding: 0;
   }
   #AItail{
-    height: calc(10.5/100*2300px);
+    height: calc(10.5/100*23rem);
     margin: 0;
     padding: 0;
   }

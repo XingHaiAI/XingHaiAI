@@ -25,12 +25,12 @@
       <div id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
         <table style="width: 100%;">
           <tr>
-            <router-link to="/ProductService/AIIntelligent" style="text-decoration: none"><td class="productService">AI智能</td></router-link>
+            <router-link to="/ProductService/AIIntelligent" style="text-decoration: none"><td class="productService">AI客服</td></router-link>
             <router-link to="/ProductService/TextSimilar" style="text-decoration: none"><td class="productService">短文本相似度</td></router-link>
             <router-link to="/ProductService/Meaning" style="text-decoration: none"><td class="productService">词义相似度</td></router-link>
           </tr>
           <tr>
-            <router-link to="/ProductService/License" style="text-decoration: none"><td class="productService">短文本相似度</td></router-link>
+            <router-link to="/ProductService/License" style="text-decoration: none"><td class="productService">车牌识别</td></router-link>
             <router-link to="/ProductService/Comments" style="text-decoration: none"><td class="productService">评论观点抽取</td></router-link>
             <router-link to="/ProductService/Emotional" style="text-decoration: none"><td class="productService">情感倾向分析</td></router-link>
           </tr>
@@ -65,8 +65,8 @@
 
     <router-view></router-view>
 
-        <div id="footer" style="margin: 0px;padding: 0px;width: 100%" v-if="$route.path!='/login'&&$route.path!='/signin'">
-          <img style="width: 100%;margin: 0px;padding: 0px" src="./assets/联系我们.jpg"/>
+        <div id="footer" style="margin: 0rem;padding: 0rem;width: 100%" v-if="$route.path!='/login'&&$route.path!='/signin'">
+          <img style="width: 100%;margin: 0rem;padding: 0rem" src="./assets/联系我们.jpg"/>
         </div>
 
   </div>
@@ -131,15 +131,15 @@
   .documentCenter{
     display: inline-block;
     color: white;
-    font-size: 1vw;
-    margin-left: 1.1vw;
-    margin-bottom: 1vw;
+    font-size: 0.137rem;
+    margin-left: 0.15rem;
+    margin-bottom: 0.137rem;
     width: 100%;
   }
   #document{
     display: none;
     width: 7%;
-    margin-top: 3vw;
+    margin-top: 0.41rem;
     margin-left: 4.8rem;
     left: 42%;
     top:100%;
@@ -150,7 +150,7 @@
   #present{
     display: none;
     width: 7%;
-    margin-top: 3vw;
+    margin-top: 0.41rem;
     margin-left: 5.7rem;
     left: 51%;
     top:100%;
@@ -161,7 +161,7 @@
   .productService{
     display: inline-block;
     color: white;
-    font-size: 1vw;
+    font-size: 0.137rem;
     margin-right: 0.60rem;
     margin-left: 0.40rem;
     margin-bottom: 0.20rem;
@@ -197,7 +197,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
-    margin-left:-1vw;
+    margin-left:-0.137rem;
     margin-top:-1vh;
     padding: 0;
   }
@@ -221,6 +221,7 @@
   .navbar{
     width: 100%;
     height: 0.5rem;
+    min-width: 9rem;
     line-height: 0.5rem;
     position: fixed;
     background-color: rgba(6,6,6,0);
@@ -303,7 +304,7 @@
 
 
   .menu_item_botton{
-    font-size: 0.9vw;
+    font-size: 0.123rem;
     text-align: center;
     line-height: 4vh;
     background-color: white;
@@ -311,7 +312,7 @@
     border-radius: 5%;
     height: 4vh;
     margin-top: 2vh;
-    width: 5vw;
+    width: 0.683rem;
     float: left;
   }
 
@@ -324,31 +325,31 @@
     font-size: inherit;
     font-weight: 900;
     padding-top: 3vh;
-    padding-left: 2vw;
+    padding-left: 0.273rem;
   }
 
   .technology_menu_item_content_title_sub_title{
     color: inherit;
-    font-size: 1vw;
+    font-size: 0.137rem;
     padding-top: 1.5vh;
     font-weight: 400;
-    padding-left: 2vw;
+    padding-left: 0.273rem;
   }
 
   .technology_menu_item_content_title_sub_title_content_first{
     color: inherit;
-    font-size: 0.8vw;
+    font-size:0.11rem;
     font-weight: 100;
-    padding-left: 2vw;
+    padding-left: 0.273rem;
     padding-top: 0.7vh;
     display: inline;
   }
 
   .technology_menu_item_content_title_sub_title_content{
     color: inherit;
-    font-size: 0.8vw;
+    font-size: 0.11rem;
     font-weight: 100;
-    padding-left: 1vw;
+    padding-left: 0.137rem;
     padding-top: 0.7vh;
     display: inline;
   }
@@ -364,18 +365,18 @@
     display: inline-block;
   }
   .technology_menu_item_content_coloum_2{
-    margin-left: 10vw;
+    margin-left: 1.366rem;
     display: inline-block;
   }
 
   .technology_menu_item_content_coloum_3{
-    margin-left: 10vw;
+    margin-left: 1.366rem;
     display: inline-block;
   }
 
 
   .Solution_menu_item_content_coloum_1{
-    margin-left: 10vw;
+    margin-left: 1.366rem;
     display: inline-block;
   }
 

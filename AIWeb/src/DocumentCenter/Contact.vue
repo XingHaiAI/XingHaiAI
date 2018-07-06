@@ -174,7 +174,7 @@ div{
 }
 .bg{
   height: 8rem;
-  width: 13.66rem;
+  width: 100%;
 
 }
 .head_content{
@@ -214,7 +214,7 @@ div{
   display: flex;
   flex-direction: column;
   float: left;
-  width: 10.245rem;
+  width: 9.245rem;
   height: 5rem;
 }
 .link_group .decorate_bar{
@@ -314,17 +314,17 @@ div{
 }
 .from_group .item_group .before_buy{
   margin-right: 0.683rem;
-  margin-left: 0.683rem;
+  margin-left: 0.383rem;
   display: inline-block;
 }
 .from_group .item_group .business{
   margin-right: 0.683rem;
-  margin-left: 0.683rem;
+  margin-left: 0.383rem;
   display: inline-block;
 }
 .from_group .item_group .question{
   margin-right: 0.683rem;
-  margin-left: 0.683rem;
+  margin-left: 0.383rem;
   display: inline-block;
 }
 .input_group {

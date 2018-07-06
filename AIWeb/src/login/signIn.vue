@@ -10,8 +10,8 @@
 </div>
 <div class="login">
   <el-card style="height: 100%">
-    <div class="title4register" style="margin-top: 20px;">
-      <span style="font-size: 30px;">欢迎使用兴海物联AI平台</span>
+    <div class="title4register" style="margin-top: 0.20rem;">
+      <span style="font-size: 0.30rem;">欢迎使用兴海物联AI平台</span>
     </div>
     <div class="form4register">
       <el-form :model="formRegister" ref="formRegister" :rules="rulesRegister" label-width="18%">
@@ -131,11 +131,11 @@
 
 <style lang="less" scoped>
 #signIn{
-    height:120vh;
+  height: 8rem;
     margin: 0;
     padding: 0;
     background-image: url("bg.png");
-    background-size: 100vw 120vh;
+    background-size: 100% 100%;
     /*width: 100%;*/
     /*height: 100%;*/
 }
@@ -144,7 +144,7 @@ p{
 }
 
 .buttons{
-  margin-top: 40px;
+  margin-top: 0.40rem;
   width: 100%;
   text-align: center;
 }
@@ -152,21 +152,21 @@ p{
 .button4register{
 
   background-color: cornflowerblue;
-  width: 200px;
-  height:45px;
+  width: 2rem;
+  height:0.45rem;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 0.18rem;
   border-color: cornflowerblue;
 }
 
 .big_word1{
     color: skyblue;
-    font-size: 1.7vw;
+    font-size: 0.233rem;
 }
 
 .form4register{
-    margin-top: 40px;
+    margin-top: 0.40rem;
 }
 
 .title4register{
@@ -177,18 +177,18 @@ p{
 .button4log{
   background-color: white;
   border-color: darkgray;
-  border-width: 1.7px;
-  font-size: 18px;
-  width: 100px;
-  height:45px;
+  border-width: 0.017rem;
+  font-size: 0.18rem;
+  width: 1rem;
+  height:0.45rem;
   color: darkgray;
   font-weight: bold;
 
 }
 
 .box{
-  margin-top: 2.5vh;
-  margin-left: 3vw;
+  margin-top: 0.17rem;
+  margin-left: 0.41rem;
   float: left;
 }
 .check_box .choose{
@@ -197,24 +197,24 @@ p{
 }
 
 .big_word2{
-    margin-left: 6vw;
+    margin-left: 0.82rem;
     color: skyblue;
-    font-size: 1.7vw;
+    font-size: 0.233rem;
 }
 
 .left_cube{
     text-align: center;
     display: inline-block;
-    margin-top: 25vh;
-    margin-left: 10vw;
-    width: 30vw;
-    height: 50vh;
+    margin-top: 1.7rem;
+    margin-left: 1.366rem;
+    width: 4.1rem;
+    height: 3.34rem;
 }
 .login{
-  height:650px;
-  width:500px;
-  margin-top: 110px;
-  margin-right: 160px;
+  height:6.50rem;
+  width:5rem;
+  margin-top: 1.10rem;
+  margin-right: 1.60rem;
 }
 
 .el-input{
@@ -222,15 +222,15 @@ p{
   width:78%
 }
 .name_email{
-    font-size: 1.25vw;
-    margin-top: 3vh;
+    font-size: 0.18rem;
+    margin-top: 0.2rem;
     width: 84%;
     margin-left: 8%;
-    height: 5vh;
-    border:1px solid;
+    height: 0.334rem;
+    border:0.01rem solid;
     border-color:#C8C8C8;
-    border-radius:5px;
-    padding-left:5px;
+    border-radius:0.05rem;
+    padding-left:0.05rem;
 
 }
 #footer{

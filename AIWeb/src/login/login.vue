@@ -94,10 +94,10 @@
 <style lang="less">
 
 #login{
-    height:120vh;
+    height:8rem;
     /*background-color: white;*/
     background-image: url("bg.png");
-    background-size: 100vw 120vh;
+    background-size: 100% 100%;
     background-repeat: repeat-y;
 }
 
@@ -106,10 +106,10 @@
 
 .button4register{
   background-color: white;
-  width: 120px;
-  font-size: 19px;
+  width: 1.20rem;
+  font-size: 0.19rem;
   font-weight: bold;
-  border-width: 1.7px;
+  border-width: 0.017rem;
   color: darkgray;
   border-color: darkgray;
 }
@@ -117,11 +117,11 @@
 .button4login{
   background-color: cornflowerblue;
   border-color: cornflowerblue;
-  width: 230px;
-  border-width: 1.7px;
+  width: 2.30rem;
+  border-width: 0.017rem;
   font-weight: bold;
   color: white;
-  font-size: 19px;
+  font-size: 0.19rem;
   /*font-weight: inherit;*/
   transition: all 0.7s;
 }
@@ -134,7 +134,7 @@
 }
 
 .form4login{
-  margin-top: 30px;
+  margin-top: 0.30rem;
 
 }
 
@@ -144,30 +144,30 @@
   }
 .big_word1{
     color: skyblue;
-    font-size: 1.7vw;
+    font-size: 0.233rem;
 }
 
 .big_word2{
-    margin-left: 6vw;
+    margin-left: 0.8196rem;
     color: skyblue;
-    font-size: 1.7vw;
+    font-size: 0.233rem;
 }
 
 .left_cube{
     text-align: center;
     display: inline-block;
-    margin-top: 25vh;
-    margin-left: 10vw;
-    width: 30vw;
-    height: 50vh;
+    margin-top: 1.7rem;
+    margin-left: 1.366rem;
+    width: 4.1rem;
+    height: 3.34rem;
 }
 
 
 .box-card{
-  height:440px;
-  width:500px;
-  margin-right: 150px;
-  margin-top: 140px;
+  height:4.40rem;
+  width:5rem;
+  margin-right: 1.5rem;
+  margin-top: 1.4rem;
 }
 
   .el-input__inner{
@@ -175,11 +175,11 @@
     /*border-left: none;*/
     /*border-right: none;*/
     /*border-bottom-color: darkgray;*/
-    /*border-bottom-width: 1.7px;*/
+    /*border-bottom-width: 0.017rem;*/
     border-color: darkgray;
-    border-width: 1.5px;
-    font-size:16px;
-    height:50px;
+    border-width: 0.015rem;
+    font-size:0.16rem;
+    height:0.50rem;
     transition:all 0.7s;
   }
 
@@ -189,7 +189,7 @@
   }
 
   .buttons{
-    margin-top: 40px;
+    margin-top: 0.40rem;
   }
 #login #footer{
   display:none;
