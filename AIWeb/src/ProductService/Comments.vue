@@ -3,7 +3,7 @@
 
 <template>
   <div>
-  <div id="AIhead" class="firstBackground">
+    <div id="AIhead" class="firstBackground">
       <div style="height: 1.50rem;"></div>
       <div class="table4this" style="margin-left: 20%">
         <tr style="font-size: 0.60rem;letter-spacing: 0.06rem;">评论观点抽取</tr>
@@ -14,58 +14,57 @@
         <tr><el-button class="button4doc">技术文档</el-button></tr>
       </div>
     </div>
-  <div id="AIbodyfir">
-    <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">自动抽取和分析评论观点，帮助您实现舆情分析，用户理解，支持产品优化和营销决策</a>
-  </div>
-  <div id="AIbodysec"class="secondBackground">
-    <!--<img src="../assets/评论抽取/功能介绍.png"class="background">-->
-    <button class="functionButton" id="apply">接口申请</button>
-    <button class="functionButton" id="download">SDK下载</button>
-  </div>
-  <div id="AIbodythi">
-    <p id="txtApp">应用场景</p>
-          <div class="card4this" style="width: 100%;">
+    <div id="AIbodyfir">
+      <a id="introduce">功能介绍</a><br/>
+      <a id="introducecontent">自动抽取和分析评论观点，帮助您实现舆情分析，用户理解，支持产品优化和营销决策</a>
+    </div>
+    <div id="AIbodysec"class="secondBackground">
+      <!--<img src="../assets/评论抽取/功能介绍.png"class="background">-->
+      <button class="functionButton" id="apply">接口申请</button>
+      <button class="functionButton" id="download">SDK下载</button>
+    </div>
+    <div id="AIbodythi">
+      <p id="txtApp">应用场景</p>
+      <div class="card4this" style="width: 100%;">
         <div style="margin-right: auto;margin-left: auto ;margin-top:0.50rem;width:60%">
-        <el-row :gutter="550" >
-
-          <el-col :span="6"><div class="grid-content bg-purple">
-            <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer">
-            </div>
-            <div>
+          <el-row :gutter="550" style="width: 13rem">
+            <el-col :span="6"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
+                <div class="card4footer">
+                </div>
+                <div>
+                  <div class="title4card">
+                    <span>评论与决策分类</span>
+                  </div>
+                  <div class="content4card">
+                    <p style="font-size: 0.16rem;font-weight: 330">通过对产品多维度评论观点进行倾向型分析，给用户提供该产品全方位的评价，方便用户进行决策</p>
+                  </div>
+                </div>
+              </el-card> </div></el-col>
+            <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
+              <div class="card4footer2">
+              </div>
               <div class="title4card">
-              <span>评论与决策分类</span>
+                <span>舆情监控</span>
               </div>
               <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">通过对产品多维度评论观点进行倾向型分析，给用户提供该产品全方位的评价，方便用户进行决策</p>
+                <p style="font-size: 0.16rem;font-weight: 330">通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</p>
               </div>
-            </div>
-          </el-card> </div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer2">
-            </div>
-            <div class="title4card">
-              <span>舆情监控</span>
-            </div>
-            <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</p>
-            </div>
-          </el-card></div></el-col>
+            </el-card></div></el-col>
 
-        </el-row>
+          </el-row>
         </div>
       </div>
     </div>
 
 
- <!--   <img src="../assets/评论抽取/评论与决策分类.png" id="AIcar">
-    <img src="../assets/评论抽取/舆情监控.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="40" id="serviceCaption" disabled>评论与决策分类</textarea>
-    <textarea rows="1" cols="40" id="carCaption"disabled>舆情监控</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>通过对产品多维度评论观点进行倾向型分析，给用户提供该产品全方位的评价，方便用户进行决策</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</textarea>
-  !-->
+    <!--   <img src="../assets/评论抽取/评论与决策分类.png" id="AIcar">
+       <img src="../assets/评论抽取/舆情监控.png" id="AIcustomer"><br/>
+       <textarea rows="1" cols="40" id="serviceCaption" disabled>评论与决策分类</textarea>
+       <textarea rows="1" cols="40" id="carCaption"disabled>舆情监控</textarea><br/>
+       <textarea rows="5" cols="40" id="serviceContent" disabled>通过对产品多维度评论观点进行倾向型分析，给用户提供该产品全方位的评价，方便用户进行决策</textarea>
+       <textarea rows="5" cols="40" id="carContent" disabled>通过对需要舆情监控的实时文字数据流进行情感倾向性分析，把握用户对热点信息的情感倾向性变化</textarea>
+     !-->
 
   </div>
 </template>

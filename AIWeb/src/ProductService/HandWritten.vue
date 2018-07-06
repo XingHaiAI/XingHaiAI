@@ -3,7 +3,7 @@
 
 <template>
   <div>
-  <div id="AIhead" class="firstBackground">
+    <div id="AIhead" class="firstBackground">
       <div style="height: 1.50rem;"></div>
       <div class="table4this" style="margin-left: 20%">
         <tr style="font-size: 0.60rem;letter-spacing: 0.06rem;color:white;">手写识别</tr>
@@ -14,56 +14,56 @@
         <tr><el-button class="button4doc">技术文档</el-button></tr>
       </div>
     </div>
-  <div id="AIbodyfir">
-    <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">提供多种场景下精准的手写文字识别技术服务，让您的应用可以手写识字，提升输入效率，优化用户体验</a>
-  </div>
-  <div id="AIbodysec"class="secondBackground">
-    <!--<img src="../assets/手写识别/功能介绍.png"class="background">-->
-    <button class="functionButton" id="apply">接口申请</button>
-    <button class="functionButton" id="download">SDK下载</button>
-  </div>
-  <div id="AIbodythi">
-    <p id="txtApp">应用场景</p>
-          <div class="card4this" style="width: 100%;">
-            <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
-              <el-row :gutter="550" >
-                <el-col :span="6"><div class="grid-content bg-purple">
-                  <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer">
-            </div>
-            <div>
+    <div id="AIbodyfir">
+      <a id="introduce">功能介绍</a><br/>
+      <a id="introducecontent">提供多种场景下精准的手写文字识别技术服务，让您的应用可以手写识字，提升输入效率，优化用户体验</a>
+    </div>
+    <div id="AIbodysec"class="secondBackground">
+      <!--<img src="../assets/手写识别/功能介绍.png"class="background">-->
+      <button class="functionButton" id="apply">接口申请</button>
+      <button class="functionButton" id="download">SDK下载</button>
+    </div>
+    <div id="AIbodythi">
+      <p id="txtApp">应用场景</p>
+      <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
+          <el-row :gutter="550" style="width: 13rem">
+            <el-col :span="6"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
+                <div class="card4footer">
+                </div>
+                <div>
+                  <div class="title4card">
+                    <span>手写输入法</span>
+                  </div>
+                  <div class="content4card">
+                    <p style="font-size: 0.16rem;font-weight: 330">可以准确地实现输入法的手写功能，提高用户的使用体验</p>
+                  </div>
+                </div>
+              </el-card> </div></el-col>
+            <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
+              <div class="card4footer2">
+              </div>
               <div class="title4card">
-              <span>手写输入法</span>
+                <span>拍照识别</span>
               </div>
               <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">可以准确地实现输入法的手写功能，提高用户的使用体验</p>
+                <p style="font-size: 0.16rem;font-weight: 330">在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</p>
               </div>
-            </div>
-          </el-card> </div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer2">
-            </div>
-            <div class="title4card">
-              <span>拍照识别</span>
-            </div>
-            <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</p>
-            </div>
-          </el-card></div></el-col>
+            </el-card></div></el-col>
 
-        </el-row>
+          </el-row>
         </div>
       </div>
     </div>
 
 
-  <!--  <img src="../assets/手写识别/手写输入法.png" id="AIcar">
-    <img src="../assets/手写识别/拍照识别.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="40" id="serviceCaption" disabled>手写输入法</textarea>
-    <textarea rows="1" cols="40" id="carCaption"disabled>拍照识别</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>可以准确地实现输入法的手写功能，提高用户的使用体验</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</textarea> -->
+    <!--  <img src="../assets/手写识别/手写输入法.png" id="AIcar">
+      <img src="../assets/手写识别/拍照识别.png" id="AIcustomer"><br/>
+      <textarea rows="1" cols="40" id="serviceCaption" disabled>手写输入法</textarea>
+      <textarea rows="1" cols="40" id="carCaption"disabled>拍照识别</textarea><br/>
+      <textarea rows="5" cols="40" id="serviceContent" disabled>可以准确地实现输入法的手写功能，提高用户的使用体验</textarea>
+      <textarea rows="5" cols="40" id="carContent" disabled>在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</textarea> -->
   </div>
 </template>
 

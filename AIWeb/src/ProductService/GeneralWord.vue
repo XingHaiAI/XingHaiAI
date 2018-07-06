@@ -3,7 +3,7 @@
 
 <template>
   <div>
-  <div id="AIhead" class="firstBackground">
+    <div id="AIhead" class="firstBackground">
       <div style="height: 1.50rem;"></div>
       <div class="table4this" style="margin-left: 20%">
         <tr style="font-size: 0.60rem;letter-spacing: 0.06rem;color:white;">通用文字识别</tr>
@@ -14,58 +14,58 @@
         <tr><el-button class="button4doc">技术文档</el-button></tr>
       </div>
     </div>
-  <div id="AIbodyfir">
-    <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">基于业界领先的深度学习技术，依托全网海量优质数据，为您提供多场景，多语种，高精度的整图文字检测和识别服务</a>
-  </div>
-  <div id="AIbodysec"class="secondBackground">
-    <!--<img src="../assets/通用文字识别/功能介绍.png"class="background">-->
-    <button class="functionButton" id="apply">接口申请</button>
-    <button class="functionButton" id="download">SDK下载</button>
-  </div>
-  <div id="AIbodythi">
-    <p id="txtApp">应用场景</p>
-          <div class="card4this" style="width: 100%;">
-            <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
-              <el-row :gutter="550" >
-                <el-col :span="6"><div class="grid-content bg-purple">
-                  <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer">
-            </div>
-            <div>
+    <div id="AIbodyfir">
+      <a id="introduce">功能介绍</a><br/>
+      <a id="introducecontent">基于业界领先的深度学习技术，依托全网海量优质数据，为您提供多场景，多语种，高精度的整图文字检测和识别服务</a>
+    </div>
+    <div id="AIbodysec"class="secondBackground">
+      <!--<img src="../assets/通用文字识别/功能介绍.png"class="background">-->
+      <button class="functionButton" id="apply">接口申请</button>
+      <button class="functionButton" id="download">SDK下载</button>
+    </div>
+    <div id="AIbodythi">
+      <p id="txtApp">应用场景</p>
+      <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
+          <el-row :gutter="550" style="width: 13rem">
+            <el-col :span="6"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
+                <div class="card4footer">
+                </div>
+                <div>
+                  <div class="title4card">
+                    <span>内容审查</span>
+                  </div>
+                  <div class="content4card">
+                    <p style="font-size: 0.16rem;font-weight: 330">识别图像和内容中的违规文字内容，进行违规处理和风险管控</p>
+                  </div>
+                </div>
+              </el-card> </div></el-col>
+            <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
+              <div class="card4footer2">
+              </div>
               <div class="title4card">
-              <span>内容审查</span>
+                <span>拍照识别</span>
               </div>
               <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">识别图像和内容中的违规文字内容，进行违规处理和风险管控</p>
+                <p style="font-size: 0.16rem;font-weight: 330">在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</p>
               </div>
-            </div>
-          </el-card> </div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer2">
-            </div>
-            <div class="title4card">
-              <span>拍照识别</span>
-            </div>
-            <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</p>
-            </div>
-          </el-card></div></el-col>
+            </el-card></div></el-col>
 
-        </el-row>
+          </el-row>
         </div>
       </div>
     </div>
 
   </div>
 
-    <!--
-    <img src="../assets/通用文字识别/内容审查.png" id="AIcar">
-    <img src="../assets/通用文字识别/拍照识别.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="40" id="serviceCaption" disabled>内容审查</textarea>
-    <textarea rows="1" cols="40" id="carCaption"disabled>拍照识别</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>识别图像和内容中的违规文字内容，进行违规处理和风险管控</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</textarea> -->
+  <!--
+  <img src="../assets/通用文字识别/内容审查.png" id="AIcar">
+  <img src="../assets/通用文字识别/拍照识别.png" id="AIcustomer"><br/>
+  <textarea rows="1" cols="40" id="serviceCaption" disabled>内容审查</textarea>
+  <textarea rows="1" cols="40" id="carCaption"disabled>拍照识别</textarea><br/>
+  <textarea rows="5" cols="40" id="serviceContent" disabled>识别图像和内容中的违规文字内容，进行违规处理和风险管控</textarea>
+  <textarea rows="5" cols="40" id="carContent" disabled>在书摘，笔记，搜索，翻译等移动应用中，实现拍照自动识别文字，涂抹识别指定区域的文字，方便用户进行文本录入，提高产品易用性和用户体验</textarea> -->
 
 </template>
 

@@ -3,7 +3,7 @@
 
 <template>
   <div>
-  <div id="AIhead" class="firstBackground">
+    <div id="AIhead" class="firstBackground">
       <div style="height: 1.50rem;"></div>
       <div class="table4this" style="margin-left: 20%">
         <tr style="font-size: 0.60rem;letter-spacing: 0.06rem;color:white;">身份证识别</tr>
@@ -14,57 +14,57 @@
         <tr><el-button class="button4doc">技术文档</el-button></tr>
       </div>
     </div>
-  <div id="AIbodyfir">
-    <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">支持对二代居民身份证正反面的关键字段识别，包括姓名，性别，民族，出生日期，住址，身份证号，签发机关，有效日期。</a>
-  </div>
-  <div id="AIbodysec"class="secondBackground">
-    <!--<img src="../assets/情感倾向分析/功能介绍.png"class="background">-->
-    <button class="functionButton" id="apply">接口申请</button>
-    <button class="functionButton" id="download">SDK下载</button>
-  </div>
-  <div id="AIbodythi">
-    <p id="txtApp">应用场景</p>
-          <div class="card4this" style="width: 100%;">
-            <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
-              <el-row :gutter="550" >
-                <el-col :span="6"><div class="grid-content bg-purple">
-                  <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer">
-            </div>
-            <div>
+    <div id="AIbodyfir">
+      <a id="introduce">功能介绍</a><br/>
+      <a id="introducecontent">支持对二代居民身份证正反面的关键字段识别，包括姓名，性别，民族，出生日期，住址，身份证号，签发机关，有效日期。</a>
+    </div>
+    <div id="AIbodysec"class="secondBackground">
+      <!--<img src="../assets/情感倾向分析/功能介绍.png"class="background">-->
+      <button class="functionButton" id="apply">接口申请</button>
+      <button class="functionButton" id="download">SDK下载</button>
+    </div>
+    <div id="AIbodythi">
+      <p id="txtApp">应用场景</p>
+      <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
+          <el-row :gutter="550" style="width: 13rem">
+            <el-col :span="6"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
+                <div class="card4footer">
+                </div>
+                <div>
+                  <div class="title4card">
+                    <span>视频主播身份认证</span>
+                  </div>
+                  <div class="content4card">
+                    <p style="font-size: 0.16rem;font-weight: 330">在视频直播场景，应用身份证OCR实现主播实名身份证识别和认证，减少人工录入成本，提高用户体验</p>
+                  </div>
+                </div>
+              </el-card> </div></el-col>
+            <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
+              <div class="card4footer2">
+              </div>
               <div class="title4card">
-              <span>视频主播身份认证</span>
+                <span>远程身份认证</span>
               </div>
               <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">在视频直播场景，应用身份证OCR实现主播实名身份证识别和认证，减少人工录入成本，提高用户体验</p>
+                <p style="font-size: 0.16rem;font-weight: 330">使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</p>
               </div>
-            </div>
-          </el-card> </div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer2">
-            </div>
-            <div class="title4card">
-              <span>远程身份认证</span>
-            </div>
-            <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</p>
-            </div>
-          </el-card></div></el-col>
+            </el-card></div></el-col>
 
-        </el-row>
+          </el-row>
         </div>
       </div>
 
     </div>
 
 
-  <!--  <img src="../assets/情感倾向分析/口碑分析.png" id="AIcar">
-    <img src="../assets/情感倾向分析/舆情监控.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="40" id="serviceCaption" disabled>视频主播身份认证</textarea>
-    <textarea rows="1" cols="40" id="carCaption"disabled>远程身份认证</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>在视频直播场景，应用身份证OCR实现主播实名身份证识别和认证，减少人工录入成本，提高用户体验</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea> -->
+    <!--  <img src="../assets/情感倾向分析/口碑分析.png" id="AIcar">
+      <img src="../assets/情感倾向分析/舆情监控.png" id="AIcustomer"><br/>
+      <textarea rows="1" cols="40" id="serviceCaption" disabled>视频主播身份认证</textarea>
+      <textarea rows="1" cols="40" id="carCaption"disabled>远程身份认证</textarea><br/>
+      <textarea rows="5" cols="40" id="serviceContent" disabled>在视频直播场景，应用身份证OCR实现主播实名身份证识别和认证，减少人工录入成本，提高用户体验</textarea>
+      <textarea rows="5" cols="40" id="carContent" disabled>使用身份证，银行卡识别，以此实现用户信息的录入，应用于金融场景的用户身份认证，速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea> -->
 
 
   </div>

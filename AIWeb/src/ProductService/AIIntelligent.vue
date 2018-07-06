@@ -27,32 +27,32 @@
 
       <div class="card4this" style="width: 100%;">
         <div style="margin-right: auto;margin-left: auto;width: 60%">
-        <el-row :gutter="550" >
-          <el-col :span="6"><div class="grid-content bg-purple">
-            <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer">
-            </div>
-            <div>
-              <div class="title4card">
-              <span>智能客服</span>
-              </div>
-              <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">精确适配业务需求，帮助解答大量通用性较强的问题，大幅提升人效。可定制和持续学习，广泛用于网站，APP，电话的客服甚至线下业务窗口等场景</p>
-              </div>
-            </div>
-          </el-card></div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple">
-            <el-card style="width: 3.36rem;height: 4rem;" :body-style="{padding:'0rem'}">
-            <div class="card4footer2">
-            </div>
-            <div class="title4card">
-              <span>智能汽车</span>
-            </div>
-            <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">赋予汽车智能对话操作的能力，帮助驾驶者通过对话直接满足导航，查询地点，拨打电话，多媒体控制等驾车中的操作需求，保障驾驶安全</p>
-            </div>
-          </el-card></div></el-col>
-        </el-row>
+          <el-row :gutter="550" style="width: 13rem" >
+            <el-col :span="6"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
+                <div class="card4footer">
+                </div>
+                <div>
+                  <div class="title4card">
+                    <span>智能客服</span>
+                  </div>
+                  <div class="content4card">
+                    <p style="font-size: 0.16rem;font-weight: 330">精确适配业务需求，帮助解答大量通用性较强的问题，大幅提升人效。可定制和持续学习，广泛用于网站，APP，电话的客服甚至线下业务窗口等场景</p>
+                  </div>
+                </div>
+              </el-card></div></el-col>
+            <el-col :span="10"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4rem;" :body-style="{padding:'0rem'}">
+                <div class="card4footer2">
+                </div>
+                <div class="title4card">
+                  <span>智能汽车</span>
+                </div>
+                <div class="content4card">
+                  <p style="font-size: 0.16rem;font-weight: 330">赋予汽车智能对话操作的能力，帮助驾驶者通过对话直接满足导航，查询地点，拨打电话，多媒体控制等驾车中的操作需求，保障驾驶安全</p>
+                </div>
+              </el-card></div></el-col>
+          </el-row>
         </div>
       </div>
       <!--

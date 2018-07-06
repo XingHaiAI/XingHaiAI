@@ -3,7 +3,7 @@
 
 <template>
   <div>
- <div id="AIhead" class="firstBackground">
+    <div id="AIhead" class="firstBackground">
       <div style="height: 1.50rem;"></div>
       <div class="table4this" style="margin-left: 20%">
         <tr style="font-size: 0.60rem;letter-spacing: 0.6rem;color:white;">车牌识别</tr>
@@ -14,45 +14,45 @@
         <tr><el-button class="button4doc">技术文档</el-button></tr>
       </div>
     </div>
-  <div id="AIbodyfir">
-    <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">支持对中国大陆机动车车牌的识别，包括地域编号和车牌号</a>
-  </div>
-  <div id="AIbodysec"class="secondBackground">
-    <!--<img src="../assets/车牌识别/功能介绍.png"class="background">-->
-    <button class="functionButton" id="apply">接口申请</button>
-    <button class="functionButton" id="download">SDK下载</button>
-  </div>
-  <div id="AIbodythi">
-    <p id="txtApp">应用场景</p>
-          <div class="card4this" style="width: 100%;">
+    <div id="AIbodyfir">
+      <a id="introduce">功能介绍</a><br/>
+      <a id="introducecontent">支持对中国大陆机动车车牌的识别，包括地域编号和车牌号</a>
+    </div>
+    <div id="AIbodysec"class="secondBackground">
+      <!--<img src="../assets/车牌识别/功能介绍.png"class="background">-->
+      <button class="functionButton" id="apply">接口申请</button>
+      <button class="functionButton" id="download">SDK下载</button>
+    </div>
+    <div id="AIbodythi">
+      <p id="txtApp">应用场景</p>
+      <div class="card4this" style="width: 100%;">
         <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
-        <el-row :gutter="550" >
-          <el-col :span="6"><div class="grid-content bg-purple">
-            <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer">
-            </div>
-            <div>
+          <el-row :gutter="550" style="width: 13rem">
+            <el-col :span="6"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
+                <div class="card4footer">
+                </div>
+                <div>
+                  <div class="title4card">
+                    <span>停车场闸机识别</span>
+                  </div>
+                  <div class="content4card">
+                    <p style="font-size: 0.16rem;font-weight: 330">在停车场的闸机上使用车牌识别，自动识别车牌号码，实现无卡，无人的停车场管理，快捷方便</p>
+                  </div>
+                </div>
+              </el-card> </div></el-col>
+            <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
+              <div class="card4footer2">
+              </div>
               <div class="title4card">
-              <span>停车场闸机识别</span>
+                <span>道路违章识别</span>
               </div>
               <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">在停车场的闸机上使用车牌识别，自动识别车牌号码，实现无卡，无人的停车场管理，快捷方便</p>
+                <p style="font-size: 0.16rem;font-weight: 330">在交通道路的摄像头中加入车牌识别结合违章判断，对违章的车辆号码进行自动识别，实现自动化的违章审计</p>
               </div>
-            </div>
-          </el-card> </div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple"><el-card style="width: 3.36rem;height: 4rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer2">
-            </div>
-            <div class="title4card">
-              <span>道路违章识别</span>
-            </div>
-            <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">在交通道路的摄像头中加入车牌识别结合违章判断，对违章的车辆号码进行自动识别，实现自动化的违章审计</p>
-            </div>
-          </el-card></div></el-col>
+            </el-card></div></el-col>
 
-        </el-row>
+          </el-row>
         </div>
       </div>
     </div>

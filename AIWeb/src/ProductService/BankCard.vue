@@ -3,72 +3,72 @@
 
 <template>
   <div>
-  <div id="AIhead" class="firstBackground">
-    <!--<img src="../assets/银行卡识别/银行卡识别.png" class="background">-->
-    <!--<a id="title">银行卡识别</a>-->
-    <!--<textarea id="titlecontent" rows="2"cols="40" disabled>识别银行卡的卡号并返回发卡行和卡片性质中心</textarea>-->
-    <!--<button>技术文档</button>-->
-    <div style="height: 1.50rem;"></div>
-    <div class="table4this" style="margin-left: 20%">
-      <tr style="font-size: 0.60rem;color: white;letter-spacing: 0.06rem;">银行卡识别</tr>
-      <div style="height: 0.20rem;color: white"></div>
-      <tr style="font-size: 0.22rem;color: white;font-weight: 300">识别银行卡的卡号并返回发卡行和卡片性质中心</tr>
-      <div style="height: 0.20rem;"></div>
-      <tr><el-button class="button4doc" :round="false">技术文档</el-button></tr>
-    </div>
-  </div>
-  <div id="AIbodyfir">
-    <a id="introduce">功能介绍</a><br/>
-    <a id="introducecontent">识别银行卡卡号，发卡行以及卡牌类别，卡片性质等信息</a>
-  </div>
-  <div id="AIbodysec"class="secondBackground">
-    <!--<img src="../assets/银行卡识别/功能介绍.png"class="background">-->
-    <button class="functionButton" id="apply">接口申请</button>
-    <button class="functionButton" id="download">SDK下载</button>
-  </div>
-  <div id="AIbodythi">
-    <p id="txtApp">应用场景</p>
-    <div style="height: 0.50rem;"></div>
-    <div class="card4this" style="width: 100%;">
-      <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
-        <el-row :gutter="550" >
-          <el-col :span="6"><div class="grid-content bg-purple">
-            <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer">
-            </div>
-            <div>
-              <div class="title4card">
-                <span>金融远程身份验证</span>
-              </div>
-              <div class="content4card">
-                <p style="font-size: 0.16rem;font-weight: 330">使用身份证OCR，银行卡OCR实现用户信息的自动识别和录入，应用于金融场景用户远程的身份认证，识别速度快，准确率高，减少用户输入成本，有效提高用户的体验</p>
-              </div>
-            </div>
-          </el-card> </div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple">
-            <el-card style="width: 3.36rem;height: 4.00rem" :body-style="{padding:'0rem'}">
-            <div class="card4footer2">
-            </div>
-            <div class="title4card">
-              <span>电商支付绑卡</span>
-            </div>
-            <div class="content4card">
-              <p style="font-size: 0.16rem;font-weight: 330">在支付绑卡缓解，使用银行卡OCR实现银行卡的拍照自动识别，提升数据录入的准确性和效率，提高用户体验</p>
-            </div>
-          </el-card></div></el-col>
-
-        </el-row>
+    <div id="AIhead" class="firstBackground">
+      <!--<img src="../assets/银行卡识别/银行卡识别.png" class="background">-->
+      <!--<a id="title">银行卡识别</a>-->
+      <!--<textarea id="titlecontent" rows="2"cols="40" disabled>识别银行卡的卡号并返回发卡行和卡片性质中心</textarea>-->
+      <!--<button>技术文档</button>-->
+      <div style="height: 1.50rem;"></div>
+      <div class="table4this" style="margin-left: 20%">
+        <tr style="font-size: 0.60rem;color: white;letter-spacing: 0.06rem;">银行卡识别</tr>
+        <div style="height: 0.20rem;color: white"></div>
+        <tr style="font-size: 0.22rem;color: white;font-weight: 300">识别银行卡的卡号并返回发卡行和卡片性质中心</tr>
+        <div style="height: 0.20rem;"></div>
+        <tr><el-button class="button4doc" :round="false">技术文档</el-button></tr>
       </div>
     </div>
-    <!--
-    <img src="../assets/银行卡识别/金融远程身份认证.png" id="AIcar">
-    <img src="../assets/银行卡识别/电商支付绑卡.png" id="AIcustomer"><br/>
-    <textarea rows="1" cols="40" id="serviceCaption" disabled>金融远程身份认证</textarea>
-    <textarea rows="1" cols="40" id="carCaption"disabled>电商支付绑卡</textarea><br/>
-    <textarea rows="5" cols="40" id="serviceContent" disabled>使用身份证OCR，银行卡OCR实现用户信息的自动识别和录入，应用于金融场景用户远程的身份认证，识别速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea>
-    <textarea rows="5" cols="40" id="carContent" disabled>在支付绑卡缓解，使用银行卡OCR实现银行卡的拍照自动识别，提升数据录入的准确性和效率，提高用户体验</textarea>
-    -->
-  </div>
+    <div id="AIbodyfir">
+      <a id="introduce">功能介绍</a><br/>
+      <a id="introducecontent">识别银行卡卡号，发卡行以及卡牌类别，卡片性质等信息</a>
+    </div>
+    <div id="AIbodysec"class="secondBackground">
+      <!--<img src="../assets/银行卡识别/功能介绍.png"class="background">-->
+      <button class="functionButton" id="apply">接口申请</button>
+      <button class="functionButton" id="download">SDK下载</button>
+    </div>
+    <div id="AIbodythi">
+      <p id="txtApp">应用场景</p>
+      <div style="height: 0.50rem;"></div>
+      <div class="card4this" style="width: 100%;">
+        <div style="margin-right: auto;margin-left: auto;margin-top:0.50rem;width: 60%">
+          <el-row :gutter="550" style="width: 13rem">
+            <el-col :span="6"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
+                <div class="card4footer">
+                </div>
+                <div>
+                  <div class="title4card">
+                    <span>金融远程身份验证</span>
+                  </div>
+                  <div class="content4card">
+                    <p style="font-size: 0.16rem;font-weight: 330">使用身份证OCR，银行卡OCR实现用户信息的自动识别和录入，应用于金融场景用户远程的身份认证，识别速度快，准确率高，减少用户输入成本，有效提高用户的体验</p>
+                  </div>
+                </div>
+              </el-card> </div></el-col>
+            <el-col :span="10"><div class="grid-content bg-purple">
+              <el-card style="width: 3.36rem;height: 4.00rem" :body-style="{padding:'0rem'}">
+                <div class="card4footer2">
+                </div>
+                <div class="title4card">
+                  <span>电商支付绑卡</span>
+                </div>
+                <div class="content4card">
+                  <p style="font-size: 0.16rem;font-weight: 330">在支付绑卡缓解，使用银行卡OCR实现银行卡的拍照自动识别，提升数据录入的准确性和效率，提高用户体验</p>
+                </div>
+              </el-card></div></el-col>
+
+          </el-row>
+        </div>
+      </div>
+      <!--
+      <img src="../assets/银行卡识别/金融远程身份认证.png" id="AIcar">
+      <img src="../assets/银行卡识别/电商支付绑卡.png" id="AIcustomer"><br/>
+      <textarea rows="1" cols="40" id="serviceCaption" disabled>金融远程身份认证</textarea>
+      <textarea rows="1" cols="40" id="carCaption"disabled>电商支付绑卡</textarea><br/>
+      <textarea rows="5" cols="40" id="serviceContent" disabled>使用身份证OCR，银行卡OCR实现用户信息的自动识别和录入，应用于金融场景用户远程的身份认证，识别速度快，准确率高，减少用户输入成本，有效提高用户的体验</textarea>
+      <textarea rows="5" cols="40" id="carContent" disabled>在支付绑卡缓解，使用银行卡OCR实现银行卡的拍照自动识别，提升数据录入的准确性和效率，提高用户体验</textarea>
+      -->
+    </div>
   </div>
 </template>
 
