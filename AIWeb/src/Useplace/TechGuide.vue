@@ -16,7 +16,7 @@
               <template slot="title">
                 <span>入门教学</span>
               </template>
-              <el-menu-item index="1-1" class="teach" popper-append-to-body="true">API调用规则</el-menu-item>
+              <el-menu-item index="1-1" class="teach" popper-append-to-body="true"><router-link to="/Teaching" style="text-decoration: none;color: black">API调用规则</router-link></el-menu-item>
               <el-menu-item index="1-2" class="teach"popper-append-to-body="true">调用返回值</el-menu-item>
               <el-menu-item index="1-3" class="teach"popper-append-to-body="true">代码示例</el-menu-item>
             </el-submenu>
@@ -55,7 +55,7 @@
           <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;" />
           <el-button type="primary" icon="el-icon-search" id="find"></el-button>
         </div>
-        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gtAPI调用规则</p>
+        <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gt如何使用API</p>
       </div>
       <div id="text">
         <p style="font-size: 0.30rem;margin-bottom: 10%;margin-top: 0.3rem">如何使用API</p>
