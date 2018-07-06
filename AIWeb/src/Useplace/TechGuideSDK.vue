@@ -122,7 +122,7 @@
     top: 40%;
   }
   #search{
-    height: 10%;
+    height: 11%;
     padding-top:3%;
     padding-left: 5%;
     padding-bottom: 0;
