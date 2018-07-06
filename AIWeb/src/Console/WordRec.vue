@@ -13,13 +13,13 @@
         <div style="margin-right:0;margin-left:1.5rem;width: 70%">
         <el-row >
           <el-col :span="14"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">通用文字识别</p>
             <div class="card4footer">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">识别图片中的文字信息</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -28,13 +28,13 @@
           </el-card></div></el-col>
           <el-col :span="10"><div class="grid-content bg-purple">
 
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">手写识别</p>
+            <div class="card4footer2">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">识别手写中文汉字</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -44,13 +44,13 @@
         </el-row>
         <el-row >
           <el-col :span="14"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">身份证识别</p>
+            <div class="card4footer3">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">识别身份证正反面的文字信息</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -58,43 +58,14 @@
             </div>
           </el-card></div></el-col>
           <el-col :span="10"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">银行卡识别</p>
+            <div class="card4footer4">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
-              </div>
-              <div>
-                <el-button class="button4card">SDK下载</el-button>
-              </div>
-            </div>
-          </el-card></div></el-col>
-        </el-row>
-        <el-row>
-          <el-col :span="14"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
-            </div>
-            <div>
-              <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
-              </div>
-              <div>
-                <el-button class="button4card">SDK下载</el-button>
-              </div>
-            </div>
-          </el-card></div></el-col>
-          <el-col :span="10"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
-            </div>
-            <div>
-              <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">识别银行卡的卡号并返回发卡行和卡片性质信息</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -104,20 +75,50 @@
         </el-row>
         <el-row >
           <el-col :span="14"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">车牌识别</p>
+            <div class="card4footer5">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">对小客车的车牌进行识别</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
               </div>
             </div>
           </el-card></div></el-col>
+          <el-col :span="10"><div class="grid-content bg-purple">
 
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">驾驶证识别</p>
+            <div class="card4footer6">
+            </div>
+            <div>
+              <div class="content4card">
+              <p style="font-size: 15px;font-weight: 600">识别机动车驾驶证所有关键字段</p>
+              </div>
+              <div>
+                <el-button class="button4card">SDK下载</el-button>
+              </div>
+            </div>
+          </el-card></div></el-col>
+        </el-row>
+        <el-row >
+          <el-col :span="14"><div class="grid-content bg-purple">
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">行驶证识别</p>
+            <div class="card4footer7">
+            </div>
+            <div>
+              <div class="content4card">
+              <p style="font-size: 15px;font-weight: 600">识别机动车行驶证所有关键字段</p>
+              </div>
+              <div>
+                <el-button class="button4card">SDK下载</el-button>
+              </div>
+            </div>
+          </el-card></div></el-col>
         </el-row>
         </div>
       </div>
@@ -213,7 +214,7 @@ import Side from "./side.vue"
     padding: 0;
   }
   #all{
-    height: 29rem;
+    height: 30rem;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -231,17 +232,41 @@ span{
   font-size:0.22rem;
 }
   .card4footer{
-    background-image: url("../assets/AI智能/AI智能客服.png");
-    width: 100%;
-    height: 50%;
-    padding: 0;
+    background-image: url("../assets/控制台/文字识别/通用文字识别.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
   }
 
   .card4footer2{
-    background-image: url("../assets/AI智能/AI智能汽车.png");
-    width: 100%;
-    height: 50%;
-    padding: 0;
+    background-image: url("../assets/控制台/文字识别/手写识别.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
+  }
+
+    .card4footer3{
+    background-image: url("../assets/控制台/文字识别/身份证识别.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
+  }
+    .card4footer4{
+    background-image: url("../assets/控制台/文字识别/银行卡识别.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
+  }
+    .card4footer5{
+    background-image: url("../assets/控制台/文字识别/车牌识别.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
+  }
+    .card4footer6{
+    background-image: url("../assets/控制台/文字识别/驾驶证识别.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
+  }
+    .card4footer7{
+    background-image: url("../assets/控制台/文字识别/行驶证识别.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
   }
 
   .title4card{

@@ -13,13 +13,13 @@
         <div style="margin-right:0;margin-left:1.5rem;width: 70%">
         <el-row >
           <el-col :span="14"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
+            <el-card style="width: 350px;height: 480px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">词义相似度</p>
             <div class="card4footer">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">输入两个词，得到两个词的相似度结果</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -28,13 +28,13 @@
           </el-card></div></el-col>
           <el-col :span="10"><div class="grid-content bg-purple">
 
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+            <el-card style="width: 350px;height: 480px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">短文本相似度</p>
+            <div class="card4footer2">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">提供不同短文本之间相似度的计算，输出一个介于0到1之间的实数值，越大则相似度越高</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -42,15 +42,15 @@
             </div>
           </el-card></div></el-col>
         </el-row>
-                <el-row >
+         <el-row >
           <el-col :span="14"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+            <el-card style="width: 350px;height: 480px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">评论观点抽取</p>
+            <div class="card4footer3">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">提取一条评论句子的关注点和评论观点，并输出评论观点标签及评论观点积极性</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -59,13 +59,13 @@
           </el-card></div></el-col>
           <el-col :span="10"><div class="grid-content bg-purple">
 
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+            <el-card style="width: 350px;height: 480px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">情感倾向分析</p>
+            <div class="card4footer4">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">对包含主观观点信息的文本进行情感类别（积极、消极、中性）判断，并给出相应的置信度</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -75,20 +75,19 @@
         </el-row>
         <el-row >
           <el-col :span="14"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+            <el-card style="width: 350px;height: 480px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">AI客服</p>
+            <div class="card4footer5">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">基于用户输入的文本内容，返回场景BOT理解与应答的信息</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
               </div>
             </div>
           </el-card></div></el-col>
-
         </el-row>
         </div>
       </div>
@@ -202,17 +201,31 @@ span{
   font-size:0.22rem;
 }
   .card4footer{
-    background-image: url("../assets/AI智能/AI智能客服.png");
-    width: 100%;
-    height: 50%;
-    padding: 0;
+    background-image: url("../assets/控制台/自然语言处理/词义相似度.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
   }
 
   .card4footer2{
-    background-image: url("../assets/AI智能/AI智能汽车.png");
-    width: 100%;
-    height: 50%;
-    padding: 0;
+    background-image: url("../assets/控制台/自然语言处理/短文本相似度.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
+  }
+
+    .card4footer3{
+    background-image: url("../assets/控制台/自然语言处理/评论观点抽取.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
+  }
+    .card4footer4{
+    background-image: url("../assets/控制台/自然语言处理/情感倾向分析.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
+  }
+    .card4footer5{
+    background-image: url("../assets/控制台/自然语言处理/AI客服.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
   }
 
   .title4card{

@@ -13,13 +13,13 @@
         <div style="margin-right:0;margin-left:1.5rem;width: 70%">
         <el-row >
           <el-col :span="14"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
             <p class="title4card">人脸检测</p>
             <div class="card4footer">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">检测出图片中的人脸并标记出位置信息</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -28,13 +28,13 @@
           </el-card></div></el-col>
           <el-col :span="10"><div class="grid-content bg-purple">
 
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">人脸对比</p>
+            <div class="card4footer2">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">比对两张图片中人脸相似度，并返回相似度分值</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
@@ -42,22 +42,21 @@
             </div>
           </el-card></div></el-col>
         </el-row>
-        <el-row >
+        <el-row>
           <el-col :span="14"><div class="grid-content bg-purple">
-            <el-card style="width: 336px;height: 400px;margin-top:1rem;" :body-style="{padding:'0px'}">
-            <p class="title4card">人脸检测</p>
-            <div class="card4footer">
+            <el-card style="width: 350px;height: 460px;margin-top:1rem;" :body-style="{padding:'0px'}">
+            <p class="title4card">人脸查找</p>
+            <div class="card4footer3">
             </div>
             <div>
               <div class="content4card">
-              <p style="font-size: 16px;font-weight: 330">检测出图片中的人脸并标记出位置信息</p>
+              <p style="font-size: 15px;font-weight: 600">在指定人脸集合中，找到最相似的人脸</p>
               </div>
               <div>
                 <el-button class="button4card">SDK下载</el-button>
               </div>
             </div>
           </el-card></div></el-col>
-
         </el-row>
         </div>
       </div>
@@ -171,17 +170,21 @@ span{
   font-size:0.22rem;
 }
   .card4footer{
-    background-image: url("../assets/AI智能/AI智能客服.png");
-    width: 100%;
-    height: 50%;
-    padding: 0;
+    background-image: url("../assets/控制台/SDK下载/人脸检测.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
   }
 
   .card4footer2{
-    background-image: url("../assets/AI智能/AI智能汽车.png");
-    width: 100%;
-    height: 50%;
-    padding: 0;
+    background-image: url("../assets/控制台/SDK下载/人脸对比.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
+  }
+
+    .card4footer3{
+    background-image: url("../assets/控制台/SDK下载/人脸查找.png");
+    padding: 75.15% 0 0;
+    background-size: cover;
   }
 
   .title4card{
