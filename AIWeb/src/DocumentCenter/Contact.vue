@@ -1,6 +1,4 @@
 <template>
-  <html>
-<body>
 <div class="bg">
     <div class="head_content">
         <div class="title">联系我们</div>
@@ -45,38 +43,131 @@
         </div>
         <div class="input_group">
             <div class="input_item_left">
-                <input class="input" type="text" placeholder="姓名"/><span style="color:red;"> *</span>
-                <input class="input" type="text" placeholder="联系电话"/><span style="color:red;"> *</span>
-                <input class="input" type="text" placeholder="电子邮箱"/><span style="color:red;"> *</span>
-                <input class="input" type="text" placeholder="所属公司机构"/>
+              <el-form :model="formAdvice" ref="formAdvice" :rules="rulesAdvice">
+                <el-form-item prop="name" style="height:0.6rem;">
+                  <el-input placeholder="请输入姓名" v-model="formAdvice.name"></el-input>
+                </el-form-item>
+                <el-form-item prop="telephone" style="height: 0.6rem">
+                  <el-input placeholder="请输入联系电话" v-model="formAdvice.telephone"></el-input>
+                </el-form-item>
+                <el-form-item prop="email" style="height: 0.6rem">
+                  <el-input placeholder="请输入电子邮箱" v-model="formAdvice.email"></el-input>
+                </el-form-item>
+                <el-form-item prop="organization" style="height: 0.6rem">
+                  <el-input placeholder="请输入机构名" v-model="formAdvice.organization"></el-input>
+                </el-form-item>
+              </el-form>
+
             </div>
-            <textarea class="input_textarea" placeholder="请描述您的问题。"></textarea>
+            <textarea class="input_textarea" v-model="formAdvice.content" placeholder="请描述您的问题。"></textarea>
         </div>
         <div class="check_box">
-            <input class="box" type="checkbox"/>
-            <div class="word">我已阅读并同意<span class="xinghai"> 《兴海物联隐私政策》 </span></div>
+          <el-checkbox v-model="checked">我已阅读并同意<span class="xinghai"> 《兴海物联隐私政策》 </span></el-checkbox>
+            <!--<div class="word">/div>-->
         </div>
-        <div class="submit">提交</div>
+        <div style="text-align: center">
+          <div style="height: 20px"></div>
+        <el-button style="height: 0.35rem;width: 1.2rem;" class="button4submit" @click="submit" :disabled="!checked">提交</el-button>
+        </div>
     </div>
 </div>
-</body>
-  </html>
+
 </template>
 <script>
 export default {
-  name: 'ContactUs'
+  name: 'ContactUs',
+  data(){
+    return{
+      checked:false,
+      formAdvice:{
+        name:'',
+        telephone:'',
+        email:'',
+        organization:'',
+        content:''
+      },
+      rulesAdvice:{
+        name:[
+          {required:true,message:'请输入姓名',trigger:'change'}
+        ],
+        telephone:[
+          {required:true,message:'请输入联系电话',trigger:'change'}
+        ],
+        email:[
+          {required:true,message:'请输入电子邮箱',trigger:'change'}
+        ],
+        organization:[
+          {required:true,message:'请输入机构名',trigger:'change'}
+        ],
+        content:[
+          {required:true,min:2,max:300,message:'请输入1-300以内的描述',trigger:'change'}
+        ]
+      }
+    }
+  },
+  methods:{
+      submit() {
+        let _this=this;
+
+        if (this.$data.formAdvice.content.length < 1 || this.$data.formAdvice.content.length > 300) {
+          this.$message({
+            type: 'error',
+            message: '请输入1-300字以内的描述'
+          })
+        } else {
+          this.$refs['formAdvice'].validate((valid) => {
+            if (valid) {
+              this.$axios({
+                method:'get',
+                url:'/account/ques',
+                data:this.$qs.stringify(this.$data.formAdvice)
+              }).then((res)=>{
+                this.$message({
+                  type:'success',
+                  message:'信息反馈成功！'
+                })
+                _this.$data.formAdvice.content='';
+                _this.$data.formAdvice.organization='';
+                _this.$data.formAdvice.email='';
+                _this.$data.formAdvice.name='';
+              }).catch((err)=>{
+                this.$message({
+                  type:'error',
+                  message:'反馈失败！'
+                })
+              })
+            }
+          })
+        }
+      }
+  }
 }
 </script>
 
-<style scoped>
+<style lang="less">
+.button4submit{
+  color: white;
+  background-color: #2285ea;
+}
+
+.button4submit:hover{
+  background-color: #2285ea;
+  color: white;
+}
+
+.button4submit:focus{
+  background-color: #2285ea;
+  color: white;
+}
+
 #ContactUs{
    background-color: blue;
    background-image: url("../assets/联系我们/bg.jpg");
    background-size: 100% 100%;
    width: 13.66rem;
    height: 2.45rem;
-   margin: 0;
-   padding: 0;
+   /*margin: 0;*/
+   /*padding: 0;*/
    display: flex;
    flex-direction: column;
    font-size: 62.5%;
@@ -86,6 +177,10 @@ export default {
     width:100%;
     height:100%;
 }
+
+
+
+
 div{
   margin: 0;
   padding: 0;
@@ -105,6 +200,12 @@ div{
 .step_line{
   margin-top: 0.001rem;
 }
+
+.el-input__inner{
+  border-color:black;
+}
+
+
 .icon_1{
   background-image: url("../assets/联系我们/icon1.png");
   margin-top:0.05rem;
@@ -161,8 +262,8 @@ div{
 	align-self:center;
 }
 body{
-  margin: 0;
-  padding: 0;
+  /*margin: 0;*/
+  /*padding: 0;*/
 }
 .xinghai{
 	color:#2285ea;
