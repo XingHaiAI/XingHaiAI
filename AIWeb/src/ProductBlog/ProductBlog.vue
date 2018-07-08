@@ -1,167 +1,227 @@
 <template>
-  <html>
-<body>
 <div class="bg">
     <div class="head_content">
     </div>
-    <div class="link_group">
-        <div class="title">
-            <div class="word">类型</div>
-        </div>
-        <div class="link_content">
-            <div class="side_column">
-              <span class="options">全部类别</span>
-              <span class="decorate_bar_on"></span>
-            </div>
-            <div class="side_column">
-              <span class="options">产品更新</span>
-              <span class="decorate_bar"></span>
-            </div>
-            <div class="side_column">
-              <span class="options">服务公告</span>
-              <span class="decorate_bar"></span>
-            </div>
-            <div class="side_column">
-              <span class="options">优惠服务</span>
-              <span class="decorate_bar"></span>
-            </div>
-        </div>
+    <div class="blog_menu" style="height: 10rem;">
+      <el-row :gutter="20">
+        <el-col :span="6">
+          <div class="grid-content bg-purple">
+            <el-menu
+              :default-active="activeTab"
+              class="el-menu-vertical-demo"
+              @select="handleSelect"
+              style="text-align: center;height: 10rem;box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);">
+              <el-menu-item index="1" >
+
+                <span slot="title">全部类别</span>
+              </el-menu-item>
+              <el-menu-item index="2">
+
+                <span slot="title">产品更新</span>
+              </el-menu-item>
+              <el-menu-item index="3">
+
+                <span slot="title">服务公告</span>
+              </el-menu-item>
+              <el-menu-item index="4">
+
+                <span slot="title">优惠服务</span>
+              </el-menu-item>
+            </el-menu>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div style="height: 0.2rem;"></div>
+          <div v-if="activeTab==='1'" class="animated bounceInRight" style="width: 10rem;margin-left: 0.4rem">
+            <el-card style="width: 80%;margin-top: 0.3rem;" v-for="(item,index) in blogAll" :key="index">
+              <div style="background-color: bisque">
+                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-caret-right" style="color: cornflowerblue;"/> {{item.name}}</span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+              </div>
+              <div style="height: 0.6rem"></div>
+              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
+                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+              </div>
+              <el-collapse-transition>
+                  <div style="padding: 0.1rem" v-show="item.show">
+                    <p style="font-size: 0.2rem">具体内容</p>
+                    <div style="height: 0.15rem"></div>
+                    <p style="font-size: 0.16rem">-{{item.content}}</p>
+                  </div>
+              </el-collapse-transition>
+          <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
+            <div style="height: 0.2rem"></div>
+            <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
+            <el-button type="text"   @click="item.show=!item.show" style="font-size: 20px;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+          </div>
+            </el-card>
+          </div>
+          <div v-if="activeTab==='2'" class="animated bounceInRight" style="width: 10rem;margin-left: 0.4rem">
+            <el-card style="width: 80%;margin-top: 0.3rem;" v-for="(item,index) in blogUpdate" :key="index">
+              <div style="background-color: bisque">
+                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.name}}</span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+              </div>
+              <div style="height: 0.6rem"></div>
+              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
+                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+              </div>
+              <el-collapse-transition>
+                <div style="padding: 0.1rem" v-show="item.show">
+                  <p style="font-size: 0.2rem">具体内容</p>
+                  <div style="height: 0.15rem"></div>
+                  <p style="font-size: 0.16rem">-{{item.content}}</p>
+                </div>
+              </el-collapse-transition>
+              <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
+                <div style="height: 0.2rem"></div>
+                <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
+                <el-button type="text"   @click="item.show=!item.show" style="font-size: 20px;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+              </div>
+            </el-card>
+          </div>
+          <div v-if="activeTab==='3'" class="animated bounceInRight" style="width: 10rem;margin-left: 0.4rem">
+            <el-card style="width: 80%;margin-top: 0.3rem;" v-for="(item,index) in blogService" :key="index">
+              <div style="background-color: bisque">
+                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-goods" style="color: cornflowerblue;"/> {{item.name}}</span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+              </div>
+              <div style="height: 0.6rem"></div>
+              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
+                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+              </div>
+              <el-collapse-transition>
+                <div style="padding: 0.1rem" v-show="item.show">
+                  <p style="font-size: 0.2rem">具体内容</p>
+                  <div style="height: 0.15rem"></div>
+                  <p style="font-size: 0.16rem">-{{item.content}}</p>
+                </div>
+              </el-collapse-transition>
+              <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
+                <div style="height: 0.2rem"></div>
+                <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
+                <el-button type="text"   @click="item.show=!item.show" style="font-size: 20px;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+              </div>
+            </el-card>
+          </div>
+          <div v-if="activeTab==='4'" class="animated bounceInRight" style="width: 10rem;margin-left: 0.4rem">
+            <el-card style="width: 80%;margin-top: 0.3rem;" v-for="(item,index) in blogDiscount" :key="index">
+              <div style="background-color: bisque">
+                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.name}}</span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+              </div>
+              <div style="height: 0.6rem"></div>
+              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
+                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+              </div>
+              <el-collapse-transition>
+                <div style="padding: 0.1rem" v-show="item.show">
+                  <p style="font-size: 0.2rem">具体内容</p>
+                  <div style="height: 0.15rem"></div>
+                  <p style="font-size: 0.16rem">-{{item.content}}</p>
+                </div>
+              </el-collapse-transition>
+              <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
+                <div style="height: 0.2rem"></div>
+                <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
+                <el-button type="text"   @click="item.show=!item.show" style="font-size: 20px;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+              </div>
+            </el-card>
+          </div>
+        </el-col>
+      </el-row>
     </div>
-    <div class="from_group">
-      <div class="blog">
-        <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/></img>语音识别的API文档更新</div>
-        <div class="blog_info">
-          <span class="time">2018-4-30</span>
-          <span class="tip">更新通知</span>
-        </div>
-        <div class="outline">联网授权V3不需要绑定BUNDLE ID；授权时长可灵活延长</div>
-        <div class="read_more">>>阅读全文</div>
-      </div>
-      <div class="blog">
-        <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/></img>语音识别的API文档更新</div>
-        <div class="blog_info">
-          <span class="time">2018-4-30</span>
-          <span class="tip">更新通知</span>
-        </div>
-        <div class="outline">联网授权V3不需要绑定BUNDLE ID；授权时长可灵活延长</div>
-        <div class="read_more">>>阅读全文</div>
-      </div>
-      <div class="blog">
-        <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/></img>语音识别的API文档更新</div>
-        <div class="blog_info">
-          <span class="time">2018-4-30</span>
-          <span class="tip">更新通知</span>
-        </div>
-        <div class="outline">联网授权V3不需要绑定BUNDLE ID；授权时长可灵活延长</div>
-        <div class="read_more">>>阅读全文</div>
-      </div>
-      <div class="blog">
-        <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/></img>语音识别的API文档更新</div>
-        <div class="blog_info">
-          <span class="time">2018-4-30</span>
-          <span class="tip">更新通知</span>
-        </div>
-        <div class="outline">联网授权V3不需要绑定BUNDLE ID；授权时长可灵活延长</div>
-        <div class="read_more">>>阅读全文</div>
-      </div>
-    </div>
+
   </div>
-</body>
-  </html>
+
 </template>
 <script>
 export default {
-  name: 'ContactUs'
+  name: 'ContactUs',
+  data(){
+    return{
+      activeTab:'1',
+      blogAll:[{
+        name:'语音视频的API更新',
+        type:'服务公告',
+        brief:'授权时长可灵活延长',
+        content:'具体内容内容内容',
+        show:false,
+        time:'2015-01-15'
+      }
+      ],
+      blogUpdate:[{
+        name:'语音视频的API更新',
+        type:'产品更新',
+        brief:'授权时长可灵活延长',
+        content:'具体内容内容内容',
+        show:false,
+        time:'2015-01-15'
+      },{
+        time:'2015-01-15',
+        name:'语音视频的API更新',
+        type:'产品更新',
+        brief:'授权时长可灵活延长',
+        content:'具体内容内容内容',
+        show:false
+      }
+      ],
+      blogService:[
+        {
+          name:'语音视频的API更新',
+          type:'服务公告',
+          brief:'授权时长可灵活延长',
+          content:'具体内容内容内容',
+          show:false,
+          time:'2015-01-15'
+        },
+        {
+          name:'语音视频的API更新',
+          type:'服务公告',
+          brief:'授权时长可灵活延长',
+          content:'具体内容内容内容',
+          show:false,
+          time:'2015-01-15'
+        }
+      ],
+      blogDiscount:[
+        {
+          name:'语音视频的API更新',
+          type:'优惠服务',
+          brief:'授权时长可灵活延长',
+          content:'具体内容内容内容',
+          show:false,
+          time:'2015-01-15'
+        },
+        {
+          name:'语音视频的API更新',
+          type:'优惠服务',
+          brief:'授权时长可灵活延长',
+          content:'具体内容内容内容',
+          show:false,
+          time:'2015-01-15'
+        }
+      ]
+    }
+  },
+  methods:{
+    handleSelect(index){
+      this.$data.activeTab=index;
+    }
+  },
+  mounted(){
+    for(let index=0;index<this.$data.blogUpdate.length;index++)
+    this.$data.blogAll.push(this.$data.blogUpdate[index]);
+    for(let index=0;index<this.$data.blogService.length;index++)
+    this.$data.blogAll.push(this.$data.blogService[index]);
+    for(let index=0;index<this.$data.blogDiscount.length;index++)
+    this.$data.blogAll.push(this.$data.blogDiscount[index]);
+  }
 }
 </script>
 
 <style scoped>
-#ContactUs{
-   background-color: blue;
-   background-image: url("../assets/联系我们/bg.jpg");
-   background-size: 100% 100%;
-   width: 100vw;
-   height: 35vh;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   flex-direction: column;
- }
-div{
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-}
-.word_head{
-  margin-top: 3vh;
-  margin-left: -6.5vw;
-  text-align: center;
-  color: white;
-  font-size: 1.5vw;
-}
-.line{
-  align-self: center;
-  margin-top: 2vh;
-}
-.step_line{
-  margin-top: 1.5vh;
-}
-.icon_1{
-  background-image: url("../assets/联系我们/icon1.png");
-  background-size: 100% 100%;
-  display: inline-block;
-  width: 2.5vh;
-  height: 2.5vh;
-}
-.icon_2{
-  background-image: url("../assets/联系我们/icon2.png");
-  background-size: 100% 100%;
-  display: inline-block;
-  width: 2.5vh;
-  height: 2.5vh;
-}
-.icon_3{
-  background-image: url("../assets/联系我们/icon3.png");
-  background-size: 100% 100%;
-  display: inline-block;
-  width: 2.5vh;
-  height: 2.5vh;
-}
-.word_info{
-  display: inline-block;
-  text-align: center;
-  color: white;
-  line-height: 3vh;
-  font-size: 1.3vw;
 
-}
-.coloum_1{
-  display: inline-block;
-}
-.coloum_2{
-  margin-left: 3vw;
-  margin-bottom:5vh;
-  background-image: url("../assets/联系我们/pic1.jpg");
-  background-size: 100% 100%;
-  display: inline-block;
-  width: 10vh;
-  height: 10vh;
-}
-body{
-  margin: 0;
-  padding: 0;
-}
-div{
-  margin: 0;
-  padding: 0;
-  vertical-align: 80%;
-}
-.bg{
-  height: 190vh;
-  width: 100vw;
-  background-size: 100% 100%;
-  background-position: center;
-}
 .head_content{
   background-image: url("../assets/产品博客/pic.png");
   width: 100%;
@@ -183,85 +243,85 @@ div{
   width: 40vw;
   margin-top: 5vh;
 }
-.link_group{
-  float: left;
-  width: 25vw;
-  height: 180vh;
-  background-color: #f6faff;
-  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.19);
-}
-.from_group{
-  display: flex;
-  flex-direction: column;
-  width: 75vw;
-  height: 180vh;
-}
-.blog{
-  margin-top:6vh;
-  margin-bottom:3vh;
-  margin-left:6vw;
-  width:58vw;
-  height:30vh;
-  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.02rem 0.1rem 0 rgba(0, 0, 0, 0.1);
-  cursor:default;
-}
-.bolg_title{
-  margin-top:3vh;
-  margin-bottom:1.5vh;
-  margin-left:1vw;
-  font-size:0.23rem;
-  letter-spacing:0.03rem;
-}
-.icon{
-  margin-right:1.2vw;
-}
-.blog_info{
-    margin-top:10px;
-    margin-bottom:10px;
-    height:20px;
-}
-.time{
-  font-size:0.15rem;
-  color:grey;
-  margin-top:0;
-  margin-left:3vw;
-}
-.tip{
-  font-size:0.15rem;
-  color:red;
-  margin-left:3vw;
-}
-.outline{
-  margin-top:3vh;
-  margin-left:3vw;
-  font-size:0.15rem;
-  color:  #303030;
-  font-weight:300;
-}
-.read_more{
-  margin-top:4vh;
-  margin-left:3vw;
-  font-size:0.15rem;
-  color:#3399FF;
-  letter-spacing:0.02rem;
-  cursor:pointer;
-}
-.decorate_bar{
-  margin-top: 5vh;
-  margin-left:10.3vw;
-  height: 4vh;
-  display: inline-block;
-  width: 0.2vw;
-  background-color: white;
-}
-.decorate_bar_on{
-  margin-top: 5vh;
-  margin-left:10.3vw;
-  height: 4vh;
-  display: inline-block;
-  width: 0.3vw;
-  background-color: blue;
-}
+/*.link_group{*/
+  /*float: left;*/
+  /*width: 25vw;*/
+  /*height: 180vh;*/
+  /*background-color: #f6faff;*/
+  /*box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.19);*/
+/*}*/
+/*.from_group{*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*width: 75vw;*/
+  /*height: 180vh;*/
+/*}*/
+/*.blogUpdate{*/
+  /*margin-top:6vh;*/
+  /*margin-bottom:3vh;*/
+  /*margin-left:6vw;*/
+  /*width:58vw;*/
+  /*height:30vh;*/
+  /*box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.02rem 0.1rem 0 rgba(0, 0, 0, 0.1);*/
+  /*cursor:default;*/
+/*}*/
+/*.bolg_title{*/
+  /*margin-top:3vh;*/
+  /*margin-bottom:1.5vh;*/
+  /*margin-left:1vw;*/
+  /*font-size:0.23rem;*/
+  /*letter-spacing:0.03rem;*/
+/*}*/
+/*.icon{*/
+  /*margin-right:1.2vw;*/
+/*}*/
+/*.blogUpdate_info{*/
+    /*margin-top:10px;*/
+    /*margin-bottom:10px;*/
+    /*height:20px;*/
+/*}*/
+/*.time{*/
+  /*font-size:0.15rem;*/
+  /*color:grey;*/
+  /*margin-top:0;*/
+  /*margin-left:3vw;*/
+/*}*/
+/*.tip{*/
+  /*font-size:0.15rem;*/
+  /*color:red;*/
+  /*margin-left:3vw;*/
+/*}*/
+/*.outline{*/
+  /*margin-top:3vh;*/
+  /*margin-left:3vw;*/
+  /*font-size:0.15rem;*/
+  /*color:  #303030;*/
+  /*font-weight:300;*/
+/*}*/
+/*.read_more{*/
+  /*margin-top:4vh;*/
+  /*margin-left:3vw;*/
+  /*font-size:0.15rem;*/
+  /*color:#3399FF;*/
+  /*letter-spacing:0.02rem;*/
+  /*cursor:pointer;*/
+/*}*/
+/*.decorate_bar{*/
+  /*margin-top: 5vh;*/
+  /*margin-left:10.3vw;*/
+  /*height: 4vh;*/
+  /*display: inline-block;*/
+  /*width: 0.2vw;*/
+  /*background-color: white;*/
+/*}*/
+/*.decorate_bar_on{*/
+  /*margin-top: 5vh;*/
+  /*margin-left:10.3vw;*/
+  /*height: 4vh;*/
+  /*display: inline-block;*/
+  /*width: 0.3vw;*/
+  /*background-color: blue;*/
+/*}*/
 .link_group .title .word{
   line-height: 3.5vh;
   display: inline-block;
@@ -289,48 +349,48 @@ div{
   line-height: 6vh;
   margin-left: 0.8vw;
 }
-.options{
-  font-size: 1.5vw;
-  font-weight: 300;
-  margin-left:8vw;
-  display:inline-block;
-  cursor:pointer;
-}
-.icon_1{
-  width: 2vw;
-  height: 4vh;
-  margin-right:0.5vw;
-  float: left;
-  background-image: url("../assets/pic/icon1.png");
-  background-size: 100% 100%;
-  background-position: center;
-}
-.icon_2{
-  width: 2vw;
-  height: 4vh;
-  margin-right:0.5vw;
-  float: left;
-  background-image: url("../assets/pic/icon2.png");
-  background-size: 100% 100%;
-  background-position: center;
-}
-.icon_3{
-  width: 2vw;
-  height: 4vh;
-  margin-right:0.5vw;
-  float: left;
-  background-image: url("../assets/pic/icon3.png");
-  background-size: 100% 100%;
-  background-position: center;
-}
-.content{
-  width: 100vw;
-  height: 29.5vh;
-  border: none;
-}
-.background{
-  height:100%;
-  width:100%;
-}
+/*.options{*/
+  /*font-size: 1.5vw;*/
+  /*font-weight: 300;*/
+  /*margin-left:8vw;*/
+  /*display:inline-block;*/
+  /*cursor:pointer;*/
+/*}*/
+/*.icon_1{*/
+  /*width: 2vw;*/
+  /*height: 4vh;*/
+  /*margin-right:0.5vw;*/
+  /*float: left;*/
+  /*background-image: url("../assets/pic/icon1.png");*/
+  /*background-size: 100% 100%;*/
+  /*background-position: center;*/
+/*}*/
+/*.icon_2{*/
+  /*width: 2vw;*/
+  /*height: 4vh;*/
+  /*margin-right:0.5vw;*/
+  /*float: left;*/
+  /*background-image: url("../assets/pic/icon2.png");*/
+  /*background-size: 100% 100%;*/
+  /*background-position: center;*/
+/*}*/
+/*.icon_3{*/
+  /*width: 2vw;*/
+  /*height: 4vh;*/
+  /*margin-right:0.5vw;*/
+  /*float: left;*/
+  /*background-image: url("../assets/pic/icon3.png");*/
+  /*background-size: 100% 100%;*/
+  /*background-position: center;*/
+/*}*/
+/*.content{*/
+  /*width: 100vw;*/
+  /*height: 29.5vh;*/
+  /*border: none;*/
+/*}*/
+/*.background{*/
+  /*height:100%;*/
+  /*width:100%;*/
+/*}*/
 
 </style>
