@@ -11,7 +11,7 @@ import animate from 'animate.css'
 Vue.config.productionTip = false
 
 Vue.prototype.$axios = axios
-
+Vue.prototype.$qs=qs;
 
 /* eslint-disable no-new */
 new Vue({
