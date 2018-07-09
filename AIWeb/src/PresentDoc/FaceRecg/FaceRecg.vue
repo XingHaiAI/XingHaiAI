@@ -1,6 +1,7 @@
 <template>
   <div id="FaceRecg">
     <UseTestFunctionShow class="content"></UseTestFunctionShow>
+    <div style="height: 7.5rem"></div>
     <UseTestStartController class="content2"></UseTestStartController>
     <UseTestUsePlace class="content3"></UseTestUsePlace>
   </div>
