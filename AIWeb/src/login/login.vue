@@ -56,12 +56,6 @@
       }
     },
     created(){
-      this.$axios({
-        method:'get',
-        url:'/account/test'
-      }).then(function (response) {
-        alert(response.data);
-      })
     },
     methods:{
 
@@ -74,8 +68,8 @@
           method:'get',
           url:'/account/login?account='+this.$data.formLogin.account+'&password='+this.$data.formLogin.password,
         }).then(function (response) {
-          alert('111');
-          console.log(response);
+          alert('登录成功！');
+          _this.$router.push({path:'/',query:{isLogin:true}});
         })
       },
      test:function () {
