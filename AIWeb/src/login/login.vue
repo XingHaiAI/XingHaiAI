@@ -18,7 +18,7 @@
         <div class="form4login">
           <el-form :model="formLogin" ref="formLogin" :rules="rules" :status-icon="true">
             <el-form-item prop="username">
-              <el-input placeholder="请输入账号" style="width: 79%" v-model="formLogin.username"></el-input>
+              <el-input placeholder="请输入账号" style="width: 79%" v-model="formLogin.account"></el-input>
             </el-form-item>
             <el-form-item prop="password">
               <el-input placeholder="请输入密码" type="password" style="width: 79%" v-model="formLogin.password"></el-input>
@@ -26,7 +26,7 @@
           </el-form>
         </div>
         <div class="buttons">
-            <el-button class="button4login" type="primary" @click="login"><router-link to="/Console/SDK" class="linkto">登录</router-link></el-button>
+            <el-button class="button4login" type="primary" @click="login">登录</el-button>
             <el-button class="button4register" @click="gotoRegister">注册</el-button>
         </div>
       </el-card>
@@ -42,11 +42,11 @@
     data(){
       return{
         formLogin:{
-          username:'',
+          account:'',
           password:''
         },
         rules:{
-          username:[
+          account:[
             {required:true,message:'请输入账号',trigger:'change'}
           ],
           password:[
@@ -55,14 +55,28 @@
         }
       }
     },
+    created(){
+      this.$axios({
+        method:'get',
+        url:'/account/test'
+      }).then(function (response) {
+        alert(response.data);
+      })
+    },
     methods:{
 
       gotoRegister(){
         this.$router.push({path:'/signin'})
       },
       login(){
-
-
+        let _this=this;
+        this.$axios({
+          method:'get',
+          url:'/account/login?account='+this.$data.formLogin.account+'&password='+this.$data.formLogin.password,
+        }).then(function (response) {
+          alert('111');
+          console.log(response);
+        })
       },
      test:function () {
         var account=document.getElementById("account").value;

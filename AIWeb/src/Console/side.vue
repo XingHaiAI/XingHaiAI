@@ -3,9 +3,10 @@
       <el-row class="tac">
         <el-col :span="12" style="width:inherit">
           <el-menu
-            default-active="2"
+            :default-active="activeTabs"
             class="el-menu-vertical-demo"
             style="margin-top:1rem;"
+            @select="handleSelect"
             @open="handleOpen"
             @close="handleClose">
             <el-submenu index="1" style="text-align: center;min-height:0.6rem">
@@ -47,6 +48,9 @@
             </el-menu-item>
           </el-menu>
         </el-col>
+        <el-col>
+          <div style="width: 100%"></div>
+        </el-col>
       </el-row>
     </div>
 </template>
@@ -56,7 +60,8 @@ export default {
   name: 'Try',
     data() {
       return {
-        isCollapse: true
+        isCollapse: true,
+        activeTabs:'1'
       };
     },
     methods: {
@@ -65,6 +70,9 @@ export default {
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
+      },
+      handleSelect(index){
+        this.$data.activeTabs=index;
       }
     }
 }

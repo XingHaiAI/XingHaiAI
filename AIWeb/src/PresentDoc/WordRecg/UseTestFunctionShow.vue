@@ -1,218 +1,115 @@
 <template>
   <div id="UseTestFunctionShow">
-  	<body>
-   		<div class="UseTestFunctionShow_Title">功能演示</div>
-		<div class="UseTestFunctionShow_Group">
+    <div style="height: 0.5rem;"></div>
+    <div style="width: 100%;height: 1rem;text-align: center">
+      <span style="font-size: 0.4rem;">功能演示</span>
+    </div>
+    <div style="width: 100%">
+      <el-card style="width: 37.041%;height:7rem;float: left;margin-left: 1rem;">
+        <div class="photoDisplay" style="width: 94%;height:40%;margin-left: auto;margin-right: auto;margin-top:0.2rem;">
+          <span style="font-size: 0.2rem;text-align: left">选择图片：</span>
+          <div style="height: 0.05rem"></div>
+          <el-card style="text-align: center">
+            <img :src="imgURLSelect"/>
+          </el-card>
+        </div>
+        <div class="photoSelect" style="width: 94%;height: 25%;margin-left: auto;margin-right: auto;margin-top: 0.2rem">
+          <span style="font-size: 0.2rem;">图片示例：</span>
+          <div style="height: 0.2rem"></div>
+          <el-row :gutter="30">
+            <el-col style="width: 50%" v-for="(item,index) in image" :key="index">
+              <el-card>
+                <img :src="item.src" @click='selectPhoto(item)' style="width: 100%;"/>
+              </el-card>
+            </el-col>
+          </el-row>
+        </div>
+        <div style="height: 0.6rem"></div>
+        <div style="height: 15%;width: 100%;">
+          <el-row>
+            <el-col>
+              <div style="width: 100%">
+                <el-input placeholder="请输入图片的URL" v-model="inputUrl" style="width: 60%;float: left"></el-input>
+                <el-button style="margin-left: 0.2rem">检测图片</el-button>
+              </div>
+              <div style="height: 0.2rem"></div>
+              <div style="float: left">
+                <el-upload
+                  class="upload-demo"
+                  action="https://jsonplaceholder.typicode.com/posts/"
+                  :on-change="handleChange"
+                  :file-list="fileList3">
+                  <el-button size="small" type="primary">本地上传</el-button>
+                  <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过2MB</div>
+                </el-upload>
+              </div>
+            </el-col>
+          </el-row>
+        </div>
+      </el-card>
+      <div style="width: 37.041%;float: right;margin-right: 2rem">
+        <el-tabs type="border-card">
+          <el-tab-pane label="分析结果">
 
-		    <div class="UseTestFunctionShow_Left_Group">
+          </el-tab-pane>
+          <el-tab-pane label="JSON">
 
-		        <div class="UseTestFunctionShow_Left_Group_Top">
-		            <div class="UseTestFunctionShow_Left_Group_Top_Content"></div>
-		        </div>
+          </el-tab-pane>
+        </el-tabs>
+      </div>
+    </div>
 
-		        <div class="UseTestFunctionShow_Left_Group_Center">
-		            <div class="UseTestFunctionShow_Left_Group_Center_Left"><p><</p></div>
-		            <div class="UseTestFunctionShow_Left_Group_Center_Center"></div>
-		            <div class="UseTestFunctionShow_Left_Group_Center_Right"><p>></p></div>
-		        </div>
-
-		        <div class="UseTestFunctionShow_Left_Group_Bottom">
-		            <div class="UseTestFunctionShow_Left_Group_Bottom_Left"><p>本地上传</p></div>
-		            <div class="UseTestFunctionShow_Left_Group_Bottom_Center"><p>语音URL</p></div>
-		            <div class="UseTestFunctionShow_Left_Group_Bottom_Right"><p>检测</p></div>
-		        </div>
-
-		    </div>
-
-		    <div class="UseTestFunctionShow_Right_Group">
-		        <div class="UseTestFunctionShow_Right_Group_Top">
-		            <div class="UseTestFunctionShow_Right_Group_Top_Left">分析结果</div>
-		            <div class="UseTestFunctionShow_Right_Group_Top_Right">JSON</div>
-		        </div>
-		        <div class="UseTestFunctionShow_Right_Group_Bottom">
-		        </div>
-		    </div>
-		</div>
-	</body>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'UseTestFunctionShow'
-}
+
+
+
+  export default {
+    name: 'UseTestFunctionShow',
+    data(){
+      return{
+        inputUrl:'',
+        imgURL:'',
+        imgURLSelect:require('./word/item_1.jpg'),
+        image:[
+          {src:require('./word/item_1.jpg')},
+          {src:require('./word/item_2.jpg')},
+        ],
+        test:{
+          image:'dafafkjke213nfnjdnonon12onoi421n4o',
+          userCode: '13688980285'
+        }
+      }
+    },
+    methods:{
+      selectPhoto(item){
+        this.$data.imgURLSelect=item.src;
+
+
+        this.$axios({
+          headers:{
+            'Content-Type': 'application/json;charset=UTF-8',
+            "Access-Control-Allow-Origin":"*"
+          },
+          method:'post',
+          url:'http://47.94.242.44/feature/get_encoding',
+          data:{
+            'image':'dafafkjke213nfnjdnonon12onoi421n4o',
+            'userCode':'13688980285'
+          }
+        }).then(function (response) {
+          alert('111');
+        })
+
+      },
+    },
+
+  }
 </script>
 
-<style scoped>
-body{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    font-size: 62.5%;
-}
-body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
-div{
-    padding: 0;
-    margin: 0;
-}
+<style lang="less">
 
-p{
-    width: 100%;
-    text-align: center;
-    align-self: center;
-}
-
-.UseTestFunctionShow_Title{
-    width: 100vw;
-    height: 5vh;
-    text-align: center;
-    font-size: 0.4rem;
-    margin-top: 6vh;
-}
-
-.UseTestFunctionShow_Group{
-    margin-top: 3vh;
-    height: 75vh;
-    align-self: center;
-}
-
-.UseTestFunctionShow_Left_Group{
-    display: inline-block;
-    width: 35vw;
-    height: 75vh;
-    margin-right: 5vw;
-}
-
-.UseTestFunctionShow_Left_Group_Top_Content{
-    margin-left: 11%;
-    width: 78%;
-    height: 50%;
-    background-color: white;
-}
-.UseTestFunctionShow_Left_Group_Center{
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-.UseTestFunctionShow_Left_Group_Center_Left{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-size: 0.2rem;
-    width: 10%;
-    height: 28%;
-    float: left;
-    background-color: #BDBDBD;
-    cursor:pointer;
-}
-
-.UseTestFunctionShow_Left_Group_Center_Center{
-    width: 78%;
-    margin-left: 1%;
-    margin-right: 1%;
-    height: 28%;
-    float: left;
-    background-color: white;
-}
-
-.UseTestFunctionShow_Left_Group_Center_Right{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-size: 0.2rem;
-    width: 10%;
-    height: 28%;
-    float: left;
-    background-color: #BDBDBD;
-    cursor:pointer;
-}
-
-.UseTestFunctionShow_Left_Group_Bottom{
-    width: 100%;
-    margin-top: 5%;
-}
-
-.UseTestFunctionShow_Left_Group_Bottom_Left{
-    margin-top: 6%;
-    display: flex;
-    flex-direction: column;
-    font-size:0.2rem;
-    border: 1px black solid;
-    float: left;
-    width: 30%;
-    height:12%;
-    margin-left: 11%;
-    cursor:pointer;
-}
-
-.UseTestFunctionShow_Left_Group_Bottom_Center{
-    margin-top: 6%;
-    display: flex;
-    font-size:0.2rem;
-    flex-direction: column;
-    border: 1px black solid;
-    width: 46%;
-    float: left;
-    height: 12%;
-    margin-left: 1%;
-    cursor:pointer;
-}
-
-.UseTestFunctionShow_Left_Group_Bottom_Right{
-    margin-top: 6%;
-    display: flex;
-    flex-direction: column;
-    font-size:0.2rem;
-    float: left;
-    height: 8%;
-    margin-left: 1%;
-}
-
-.UseTestFunctionShow_Right_Group{
-    display: inline-block;
-    width: 35vw;
-    height: 75vh;
-    margin-left: 5vw;
-}
-
-.UseTestFunctionShow_Right_Group_Top{
-    width: 100%;
-}
-
-.UseTestFunctionShow_Right_Group_Top_Left{
-    margin-left: 11%;
-    float: left;
-    line-height: 4vh;
-    text-align: center;
-    width: 18%;
-    height: 4vh;
-    font-size:0.2rem;
-    border: 1px black solid;
-    background-color: white;
-    cursor:pointer;
-}
-
-.UseTestFunctionShow_Right_Group_Top_Right{
-    text-align: center;
-    float: left;
-    line-height: 4vh;
-    width: 18%;
-    font-size:0.2rem;
-    height: 4vh;
-    border: 1px black solid;
-    background-color: white;
-    cursor:pointer;
-}
-
-.UseTestFunctionShow_Right_Group_Bottom{
-    width: 78%;
-    margin-left: 11%;
-    border: 1px black solid;
-    height: 86%;
-    background-color: white;
-    float: left;
-}
 </style>
 
