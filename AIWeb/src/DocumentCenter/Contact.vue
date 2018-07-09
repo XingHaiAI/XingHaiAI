@@ -27,15 +27,15 @@
         <div class="item_group">
             <div class="before_buy">
                 <div class="icon_1"></div>
-                <div class="word"><router-link to="/ContactUs" style="text-decoration: none;color: black">售前咨询</router-link></div>
+                <div class="word">售前咨询</div>
             </div>
             <div class="business">
                 <div class="icon_2"></div>
-                <div class="word"><router-link to="/ContactBussiness" style="text-decoration: none;color: black">商务咨询</router-link></div>
+                <div class="word">商务咨询</div>
             </div>
             <div class="question">
                 <div class="icon_3"></div>
-                <div class="word"><router-link to="/ContactProblem" style="text-decoration: none;color: black">问题反馈</router-link></div>
+                <div class="word">问题反馈</div>
             </div>
         </div>
         <div class="inro">
@@ -44,22 +44,26 @@
         <div class="input_group">
             <div class="input_item_left">
               <el-form :model="formAdvice" ref="formAdvice" :rules="rulesAdvice">
-                <el-form-item prop="name" style="height:0.6rem;">
+                <el-form-item prop="name" style="height:0.4rem;">
                   <el-input placeholder="请输入姓名" v-model="formAdvice.name"></el-input>
                 </el-form-item>
-                <el-form-item prop="telephone" style="height: 0.6rem">
-                  <el-input placeholder="请输入联系电话" v-model="formAdvice.telephone"></el-input>
+                <el-form-item prop="telephone" style="height: 0.4rem">
+                  <el-input placeholder="请输入联系电话" v-model="formAdvice.phone"></el-input>
                 </el-form-item>
-                <el-form-item prop="email" style="height: 0.6rem">
+                <el-form-item prop="email" style="height: 0.4rem">
                   <el-input placeholder="请输入电子邮箱" v-model="formAdvice.email"></el-input>
                 </el-form-item>
-                <el-form-item prop="organization" style="height: 0.6rem">
-                  <el-input placeholder="请输入机构名" v-model="formAdvice.organization"></el-input>
+                <el-form-item prop="organization" style="height: 0.4rem">
+                  <el-input placeholder="请输入机构名" v-model="formAdvice.company"></el-input>
+                </el-form-item>
+                <el-form-item prop="type">
+                  <el-radio v-model="formAdvice.type" label="1" style="font-size: 10px;">售前咨询</el-radio>
+                  <el-radio v-model="formAdvice.type" label="2" style="font-size: 10px;">商务咨询</el-radio>
+                  <el-radio v-model="formAdvice.type" label="3" style="font-size: 10px;">问题反馈</el-radio>
                 </el-form-item>
               </el-form>
-
             </div>
-            <textarea class="input_textarea" v-model="formAdvice.content" placeholder="请描述您的问题。"></textarea>
+            <textarea class="input_textarea" v-model="formAdvice.question" placeholder="请描述您的问题。"></textarea>
         </div>
         <div class="check_box">
           <el-checkbox v-model="checked">我已阅读并同意<span class="xinghai"> 《兴海物联隐私政策》 </span></el-checkbox>
@@ -81,25 +85,26 @@ export default {
       checked:false,
       formAdvice:{
         name:'',
-        telephone:'',
+        phone:'',
         email:'',
-        organization:'',
-        content:''
+        company:'',
+        question:'',
+        type:'1'
       },
       rulesAdvice:{
         name:[
           {required:true,message:'请输入姓名',trigger:'change'}
         ],
-        telephone:[
+        phone:[
           {required:true,message:'请输入联系电话',trigger:'change'}
         ],
         email:[
           {required:true,message:'请输入电子邮箱',trigger:'change'}
         ],
-        organization:[
+        company:[
           {required:true,message:'请输入机构名',trigger:'change'}
         ],
-        content:[
+        question:[
           {required:true,min:2,max:300,message:'请输入1-300以内的描述',trigger:'change'}
         ]
       }
@@ -109,7 +114,7 @@ export default {
       submit() {
         let _this=this;
 
-        if (this.$data.formAdvice.content.length < 1 || this.$data.formAdvice.content.length > 300) {
+        if (this.$data.formAdvice.question.length < 1 || this.$data.formAdvice.question.length > 300) {
           this.$message({
             type: 'error',
             message: '请输入1-300字以内的描述'
@@ -119,15 +124,16 @@ export default {
             if (valid) {
               this.$axios({
                 method:'get',
-                url:'/account/ques',
-                data:this.$qs.stringify(this.$data.formAdvice)
+                url:'/question/submit',
+                params:this.$data.formAdvice
               }).then((res)=>{
                 this.$message({
                   type:'success',
                   message:'信息反馈成功！'
                 })
-                _this.$data.formAdvice.content='';
-                _this.$data.formAdvice.organization='';
+                _this.$data.formAdvice.question='';
+                _this.$data.formAdvice.company='';
+                _this.$data.formAdvice.phone='';
                 _this.$data.formAdvice.email='';
                 _this.$data.formAdvice.name='';
               }).catch((err)=>{
@@ -435,7 +441,7 @@ div{
 .input_item_left{
   font-size: 0.2rem;
   float: left;
-  width: 2.732rem;
+  width: 2.9rem;
 }
 .input{
   border: none;
