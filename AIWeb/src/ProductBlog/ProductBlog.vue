@@ -1,6 +1,6 @@
 <template>
 <div class="bg">
-    <div class="head_content">
+    <div class="head_content1">
     </div>
     <div class="blog_menu" style="display: flex;min-height:10rem;">
       <el-row :gutter="20">
@@ -222,7 +222,7 @@ export default {
 
 <style scoped>
 
-.head_content{
+.head_content1{
   background-image: url("../assets/产品博客/pic.png");
   width: 100%;
   padding-top:3rem;
@@ -231,19 +231,19 @@ export default {
   min-width: 12rem;
 }
 
-/*.head_content .title{*/
-  /*font-size: 3vw;*/
-  /*color: white;*/
-  /*margin-top: 7vh;*/
-  /*margin-left: 12vw;*/
-/*}*/
-/*.head_content .content{*/
-  /*font-size: 1.2vw;*/
-  /*color: white;*/
-  /*margin-left: 12vw;*/
-  /*width: 40vw;*/
-  /*margin-top: 5vh;*/
-/*}*/
+.head_content1 .title{
+  font-size: 3vw;
+  color: white;
+  margin-top: 7vh;
+  margin-left: 12vw;
+}
+.head_content1 .content{
+  font-size: 1.2vw;
+  color: white;
+  margin-left: 12vw;
+  width: 40vw;
+  margin-top: 5vh;
+}
 /*.link_group{*/
   /*float: left;*/
   /*width: 25vw;*/
