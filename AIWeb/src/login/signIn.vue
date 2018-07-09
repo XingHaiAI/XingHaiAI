@@ -149,7 +149,7 @@
                 account:this.$data.formRegister.username,
                 password:this.$data.formRegister.password,
                 email:this.$data.formRegister.email,
-                code:this.$data.formRegister.identity
+                code:parseInt(this.$data.formRegister.identity)
               }
             }).then(function (response) {
               if(response.data===true){
