@@ -6,7 +6,7 @@
     <div id="AIhead" class="firstBackground">
       <div style="height: 1.50rem;"></div>
       <div class="table4this" style="margin-left: 20%">
-        <tr style="font-size: 0.60rem;letter-spacing: 0.6rem;color:white;">车牌识别</tr>
+        <tr style="font-size: 0.60rem;letter-spacing: 0.06rem;color:white;">车牌识别</tr>
         <div style="height: 0.20rem;"></div>
         <tr style="font-size: 0.22rem;color:white">对小客车的车牌进行识别</tr>
         <tr style="font-size: 0.22rem"> </tr>
@@ -145,7 +145,7 @@
 
   .title4card{
     margin-top: 0.14rem;
-    font-size:0.30rem;
+    font-size:0.21rem;
     text-align: center;
   }
 

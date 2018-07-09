@@ -70,22 +70,22 @@ div{
 .pic_1{
     background-image: url("./about_us/pic1.png");
     background-size: 100% 100%;
-    width: 100%;
-    height: 55%;
+    width: 2.01rem;
+    height: 1.56rem;
 }
 
 .pic_2{
     background-image: url("./about_us/pic2.png");
     background-size: 100% 100%;
-    width: 100%;
-    height: 55%;
+    width:  2.01rem;
+    height: 1.56rem;
 }
 
 .pic_3{
     background-image: url("./about_us/pic3.png");
     background-size: 100% 100%;
-    width: 100%;
-    height: 55%;
+    width:  2.01rem;
+    height:1.56rem;
 }
 
 .info_item_title{

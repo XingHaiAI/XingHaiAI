@@ -3,8 +3,8 @@
 <template>
   <div id="ai">
     <div id="AIhead" class="firstBackground">
-      <div style="height: 1.5rem;"></div>
-      <div class="table4this" style="margin-left: 20%">
+      <div style="height: 1.95rem;"></div>
+      <div class="table4this" style="margin-left: 14%">
         <tr style="font-size: 0.60rem;letter-spacing: 0.06rem;">AI客服</tr>
         <div style="height: 0.20rem;"></div>
         <tr style="font-size: 0.22rem">基于用户输入的文本内容，返回场景BOT</tr>
@@ -145,7 +145,7 @@
 
   .title4card{
     margin-top: 0.14rem;
-    font-size:0.30rem;
+    font-size:0.21rem;
     text-align: center;
   }
 

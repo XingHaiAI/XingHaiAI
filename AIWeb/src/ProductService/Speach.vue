@@ -5,7 +5,7 @@
   <div>
     <div id="AIhead" class="firstBackground">
       <div style="height: 1.50rem;"></div>
-      <div class="table4this" style="margin-left: 34%;margin-top:7%;">
+      <div class="table4this" style="margin-left: 34%;margin-top:2rem;">
         <div style="height: 0.20rem;"></div>
         <tr style="font-size: 0.22rem;color:white;">语音合成服务，基于HTTP请求的REST API接</tr>
         <tr style="font-size: 0.22rem;color:white;">口，将文本转换为可以播放的MP3文件</tr>
@@ -92,7 +92,7 @@
     width: 100%;
     height: 50%;
     background-image: url("../assets/banner/语音合成.jpg");
-    background-size: 100% 130%;
+    background-size: 100% 100%;
   }
   .secondBackground{
     background-position: right bottom,left top;
@@ -142,7 +142,7 @@
 
   .title4card{
     margin-top: 0.14rem;
-    font-size:0.30rem;
+    font-size:0.21rem;
     text-align: center;
   }
 

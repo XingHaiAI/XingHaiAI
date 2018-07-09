@@ -4,8 +4,8 @@
 <template>
   <div>
     <div id="AIhead" class="firstBackground">
-      <div style="height: 1.50rem;"></div>
-      <div class="table4this" style="margin-left: 20%">
+      <div style="height: 1.95rem;"></div>
+      <div class="table4this" style="margin-left: 14%">
         <tr style="font-size: 0.60rem;letter-spacing: 0.06rem;">情感倾向分析</tr>
         <div style="height: 0.20rem;"></div>
         <tr style="font-size: 0.22rem">对包含主观信息的文本进行情感类别(积</tr>
@@ -138,7 +138,7 @@
 
   .title4card{
     margin-top: 0.14rem;
-    font-size:0.30rem;
+    font-size:0.21rem;
     text-align: center;
   }
 

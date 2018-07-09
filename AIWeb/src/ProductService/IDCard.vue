@@ -147,7 +147,7 @@
 
   .title4card{
     margin-top: 0.14rem;
-    font-size:0.30rem;
+    font-size:0.21rem;
     text-align: center;
   }
 

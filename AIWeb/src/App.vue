@@ -4,8 +4,8 @@
 
     <div class="navbar">
       <!--LOGO-->
-      <div class="logo">
-        <router-link to="/"></router-link>
+      <div>
+        <router-link to="/" class="logo"></router-link>
       </div>
       <!--各个菜单项，鼠标点击时展开-->
       <div class="menu_group">
@@ -63,16 +63,16 @@
         </table>
       </div>
       <div id="document" v-on:mouseover="documentOver" v-on:mouseout="documentOut">
-        <table style="position: relative;bottom: 100%">
+        <table style="position: relative;top: 0.1rem">
           <!--<router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">入门教学</td></router-link>-->
           <router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">联系我们</td></router-link>
-          <router-link to="" style="text-decoration: none"><td class="documentCenter">技术指南</td></router-link>
-          <router-link to="" style="text-decoration: none"><td class="documentCenter">常见问题</td></router-link>
-          <router-link to="" style="text-decoration: none"><td class="documentCenter">API文档</td></router-link>
+          <router-link to="/TechGuideSDK" style="text-decoration: none"><td class="documentCenter">技术指南</td></router-link>
+          <router-link to="/CommonProblems" style="text-decoration: none"><td class="documentCenter">常见问题</td></router-link>
+          <router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">API文档</td></router-link>
         </table>
       </div>
       <div id="present" v-on:mouseover="presentOver" v-on:mouseout="presentOut">
-        <table style="position: relative;bottom: 100%">
+        <table style="position: relative;top: 0.1rem">
           <!--<router-link to="/PresentDoc/SpeachRecg" style="text-decoration: none"><td class="documentCenter">语音识别</td></router-link>
           <router-link to="/PresentDoc/PicRecg" style="text-decoration: none"><td class="documentCenter">图像识别</td></router-link>
           <router-link to="/PresentDoc/WordRecg" style="text-decoration: none"><td class="documentCenter">文字识别</td></router-link>
@@ -155,15 +155,16 @@
     display: inline-block;
     color: white;
     font-size: 0.137rem;
-    margin-left: 0.15rem;
+    margin-left: 0.22rem;
     margin-bottom: 0.137rem;
     width: 100%;
   }
   #document{
     display: none;
-    width: 7%;
-    margin-top: 0.41rem;
-    margin-left: 4.8rem;
+    height: 1.9rem;
+    width: 8%;
+    margin-top: 0rem;
+    margin-left: 5.75rem;
     left: 40%;
     top:100%;
     color: white;
@@ -172,9 +173,10 @@
   }
   #present{
     display: none;
-    width: 8.3%;
-    margin-top: 0.41rem;
-    margin-left: 5.7rem;
+    height: 1.9rem;
+    width: 8%;
+    margin-top: 0rem;
+    margin-left: 6.8rem;
     left: 51%;
     top:100%;
     color: white;
@@ -183,16 +185,16 @@
   }
   .productServiceHeader{
     color: white;
-    font-size: 0.2rem;
+    font-size: 0.137rem;
     width:100%;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
     align:left;
   }
   .column{
     margin-top: 0.1rem;
     height: 2.2rem !important;
     text-align: center !important;
-    width: 1.5rem !important;
+    width: 1.3rem !important;
     float: left;
     height: 100%;
   }
@@ -205,6 +207,7 @@
   .productService{
     color: #ffffff90;
     font-size: 0.137rem;
+    height: 0.23rem;
     margin-right: 0.10rem;
     margin-left: 0.10rem;
     margin-bottom: 0.20rem;
@@ -214,12 +217,12 @@
   }
   #service{
     display: none;
-    margin-left: 0.5rem;
+    margin-left: 0.9rem;
     color: white;
-    background-color: #2e3d4f;
+    /*background-color: #2e3d4f;*/
     background-color: #060606;
     height:2.90rem;
-    width: 8.00rem;
+    width: 6.60rem;
     left:10%;
     top:100%;
     cursor:pointer;
@@ -241,7 +244,7 @@
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
     margin-left:-0.137rem;
-    margin-top:-1vh;
+    margin-top:-0.0rem;
     padding: 0;
   }
   div{
@@ -267,15 +270,16 @@
     min-width: 9rem;
     line-height: 0.5rem;
     position: fixed;
-    background-color: rgba(6,6,6,0);
+    background-color: rgba(6,6,6,1);
     top:0;
     left: 0;
     z-index: 10;
-    transition: background-color 0.7s;
+    /*background-color: rgba(6,6,6,0);*/
+    /*transition: background-color 0.7s;*/
   }
-  .navbar:hover{
-    background-color: rgba(6,6,6,1);
-  }
+  /*.navbar:hover{*/
+    /*background-color: rgba(6,6,6,1);*/
+  /*}*/
 
 
   .navbar .logo{
@@ -284,8 +288,8 @@
     background-size: 100% 100%;
     background-position: center;
     margin-top: 0.15rem;
-    margin-left: 0.2rem;
-    width: 1.3rem;
+    margin-left: 0.22rem;
+    width: 2.18rem;
     height: 0.2rem;
     float: left;
     font-size: 0.16rem;
@@ -303,7 +307,7 @@
     height: 0.5rem;
     color: white;
     line-height: 0.5rem;
-    font-size: 0.12rem;
+    font-size: 0.137rem;
     float: left;
     margin-right: 0.5rem;
     cursor:pointer;
@@ -352,93 +356,93 @@
   }
 
 
-  .menu_item_botton{
-    font-size: 0.123rem;
-    text-align: center;
-    line-height: 4vh;
-    background-color: white;
-    color: blue;
-    border-radius: 5%;
-    height: 4vh;
-    margin-top: 2vh;
-    width: 0.683rem;
-    float: left;
-  }
+  /*.menu_item_botton{*/
+    /*font-size: 0.123rem;*/
+    /*text-align: center;*/
+    /*line-height: 4vh;*/
+    /*background-color: white;*/
+    /*color: blue;*/
+    /*border-radius: 5%;*/
+    /*height: 4vh;*/
+    /*margin-top: 2vh;*/
+    /*width: 0.683rem;*/
+    /*float: left;*/
+  /*}*/
 
-  .navbar:hover .menu_item_botton{
-    animation: menu_item_button_ani 1s forwards;
-  }
+  /*.navbar:hover .menu_item_botton{*/
+    /*animation: menu_item_button_ani 1s forwards;*/
+  /*}*/
 
-  .Technology_menu_item_content_title{
-    color: white;
-    font-size: inherit;
-    font-weight: 900;
-    padding-top: 3vh;
-    padding-left: 0.273rem;
-  }
+  /*.Technology_menu_item_content_title{*/
+    /*color: white;*/
+    /*font-size: inherit;*/
+    /*font-weight: 900;*/
+    /*padding-top: 3vh;*/
+    /*padding-left: 0.273rem;*/
+  /*}*/
 
-  .technology_menu_item_content_title_sub_title{
-    color: inherit;
-    font-size: 0.137rem;
-    padding-top: 1.5vh;
-    font-weight: 400;
-    padding-left: 0.273rem;
-  }
+  /*.technology_menu_item_content_title_sub_title{*/
+    /*color: inherit;*/
+    /*font-size: 0.137rem;*/
+    /*padding-top: 1.5vh;*/
+    /*font-weight: 400;*/
+    /*padding-left: 0.273rem;*/
+  /*}*/
 
-  .technology_menu_item_content_title_sub_title_content_first{
-    color: inherit;
-    font-size:0.11rem;
-    font-weight: 100;
-    padding-left: 0.273rem;
-    padding-top: 0.7vh;
-    display: inline;
-  }
+  /*.technology_menu_item_content_title_sub_title_content_first{*/
+    /*color: inherit;*/
+    /*font-size:0.11rem;*/
+    /*font-weight: 100;*/
+    /*padding-left: 0.273rem;*/
+    /*padding-top: 0.7vh;*/
+    /*display: inline;*/
+  /*}*/
 
-  .technology_menu_item_content_title_sub_title_content{
-    color: inherit;
-    font-size: 0.11rem;
-    font-weight: 100;
-    padding-left: 0.137rem;
-    padding-top: 0.7vh;
-    display: inline;
-  }
-  .technology_menu_item_content_title_sub_title_content_first:hover{
-    color: blue;
-  }
+  /*.technology_menu_item_content_title_sub_title_content{*/
+    /*color: inherit;*/
+    /*font-size: 0.11rem;*/
+    /*font-weight: 100;*/
+    /*padding-left: 0.137rem;*/
+    /*padding-top: 0.7vh;*/
+    /*display: inline;*/
+  /*}*/
+  /*.technology_menu_item_content_title_sub_title_content_first:hover{*/
+    /*color: blue;*/
+  /*}*/
 
-  .technology_menu_item_content_title_sub_title_content:hover{
-    color: blue;
-  }
+  /*.technology_menu_item_content_title_sub_title_content:hover{*/
+    /*color: blue;*/
+  /*}*/
 
-  .technology_menu_item_content_coloum_1{
-    display: inline-block;
-  }
-  .technology_menu_item_content_coloum_2{
-    margin-left: 1.366rem;
-    display: inline-block;
-  }
+  /*.technology_menu_item_content_coloum_1{*/
+    /*display: inline-block;*/
+  /*}*/
+  /*.technology_menu_item_content_coloum_2{*/
+    /*margin-left: 1.366rem;*/
+    /*display: inline-block;*/
+  /*}*/
 
-  .technology_menu_item_content_coloum_3{
-    margin-left: 1.366rem;
-    display: inline-block;
-  }
+  /*.technology_menu_item_content_coloum_3{*/
+    /*margin-left: 1.366rem;*/
+    /*display: inline-block;*/
+  /*}*/
 
 
-  .Solution_menu_item_content_coloum_1{
-    margin-left: 1.366rem;
-    display: inline-block;
-  }
+  /*.Solution_menu_item_content_coloum_1{*/
+    /*margin-left: 1.366rem;*/
+    /*display: inline-block;*/
+  /*}*/
 
-  .menu_item_group_block:hover{
-    background-color: grey;
-  }
+  /*.menu_item_group_block:hover{*/
+    /*background-color: grey;*/
+  /*}*/
 
-  .el-header{
-    height:0;
-  }
+  /*.el-header{*/
+    /*height:0;*/
+  /*}*/
 
-  .el-main{
-    margin:0;
-    padding:0;
-  }
+  /*.el-main{*/
+    /*margin:0;*/
+    /*padding:0;*/
+  /*}*/
 </style>

@@ -17,7 +17,8 @@ export default {
 
 <style scoped>
 #Try{
-    background-color: white;
+    background:url("./try/bg.jpg");
+  background-size: 100% 100%;
     margin: 0;
     padding: 0;
     display: flex;

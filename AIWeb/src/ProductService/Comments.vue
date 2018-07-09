@@ -4,8 +4,8 @@
 <template>
   <div>
     <div id="AIhead" class="firstBackground">
-      <div style="height: 1.50rem;"></div>
-      <div class="table4this" style="margin-left: 20%">
+      <div style="height: 1.7rem;"></div>
+      <div class="table4this" style="margin-left: 14%">
         <tr style="font-size: 0.60rem;letter-spacing: 0.06rem;">评论观点抽取</tr>
         <div style="height: 0.20rem;"></div>
         <tr style="font-size: 0.22rem">自动抽取和分析评论观点，帮助您实现舆情分析，</tr>
@@ -139,7 +139,7 @@
 
   .title4card{
     margin-top: 0.14rem;
-    font-size:0.30rem;
+    font-size:0.21rem;
     text-align: center;
   }
 
