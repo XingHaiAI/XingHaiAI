@@ -41,6 +41,7 @@ import ConsolePicRec from '@/Console/PicRec.vue'
 import ConsoleWordRec from '@/Console/WordRec.vue'
 import ConsoleSpeach from '@/Console/Speach.vue'
 import ConsoleNPL from '@/Console/NPL.vue'
+import APPList from '@/Console/APPList.vue'
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -165,6 +166,9 @@ export default new Router({
     },
     {
       path:'/Console/NPL',name:'ConsoleNPL',component:ConsoleNPL
+    },
+    {
+      path:'/Console/APPList',name:'APPList',component:APPList
     }
   ]
 })

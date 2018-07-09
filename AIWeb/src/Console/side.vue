@@ -20,7 +20,7 @@
             </el-submenu>
             <el-menu-item index="2" style="text-align: center;min-height:0.6rem">
                <span slot="title" >
-                 <router-link to="" style="text-decoration: none;color: black">应用列表</router-link>
+                 <router-link to="/Console/APPList" style="text-decoration: none;color: black">应用列表</router-link>
                </span>
             </el-menu-item>
             <el-menu-item index="3" style="text-align: center;min-height:0.6rem">
