@@ -2,7 +2,7 @@
 <div class="bg">
     <div class="head_content">
     </div>
-    <div class="blog_menu" style="height: 10rem;">
+    <div class="blog_menu" style="display: flex;min-height:10rem;">
       <el-row :gutter="20">
         <el-col :span="6">
           <div class="grid-content bg-purple">
@@ -10,30 +10,30 @@
               :default-active="activeTab"
               class="el-menu-vertical-demo"
               @select="handleSelect"
-              style="text-align: center;height: 10rem;box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);">
-              <el-menu-item index="1" >
+              style="text-align: center;width:3.2rem;position: absolute;top:0;bottom: 0;box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);">
+              <el-menu-item index="1" style="height: 0.55rem">
 
-                <span slot="title">全部类别</span>
+                <span slot="title"style="font-size: 0.17rem">全部类别</span>
               </el-menu-item>
-              <el-menu-item index="2">
+              <el-menu-item index="2"style="height: 0.55rem">
 
-                <span slot="title">产品更新</span>
+                <span slot="title"style="font-size: 0.17rem">产品更新</span>
               </el-menu-item>
-              <el-menu-item index="3">
+              <el-menu-item index="3"style="height: 0.55rem">
 
-                <span slot="title">服务公告</span>
+                <span slot="title"style="font-size: 0.17rem">服务公告</span>
               </el-menu-item>
-              <el-menu-item index="4">
+              <el-menu-item index="4"style="height: 0.55rem">
 
-                <span slot="title">优惠服务</span>
+                <span slot="title"style="font-size: 0.17rem">优惠服务</span>
               </el-menu-item>
             </el-menu>
           </div>
         </el-col>
         <el-col :span="6">
           <div style="height: 0.2rem;"></div>
-          <div v-if="activeTab==='1'" class="animated bounceInRight" style="width: 10rem;margin-left: 0.4rem">
-            <el-card style="width: 80%;margin-top: 0.3rem;" v-for="(item,index) in blogAll" :key="index">
+          <div v-if="activeTab==='1'" class="animated bounceInRight" style="width: 8rem;margin-left: 4.2rem">
+            <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogAll" :key="index">
               <div style="background-color: bisque">
                 <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-caret-right" style="color: cornflowerblue;"/> {{item.name}}</span>
                 <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
@@ -52,12 +52,12 @@
           <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
             <div style="height: 0.2rem"></div>
             <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
-            <el-button type="text"   @click="item.show=!item.show" style="font-size: 20px;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+            <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.20rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
           </div>
             </el-card>
           </div>
-          <div v-if="activeTab==='2'" class="animated bounceInRight" style="width: 10rem;margin-left: 0.4rem">
-            <el-card style="width: 80%;margin-top: 0.3rem;" v-for="(item,index) in blogUpdate" :key="index">
+          <div v-if="activeTab==='2'" class="animated bounceInRight" style="width: 8rem;margin-left: 4.2rem">
+            <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogUpdate" :key="index">
               <div style="background-color: bisque">
                 <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.name}}</span>
                 <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
@@ -76,12 +76,12 @@
               <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
                 <div style="height: 0.2rem"></div>
                 <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
-                <el-button type="text"   @click="item.show=!item.show" style="font-size: 20px;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.20rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
               </div>
             </el-card>
           </div>
-          <div v-if="activeTab==='3'" class="animated bounceInRight" style="width: 10rem;margin-left: 0.4rem">
-            <el-card style="width: 80%;margin-top: 0.3rem;" v-for="(item,index) in blogService" :key="index">
+          <div v-if="activeTab==='3'" class="animated bounceInRight" style="width: 8rem;margin-left: 4.2rem">
+            <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogService" :key="index">
               <div style="background-color: bisque">
                 <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-goods" style="color: cornflowerblue;"/> {{item.name}}</span>
                 <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
@@ -100,12 +100,12 @@
               <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
                 <div style="height: 0.2rem"></div>
                 <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
-                <el-button type="text"   @click="item.show=!item.show" style="font-size: 20px;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.20rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
               </div>
             </el-card>
           </div>
-          <div v-if="activeTab==='4'" class="animated bounceInRight" style="width: 10rem;margin-left: 0.4rem">
-            <el-card style="width: 80%;margin-top: 0.3rem;" v-for="(item,index) in blogDiscount" :key="index">
+          <div v-if="activeTab==='4'" class="animated bounceInRight" style="width: 8rem;margin-left: 4.2rem">
+            <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogDiscount" :key="index">
               <div style="background-color: bisque">
                 <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.name}}</span>
                 <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
@@ -124,7 +124,7 @@
               <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
                 <div style="height: 0.2rem"></div>
                 <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
-                <el-button type="text"   @click="item.show=!item.show" style="font-size: 20px;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.20rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
               </div>
             </el-card>
           </div>
@@ -225,24 +225,25 @@ export default {
 .head_content{
   background-image: url("../assets/产品博客/pic.png");
   width: 100%;
-  padding-top:50vh;
-  background-size: 100% 50vh;
+  padding-top:3rem;
+  background-size: 100% 3rem;
   background-repeat: no-repeat;
   min-width: 12rem;
 }
-.head_content .title{
-  font-size: 3vw;
-  color: white;
-  margin-top: 7vh;
-  margin-left: 12vw;
-}
-.head_content .content{
-  font-size: 1.2vw;
-  color: white;
-  margin-left: 12vw;
-  width: 40vw;
-  margin-top: 5vh;
-}
+
+/*.head_content .title{*/
+  /*font-size: 3vw;*/
+  /*color: white;*/
+  /*margin-top: 7vh;*/
+  /*margin-left: 12vw;*/
+/*}*/
+/*.head_content .content{*/
+  /*font-size: 1.2vw;*/
+  /*color: white;*/
+  /*margin-left: 12vw;*/
+  /*width: 40vw;*/
+  /*margin-top: 5vh;*/
+/*}*/
 /*.link_group{*/
   /*float: left;*/
   /*width: 25vw;*/
@@ -322,33 +323,33 @@ export default {
   /*width: 0.3vw;*/
   /*background-color: blue;*/
 /*}*/
-.link_group .title .word{
-  line-height: 3.5vh;
-  display: inline-block;
-  font-size: 1.8vw;
-  font-weight: 900;
-  margin-top: 10vh;
-  margin-left:8vw;
-}
+/*.link_group .title .word{*/
+  /*line-height: 3.5vh;*/
+  /*display: inline-block;*/
+  /*font-size: 1.8vw;*/
+  /*font-weight: 900;*/
+  /*margin-top: 10vh;*/
+  /*margin-left:8vw;*/
+/*}*/
 
-.link_content{
-  text-align: left;
-}
-.link_content .content{
-  margin-left: 7.1vw;
-}
-.link_content .word{
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: -1vw;
-  font-size: 1vw;
-  font-weight: 300;
-}
-.item_group .word{
-  float: left;
-  line-height: 6vh;
-  margin-left: 0.8vw;
-}
+/*.link_content{*/
+  /*text-align: left;*/
+/*}*/
+/*.link_content .content{*/
+  /*margin-left: 7.1vw;*/
+/*}*/
+/*.link_content .word{*/
+  /*margin-top: 2vh;*/
+  /*margin-bottom: 2vh;*/
+  /*margin-left: -1vw;*/
+  /*font-size: 1vw;*/
+  /*font-weight: 300;*/
+/*}*/
+/*.item_group .word{*/
+  /*float: left;*/
+  /*line-height: 6vh;*/
+  /*margin-left: 0.8vw;*/
+/*}*/
 /*.options{*/
   /*font-size: 1.5vw;*/
   /*font-weight: 300;*/
