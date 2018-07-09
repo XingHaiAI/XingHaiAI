@@ -26,7 +26,7 @@
             <el-button slot="append" >
               <span v-show="timeShow" @click="getCode">获取验证码</span>
               <el-tooltip class="item" effect="dark" content="不能在60s内重复申请验证码哦" placement="top-start">
-              <span v-show="!timeShow" class="count">{{timeCount}} s</span>
+              <span v-show="!timeShow" class="count">{{timeCount}} s后重新获取验证码</span>
               </el-tooltip>
             </el-button>
           </el-input>
@@ -45,7 +45,7 @@
 
     </div>
     <div class="buttons">
-      <el-button class="button4register" :disabled="!agree">注册</el-button>
+      <el-button class="button4register" :disabled="!agree" @click="SignIn">注册</el-button>
       <el-button class="button4log" @click="gotoLogin">登录</el-button>
     </div>
   </el-card>
@@ -81,6 +81,7 @@
           email:'',
           identity:''
         },
+        identityCode:'',
         rulesRegister:{
           username:[
             {required:true,message:'请输入用户名',trigger:'change'}
@@ -89,7 +90,7 @@
             {required:true,min:6,max:18,message:'请输入6-18位密码',trigger:'change'}
           ],
           email:[
-            {required:true,pattern:/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\\.[a-zA-Z0-9]{2,6}$/,message:'请输入正确的邮箱格式',trigger:'change'}
+            {required:true,pattern:/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/,message:'请输入正确的邮箱格式',trigger:'change'}
           ],
           passwordRepeat:[
             {required:true,validator:checkPassword,trigger:'change'}
@@ -105,24 +106,62 @@
         this.$router.push({path:'/login'})
       },
       getCode() {
-        let _this=this;
-        const TIME_COUNT = 60;    //验证码获取时间间隔
-        if (!_this.timer) {
-          _this.timeCount = TIME_COUNT;
-          _this.timeShow = false;
-          _this.timer = setInterval(() => {
-            if (_this.timeCount > 0 && _this.timeCount <= TIME_COUNT) {
-              _this.timeCount--;
-            } else {
-              _this.timeShow = true;
-              clearInterval(_this.timer);
-              _this.timer = null;
+        let _this = this;
+        const reg=/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/
+        if (reg.test(this.$data.formRegister.email)) {
+          this.$axios({
+            method: 'get',
+            url: '/account/sendEmail',
+            params: {
+              email: this.$data.formRegister.email
             }
-          }, 1000)
+          }).then(function (response) {
+            const TIME_COUNT = 60;    //验证码获取时间间隔
+            if (!_this.timer) {
+              _this.timeCount = TIME_COUNT;
+              _this.timeShow = false;
+              _this.timer = setInterval(() => {
+                if (_this.timeCount > 0 && _this.timeCount <= TIME_COUNT) {
+                  _this.timeCount--;
+                } else {
+                  _this.timeShow = true;
+                  clearInterval(_this.timer);
+                  _this.timer = null;
+                }
+              }, 1000)
+              alert('验证码发送成功！')
+            }
+          }).catch(function (err) {
+            alert('验证码发送失败！请检查填写是否有错误！')
+          })
+        }else{
+          alert('请输入正确的邮箱！')
         }
-        this.$message({
-          message: '发送验证码成功！请注意查收',
-          type: 'success'
+      },
+      SignIn(){
+        let _this=this;
+        this.$refs['formRegister'].validate((valid)=>{
+          if(valid){
+            this.$axios({
+              method:'get',
+              url:'account/register',
+              params:{
+                account:this.$data.formRegister.username,
+                password:this.$data.formRegister.password,
+                email:this.$data.formRegister.email,
+                code:this.$data.formRegister.identity
+              }
+            }).then(function (response) {
+              if(response.data===true){
+                alert('注册成功！');
+                _this.$router.push({path:'/login',query:{account:_this.$data.formRegister.username}})
+              }else{
+                alert('验证码错误！')
+              }
+            }).catch(function (err) {
+              alert('该用户已存在！');
+            })
+          }
         })
       }
     }
