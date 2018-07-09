@@ -5,7 +5,7 @@
     <div class="navbar">
       <!--LOGO-->
       <div class="logo">
-        <router-link to="/">兴海物联开放平台</router-link>
+        <router-link to="/"></router-link>
       </div>
       <!--各个菜单项，鼠标点击时展开-->
       <div class="menu_group">
@@ -24,40 +24,63 @@
 
       <div id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
         <table style="width: 100%;">
-          <tr>
-            <router-link to="/ProductService/AIIntelligent" style="text-decoration: none"><td class="productService">AI客服</td></router-link>
-            <router-link to="/ProductService/TextSimilar" style="text-decoration: none"><td class="productService">短文本相似度</td></router-link>
-            <router-link to="/ProductService/Meaning" style="text-decoration: none"><td class="productService">词义相似度</td></router-link>
+          <tr class="column">
+            <div class="productServiceHeader">语音处理</div>
+            <router-link to="/ProductService/SpeachRecog" style="text-decoration: none"><td class="productService">语音识别</td></router-link>
+            <router-link to="/ProductService/Speach" style="text-decoration: none"><td class="productService">语音合成</td></router-link>
           </tr>
-          <tr>
-            <router-link to="/ProductService/License" style="text-decoration: none"><td class="productService">车牌识别</td></router-link>
+          <tr class="column column_center">
+            <div class="productServiceHeader">自然语言处理</div>
+            <router-link to="/ProductService/Meaning" style="text-decoration: none"><td class="productService">词义相似度</td></router-link>
+            <router-link to="/ProductService/TextSimilar" style="text-decoration: none"><td class="productService">短文本相似度</td></router-link>
             <router-link to="/ProductService/Comments" style="text-decoration: none"><td class="productService">评论观点抽取</td></router-link>
             <router-link to="/ProductService/Emotional" style="text-decoration: none"><td class="productService">情感倾向分析</td></router-link>
+            <router-link to="/ProductService/AIIntelligent" style="text-decoration: none"><td class="productService">AI客服</td></router-link>
           </tr>
-          <tr>
-            <router-link to="/ProductService/IDCard" style="text-decoration: none"><td class="productService">身份证识别</td></router-link>
+          <tr class="column column_center">
+            <div class="productServiceHeader">文字识别</div>
             <router-link to="/ProductService/HandWritten" style="text-decoration: none"><td class="productService">手写识别</td></router-link>
             <router-link to="/ProductService/GeneralWord" style="text-decoration: none"><td class="productService">通用文字识别</td></router-link>
-          </tr>
-          <tr>
+            <router-link to="/ProductService/IDCard" style="text-decoration: none"><td class="productService">身份证识别</td></router-link>
             <router-link to="/ProductService/BankCard" style="text-decoration: none"><td class="productService">银行卡识别</td></router-link>
-            <router-link to="/ProductService/Speach" style="text-decoration: none"><td class="productService">语音合成</td></router-link>
-            <router-link to="/ProductService/SpeachRecog" style="text-decoration: none"><td class="productService">语音识别</td></router-link>
+            <router-link to="/ProductService/License" style="text-decoration: none"><td class="productService">车牌识别</td></router-link>
+            <router-link to="" style="text-decoration: none"><td class="productService">驾驶证识别</td></router-link>
+            <router-link to="" style="text-decoration: none"><td class="productService">行驶证识别</td></router-link>
+          </tr>
+          <tr class="column column_center">
+            <div class="productServiceHeader">人脸识别</div>
+            <router-link to="" style="text-decoration: none"><td class="productService">人脸检测</td></router-link>
+            <router-link to="" style="text-decoration: none"><td class="productService">人脸对比</td></router-link>
+            <router-link to="" style="text-decoration: none"><td class="productService">人脸查找</td></router-link>
+          </tr>
+          <tr class="column">
+            <div class="productServiceHeader">图像识别</div>
+            <router-link to="" style="text-decoration: none"><td class="productService">通用图形分析</td></router-link>
+            <router-link to="" style="text-decoration: none"><td class="productService">去模糊化</td></router-link>
+            <router-link to="" style="text-decoration: none"><td class="productService">人重识别</td></router-link>
+            <router-link to="" style="text-decoration: none"><td class="productService">车型识别</td></router-link>
           </tr>
         </table>
       </div>
       <div id="document" v-on:mouseover="documentOver" v-on:mouseout="documentOut">
         <table style="position: relative;bottom: 100%">
+          <!--<router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">入门教学</td></router-link>-->
           <router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">联系我们</td></router-link>
-          <router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">入门教学</td></router-link>
+          <router-link to="" style="text-decoration: none"><td class="documentCenter">技术指南</td></router-link>
+          <router-link to="" style="text-decoration: none"><td class="documentCenter">常见问题</td></router-link>
+          <router-link to="" style="text-decoration: none"><td class="documentCenter">API文档</td></router-link>
         </table>
       </div>
       <div id="present" v-on:mouseover="presentOver" v-on:mouseout="presentOut">
         <table style="position: relative;bottom: 100%">
-          <router-link to="/PresentDoc/SpeachRecg" style="text-decoration: none"><td class="documentCenter">语音识别</td></router-link>
+          <!--<router-link to="/PresentDoc/SpeachRecg" style="text-decoration: none"><td class="documentCenter">语音识别</td></router-link>
           <router-link to="/PresentDoc/PicRecg" style="text-decoration: none"><td class="documentCenter">图像识别</td></router-link>
           <router-link to="/PresentDoc/WordRecg" style="text-decoration: none"><td class="documentCenter">文字识别</td></router-link>
-          <router-link to="/PresentDoc/FaceRecg" style="text-decoration: none"><td class="documentCenter">人脸识别</td></router-link>
+          <router-link to="/PresentDoc/FaceRecg" style="text-decoration: none"><td class="documentCenter">人脸识别</td></router-link>-->
+          <router-link to="/PresentDoc/FaceRecg" style="text-decoration: none"><td class="documentCenter">人脸检测</td></router-link>
+          <router-link to="" style="text-decoration: none"><td class="documentCenter">人脸对比</td></router-link>
+          <router-link to="" style="text-decoration: none"><td class="documentCenter">身份证识别</td></router-link>
+          <router-link to="" style="text-decoration: none"><td class="documentCenter">车牌识别</td></router-link>
         </table>
       </div>
     </div>
@@ -65,9 +88,9 @@
 
     <router-view></router-view>
 
-        <div id="footer" style="margin: 0rem;padding: 0rem;width: 100%" v-if="$route.path!='/login'&&$route.path!='/signin'">
-          <img style="width: 100%;margin: 0rem;padding: 0rem" src="./assets/联系我们.jpg"/>
-        </div>
+    <div id="footer" style="margin: 0rem;padding: 0rem;width: 100%" v-if="$route.path!='/login'&&$route.path!='/signin'">
+      <img style="width: 100%;margin: 0rem;padding: 0rem" src="./assets/联系我们.jpg"/>
+    </div>
 
   </div>
 </template>
@@ -141,7 +164,7 @@
     width: 7%;
     margin-top: 0.41rem;
     margin-left: 4.8rem;
-    left: 42%;
+    left: 40%;
     top:100%;
     color: white;
     background-color: #060606;
@@ -149,7 +172,7 @@
   }
   #present{
     display: none;
-    width: 7%;
+    width: 8.3%;
     margin-top: 0.41rem;
     margin-left: 5.7rem;
     left: 51%;
@@ -158,12 +181,32 @@
     background-color: #060606;
     cursor:pointer;
   }
-  .productService{
-    display: inline-block;
+  .productServiceHeader{
     color: white;
+    font-size: 0.2rem;
+    width:100%;
+    margin-bottom: 0.1rem;
+    align:left;
+  }
+  .column{
+    margin-top: 0.1rem;
+    height: 2.2rem !important;
+    text-align: center !important;
+    width: 1.5rem !important;
+    float: left;
+    height: 100%;
+  }
+
+  .column_center{
+    border-left: solid #ffffff90 0.01rem;
+    border-right: solid #ffffff90 0.01rem;
+  }
+
+  .productService{
+    color: #ffffff90;
     font-size: 0.137rem;
-    margin-right: 0.60rem;
-    margin-left: 0.40rem;
+    margin-right: 0.10rem;
+    margin-left: 0.10rem;
     margin-bottom: 0.20rem;
     margin-top: 0.10rem;
     width:20%;
@@ -236,8 +279,14 @@
 
 
   .navbar .logo{
-    width: 18%;
-    height: 0.5rem;
+    margin-right: 1rem;
+    background-image: url("assets/pic/logo.png");
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: 0.15rem;
+    margin-left: 0.2rem;
+    width: 1.3rem;
+    height: 0.2rem;
     float: left;
     font-size: 0.16rem;
     text-align: center;
@@ -384,12 +433,12 @@
     background-color: grey;
   }
 
-.el-header{
-  height:0;
-}
+  .el-header{
+    height:0;
+  }
 
-.el-main{
-  margin:0;
-  padding:0;
-}
+  .el-main{
+    margin:0;
+    padding:0;
+  }
 </style>
