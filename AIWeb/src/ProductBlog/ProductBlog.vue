@@ -13,19 +13,19 @@
               style="text-align: center;width:3.2rem;position: absolute;top:0;bottom: 0;box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);">
               <el-menu-item index="1" style="height: 0.55rem">
 
-                <span slot="title"style="font-size: 0.17rem">全部类别</span>
+                <span slot="title" style="font-size: 0.17rem">全部类别</span>
               </el-menu-item>
-              <el-menu-item index="2"style="height: 0.55rem">
+              <el-menu-item index="2" style="height: 0.55rem">
 
-                <span slot="title"style="font-size: 0.17rem">产品更新</span>
+                <span slot="title" style="font-size: 0.17rem">产品更新</span>
               </el-menu-item>
-              <el-menu-item index="3"style="height: 0.55rem">
+              <el-menu-item index="3" style="height: 0.55rem">
 
-                <span slot="title"style="font-size: 0.17rem">服务公告</span>
+                <span slot="title" style="font-size: 0.17rem">服务公告</span>
               </el-menu-item>
-              <el-menu-item index="4"style="height: 0.55rem">
+              <el-menu-item index="4" style="height: 0.55rem">
 
-                <span slot="title"style="font-size: 0.17rem">优惠服务</span>
+                <span slot="title" style="font-size: 0.17rem">优惠服务</span>
               </el-menu-item>
             </el-menu>
           </div>
