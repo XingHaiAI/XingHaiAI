@@ -12,37 +12,37 @@
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose">
-            <el-submenu index="1" style="text-align: center;min-height:0.6rem">
+            <el-submenu index="1" style="text-align: left;margin-top:0.5rem;min-height:0.6rem">
               <template slot="title">
                 <span>入门教学</span>
               </template>
-              <el-menu-item index="1-1" class="teach" popper-append-to-body="true"><router-link to="/Teaching" style="text-decoration: none;color: black">API调用规则</router-link></el-menu-item>
-              <el-menu-item index="1-2" class="teach"popper-append-to-body="true">调用返回值</el-menu-item>
-              <el-menu-item index="1-3" class="teach"popper-append-to-body="true">代码示例</el-menu-item>
+              <el-menu-item index="1-1" class="teach" popper-append-to-body="true"><router-link to="/Teaching" style="text-decoration: none;color: black;margin-left: 0.6rem;">API调用规则</router-link></el-menu-item>
+              <el-menu-item index="1-2" class="teach"popper-append-to-body="true"><router-link to="" style="text-decoration: none;color: black;margin-left: 0.6rem;">调用返回值</router-link></el-menu-item>
+              <el-menu-item index="1-3" class="teach"popper-append-to-body="true"><router-link to="" style="text-decoration: none;color: black;margin-left: 0.6rem;">代码示例</router-link></el-menu-item>
             </el-submenu>
-            <el-submenu index="2"style="text-align: center;min-height:0.6rem">
+            <el-submenu index="2"style="text-align: left;min-height:0.6rem">
               <template slot="title"style="mode:horizontal;collapse-transition:false">
                 <span>技术指南</span>
               </template>
-              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideSDK" style="text-decoration: none;color: black">如何使用SDK</router-link></el-menu-item>
-              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideAPI" style="text-decoration: none;color: black">如何使用API</router-link></el-menu-item>
+              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideSDK" style="text-decoration: none;color: black;margin-left: 0.6rem;">如何使用SDK</router-link></el-menu-item>
+              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">如何使用API</router-link></el-menu-item>
             </el-submenu>
-            <el-menu-item index="3" style="text-align: center;min-height:0.6rem">
+            <el-menu-item index="3" style="text-align: left;min-height:0.6rem">
                <span slot="title">
                  <router-link to="/CommonProblems" style="text-decoration: none;color: black">常见问题</router-link>
                </span>
             </el-menu-item>
-            <el-submenu index="4" style="text-align: center;min-height:0.6rem">
+            <el-submenu index="4" style="text-align: left;min-height:0.6rem">
               <template slot="title">
                 <span>API接口</span>
               </template>
-              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"><router-link to="/SpeachAPI" style="text-decoration: none;color: black">语音处理</router-link></el-menu-item>
-              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"><router-link to="/WordAPI" style="text-decoration: none;color: black">文字识别</router-link></el-menu-item>
-              <el-menu-item index="2-3" class="teach"popper-append-to-body="true"><router-link to="/FaceAPI" style="text-decoration: none;color: black">人脸识别</router-link></el-menu-item>
-              <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/PictureAPI" style="text-decoration: none;color: black">图像识别</router-link></el-menu-item>
-              <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/NPLAPI" style="text-decoration: none;color: black">自然语言处理</router-link></el-menu-item>
+              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"><router-link to="/SpeachAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">语音处理</router-link></el-menu-item>
+              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"><router-link to="/WordAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">文字识别</router-link></el-menu-item>
+              <el-menu-item index="2-3" class="teach"popper-append-to-body="true"><router-link to="/FaceAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">人脸识别</router-link></el-menu-item>
+              <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/PictureAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">图像识别</router-link></el-menu-item>
+              <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/NPLAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">自然语言处理</router-link></el-menu-item>
             </el-submenu>
-            <el-menu-item index="5" style="text-align: center;min-height:0.6rem">
+            <el-menu-item index="5" style="text-align: left;min-height:0.6rem">
               <span slot="title">SDK下载</span>
             </el-menu-item>
           </el-menu>
@@ -59,14 +59,14 @@
       </div>
        <div class="from_group">
         <div class="blog">
-          <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/></img>人脸识别</div>
+          <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/>人脸识别</div>
           <div class="outline">语音合成服务，基于HTTP请求的REST API 接口，将文本转换为可以播放的MP3文件。将人类语言词汇内容转换为计算机可读输入。</div>
           <div class="more"><button class="APIbutton">API文档</button></div>
         </div>
         <div class="blog">
-          <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/></img>人脸识别</div>
+          <div class="bolg_title"><img src="../assets/产品博客/icon.png" class="icon"/>人脸识别</div>
           <div class="outline">语音合成服务，基于HTTP请求的REST API 接口，将文本转换为可以播放的MP3文件。将人类语言词汇内容转换为计算机可读输入。</div>
-          <div class="more"><button>API文档</button></div>
+          <div class="more"><button class="APIbutton">API文档</button></div>
         </div>
       </div>
     </div>
@@ -149,8 +149,8 @@ textarea{
 }
 #aside{
   float: left;
-  height: 100%;
-  width: 26%;
+  height: 15.3rem;
+  width: 24%;
   margin: 0;
   box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);
 }
@@ -233,18 +233,32 @@ img{
 }
 span{
   font-size:0.22rem;
+  margin-left: 0.6rem;
 }
+
 button{
   width: 1.20rem;
   height: 0.25rem;
   text-align: center;
   background: transparent;
   position: relative;
-  border-color: #99FFCC;
+  border-width: 0.01rem;
+  border-color: #4096ff;
   color:#4096ff;
   font-size: 0.15rem;
   cursor:pointer;
 }
+button:hover{
+  background: white;
+  border-width: 0.02rem;
+  border-color: #4096ff;
+}
+button:active{
+  background: #4096ff;
+  border-color: transparent;
+  color:white;
+}
+
 .searchInput{
   font-size:0.16rem;
   padding-left:0.137rem;

@@ -12,35 +12,35 @@
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose">
-            <el-submenu index="1" style="text-align: center;min-height:0.6rem">
+            <el-submenu index="1" style="text-align: left;margin-top:0.5rem;min-height:0.6rem">
               <template slot="title">
                 <span>入门教学</span>
               </template>
-              <el-menu-item index="1-1" class="teach" popper-append-to-body="true"><router-link to="/Teaching" style="text-decoration: none;color: black">API调用规则</router-link></el-menu-item>
-              <el-menu-item index="1-2" class="teach"popper-append-to-body="true">调用返回值</el-menu-item>
-              <el-menu-item index="1-3" class="teach"popper-append-to-body="true">代码示例</el-menu-item>
+              <el-menu-item index="1-1" class="teach" popper-append-to-body="true"><router-link to="/Teaching" style="text-decoration: none;color: black;margin-left: 0.6rem;">API调用规则</router-link></el-menu-item>
+              <el-menu-item index="1-2" class="teach"popper-append-to-body="true"><router-link to="" style="text-decoration: none;color: black;margin-left: 0.6rem;">调用返回值</router-link></el-menu-item>
+              <el-menu-item index="1-3" class="teach"popper-append-to-body="true"><router-link to="" style="text-decoration: none;color: black;margin-left: 0.6rem;">代码示例</router-link></el-menu-item>
             </el-submenu>
-            <el-submenu index="2"style="text-align: center;min-height:0.6rem">
+            <el-submenu index="2"style="text-align: left;min-height:0.6rem">
               <template slot="title"style="mode:horizontal;collapse-transition:false">
                 <span>技术指南</span>
               </template>
-              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideSDK" style="text-decoration: none;color: black">如何使用SDK</router-link></el-menu-item>
-              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideAPI" style="text-decoration: none;color: black">如何使用API</router-link></el-menu-item>
+              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideSDK" style="text-decoration: none;color: black;margin-left: 0.6rem;">如何使用SDK</router-link></el-menu-item>
+              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"> <router-link to="/TechGuideAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">如何使用API</router-link></el-menu-item>
             </el-submenu>
-            <el-menu-item index="3" style="text-align: center;min-height:0.6rem">
+            <el-menu-item index="3" style="text-align: left;min-height:0.6rem">
               <span slot="title">常见问题</span>
             </el-menu-item>
-            <el-submenu index="4" style="text-align: center;min-height:0.6rem">
+            <el-submenu index="4" style="text-align: left;min-height:0.6rem">
               <template slot="title">
                 <span>API接口</span>
               </template>
-              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"><router-link to="/SpeachAPI" style="text-decoration: none;color: black">语音处理</router-link></el-menu-item>
-              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"><router-link to="/WordAPI" style="text-decoration: none;color: black">文字识别</router-link></el-menu-item>
-              <el-menu-item index="2-3" class="teach"popper-append-to-body="true"><router-link to="/FaceAPI" style="text-decoration: none;color: black">人脸识别</router-link></el-menu-item>
-              <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/PictureAPI" style="text-decoration: none;color: black">图像识别</router-link></el-menu-item>
-              <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/NPLAPI" style="text-decoration: none;color: black">自然语言处理</router-link></el-menu-item>
+              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"><router-link to="/SpeachAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">语音处理</router-link></el-menu-item>
+              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"><router-link to="/WordAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">文字识别</router-link></el-menu-item>
+              <el-menu-item index="2-3" class="teach"popper-append-to-body="true"><router-link to="/FaceAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">人脸识别</router-link></el-menu-item>
+              <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/PictureAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">图像识别</router-link></el-menu-item>
+              <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/NPLAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">自然语言处理</router-link></el-menu-item>
             </el-submenu>
-            <el-menu-item index="5" style="text-align: center;min-height:0.6rem">
+            <el-menu-item index="5" style="text-align: left;min-height:0.6rem">
               <span slot="title">SDK下载</span>
             </el-menu-item>
           </el-menu>
@@ -146,8 +146,8 @@
   }
   #aside{
     float: left;
-    height: 100%;
-    width: 26%;
+    height: 15.3rem;
+    width: 24%;
     margin: 0;
     box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);
   }
@@ -186,6 +186,7 @@
   }
   span{
     font-size:0.22rem;
+    margin-left: 0.6rem;
   }
   .searchInput{
     font-size:0.16rem;

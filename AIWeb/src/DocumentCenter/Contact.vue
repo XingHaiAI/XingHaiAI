@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="from_group">
-        <div class="decorate_bar">提交反馈</div>
+        <div class="decorate_bar"style="margin-bottom: 0.3rem">提交反馈</div>
         <div class="item_group">
             <div class="before_buy">
                 <div class="icon_1"></div>
@@ -209,8 +209,8 @@ div{
 
 .el-input__inner{
   border-color:black;
+  font-size: 0.16rem;
 }
-
 
 .icon_1{
   background-image: url("../assets/联系我们/icon1.png");
@@ -258,8 +258,8 @@ div{
 }
 .inro{
 	height:1rem;
-	line-height:0.25rem;
-	font-size:0.2rem;
+	line-height:0.29rem;
+	font-size:0.18rem;
 	letter-spacing:0.2em;
 	margin-top:-1rem;
 	margin-bottom:0.5rem;
@@ -375,7 +375,7 @@ div{
 .from_group .decorate_bar{
   width: 6.83rem;
   height: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.9rem;
   font-size:0.3rem;
   text-align:center;
   align-self: center;
@@ -455,9 +455,9 @@ div{
 .input_textarea{
   border: none;
   padding: 0.05rem;
-  font-size: 0.2rem;
-  border: #D1D1D1 0.01rem solid;
-  border-radius: 5%;
+  font-size: 0.16rem;
+  border: black 0.01rem solid;
+  border-radius: 2%;
   margin-left: 0.137rem;
   height: 2.55rem;
   width: 3.415rem;
@@ -492,6 +492,6 @@ div{
   cursor:pointer;
 }
 
-.input_textarea::-webkit-input-placeholder { color: #B0B0B0;font-size:0.18rem;}
-.input::-webkit-input-placeholder { color: #B0B0B0;font-size:0.18rem;padding-left:0.068rem;}
+.input_textarea::-webkit-input-placeholder { color: #B0B0B0;font-size:0.16rem;}
+.input::-webkit-input-placeholder { color: #B0B0B0;font-size:0.16rem;padding-left:0.068rem;}
 </style>
