@@ -1,11 +1,4 @@
 <template>
-  <html>
-  <head>
-    <title>DRW</title>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="ContactUs.css">
-  </head>
-  <body>
   <div class="word_head">联系我们：欢迎联系，真诚期待与您携手合作！</div>
   <div class="line">
     <div class="coloum_1">
@@ -24,8 +17,6 @@
     </div>
     <div class="coloum_2"></div>
   </div>
-  </body>
-  </html>
 </template>
 
 <script>

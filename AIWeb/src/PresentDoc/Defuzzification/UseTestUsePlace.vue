@@ -6,15 +6,15 @@
 		    <div class="UseTestUsePlace_Item_Group_Item_Left">
 		        <div class="UseTestUsePlace_Item_Group_Item_Img_Left"></div>
 		        <div class="UseTestUsePlace_Item_Group_Item_Word">
-		            <div class="UseTestUsePlace_Item_Group_Item_Word_Title">图片分类标签</div>
-		            <div class="UseTestUsePlace_Item_Group_Item_Word_Content">使用场景与物体检测，为图片或视频添加智能分类标签。广泛运用于智能相册、视频结构化处理等场景中</div>
+		            <div class="UseTestUsePlace_Item_Group_Item_Word_Title">图片内容解锁</div>
+		            <div class="UseTestUsePlace_Item_Group_Item_Word_Content" style="color:gray;">通过图片内容识别，提供相符的信息或服务。如利用车型识别提供便捷的一键拍照租车服务</div>
 		        </div>
 		    </div>
 		    <div class="UseTestUsePlace_Item_Group_Item_Right">
 		        <div class="UseTestUsePlace_Item_Group_Item_Img_Right"></div>
 		        <div class="UseTestUsePlace_Item_Group_Item_Word">
-		            <div class="UseTestUsePlace_Item_Group_Item_Word_Title">特定物体检测</div>
-		            <div class="UseTestUsePlace_Item_Group_Item_Word_Content">识别并匹配特定物体，并支持定制化需求。适合自动化监控，社交游戏等场景。</div>
+		            <div class="UseTestUsePlace_Item_Group_Item_Word_Title">车牌识别</div>
+		            <div class="UseTestUsePlace_Item_Group_Item_Word_Content" style="color: gray">在交通道路上的摄像头中加入车牌识别结合违章判断，对不清晰的车辆号码进行自动识别，实现自动化的违章设计</div>
 		        </div>
 		    </div>
 		</div>
@@ -84,7 +84,7 @@ div{
 }
 
 .UseTestUsePlace_Item_Group_Item_Img_Left{
-    background-image: url("pic/item_1.jpg");
+    background-image: url("./image/去模糊化.png");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
@@ -92,7 +92,7 @@ div{
 }
 
 .UseTestUsePlace_Item_Group_Item_Img_Right{
-    background-image: url("pic/item_2.jpg");
+    background-image: url("./image/车牌识别.png");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;

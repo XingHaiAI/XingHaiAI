@@ -18,9 +18,9 @@
         </div>
           <div class="photoSelect" style="width: 94%;height: 27%;margin-left: auto;margin-right: auto;overflow-x: scroll;overflow-y: hidden;overflow-wrap: normal;white-space: nowrap;">
             <div style="height: 0.1rem;"></div>
-            <el-row :gutter="20" style="width: 900px;">
-              <el-col style="height: 150px;width:150px;" v-for="(item,index) in image" :key="index">
-                <el-card style="width: 140px;height: 148px;">
+            <el-row :gutter="60" style="width: 4.5rem;">
+              <el-col style="height: 2rem;width: 2rem" v-for="(item,index) in image" :key="index">
+                <el-card style="width: 1.9rem;height: 2rem;">
                 <img :src="item.src" @click='selectPhoto(item)' style="width: 100%;"/>
                 </el-card>
               </el-col>
@@ -74,14 +74,10 @@ export default {
     return{
       inputUrl:'',
       imgURL:'',
-      imgURLSelect:require('./face/face3.png'),
+      imgURLSelect:require('./image/去模糊化.png'),
       image:[
-        {src:require('./face/face3.png')},
-        {src:require('./face/face4.png')},
-        {src:require('./face/face5.png')},
-        {src:require('./face/face6.png')},
-        {src:require('./face/face7.png')},
-        {src:require('./face/face8.png')}
+        {src:require('./image/去模糊化.png')},
+        {src:require('./image/车牌识别.png')},
       ],
       test:{
         image:'dafafkjke213nfnjdnonon12onoi421n4o',
