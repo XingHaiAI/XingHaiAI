@@ -266,7 +266,7 @@
   .navbar{
     width: 100%;
     height: 0.5rem;
-    min-width: 9rem;
+    min-width: 10rem;
     line-height: 0.5rem;
     position: fixed;
     background-color: rgba(6,6,6,1);
