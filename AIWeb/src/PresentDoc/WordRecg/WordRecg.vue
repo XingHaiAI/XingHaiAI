@@ -1,4 +1,5 @@
 <template>
+  <!--银行卡识别-->
   <div id="WordRecg">
     <UseTestFunctionShow class="content"></UseTestFunctionShow>
     <div style="height: 7.5rem"></div>

@@ -27,10 +27,15 @@ import 'element-ui/lib/theme-chalk/index.css'
 import TechGuideAPI from '@/Useplace/TechGuide.vue'
 import TechGuideSDK from '@/Useplace/TechGuideSDK.vue'
 import CommonProblems from '@/Useplace/CommonProblems.vue'
-import PreSpeachRecg from '@/PresentDoc/SpeachRecg/SpeachRecg.vue'
+
+
 import FaceRecg from '@/PresentDoc/FaceRecg/FaceRecg.vue'
-import PicRecg from '@/PresentDoc/PicRecg/PicRecg.vue'
 import WordRecg from '@/PresentDoc/WordRecg/WordRecg.vue'
+import Defuzzification from '../PresentDoc/Defuzzification/Defuzzification'
+import LPR from '../PresentDoc/LPR/LPR'
+import IDRecg from '../PresentDoc/IDRecg/IDRecg'
+
+
 import login from '@/login/login.vue'
 import signIn from '@/login/signIn.vue'
 import ConsoleSDK from '@/Console/SDK.vue'
@@ -40,6 +45,7 @@ import ConsoleWordRec from '@/Console/WordRec.vue'
 import ConsoleSpeach from '@/Console/Speach.vue'
 import ConsoleNPL from '@/Console/NPL.vue'
 import APPList from '@/Console/APPList.vue'
+import GraphicsAnalysis from '../PresentDoc/GraphicsAnalysis/GraphicsAnalysis'
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -121,14 +127,13 @@ export default new Router({
     }
     ,
     {
-      path:'/PresentDoc/SpeachRecg',name:'SpeachRecg',component:PreSpeachRecg
+      path:'/PresentDoc/Defuzzification',component:Defuzzification
     },
+
     {
       path:'/PresentDoc/FaceRecg',name:'FaceRecg',component:FaceRecg
     },
-    {
-      path:'/PresentDoc/PicRecg',name:'PicRecg',component:PicRecg
-    },
+
     {
       path:'/PresentDoc/WordRecg',name:'WordRecg',component:WordRecg
     },
@@ -161,6 +166,15 @@ export default new Router({
     },
     {
       path:'/Console/APPList',name:'APPList',component:APPList
+    },
+    {
+      path:'/PresentDoc/GraphicsAnalysis',component:GraphicsAnalysis
+    },
+    {
+      path:'/PresentDoc/LPR',component:LPR
+    },
+    {
+      path:'/PresentDoc/IDRecg',component:IDRecg
     }
   ]
 })
