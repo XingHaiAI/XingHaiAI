@@ -10,22 +10,22 @@
               :default-active="activeTab"
               class="el-menu-vertical-demo"
               @select="handleSelect"
-              style="text-align: left;width:3.2rem;position: absolute;top:0;bottom: 0;box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);">
-              <el-menu-item index="1" style="height: 0.6rem;margin-top:0.6rem;">
+              style="text-align: center;width:3.2rem;position: absolute;top:0;bottom: 0;box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);">
+              <el-menu-item index="1" style="height: 0.55rem">
 
-                <span slot="title" style="font-size: 0.22rem;margin-left: 0.6rem;margin-left: 0.6rem">全部类别</span>
+                <span slot="title" style="font-size: 0.17rem">全部类别</span>
               </el-menu-item>
-              <el-menu-item index="2" style="height: 0.6rem">
+              <el-menu-item index="2" style="height: 0.55rem">
 
-                <span slot="title" style="font-size: 0.22rem;margin-left: 0.6rem">产品更新</span>
+                <span slot="title" style="font-size: 0.17rem">产品更新</span>
               </el-menu-item>
-              <el-menu-item index="3" style="height: 0.6rem">
+              <el-menu-item index="3" style="height: 0.55rem">
 
-                <span slot="title" style="font-size: 0.22rem;margin-left: 0.6rem">服务公告</span>
+                <span slot="title" style="font-size: 0.17rem">服务公告</span>
               </el-menu-item>
-              <el-menu-item index="4" style="height: 0.6rem">
+              <el-menu-item index="4" style="height: 0.55rem">
 
-                <span slot="title" style="font-size: 0.22rem;margin-left: 0.6rem">优惠服务</span>
+                <span slot="title" style="font-size: 0.17rem">优惠服务</span>
               </el-menu-item>
             </el-menu>
           </div>
@@ -33,100 +33,152 @@
         <el-col :span="6">
           <div style="height: 0.2rem;"></div>
           <div v-if="activeTab==='1'" class="animated bounceInRight" style="width: 8rem;margin-left: 4.2rem">
+            <div v-if="total4All!==0">
             <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogAll" :key="index">
               <div style="background-color: bisque">
-                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-caret-right" style="color: cornflowerblue;"/> {{item.name}}</span>
-                <span style="float:right;font-size:0.15rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-caret-right" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.logtype}}</a></span>
               </div>
               <div style="height: 0.6rem"></div>
-              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
-                <span style="margin-left: 0.22rem;font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.ashow">
+                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
               </div>
               <el-collapse-transition>
-                  <div style="padding: 0.1rem" v-show="item.show">
+                  <div style="padding: 0.1rem" v-show="item.ashow">
                     <p style="font-size: 0.2rem">具体内容</p>
                     <div style="height: 0.15rem"></div>
-                    <p style="font-size: 0.16rem">-{{item.content}}</p>
+                    <p style="font-size: 0.16rem">-{{item.logcontent}}</p>
                   </div>
               </el-collapse-transition>
           <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
             <div style="height: 0.2rem"></div>
-            <span style="float: left;font-size: 0.15rem;margin-left: 0.32rem;margin-top: 0.05rem">发布于{{item.time}}</span>
-            <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.15rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+            <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
+            <el-button type="text"   @click="item.ashow=!item.ashow" style="font-size: 0.20rem;float: right">{{item.ashow?'收起详情':'查看详情'}}</el-button>
           </div>
             </el-card>
+            <div class="pageDiv">
+              <div class="block">
+                <el-pagination
+                  :current-page="page4All"
+                  @current-change="blogAllChange"
+                  layout="prev, pager, next"
+                  :total="total4All">
+                </el-pagination>
+              </div>
+            </div>
+            </div>
+            <div v-else style="font-size: 0.16rem;text-align: center">暂无更新信息哦~</div>
           </div>
           <div v-if="activeTab==='2'" class="animated bounceInRight" style="width: 8rem;margin-left: 4.2rem">
+            <div v-if="total4Update!==0">
             <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogUpdate" :key="index">
               <div style="background-color: bisque">
-                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.name}}</span>
-                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.logtype}}</a></span>
               </div>
               <div style="height: 0.6rem"></div>
-              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
-                <span style="margin-left: 0.22rem;font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.ashow">
+                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
               </div>
               <el-collapse-transition>
-                <div style="padding: 0.1rem" v-show="item.show">
+                <div style="padding: 0.1rem" v-show="item.ashow">
                   <p style="font-size: 0.2rem">具体内容</p>
                   <div style="height: 0.15rem"></div>
-                  <p style="font-size: 0.16rem">-{{item.content}}</p>
+                  <p style="font-size: 0.16rem">-{{item.logcontent}}</p>
                 </div>
               </el-collapse-transition>
               <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
                 <div style="height: 0.2rem"></div>
-                <span style="float: left;font-size: 0.15rem;margin-left: 0.32rem;margin-top: 0.05rem">发布于{{item.time}}</span>
-                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.15rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+                <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
+                <el-button type="text"   @click="item.ashow=!item.ashow" style="font-size: 0.20rem;float: right">{{item.ashow?'收起详情':'查看详情'}}</el-button>
               </div>
             </el-card>
+            <div class="pageDiv">
+              <div class="block">
+                <el-pagination
+                  :current-page="page4Update"
+                  @current-change="blogUpdateChange"
+                  layout="prev, pager, next"
+                  :total="total4Update">
+                </el-pagination>
+              </div>
+            </div>
+            </div>
+            <div v-else style="font-size: 0.16rem;text-align: center">暂无更新信息哦~</div>
           </div>
           <div v-if="activeTab==='3'" class="animated bounceInRight" style="width: 8rem;margin-left: 4.2rem">
+            <div v-if="total4Service!==0">
             <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogService" :key="index">
               <div style="background-color: bisque">
-                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-goods" style="color: cornflowerblue;"/> {{item.name}}</span>
-                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-goods" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.logtype}}</a></span>
               </div>
               <div style="height: 0.6rem"></div>
-              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
-                <span style="margin-left: 0.22rem;font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.ashow">
+                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
               </div>
               <el-collapse-transition>
-                <div style="padding: 0.1rem" v-show="item.show">
+                <div style="padding: 0.1rem" v-show="item.ashow">
                   <p style="font-size: 0.2rem">具体内容</p>
                   <div style="height: 0.15rem"></div>
-                  <p style="font-size: 0.16rem">-{{item.content}}</p>
+                  <p style="font-size: 0.16rem">-{{item.logcontent}}</p>
                 </div>
               </el-collapse-transition>
               <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
                 <div style="height: 0.2rem"></div>
-                <span style="float: left;font-size: 0.15rem;margin-left: 0.32rem;margin-top: 0.05rem">发布于{{item.time}}</span>
-                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.15rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+                <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
+                <el-button type="text"   @click="item.ashow=!item.ashow" style="font-size: 0.20rem;float: right">{{item.ashow?'收起详情':'查看详情'}}</el-button>
               </div>
             </el-card>
+            <div class="pageDiv">
+              <div class="block">
+                <el-pagination
+                  :current-page="page4Service"
+                  @current-change="blogServiceChange"
+                  layout="prev, pager, next"
+                  :total="total4Service">
+                </el-pagination>
+              </div>
+            </div>
+            </div>
+            <div v-else style="font-size: 0.16rem;text-align: center">暂无更新信息哦~</div>
           </div>
           <div v-if="activeTab==='4'" class="animated bounceInRight" style="width: 8rem;margin-left: 4.2rem">
+            <div v-if="total4Discount!==0">
             <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogDiscount" :key="index">
               <div style="background-color: bisque">
-                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.name}}</span>
-                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+                <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.logtype}}</a></span>
               </div>
               <div style="height: 0.6rem"></div>
-              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
-                <span style="margin-left: 0.22rem;font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+              <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.ashow">
+                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
               </div>
               <el-collapse-transition>
-                <div style="padding: 0.1rem" v-show="item.show">
+                <div style="padding: 0.1rem" v-show="item.ashow">
                   <p style="font-size: 0.2rem">具体内容</p>
                   <div style="height: 0.15rem"></div>
-                  <p style="font-size: 0.16rem">-{{item.content}}</p>
+                  <p style="font-size: 0.16rem">-{{item.logcontent}}</p>
                 </div>
               </el-collapse-transition>
               <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
                 <div style="height: 0.2rem"></div>
-                <span style="float: left;font-size: 0.15rem;margin-left: 0.32rem;margin-top: 0.05rem">发布于{{item.time}}</span>
-                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.15rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+                <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
+                <el-button type="text"   @click="item.ashow=!item.ashow" style="font-size: 0.20rem;float: right">{{item.ashow?'收起详情':'查看详情'}}</el-button>
               </div>
             </el-card>
+            <div class="pageDiv">
+              <div class="block">
+                <el-pagination
+                  :current-page="page4Discount"
+                  @current-change="blogDiscountChange"
+                  layout="prev, pager, next"
+                  :total="total4Discount">
+                </el-pagination>
+              </div>
+            </div>
+          </div>
+            <div v-else style="font-size: 0.16rem;text-align: center">暂无更新信息哦~</div>
           </div>
         </el-col>
       </el-row>
@@ -141,81 +193,255 @@ export default {
   data(){
     return{
       activeTab:'1',
+      total4All:0,
+      page4All:1,
       blogAll:[{
-        name:'语音视频的API更新',
-        type:'服务公告',
+        logtitle:'语音视频的API更新',
+        logtype:'服务公告',
         brief:'授权时长可灵活延长',
-        content:'具体内容内容内容',
-        show:false,
+        logcontent:'具体内容内容内容',
+        ashow:false,
         time:'2015-01-15'
       }
       ],
+      total4Update:0,
+      page4Update:0,
       blogUpdate:[{
-        name:'语音视频的API更新',
-        type:'产品更新',
+        logtitle:'语音视频的API更新',
+        logtype:'产品更新',
         brief:'授权时长可灵活延长',
-        content:'具体内容内容内容',
-        show:false,
+        logcontent:'具体内容内容内容',
+        ashow:false,
         time:'2015-01-15'
       },{
         time:'2015-01-15',
-        name:'语音视频的API更新',
-        type:'产品更新',
+        logtitle:'语音视频的API更新',
+        logtype:'产品更新',
         brief:'授权时长可灵活延长',
-        content:'具体内容内容内容',
-        show:false
+        logcontent:'具体内容内容内容',
+        ashow:false
       }
       ],
+      total4Service:0,
+      page4Service:0,
       blogService:[
         {
-          name:'语音视频的API更新',
-          type:'服务公告',
+          logtitle:'语音视频的API更新',
+          logtype:'服务公告',
           brief:'授权时长可灵活延长',
-          content:'具体内容内容内容',
-          show:false,
+          logcontent:'具体内容内容内容',
+          ashow:false,
           time:'2015-01-15'
         },
         {
-          name:'语音视频的API更新',
-          type:'服务公告',
+          logtitle:'语音视频的API更新',
+          logtype:'服务公告',
           brief:'授权时长可灵活延长',
-          content:'具体内容内容内容',
-          show:false,
+          logcontent:'具体内容内容内容',
+          ashow:false,
           time:'2015-01-15'
         }
       ],
+      total4Discount:0,
+      page4Discount:0,
       blogDiscount:[
         {
-          name:'语音视频的API更新',
-          type:'优惠服务',
+          logtitle:'语音视频的API更新',
+          logtype:'优惠服务',
           brief:'授权时长可灵活延长',
-          content:'具体内容内容内容',
-          show:false,
+          logcontent:'具体内容内容内容',
+          ashow:false,
           time:'2015-01-15'
         },
-        {
-          name:'语音视频的API更新',
-          type:'优惠服务',
-          brief:'授权时长可灵活延长',
-          content:'具体内容内容内容',
-          show:false,
-          time:'2015-01-15'
-        }
-      ]
+
+      ],
+
     }
   },
   methods:{
     handleSelect(index){
       this.$data.activeTab=index;
+    },
+
+    /**
+     * 点击不同页数时重新请求页面内容
+     */
+    blogAllChange(){
+      let _this=this;
+      this.$axios({
+        method:'get',
+        url:'/blog/get',
+        params:{
+          type:'4',
+          page:this.$data.page4All
+        }
+      }).then(function (response) {
+        for(let index=0;index<response.data.logcontents.length;index++){
+          response.data.logcontents[index].ashow=false;
+          if(response.data.logcontents[index].logtype==='1'){
+            response.data.logcontents[index].logtype='产品更新'
+          }else if(response.data.logcontents[index].logtype==='2'){
+            response.data.logcontents[index].logtype='服务公告'
+          }else{
+            response.data.logcontents[index].logtype='优惠信息'
+          }
+        }
+        _this.$data.blogAll=response.data.logcontents;
+        // _this.$data.page4All=response.data.part;
+        _this.$data.total4All=response.data.all;
+      })
+    },
+    blogUpdateChange(){
+      let _this=this;
+      this.$axios({
+        method:'get',
+        url:'/blog/get',
+        params:{
+          type:'1',
+          page:this.$data.page4Update
+        }
+      }).then(function (response) {
+        for(let index=0;index<response.data.logcontents.length;index++){
+          response.data.logcontents[index].ashow=false;
+          response.data.logcontents[index].logtype='产品更新'
+        }
+        _this.$data.blogUpdate=response.data.logcontents
+        _this.$data.total4Update=response.data.all;
+        // _this.$data.page4Update=response.data.part;
+      })
+    },
+    blogServiceChange(){
+      let _this=this;
+      this.$axios({
+        method:'get',
+        url:'/blog/get',
+        params:{
+          type:'2',
+          page:this.$data.page4Service
+        }
+      }).then(function (response) {
+        for(let index=0;index<response.data.logcontents.length;index++){
+          response.data.logcontents[index].ashow=false;
+          response.data.logcontents[index].logtype='服务公告'
+        }
+        _this.$data.blogService=response.data.logcontents
+        _this.$data.total4Service=response.data.all;
+        // _this.$data.page4Service=response.data.part;
+      })
+    },
+    blogDiscountChange(){
+      let _this=this;
+      this.$axios({
+        method:'get',
+        url:'/blog/get',
+        params:{
+          type:'3',
+          page:this.$data.page4Discount
+        }
+      }).then(function (response) {
+        for(let index=0;index<response.data.logcontents.length;index++){
+          response.data.logcontents[index].ashow=false;
+          response.data.logcontents[index].logtype='产品更新'
+        }
+        _this.$data.blogDiscount=response.data.logcontents
+        _this.$data.total4Discount=response.data.all;
+        _this.$data.page4Discount=response.data.part;
+      })
     }
   },
-  mounted(){
-    for(let index=0;index<this.$data.blogUpdate.length;index++)
-    this.$data.blogAll.push(this.$data.blogUpdate[index]);
-    for(let index=0;index<this.$data.blogService.length;index++)
-    this.$data.blogAll.push(this.$data.blogService[index]);
-    for(let index=0;index<this.$data.blogDiscount.length;index++)
-    this.$data.blogAll.push(this.$data.blogDiscount[index]);
+  created(){
+
+    let _this=this;
+
+    /**
+     * get请求获取全部类型的产品博客
+     */
+    this.$axios({
+      method:'get',
+      url:'/blog/get',
+      params:{
+        page:'1',
+        type:'4'
+      }
+    }).then(function (response) {
+      for(let index=0;index<response.data.logcontents.length;index++){
+        response.data.logcontents[index].ashow=false;
+        if(response.data.logcontents[index].logtype==='1'){
+          response.data.logcontents[index].logtype='产品更新'
+        }else if(response.data.logcontents[index].logtype==='2'){
+          response.data.logcontents[index].logtype='服务公告'
+        }else{
+          response.data.logcontents[index].logtype='优惠信息'
+        }
+      }
+       _this.$data.blogAll=response.data.logcontents;
+       _this.$data.page4All=response.data.part;
+       _this.$data.total4All=response.data.all;
+    })
+
+
+    /**
+     * get请求获取全部产品更新的信息
+     */
+    this.$axios({
+      method:'get',
+      url:'/blog/get',
+      params:{
+        type:'1',
+        page:'1'
+      }
+    }).then(function (response) {
+      for(let index=0;index<response.data.logcontents.length;index++){
+        response.data.logcontents[index].ashow=false;
+        response.data.logcontents[index].logtype='产品更新'
+      }
+      _this.$data.blogUpdate=response.data.logcontents
+      _this.$data.total4Update=response.data.all;
+      _this.$data.page4Update=response.data.part;
+    })
+
+
+    /**
+     * get请求获取全部服务公告
+     */
+    this.$axios({
+      method:'get',
+      url:'/blog/get',
+      params:{
+        type:'2',
+        page:'1'
+      }
+    }).then(function (response) {
+      for(let index=0;index<response.data.logcontents.length;index++){
+        response.data.logcontents[index].ashow=false;
+        response.data.logcontents[index].logtype='服务公告'
+      }
+      _this.$data.blogService=response.data.logcontents
+      _this.$data.total4Service=response.data.all;
+      _this.$data.page4Service=response.data.part;
+    })
+
+
+    /**
+     * get请求获取所有优惠信息
+     */
+    this.$axios({
+      method:'get',
+      url:'/blog/get',
+      params:{
+        type:'3',
+        page:'1'
+      }
+    }).then(function (response) {
+      for(let index=0;index<response.data.logcontents.length;index++){
+        response.data.logcontents[index].ashow=false;
+        response.data.logcontents[index].logtype='产品更新'
+      }
+      _this.$data.blogDiscount=response.data.logcontents
+      _this.$data.total4Discount=response.data.all;
+      _this.$data.page4Discount=response.data.part;
+    })
+
   }
 }
 </script>
@@ -237,7 +463,7 @@ export default {
   /*margin-top: 7vh;*/
   /*margin-left: 12vw;*/
 /*}*/
-/*.head_content1 .content{*/
+/*.head_content1 .logcontent{*/
   /*font-size: 1.2vw;*/
   /*color: white;*/
   /*margin-left: 12vw;*/
