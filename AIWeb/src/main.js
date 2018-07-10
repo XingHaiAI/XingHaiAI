@@ -21,7 +21,7 @@ new Vue({
 
   created () {
     this.$axios.defaults.baseURL='http://39.108.67.59:8085/'
-    this.$axios.defaults.headers['Content-Type']="application/json;charset=UTF-8"
+   
   },
   components: { App },
   template: '<App/>'
