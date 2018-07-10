@@ -67,7 +67,7 @@
           <!--<router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">入门教学</td></router-link>-->
           <router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">联系我们</td></router-link>
           <router-link to="/TechGuideSDK" style="text-decoration: none"><td class="documentCenter">技术指南</td></router-link>
-          <router-link to="/CommonProblemsnpm" style="text-decoration: none"><td class="documentCenter">常见问题</td></router-link>
+          <router-link to="/CommonProblems" style="text-decoration: none"><td class="documentCenter">常见问题</td></router-link>
           <router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">API文档</td></router-link>
         </table>
       </div>

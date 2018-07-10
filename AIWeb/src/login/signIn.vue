@@ -10,18 +10,19 @@
 </div>
 <div class="login">
   <el-card style="height: 100%">
-    <div class="title4register" style="margin-top: 0.20rem;">
+    <div class="title4register" style="margin-top: 0.20rem;margin-left: 0.2rem;">
+      <img src="../login/icon.png">
       <span style="font-size: 0.30rem;">欢迎使用兴海物联AI平台</span>
     </div>
     <div class="form4register">
       <el-form :model="formRegister" ref="formRegister" :rules="rulesRegister" label-width="18%">
-        <el-form-item prop="username" label="用户名" >
+        <el-form-item prop="username" label=" " style="margin-top: 0.2rem;margin-left:-0.5rem ">
           <el-input v-model="formRegister.username" placeholder="请输入用户名"></el-input>
         </el-form-item>
-        <el-form-item prop="email" label="邮箱" >
+        <el-form-item prop="email" label=" " style="margin-left:-0.5rem ">
           <el-input v-model="formRegister.email" placeholder="请输入邮箱"></el-input>
         </el-form-item>
-        <el-form-item prop="identity" label="验证码" >
+        <el-form-item prop="identity" label=" " style="margin-left:-0.5rem ">
           <el-input v-model="formRegister.identity" placeholder="请输入邮箱验证码">
             <el-button slot="append" >
               <span v-show="timeShow" @click="getCode">获取验证码</span>
@@ -32,14 +33,15 @@
           </el-input>
 
         </el-form-item>
-        <el-form-item prop="password" label="密码" >
+        <el-form-item prop="password" label=" " style="margin-left:-0.5rem ">
           <el-input v-model="formRegister.password" type="password" placeholder="请输入密码"></el-input>
         </el-form-item>
-        <el-form-item prop="passwordRepeat" label="重复密码">
+        <el-form-item prop="passwordRepeat" label=" "style="margin-left:-0.5rem ">
           <el-input v-model="formRegister.passwordRepeat" type="password"  placeholder="请再次输入密码"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-checkbox :checked="agree" @change="agree=!agree">我已阅读并同意兴海物联私政策</el-checkbox>
+          <el-checkbox :checked="agree" @change="agree=!agree">我已阅读并同意</el-checkbox>
+          <span style="color: #2285ea">《兴海物联隐私政策》</span>
         </el-form-item>
       </el-form>
 
@@ -184,21 +186,27 @@ p{
 
 .buttons{
   margin-top: 0.40rem;
+  margin-left: -0.04rem;
   width: 100%;
   text-align: center;
 }
 
 .button4register{
 
-  background-color: cornflowerblue;
-  width: 2rem;
+  background-color: #2285ea;
+  width: 2.6rem;
   height:0.45rem;
   color: white;
   font-weight: bold;
   font-size: 0.18rem;
-  border-color: cornflowerblue;
+  border-color: #2285ea;
 }
+.button4register:hover{
+  background-color: cornflowerblue;
+  transform: scale(1.05);
+  color: white;
 
+}
 .big_word1{
     color: skyblue;
     font-size: 0.233rem;
@@ -258,7 +266,7 @@ p{
 
 .el-input{
 
-  width:78%
+  width:88%;
 }
 .name_email{
     font-size: 0.18rem;

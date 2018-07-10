@@ -12,16 +12,17 @@
     <div class="login">
       <el-card class="box-card">
 
-        <div class="title4login" style="margin-top: 20px;">
+        <div class="title4login" style="margin-top: 20px;margin-left: 0.2rem;">
+          <img src="../login/icon.png">
           <span style="font-size: 32px;">欢迎使用兴海物联AI平台</span>
         </div>
         <div class="form4login">
           <el-form :model="formLogin" ref="formLogin" :rules="rules" :status-icon="true">
             <el-form-item prop="username">
-              <el-input placeholder="请输入账号" style="width: 79%" v-model="formLogin.account"></el-input>
+              <el-input placeholder="请输入账号" style="width: 85%;margin-top: 0.5rem" v-model="formLogin.account"></el-input>
             </el-form-item>
             <el-form-item prop="password">
-              <el-input placeholder="请输入密码" type="password" style="width: 79%" v-model="formLogin.password"></el-input>
+              <el-input placeholder="请输入密码" type="password" style="width: 85%" v-model="formLogin.password"></el-input>
             </el-form-item>
           </el-form>
         </div>
@@ -123,9 +124,9 @@
 }
 
 .button4login{
-  background-color: cornflowerblue;
-  border-color: cornflowerblue;
-  width: 2.30rem;
+  background-color: #2285ea;
+  border-color: #2285ea;
+  width: 2.45rem;
   border-width: 0.017rem;
   font-weight: bold;
   color: white;
@@ -143,7 +144,7 @@
 
 .form4login{
   margin-top: 0.30rem;
-
+  margin-left: 0.2rem;
 }
 
 .linkto{
@@ -198,6 +199,7 @@
 
   .buttons{
     margin-top: 0.40rem;
+    margin-left: 0.2rem;
   }
 #login #footer{
   display:none;
