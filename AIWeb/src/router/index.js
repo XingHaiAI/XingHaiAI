@@ -16,6 +16,15 @@ import ProductBlog from '@/ProductBlog/ProductBlog.vue'
 import Comments from '@/ProductService/Comments.vue'
 import Emotional from '@/ProductService/Emotional.vue'
 import IDCard from '@/ProductService/IDCard.vue'
+import VehicleLicense from '@/ProductService/VehicleLicense.vue'
+import DrivingLicense from '@/ProductService/DrivingLicence.vue'
+import FaceComparison from '@/ProductService/FaceComparison.vue'
+import FaceDetection from '@/ProductService/FaceDetection.vue'
+import FaceLocating from '@/ProductService/FaceLocating.vue'
+import Defuzzification2 from '@/ProductService/Defuzzification.vue'
+import GraphicalAnalysis from '@/ProductService/GraphicalAnalysis.vue'
+import CrowdIdentification from '@/ProductService/CrowdIdentification.vue'
+import CarIdentification from '@/ProductService/CarIdentification.vue'
 import Teaching from '@/Useplace/Teaching.vue'
 import SpeachAPI from '@/Useplace/SpeachAPI.vue'
 import FaceAPI from '@/Useplace/FaceAPI.vue'
@@ -60,14 +69,42 @@ export default new Router({
       path:'/ProductService/AIIntelligent',name:'AIIntelligent',component:AIIntelligent
     },
     {
-      path:'/ProductService/License',name:'License',component:License
-    },
-    {
       path:'/ProductService/Meaning',name:'Meaning',component:Meaning
     },
     {
       path:'/ProductService/TextSimilar',name:'TextSimilar',component:TextSimilar
     },
+    {
+      path:'/ProductService/License',name:'License',component:License
+    },
+    {
+      path:'/ProductService/DrivingLicense',name:'DrivingLicense',component:DrivingLicense
+    },
+    {
+      path:'/ProductService/VehicleLicense',name:'VehicleLicense',component:VehicleLicense
+    },
+    {
+      path:'/ProductService/FaceDetection',name:'FaceDetection',component:FaceDetection
+    },
+    {
+      path:'/ProductService/FaceComparison',name:'FaceComparison',component:FaceComparison
+    },
+    {
+      path:'/ProductService/FaceLocating',name:' FaceLocating',component: FaceLocating
+    },
+    {
+      path:'/ProductService/GraphicalAnalysis',name:'GraphicalAnalysis',component:GraphicalAnalysis
+    },
+    {
+      path:'/ProductService/Defuzzification',name:'Defuzzification',component:Defuzzification2
+    },
+    {
+      path:'/ProductService/CrowdIdentification',name:'CrowdIdentification',component:CrowdIdentification
+    },
+    {
+      path:'/ProductService/CarIdentification',name:'CarIdentification',component:CarIdentification
+    },
+
     {
       path:'/Useplace',name:'Application',component:Application
     },

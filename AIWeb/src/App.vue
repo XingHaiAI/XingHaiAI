@@ -44,21 +44,21 @@
             <router-link to="/ProductService/IDCard" style="text-decoration: none"><td class="productService">身份证识别</td></router-link>
             <router-link to="/ProductService/BankCard" style="text-decoration: none"><td class="productService">银行卡识别</td></router-link>
             <router-link to="/ProductService/License" style="text-decoration: none"><td class="productService">车牌识别</td></router-link>
-            <router-link to="" style="text-decoration: none"><td class="productService">驾驶证识别</td></router-link>
-            <router-link to="" style="text-decoration: none"><td class="productService">行驶证识别</td></router-link>
+            <router-link to="/ProductService/DrivingLicense" style="text-decoration: none"><td class="productService">驾驶证识别</td></router-link>
+            <router-link to="/ProductService/VehicleLicense" style="text-decoration: none"><td class="productService">行驶证识别</td></router-link>
           </tr>
           <tr class="column column_center">
             <div class="productServiceHeader">人脸识别</div>
-            <router-link to="" style="text-decoration: none"><td class="productService">人脸检测</td></router-link>
-            <router-link to="" style="text-decoration: none"><td class="productService">人脸对比</td></router-link>
-            <router-link to="" style="text-decoration: none"><td class="productService">人脸查找</td></router-link>
+            <router-link to="/ProductService/FaceDetection" style="text-decoration: none"><td class="productService">人脸检测</td></router-link>
+            <router-link to="/ProductService/FaceComparison" style="text-decoration: none"><td class="productService">人脸对比</td></router-link>
+            <router-link to="/ProductService/FaceLocating" style="text-decoration: none"><td class="productService">人脸查找</td></router-link>
           </tr>
           <tr class="column">
             <div class="productServiceHeader">图像识别</div>
-            <router-link to="" style="text-decoration: none"><td class="productService">通用图形分析</td></router-link>
-            <router-link to="" style="text-decoration: none"><td class="productService">去模糊化</td></router-link>
-            <router-link to="" style="text-decoration: none"><td class="productService">人重识别</td></router-link>
-            <router-link to="" style="text-decoration: none"><td class="productService">车型识别</td></router-link>
+            <router-link to="/ProductService/GraphicalAnalysis" style="text-decoration: none"><td class="productService">通用图形分析</td></router-link>
+            <router-link to="/ProductService/Defuzzification" style="text-decoration: none"><td class="productService">去模糊化</td></router-link>
+            <router-link to="/ProductService/CrowdIdentification" style="text-decoration: none"><td class="productService">人重识别</td></router-link>
+            <router-link to="/ProductService/CarIdentification" style="text-decoration: none"><td class="productService">车型识别</td></router-link>
           </tr>
         </table>
       </div>
@@ -277,7 +277,7 @@
     /*transition: background-color 0.7s;*/
   }
   /*.navbar:hover{*/
-    /*background-color: rgba(6,6,6,1);*/
+  /*background-color: rgba(6,6,6,1);*/
   /*}*/
 
 
@@ -356,92 +356,92 @@
 
 
   /*.menu_item_botton{*/
-    /*font-size: 0.123rem;*/
-    /*text-align: center;*/
-    /*line-height: 4vh;*/
-    /*background-color: white;*/
-    /*color: blue;*/
-    /*border-radius: 5%;*/
-    /*height: 4vh;*/
-    /*margin-top: 2vh;*/
-    /*width: 0.683rem;*/
-    /*float: left;*/
+  /*font-size: 0.123rem;*/
+  /*text-align: center;*/
+  /*line-height: 4vh;*/
+  /*background-color: white;*/
+  /*color: blue;*/
+  /*border-radius: 5%;*/
+  /*height: 4vh;*/
+  /*margin-top: 2vh;*/
+  /*width: 0.683rem;*/
+  /*float: left;*/
   /*}*/
 
   /*.navbar:hover .menu_item_botton{*/
-    /*animation: menu_item_button_ani 1s forwards;*/
+  /*animation: menu_item_button_ani 1s forwards;*/
   /*}*/
 
   /*.Technology_menu_item_content_title{*/
-    /*color: white;*/
-    /*font-size: inherit;*/
-    /*font-weight: 900;*/
-    /*padding-top: 3vh;*/
-    /*padding-left: 0.273rem;*/
+  /*color: white;*/
+  /*font-size: inherit;*/
+  /*font-weight: 900;*/
+  /*padding-top: 3vh;*/
+  /*padding-left: 0.273rem;*/
   /*}*/
 
   /*.technology_menu_item_content_title_sub_title{*/
-    /*color: inherit;*/
-    /*font-size: 0.137rem;*/
-    /*padding-top: 1.5vh;*/
-    /*font-weight: 400;*/
-    /*padding-left: 0.273rem;*/
+  /*color: inherit;*/
+  /*font-size: 0.137rem;*/
+  /*padding-top: 1.5vh;*/
+  /*font-weight: 400;*/
+  /*padding-left: 0.273rem;*/
   /*}*/
 
   /*.technology_menu_item_content_title_sub_title_content_first{*/
-    /*color: inherit;*/
-    /*font-size:0.11rem;*/
-    /*font-weight: 100;*/
-    /*padding-left: 0.273rem;*/
-    /*padding-top: 0.7vh;*/
-    /*display: inline;*/
+  /*color: inherit;*/
+  /*font-size:0.11rem;*/
+  /*font-weight: 100;*/
+  /*padding-left: 0.273rem;*/
+  /*padding-top: 0.7vh;*/
+  /*display: inline;*/
   /*}*/
 
   /*.technology_menu_item_content_title_sub_title_content{*/
-    /*color: inherit;*/
-    /*font-size: 0.11rem;*/
-    /*font-weight: 100;*/
-    /*padding-left: 0.137rem;*/
-    /*padding-top: 0.7vh;*/
-    /*display: inline;*/
+  /*color: inherit;*/
+  /*font-size: 0.11rem;*/
+  /*font-weight: 100;*/
+  /*padding-left: 0.137rem;*/
+  /*padding-top: 0.7vh;*/
+  /*display: inline;*/
   /*}*/
   /*.technology_menu_item_content_title_sub_title_content_first:hover{*/
-    /*color: blue;*/
+  /*color: blue;*/
   /*}*/
 
   /*.technology_menu_item_content_title_sub_title_content:hover{*/
-    /*color: blue;*/
+  /*color: blue;*/
   /*}*/
 
   /*.technology_menu_item_content_coloum_1{*/
-    /*display: inline-block;*/
+  /*display: inline-block;*/
   /*}*/
   /*.technology_menu_item_content_coloum_2{*/
-    /*margin-left: 1.366rem;*/
-    /*display: inline-block;*/
+  /*margin-left: 1.366rem;*/
+  /*display: inline-block;*/
   /*}*/
 
   /*.technology_menu_item_content_coloum_3{*/
-    /*margin-left: 1.366rem;*/
-    /*display: inline-block;*/
+  /*margin-left: 1.366rem;*/
+  /*display: inline-block;*/
   /*}*/
 
 
   /*.Solution_menu_item_content_coloum_1{*/
-    /*margin-left: 1.366rem;*/
-    /*display: inline-block;*/
+  /*margin-left: 1.366rem;*/
+  /*display: inline-block;*/
   /*}*/
 
   /*.menu_item_group_block:hover{*/
-    /*background-color: grey;*/
+  /*background-color: grey;*/
   /*}*/
 
   /*.el-header{*/
-    /*height:0;*/
+  /*height:0;*/
   /*}*/
 
   /*.el-main{*/
-    /*margin:0;*/
-    /*padding:0;*/
+  /*margin:0;*/
+  /*padding:0;*/
   /*}*/
 </style>
