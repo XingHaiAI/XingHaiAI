@@ -1,5 +1,6 @@
 <template>
   <div id="UseTestUsePlace">
+    <body>
 		<div class="UseTestUsePlace_Title">应用场景</div>
 		<div class="UseTestUsePlace_Item_Group">
 		    <div class="UseTestUsePlace_Item_Group_Item_Left">
@@ -17,6 +18,7 @@
 		        </div>
 		    </div>
 		</div>
+    </body>
   </div>
 </template>
 

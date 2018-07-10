@@ -10,22 +10,22 @@
               :default-active="activeTab"
               class="el-menu-vertical-demo"
               @select="handleSelect"
-              style="text-align: center;width:3.2rem;position: absolute;top:0;bottom: 0;box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);">
-              <el-menu-item index="1" style="height: 0.55rem">
+              style="text-align: left;width:3.2rem;position: absolute;top:0;bottom: 0;box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);">
+              <el-menu-item index="1" style="height: 0.6rem;margin-top:0.6rem;">
 
-                <span slot="title" style="font-size: 0.17rem">全部类别</span>
+                <span slot="title" style="font-size: 0.22rem;margin-left: 0.6rem;margin-left: 0.6rem">全部类别</span>
               </el-menu-item>
-              <el-menu-item index="2" style="height: 0.55rem">
+              <el-menu-item index="2" style="height: 0.6rem">
 
-                <span slot="title" style="font-size: 0.17rem">产品更新</span>
+                <span slot="title" style="font-size: 0.22rem;margin-left: 0.6rem">产品更新</span>
               </el-menu-item>
-              <el-menu-item index="3" style="height: 0.55rem">
+              <el-menu-item index="3" style="height: 0.6rem">
 
-                <span slot="title" style="font-size: 0.17rem">服务公告</span>
+                <span slot="title" style="font-size: 0.22rem;margin-left: 0.6rem">服务公告</span>
               </el-menu-item>
-              <el-menu-item index="4" style="height: 0.55rem">
+              <el-menu-item index="4" style="height: 0.6rem">
 
-                <span slot="title" style="font-size: 0.17rem">优惠服务</span>
+                <span slot="title" style="font-size: 0.22rem;margin-left: 0.6rem">优惠服务</span>
               </el-menu-item>
             </el-menu>
           </div>
@@ -36,11 +36,11 @@
             <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogAll" :key="index">
               <div style="background-color: bisque">
                 <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-caret-right" style="color: cornflowerblue;"/> {{item.name}}</span>
-                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+                <span style="float:right;font-size:0.15rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
               </div>
               <div style="height: 0.6rem"></div>
               <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
-                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+                <span style="margin-left: 0.22rem;font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
               </div>
               <el-collapse-transition>
                   <div style="padding: 0.1rem" v-show="item.show">
@@ -51,8 +51,8 @@
               </el-collapse-transition>
           <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
             <div style="height: 0.2rem"></div>
-            <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
-            <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.20rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+            <span style="float: left;font-size: 0.15rem;margin-left: 0.32rem;margin-top: 0.05rem">发布于{{item.time}}</span>
+            <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.15rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
           </div>
             </el-card>
           </div>
@@ -60,11 +60,11 @@
             <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogUpdate" :key="index">
               <div style="background-color: bisque">
                 <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.name}}</span>
-                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
               </div>
               <div style="height: 0.6rem"></div>
               <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
-                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+                <span style="margin-left: 0.22rem;font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
               </div>
               <el-collapse-transition>
                 <div style="padding: 0.1rem" v-show="item.show">
@@ -75,8 +75,8 @@
               </el-collapse-transition>
               <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
                 <div style="height: 0.2rem"></div>
-                <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
-                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.20rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+                <span style="float: left;font-size: 0.15rem;margin-left: 0.32rem;margin-top: 0.05rem">发布于{{item.time}}</span>
+                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.15rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
               </div>
             </el-card>
           </div>
@@ -84,11 +84,11 @@
             <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogService" :key="index">
               <div style="background-color: bisque">
                 <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-goods" style="color: cornflowerblue;"/> {{item.name}}</span>
-                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
               </div>
               <div style="height: 0.6rem"></div>
               <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
-                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+                <span style="margin-left: 0.22rem;font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
               </div>
               <el-collapse-transition>
                 <div style="padding: 0.1rem" v-show="item.show">
@@ -99,8 +99,8 @@
               </el-collapse-transition>
               <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
                 <div style="height: 0.2rem"></div>
-                <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
-                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.20rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+                <span style="float: left;font-size: 0.15rem;margin-left: 0.32rem;margin-top: 0.05rem">发布于{{item.time}}</span>
+                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.15rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
               </div>
             </el-card>
           </div>
@@ -108,11 +108,11 @@
             <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogDiscount" :key="index">
               <div style="background-color: bisque">
                 <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.name}}</span>
-                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.25rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
+                <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.type}}</a></span>
               </div>
               <div style="height: 0.6rem"></div>
               <div class="texts4blogUpdate" style="padding: 0.1rem" v-show="!item.show">
-                <span style="font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
+                <span style="margin-left: 0.22rem;font-size: 0.16rem;color: darkgray">{{item.brief}}</span>
               </div>
               <el-collapse-transition>
                 <div style="padding: 0.1rem" v-show="item.show">
@@ -123,8 +123,8 @@
               </el-collapse-transition>
               <div style="position: relative;margin-bottom:5%;margin-top: 2%;" >
                 <div style="height: 0.2rem"></div>
-                <span style="float: left;font-size: 0.16rem">发布于{{item.time}}</span>
-                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.20rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
+                <span style="float: left;font-size: 0.15rem;margin-left: 0.32rem;margin-top: 0.05rem">发布于{{item.time}}</span>
+                <el-button type="text"   @click="item.show=!item.show" style="font-size: 0.15rem;float: right">{{item.show?'收起详情':'查看详情'}}</el-button>
               </div>
             </el-card>
           </div>
