@@ -77,6 +77,7 @@
         timeShow:true,
         agree:false,
         formRegister:{
+          time:'',
           username:'',
           password:'',
           passwordRepeat:'',
@@ -109,6 +110,15 @@
       },
       getCode() {
         let _this = this;
+        this.$data.formRegister.time=new Date();
+
+        let date=this.$data.formRegister.time;
+        let year=date.getFullYear();
+        let month=date.getMonth()+1;
+        let day=date.getDate();
+
+        this.$data.formRegister.time=year+'-'+month+'-'+day;
+
         const reg=/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/
         if (reg.test(this.$data.formRegister.email)) {
           this.$axios({
@@ -151,7 +161,8 @@
                 account:this.$data.formRegister.username,
                 password:this.$data.formRegister.password,
                 email:this.$data.formRegister.email,
-                code:parseInt(this.$data.formRegister.identity)
+                code:parseInt(this.$data.formRegister.identity),
+                time:this.$data.formRegister.time
               }
             }).then(function (response) {
               if(response.data===true){

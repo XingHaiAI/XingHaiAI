@@ -1,5 +1,5 @@
 <template>
-  <body id="all">
+  <div>
   <div id="header">
     <img src="../assets/控制台/banner.png">
   </div>
@@ -46,32 +46,41 @@
       </el-row>
     </div>
     <div id="main">
+
+      <el-dialog :visible.sync="dialogVisible" :modal-append-to-body="false" title="修改密码" style="width: 8rem">
+        <el-form :model="formModifyPassword" :ref="formModifyPassword" :rules="rulesModifyPassword">
+          <el-form-item prop="oldPassword" label="旧密码" style="width: 2.6rem;">
+            <el-input type="password" v-model="formModifyPassword.oldPassword"></el-input>
+          </el-form-item>
+          <el-form-item prop="newPassword" label="新密码" style="width: 2.6rem">
+            <el-input type="password" v-model="formModifyPassword.newPassword"></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button @click="confirmModify" style="color: white;background-color: cornflowerblue;width: 1rem;height: 0.4rem">确定</el-button>
+            <el-button @click="cancelModify" style="color: white;background-color: crimson;width: 1rem;height: 0.4rem;border-color: crimson">取消</el-button>
+          </el-form-item>
+        </el-form>
+      </el-dialog>
+
+
       <div id="search">
         <p class="route"><router-link to="" class="linkto">控制台</router-link>&gt账号信息</p>
       </div>
       <div class="line">
         <div class="title">用户名：</div>
-        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;" placeholder="用户名08288"/>
+        <input class="searchInput" v-model="userInfo.username" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;" disabled placeholder="用户名"/>
       </div>
 
       <div class="line">
         <div class="title">邮箱：</div>
-        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" placeholder="输入邮箱"/>
-        <el-button type="primary" class="bg_btn" id="find" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: blue;color: white;">修改</el-button>
-      </div>
-
-
-      <div class="line">
-        <div class="title">手机号：</div>
-        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" placeholder="输入手机号"/>
-        <el-button type="primary" class="bg_btn" id="find" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: blue;color: white;">修改</el-button>
+        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" v-model="userInfo.email" disabled placeholder="输入邮箱"/>
       </div>
 
 
       <div class="line">
         <div class="title">密码：</div>
-        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" placeholder="输入密码"/>
-        <el-button type="primary" class="bg_btn" id="find" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: blue;color: white;">修改</el-button>
+        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" disabled placeholder="输入密码"/>
+        <el-button type="primary"  class="bg_btn" id="find" v-model="userInfo.password" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: blue;color: white;" @click="dialogVisible=true">修改</el-button>
       </div>
 
       <div class="line" style="margin-top: 0.15rem !important;">
@@ -84,7 +93,7 @@
 
     </div>
   </div>
-  </body>
+  </div>
 </template>
 
 <script>
@@ -92,10 +101,62 @@
     name:"ControllerInfo",
     data() {
       return {
-        isCollapse: true
+        isCollapse: true,
+        userInfo:{
+          username:'',
+          password:'',
+          email:'',
+        },
+        dialogVisible:false,
+        formModifyPassword:{
+          oldPassword:'',
+          newPassword:''
+        },
+        rulesModifyPassword:{
+          newpassword:[
+            {required:true,min:6,max:18,message:'请输入6-18位的新密码',trigger:'change'}]
+        }
       };
     },
+    created(){
+      /**
+       * 获取用户的个人信息
+       */
+      let _this=this;
+      this.$axios({
+        method:'get',
+        url:''
+      }).then(function (response) {
+        _this.$data.userInfo=response.data;
+      })
+
+    },
     methods: {
+      confirmModify(){
+        let _this=this;
+        this.$axios({
+          method:'get',
+          url:'/account/updatePassword',
+          params:{
+            account:'123456',
+            oldpassword:this.$data.formModifyPassword.oldPassword,
+            newpassword:this.$data.formModifyPassword.newPassword
+          }
+        }).then(function (response) {
+          if(response.data===true){
+            alert('修改成功！')
+          }else{
+            alert('修改失败!请检查旧密码是否输入正确')
+          }
+        }).catch(function (error) {
+          alert('修改失败！')
+        })
+      },
+      cancelModify(){
+        this.$data.formModifyPassword.newPassword='';
+        this.$data.formModifyPassword.oldPassword='';
+        this.$data.dialogVisible=false;
+      },
       handleOpen(key, keyPath) {
         console.log(key, keyPath);
       },

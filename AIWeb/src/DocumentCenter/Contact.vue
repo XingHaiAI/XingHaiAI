@@ -89,7 +89,8 @@ export default {
         email:'',
         company:'',
         question:'',
-        type:'1'
+        type:'1',
+        time:''
       },
       rulesAdvice:{
         name:[
@@ -113,6 +114,18 @@ export default {
   methods:{
       submit() {
         let _this=this;
+        this.$data.formAdvice.time=new Date();
+        let date=this.$data.formAdvice.time;
+        let year=date.getFullYear();
+        let month=date.getMonth()+1;
+        let day=date.getDate();
+        if(month>'0'&&month<='9'){
+          month='0'+month;
+        }
+        if(day>'0'&&day<='9'){
+          day='0'+day;
+        }
+        this.$data.formAdvice.time=year+'-'+month+'-'+day;
 
         if (this.$data.formAdvice.question.length < 1 || this.$data.formAdvice.question.length > 300) {
           this.$message({
