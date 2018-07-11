@@ -25,9 +25,6 @@
             <el-menu-item index="2"style="text-align: left;min-height:0.6rem">
               <span slot="title"><router-link to="/Controller/ControllerUseList" style="text-decoration: none;color: black;">应用列表</router-link></span>
             </el-menu-item>
-            <el-menu-item index="3" style="text-align: left;min-height:0.6rem">
-              <span slot="title"><router-link to="/Controller/ControllerWatchList" style="text-decoration: none;color: black;">监控报表</router-link></span>
-            </el-menu-item>
             <el-menu-item index="4" style="text-align: left;min-height:0.6rem">
               <span slot="title"><router-link to="/Controller/ControllerSDKDownload" style="text-decoration: none;color: black;">SDK下载</router-link></span>
             </el-menu-item>

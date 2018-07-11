@@ -66,7 +66,6 @@ import ControllerWordAPI from '@/Controller/ControllerWordAPI.vue'
 import ControllerMoneyLeft from '@/Controller/ControllerMoneyLeft.vue'
 import ControllerOrderList from '@/Controller/ControllerOrderList.vue'
 import ControllerUseList from '@/Controller/ControllerUseList.vue'
-import ControllerWatchList from '@/Controller/ControllerWatchList.vue'
 import ControllerSDKDownload from '@/Controller/ControllerSDKDownload.vue'
 import ControllerInfo from '@/Controller/ControllerInfo.vue'
 
@@ -255,9 +254,6 @@ export default new Router({
     },
     {
       path:'/Controller/ControllerUseList',component:ControllerUseList
-    },
-    {
-      path:'/Controller/ControllerWatchList',component:ControllerWatchList
     },
     {
       path:'/Controller/ControllerSDKDownload',component:ControllerSDKDownload
