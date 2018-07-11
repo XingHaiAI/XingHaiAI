@@ -462,6 +462,12 @@ div{
   height: 2.55rem;
   width: 3.415rem;
 }
+.input_textarea:hover{
+	border:#A0A0A0 0.01rem solid;
+	}
+.input_textarea:focus{
+	border:0px;
+	}
 .check_box{
   font-size: 0.2rem;
   font-weight: 100;

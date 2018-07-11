@@ -26,7 +26,7 @@
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>
       <div class="card4this" style="width: 100%;">
-        <div style="margin-right: auto;margin-left: auto ;margin-top:0.50rem;width:60%">
+        <div style="margin-right: auto;margin-left: 2.45rem;margin-top:0.50rem;width:60%">
           <el-row :gutter="550" style="width: 13rem" >
             <el-col :span="6"><div class="grid-content bg-purple">
               <el-card style="width: 3.36rem;height: 4rem;margin-right: 2rem" :body-style="{padding:'0rem'}">
