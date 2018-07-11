@@ -55,6 +55,21 @@ import ConsoleSpeach from '@/Console/Speach.vue'
 import ConsoleNPL from '@/Console/NPL.vue'
 import APPList from '@/Console/APPList.vue'
 import GraphicsAnalysis from '../PresentDoc/GraphicsAnalysis/GraphicsAnalysis'
+
+import ControllerIndex from '@/Controller/ControllerIndex.vue'
+import ControllerFaceAPI from '@/Controller/ControllerFaceAPI.vue'
+import ControllerNPLAPI from '@/Controller/ControllerNPLAPI.vue'
+import ControllerSpeachAPI from '@/Controller/ControllerSpeachAPI.vue'
+import ControllerPictureAPI from '@/Controller/ControllerPictureAPI.vue'
+import ControllerWordAPI from '@/Controller/ControllerWordAPI.vue'
+
+import ControllerMoneyLeft from '@/Controller/ControllerMoneyLeft.vue'
+import ControllerOrderList from '@/Controller/ControllerOrderList.vue'
+import ControllerUseList from '@/Controller/ControllerUseList.vue'
+import ControllerWatchList from '@/Controller/ControllerWatchList.vue'
+import ControllerSDKDownload from '@/Controller/ControllerSDKDownload.vue'
+
+
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -212,6 +227,39 @@ export default new Router({
     },
     {
       path:'/PresentDoc/IDRecg',component:IDRecg
+    },
+    {
+      path:'/Controller/ControllerIndex',component:ControllerIndex
+    },
+    {
+      path:'/Controller/ControllerFaceAPI',component:ControllerFaceAPI
+    },
+    {
+      path:'/Controller/ControllerPictureAPI',component:ControllerPictureAPI
+    },
+    {
+      path:'/Controller/ControllerWordAPI',component:ControllerWordAPI
+    },
+    {
+      path:'/Controller/ControllerNPLAPI',component:ControllerNPLAPI
+    },
+    {
+      path:'/Controller/ControllerSpeachAPI',component:ControllerSpeachAPI
+    },
+    {
+      path:'/Controller/ControllerMoneyLeft',component:ControllerMoneyLeft
+    },
+    {
+      path:'/Controller/ControllerOrderList',component:ControllerOrderList
+    },
+    {
+      path:'/Controller/ControllerUseList',component:ControllerUseList
+    },
+    {
+      path:'/Controller/ControllerWatchList',component:ControllerWatchList
+    },
+    {
+      path:'/Controller/ControllerSDKDownload',component:ControllerSDKDownload
     }
   ]
 })
