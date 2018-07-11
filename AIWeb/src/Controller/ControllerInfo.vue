@@ -64,6 +64,7 @@
       <div id="search">
         <p class="route"><router-link to="" class="linkto">控制台</router-link>&gt账号信息</p>
       </div>
+      <div style="height: 30px;"></div>
       <div class="line">
         <div class="title">用户名：</div>
         <input class="searchInput" v-model="userInfo.username" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;" disabled placeholder="用户名"/>
