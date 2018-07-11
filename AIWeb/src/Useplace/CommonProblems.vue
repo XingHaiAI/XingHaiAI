@@ -66,7 +66,7 @@
         <textarea rows="5"cols="70"disabled style="font-size: 0.18rem">一部分银行支持用户设置每日网上支付上限，可以登录银行网站进行支付限额调整。另一个方法是先每日充值支付宝余额，再使用支付宝余额进行支付。</textarea>
         <p style="font-size: 0.25rem">订单创建后多长时间会被关闭?</p>
         <textarea rows="5"cols="70"disabled style="font-size: 0.18rem">目前未支付的订单会在订单创建3天后关闭。订单创建之后请尽快进行支付，如果订单超时关闭请您重新下单。</textarea>
-        <p style="font-size: 0.25rem">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
+        <p style="font-size: 0.25rem">如有疑问请<router-link to="/ContactUs" class="linkto"> 联系我们</router-link></p>
       </div>
     </div>
   </div>

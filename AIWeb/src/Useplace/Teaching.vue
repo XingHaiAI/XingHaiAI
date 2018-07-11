@@ -67,7 +67,7 @@
         <textarea rows="5"cols="70"disabled style="font-size: 0.18rem">调用每个API需要根据需求传不同的参数，每个API参数的详细定义请查看人脸识别。所有API的嗲用都要使用POST请求，用户可以以QUERY STRING的形式将参数写进请求体中，传图片文件参数时需要在请求体中使用MULTIPART/FORM-DATA格式来编码</textarea>
         <p style="font-size: 0.25rem">API调用--提示</p>
         <textarea rows="5"cols="70"disabled style="font-size: 0.18rem">为了避免因网络问题而造成的阻塞，建议将API调用放进异步线程里执行。</textarea>
-        <p style="font-size: 0.25rem">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
+        <p style="font-size: 0.25rem">如有疑问请<router-link to="/ContactUs" class="linkto"> 联系我们</router-link></p>
       </div>
     </div>
   </div>

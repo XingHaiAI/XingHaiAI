@@ -114,7 +114,6 @@
 
           // 赋值
           var box = document.getElementsByClassName('red_box')[0]
-
           console.log(box.style)
           box.style.width = _width + 'px';
           box.style.height = _height + 'px';
@@ -144,16 +143,15 @@
           _this.$data.myBottom=res.data.faces[0].bounding_box.bottom;
           _this.$data.myLeft=res.data.faces[0].bounding_box.left;
           _this.$data.myRight=res.data.faces[0].bounding_box.right;
-          // _this.$data.myTop=39;
-          // _this.$data.myBottom=87;
-          // _this.$data.myLeft=30;
-          // _this.$data.myRight=77;
+
+
+          // 图片宽度
           var divWidth =document.getElementsByClassName('imgResult')[0].offsetWidth;//实际像素宽
           var imgWidth =document.getElementsByClassName('imgResult')[0].naturalWidth;//原图像素宽
           // after getdata
           var point1 = [_this.$data.myLeft, _this.$data.myTop];
-          console.log(point1)
           var point2 = [_this.$data.myRight, _this.$data.myBottom];
+          console.log(point1)
           // var point1 = [30, 39];
           // var point2 = [77, 87];
 
@@ -167,7 +165,6 @@
 
           // 赋值
           var box = document.getElementsByClassName('red_box')[0]
-
           console.log(box.style)
           box.style.width = _width + 'px';
           box.style.height = _height + 'px';
@@ -180,9 +177,7 @@
 
       },
     },
-    mounted(){
-
-    }
+    mounted(){}
 
   }
 </script>

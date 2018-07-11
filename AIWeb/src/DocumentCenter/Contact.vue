@@ -7,18 +7,18 @@
     <div class="link_group">
         <div class="title">
             <div class="decorate_bar"></div>
-            <div class="word">常见问题</div>
+          <div class="word"><router-link to="/CommonProblems"style="color: black">常见问题</router-link></div>
         </div>
         <div class="link_content">
-            <div class="title">售前咨询</div>
+          <div class="title"><router-link to="/CommonProblems"style="color: black">售前咨询</router-link></div>
             <div class="content">
-                <div class="word">如何接入API？</div><br/>
-                <div class="word">API如何收费？</div><br/>
-                <div class="word">返回值报错怎么办？</div>
+              <div class="word"><router-link to="/CommonProblems"style="color: black">如何接入API？</router-link></div><br/>
+              <div class="word"><router-link to="/CommonProblems"style="color: black">API如何收费？</router-link></div><br/>
+              <div class="word"><router-link to="/CommonProblems"style="color: black">返回值报错怎么办？</router-link></div>
             </div>
-            <div class="title">商务咨询</div>
+          <div class="title"><router-link to="/CommonProblems"style="color: black">商务咨询</router-link></div>
             <div class="content">
-                <div class="word">有什么合作方案？</div>
+              <div class="word"><router-link to="/CommonProblems"style="color: black">有什么合作方案？</router-link></div>
             </div>
         </div>
     </div>
