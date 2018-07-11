@@ -68,6 +68,7 @@ import ControllerOrderList from '@/Controller/ControllerOrderList.vue'
 import ControllerUseList from '@/Controller/ControllerUseList.vue'
 import ControllerWatchList from '@/Controller/ControllerWatchList.vue'
 import ControllerSDKDownload from '@/Controller/ControllerSDKDownload.vue'
+import ControllerInfo from '@/Controller/ControllerInfo.vue'
 
 
 Vue.use(Router)
@@ -260,6 +261,9 @@ export default new Router({
     },
     {
       path:'/Controller/ControllerSDKDownload',component:ControllerSDKDownload
+    },
+    {
+      path:'/Controller/ControllerInfo',component:ControllerInfo
     }
   ]
 })

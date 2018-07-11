@@ -47,61 +47,41 @@
     </div>
     <div id="main">
       <div id="search">
-        <p class="route"><router-link to="" class="linkto">控制台</router-link>&gt我的订单</p>
+        <p class="route"><router-link to="" class="linkto">控制台</router-link>&gt账号信息</p>
       </div>
-      <div class="line2">
-        <div class="line_word_left" style="width: 28%;float: left">消费趋势</div>
-        <div class="line_input_right" style="float: left;margin-left: 2.36rem;margin-top: -0.45rem">
-          <el-button type="" id="find" class="line_column_btn2" style="width: 0.9rem;float: left;margin-top: 0.1rem;margin-left: -0.03rem;">全部</el-button>
-          <el-button type="" id="find" class="line_column_btn2" style="width: 0.9rem;float: left;margin-top: 0.1rem;margin-left: -0.02rem;">待支付</el-button>
-          <el-button type="" id="find" class="line_column_btn2" style="width: 0.9rem;float: left;margin-top: 0.1rem;margin-left: -0.02rem;">已支付</el-button>
-          <el-button type="" id="find" class="line_column_btn2" style="width: 0.9rem;float: left;margin-top: 0.1rem;margin-left: -0.02rem;">已完成</el-button>
-          <el-button type="" id="find" class="line_column_btn2" style="width: 0.9rem;float: left;margin-top: 0.1rem;margin-left: -0.02rem;">交易关闭</el-button>
-        </div>
-      </div>
-      <div class="line2">
-        <div class="line_word_left" style="width: 28%;float: left">时间范围</div>
-        <div class="line_input_right">
-          <input class="searchInput" style="width: 30%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;float: left" />——<input class="searchInput" style="width: 30%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;" />
-        </div>
+      <div class="line">
+        <div class="title">用户名：</div>
+        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;" placeholder="用户名08288"/>
       </div>
 
-      <div class="line2">
-        <div class="line_word_left" style="width: 28%;float: left">查询</div>
-        <div class="line_input_right">
-          <el-input
-            placeholder="请输入内容"
-            style="float: left;width: 4rem"
-            v-model="input21">
+      <div class="line">
+        <div class="title">邮箱：</div>
+        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" placeholder="输入邮箱"/>
+        <el-button type="primary" class="bg_btn" id="find" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: blue;color: white;">修改</el-button>
+      </div>
 
-          </el-input>
-          <el-button type="" icon="el-icon-search" id="find" class="line_column_btn2"  style="width: 0.5rem;float: left;margin-left: -0.02rem;float: leftl"></el-button>
-        </div>
-      </div>
-      <div class="table">
-        <el-table v-bind:data="manifests" highlight-current-row border height="500">
-          <el-table-column prop="num" label="订单编号"></el-table-column>
-          <el-table-column prop="time" label="创建时间"></el-table-column>
-          <el-table-column prop="thing" label="选购商品"></el-table-column>
-          <el-table-column prop="money" label="订单金额"></el-table-column>
-          <el-table-column prop="status" label="订单状态"></el-table-column>
-          <el-table-column inline-template label="操作">
-                        <span>
-                            <el-button type="text" size="small" v-on:click="edit(row.ID)" icon="edit">查看</el-button>
-                            <el-button type="text" size="small" v-on:click="del(row.ID)" icon="delete">删 除</el-button>
-                        </span>
-          </el-table-column>
-        </el-table>
-      </div>
-      <div class="line2">
-        <el-pagination
-          @current-change="nextPage"
-          layout="prev, pager, next"
-          :total="129"
-        style="margin-left: 2.7rem;margin-top: 0.3rem">
 
-        </el-pagination>
+      <div class="line">
+        <div class="title">手机号：</div>
+        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" placeholder="输入手机号"/>
+        <el-button type="primary" class="bg_btn" id="find" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: blue;color: white;">修改</el-button>
       </div>
+
+
+      <div class="line">
+        <div class="title">密码：</div>
+        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" placeholder="输入密码"/>
+        <el-button type="primary" class="bg_btn" id="find" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: blue;color: white;">修改</el-button>
+      </div>
+
+      <div class="line" style="margin-top: 0.15rem !important;">
+        <div class="title">开发者类型：</div>
+        <el-radio-group v-model="radio1" style="margin-top: 0.15rem !important;">
+          <el-radio :label="3">个人开发者</el-radio>
+          <el-radio :label="9">企业</el-radio>
+        </el-radio-group>
+      </div>
+
     </div>
   </div>
   </body>
@@ -109,7 +89,7 @@
 
 <script>
   export default {
-    name:"ControllerOrderList",
+    name:"ControllerInfo",
     data() {
       return {
         isCollapse: true
@@ -127,22 +107,37 @@
 </script>
 
 <style scoped>
-
-  body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
+  #find{
+    width: 10%;
+    height: 25%;
+    margin: 0;
+    position: relative;
+    right:0.5%;
+  }
   .linkto{
     color: #4096ff;
     text-decoration: none
   }
+  #text{
+    text-align: center;
+    position: relative;
 
-
-  .table{
-    width: 9rem;
-    margin-left: 1rem;
+  }
+  body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
+  textarea{
+    overflow:auto;
+    background: transparent;
+    color: black;
+    border: none;
+    resize: none;
+    font-weight:lighter;
+    margin-bottom:0.3rem;
   }
 
   .line{
     width: 8.5rem;
     margin-left: 1rem;
+    margin-bottom: -2.5rem;
     height: 3.5rem;
   }
 
@@ -154,13 +149,6 @@
     margin-right: 5%;
   }
 
-
-  .line2{
-    width: 8.5rem;
-    margin-left: 1rem;
-    height: 1.3rem;
-  }
-
   .column_title{
     width: 3.4rem;
     text-align: center;
@@ -170,7 +158,7 @@
   .column_pic1{
     width: 3.4rem;
     height: 2rem;
-    background-image: url("../assets/控制台/语音处理/语音合成.png") !important;
+    background-image: url("../assets/控制台/文字识别/通用文字识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
   }
@@ -178,7 +166,47 @@
   .column_pic2{
     width: 3.4rem;
     height: 2rem;
-    background-image: url("../assets/控制台/语音处理/语音识别.png") !important;
+    background-image: url("../assets/控制台/文字识别/手写识别.png") !important;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .column_pic3{
+    width: 3.4rem;
+    height: 2rem;
+    background-image: url("../assets/控制台/文字识别/身份证识别.png") !important;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .column_pic4{
+    width: 3.4rem;
+    height: 2rem;
+    background-image: url("../assets/控制台/文字识别/银行卡识别.png") !important;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .column_pic5{
+    width: 3.4rem;
+    height: 2rem;
+    background-image: url("../assets/控制台/文字识别/车牌识别.png") !important;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .column_pic6{
+    width: 3.4rem;
+    height: 2rem;
+    background-image: url("../assets/控制台/文字识别/驾驶证识别.png") !important;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .column_pic7{
+    width: 3.4rem;
+    height: 2rem;
+    background-image: url("../assets/控制台/文字识别/行驶证识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
   }
@@ -198,20 +226,10 @@
     line-height: 0.5rem;
     background-color: blue;
   }
-
-  textarea{
-    overflow:auto;
-    background: transparent;
-    color: black;
-    border: none;
-    resize: none;
-    font-weight:lighter;
-    margin-bottom:0.3rem;
-  }
   .route{
     float: left;
     position: relative;
-    top: 10%;
+    top: 40%;
   }
   #search{
     height: 11%;
@@ -272,12 +290,78 @@
     margin: 0;
     padding: 0;
   }
+  .from_group{
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    height: 12rem;
+  }
+  .blog{
+    margin-top:0.4rem;
+    margin-bottom:0.2rem;
+    margin-left:0.820rem;
+    width:7.92rem;
+    height:2rem;
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.02rem 0.1rem 0 rgba(0, 0, 0, 0.1);
+    cursor:default;
+  }
+  .bolg_title{
+    margin-top:0.2rem;
+    margin-bottom:0.1rem;
+    margin-left:0.137rem;
+    font-size:0.23rem;
+    letter-spacing:0.03rem;
+  }
+  .icon{
+    margin-right:0.164rem;
+    height:0.133rem;
+    width:0.133rem;
+  }
+  .outline{
+    margin-top:0.2rem;
+    margin-left:0.41rem;
+    font-size:0.15rem;
+    font-weight:900;
+    color:  #303030;
+    font-weight:450;
+    line-height:0.267rem;
+  }
+  .more{
+    margin-top:0.133rem;
+    margin-left:0.41rem;
+    font-size:0.15rem;
+    color:#3399FF;
+    letter-spacing:0.02rem;
+    cursor:pointer;
+  }
   .el-menu-vertical-demo{
-    height:15.0rem;
+    height:15rem;
   }
   span{
     font-size:0.22rem;
     margin-left: 0.6rem;
+  }
+  button{
+    width: 1.20rem;
+    height: 0.25rem;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    border-width: 0.01rem;
+    border-color: #4096ff;
+    color:#4096ff;
+    font-size: 0.15rem;
+    cursor:pointer;
+  }
+  button:hover{
+    background: white;
+    border-width: 0.02rem;
+    border-color: #4096ff;
+  }
+  button:active{
+    background: #4096ff;
+    border-color: transparent;
+    color:white;
   }
   .searchInput{
     font-size:0.16rem;
