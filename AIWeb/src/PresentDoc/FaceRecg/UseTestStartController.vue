@@ -21,8 +21,8 @@ export default {
 body{
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: url("StartControllerImg/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
@@ -40,50 +40,51 @@ div{
     font-size: 0.4rem;
     color: white;
     text-align: center;
-    margin-top: 35vh;
+    margin-top: 2.0rem;
 }
 
 .UseTestStartController_Button_Group{
-    margin-top: 10vh;
+    margin-top: 1.2rem;
     align-self: center;
-    height: 30vh;
+    height: 2.5rem;
 }
 
 .UseTestStartController_Button_Left{
     text-align: center;
-    height: 9vh;
-    line-height: 9vh;
-    width:20vw;
-    margin-right: 4vw;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    width:2.732rem;
+    margin-right: 0.3rem;
     font-size: 0.2rem;
     color: white;
-    border: solid 1px white;
+    border: solid 0.01rem white;
     display: inline-block;
     cursor:pointer;
 }
 
 .UseTestStartController_Button_Center{
-    text-align: center;
-    height: 9vh;
-    line-height: 9vh;
-    width: 20vw;
-    font-size: 0.2rem;
-    color: white;
-    border: solid 1px white;
-    display: inline-block;
-    cursor:pointer;
+  text-align: center;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  width:2.732rem;
+  margin-right: 0.3rem;
+  font-size: 0.2rem;
+  color: white;
+  border: solid 0.01rem white;
+  display: inline-block;
+  cursor:pointer;
 }
 
 .UseTestStartController_Button_Right{
-    text-align: center;
-    height: 9vh;
-    line-height: 9vh;
-    width: 20vw;
-    margin-left: 4vw;
-    font-size: 0.2rem;
-    color: white;
-    border: solid 1px white;
-    display: inline-block;
-    cursor:pointer;
+  text-align: center;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  width:2.732rem;
+  margin-right: 0.3rem;
+  font-size: 0.2rem;
+  color: white;
+  border: solid 0.01rem white;
+  display: inline-block;
+  cursor:pointer;
 }
 </style>

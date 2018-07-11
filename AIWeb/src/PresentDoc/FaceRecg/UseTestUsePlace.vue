@@ -44,43 +44,43 @@ div{
 }
 
 .UseTestUsePlace_Title{
-    width: 100vw;
-    height: 5vh;
+    width: 100%;
+    height: 0.3rem;
     text-align: center;
     font-size: 0.4rem;
-    margin-top: 6vh;
+    margin-top: 0.4rem;
 }
 
 .UseTestUsePlace_Item_Group{
     vertical-align: top;
     align-self: center;
-    margin-top: 10vh;
+    margin-top: 0.7rem;
 }
 
 .UseTestUsePlace_Item_Group_Item_Left{
-    margin-right: 5vw;
+    margin-right: 0.683rem;
     display: inline-block;
-    width: 25vw;
+    width: 3.415rem;
     background-color: white;
-    height: 32vw;
+    height: 4.3712rem;
     cursor:default;
 }
 
 .UseTestUsePlace_Item_Group_Item_Left:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .UseTestUsePlace_Item_Group_Item_Right{
     display: inline-block;
-    margin-left: 5vw;
-    width: 25vw;
+    margin-left: 0.683rem;
+    width: 3.415rem;
     background-color: white;
-    height: 32vw;
+    height: 4.3712rem;
     cursor:default;
 }
 
 .UseTestUsePlace_Item_Group_Item_Right:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .UseTestUsePlace_Item_Group_Item_Img_Left{
