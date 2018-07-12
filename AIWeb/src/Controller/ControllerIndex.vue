@@ -52,13 +52,13 @@
           <div class="column_title">语音合成</div>
           <div class="column_pic1"></div>
           <div class="column_word">语音合成</div>
-          <div class="column_btn">API文档</div>
+          <el-button class="button4submit">API文档</el-button>
         </div>
         <div class="column">
           <div class="column_title">语音识别</div>
           <div class="column_pic2"></div>
           <div class="column_word">识别语音中汉字</div>
-          <div class="column_btn">API文档</div>
+          <el-button class="button4submit">API文档</el-button>
         </div>
       </div>
 
@@ -138,15 +138,26 @@
     margin-bottom: 0.05rem;
   }
 
-  .column_btn{
-    width: 70%;
-    margin-left: 15%;
-    color: white;
-    font-weight: 600;
-    line-height: 0.5rem;
-    background-color: blue;
-  }
+  /*.column_btn{*/
+    /*width: 70%;*/
+    /*margin-left: 15%;*/
+    /*color: white;*/
+    /*font-weight: 600;*/
+    /*line-height: 0.5rem;*/
+    /*background-color: blue;*/
+  /*}*/
 
+  .button4submit{
+    color: white;
+    background-color: #2285ea;
+    height: 0.45rem;
+    width: 2.0rem;
+    font-size: 0.2rem;
+  }
+  .button4submit:hover{
+    background-color: #2473d7;
+    color: white;
+  }
   textarea{
     overflow:auto;
     background: transparent;

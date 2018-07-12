@@ -51,13 +51,13 @@
           <div class="column_title">词义相似度</div>
           <div class="column_pic1"></div>
           <div class="column_word">词义相似度</div>
-          <div class="column_btn">API文档</div>
+          <el-button class="button4submit">API文档</el-button>
         </div>
         <div class="column">
           <div class="column_title">短文本相似度</div>
           <div class="column_pic2"></div>
           <div class="column_word">短文本相似度</div>
-          <div class="column_btn">API文档</div>
+          <el-button class="button4submit">API文档</el-button>
         </div>
       </div>
       <div class="line">
@@ -65,20 +65,20 @@
         <div class="column_title">评论观点抽取</div>
         <div class="column_pic3"></div>
         <div class="column_word">评论观点抽取</div>
-        <div class="column_btn">API文档</div>
+        <el-button class="button4submit">API文档</el-button>
       </div>
       <div class="column">
         <div class="column_title">情感倾向分析</div>
         <div class="column_pic4"></div>
         <div class="column_word">情感倾向分析</div>
-        <div class="column_btn">API文档</div>
+        <el-button class="button4submit">API文档</el-button>
       </div>
     </div><div class="line">
       <div class="column">
         <div class="column_title">AI客服</div>
         <div class="column_pic5"></div>
         <div class="column_word">AI客服</div>
-        <div class="column_btn">API文档</div>
+        <el-button class="button4submit">API文档</el-button>
       </div>
     </div>
     </div>
@@ -200,16 +200,26 @@
     margin-bottom: 0.05rem;
   }
 
-  .column_btn{
-    width: 70%;
-    margin-left: 15%;
+  /*.column_btn{*/
+    /*width: 70%;*/
+    /*margin-left: 15%;*/
+    /*color: white;*/
+    /*font-weight: 600;*/
+    /*line-height: 0.5rem;*/
+    /*background-color: blue;*/
+  /*}*/
+
+  .button4submit{
     color: white;
-    font-weight: 600;
-    line-height: 0.5rem;
-    background-color: blue;
+    background-color: #2285ea;
+    height: 0.45rem;
+    width: 2.0rem;
+    font-size: 0.2rem;
   }
-
-
+  .button4submit:hover{
+    background-color: #2473d7;
+    color: white;
+  }
   .route{
     float: left;
     position: relative;

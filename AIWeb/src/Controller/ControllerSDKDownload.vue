@@ -51,13 +51,13 @@
           <div class="column_title">人脸检测</div>
           <div class="column_pic1"></div>
           <div class="column_word">检测图片中的人脸并标出相应位置</div>
-          <div class="column_btn">SDK下载</div>
+          <el-button class="button4submit">SDK下载</el-button>
         </div>
         <div class="column">
           <div class="column_title">人脸对比</div>
           <div class="column_pic2"></div>
           <div class="column_word">比较两张图片中的人脸的相似度并返回相似度分值</div>
-          <div class="column_btn">SDK下载</div>
+          <el-button class="button4submit">SDK下载</el-button>
         </div>
       </div>
       <div class="line">
@@ -65,13 +65,13 @@
           <div class="column_title">人脸查找</div>
           <div class="column_pic3"></div>
           <div class="column_word">在指定的人脸集合中找到最相似的人脸</div>
-          <div class="column_btn">SDK下载</div>
+          <el-button class="button4submit">SDK下载</el-button>
         </div>
         <div class="column">
           <div class="column_title">身份证识别</div>
           <div class="column_pic4"></div>
           <div class="column_word">识别身份证正反面的文字信息</div>
-          <div class="column_btn">SDK下载</div>
+          <el-button class="button4submit">SDK下载</el-button>
         </div>
       </div>
       <div class="line">
@@ -79,13 +79,13 @@
           <div class="column_title">去模糊化</div>
           <div class="column_pic5"></div>
           <div class="column_word">将当前图片清晰度提高</div>
-          <div class="column_btn">SDK下载</div>
+          <el-button class="button4submit">SDK下载</el-button>
         </div>
         <div class="column">
           <div class="column_title">车牌识别</div>
           <div class="column_pic6"></div>
           <div class="column_word">对小客车的车牌进行识别</div>
-          <div class="column_btn">SDK下载</div>
+          <el-button class="button4submit">SDK下载</el-button>
         </div>
       </div>
 
@@ -196,15 +196,25 @@
     margin-bottom: 0.05rem;
   }
 
-  .column_btn{
-    width: 70%;
-    margin-left: 15%;
+  /*.column_btn{*/
+    /*width: 70%;*/
+    /*margin-left: 15%;*/
+    /*color: white;*/
+    /*font-weight: 600;*/
+    /*line-height: 0.5rem;*/
+    /*background-color: blue;*/
+  /*}*/
+  .button4submit{
     color: white;
-    font-weight: 600;
-    line-height: 0.5rem;
-    background-color: blue;
+    background-color: #2285ea;
+    height: 0.45rem;
+    width: 2.0rem;
+    font-size: 0.2rem;
   }
-
+  .button4submit:hover{
+    background-color: #2473d7;
+    color: white;
+  }
   textarea{
     overflow:auto;
     background: transparent;

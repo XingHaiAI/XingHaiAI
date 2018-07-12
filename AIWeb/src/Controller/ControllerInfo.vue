@@ -79,7 +79,7 @@
       <div class="line">
         <div class="title">密码：</div>
         <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" disabled placeholder="输入密码"/>
-        <el-button type="primary"  class="bg_btn" id="find" v-model="userInfo.password" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: blue;color: white;" @click="dialogVisible=true">修改</el-button>
+        <el-button type="primary"  class="bg_btn" id="find" v-model="userInfo.password" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: #2285ea;color: white;" @click="dialogVisible=true">修改</el-button>
       </div>
 
       <div class="line" style="margin-top: 0.15rem !important;">
