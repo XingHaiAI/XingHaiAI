@@ -1,5 +1,5 @@
 <template>
-  <div id="login">
+  <div id="login"style="min-width: 13.6rem">
   <div class="left_cube">
     <div class="big_word1">
         专注人工智能算法研究

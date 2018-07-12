@@ -1,5 +1,5 @@
 <template>
-<div class="bg">
+<div class="bg"style="min-width: 13.6rem">
     <div class="head_content">
         <div class="title">联系我们</div>
         <div class="content">CONTACT  WITH  US</div>

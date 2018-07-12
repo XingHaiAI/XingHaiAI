@@ -1,5 +1,5 @@
 <template>
-  <body id="all">
+  <body id="all"style="min-width: 13.6rem">
   <div id="header">
     <img src="../assets/控制台/banner.png">
   </div>
@@ -226,7 +226,7 @@ img{
   padding: 0;
 }
 #header{
-  height:16.18%;
+  height:5rem;
   width: 100%;
   background-color: black;
   margin: 0;
