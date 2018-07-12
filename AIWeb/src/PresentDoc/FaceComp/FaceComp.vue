@@ -2,7 +2,7 @@
   <!--人脸检测-->
   <div id="FaceRecg"style="min-width: 13.6rem">
     <UseTestFunctionShow class="content"></UseTestFunctionShow>
-    <div style="height: 7.5rem"></div>
+    <div style="height: 8.5rem"></div>
     <UseTestStartController class="content2"></UseTestStartController>
     <UseTestUsePlace class="content3"></UseTestUsePlace>
   </div>
