@@ -2,7 +2,7 @@
 <!--语音分页面-->
 
 <template>
-  <div>
+  <div style="min-width: 13.6rem">
     <div id="AIhead" class="firstBackground">
       <div style="height: 1.50rem;"></div>
       <div class="table4this" style="margin-left: 34%;margin-top:2rem;">
@@ -10,7 +10,10 @@
         <tr style="font-size: 0.22rem;color:white;">语音合成服务，基于HTTP请求的REST API接</tr>
         <tr style="font-size: 0.22rem;color:white;">口，将文本转换为可以播放的MP3文件</tr>
         <div style="height: 0.20rem;"></div>
-        <tr class="buttons"><el-button class="button4doc">演示</el-button><el-button class="button4doc">技术文档</el-button></tr>
+        <tr class="buttons">
+          <!--<el-button class="button4doc">演示</el-button>-->
+          <el-button class="button4doc">技术文档</el-button>
+        </tr>
       </div>
     </div>
     <div id="AIbodyfir">
@@ -109,7 +112,7 @@
     margin-top: 5.2rem;
   }
   .button4doc{
-    left:20%;
+    margin-left:2.3rem;
     margin-right:0.10rem;
     height: 0.50rem;
     width: 1.50rem;

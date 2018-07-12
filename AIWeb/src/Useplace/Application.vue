@@ -1,10 +1,10 @@
 <template>
-    <div id="application">
+    <div id="application" style="min-width: 13.6rem">
         <div id="AIhead">
-            <img src="../assets/应用场景/banner.jpg" class="background">
+            <img src="../assets/应用场景/banner.png" class="background">
             <a id="title">应用场景</a>
             <textarea id="titlecontent" rows="2"cols="40" disabled>在面临人力成本高、服务同质化的现代产业中，深度学习技术能有效地减少人工成本、提高企业竞争力。</textarea>
-            <el-button class="button4contact" style="border-color: #060606;border-width: 0.015rem;color:#060606;font-weight: lighter">商务咨询</el-button>
+          <router-link to="/ContactUs"><el-button class="button4contact" >商务咨询</el-button></router-link>
         </div>
         <wisedomPark class="content1"></wisedomPark>
         <usePlace class="content2"></usePlace>
@@ -45,7 +45,23 @@ body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,l
     width:100%;
     height:100%;
 }
+.button4contact{
+  height: 0.50rem;
+  width: 1.70rem;
+  font-size: 0.22rem;
+  color: white;
+  border-width: 0.015rem;
+  font-weight: lighter;
+  border-color: white;
+  background-color: rgba(0,0,0,0);
+  font-weight: 500;
+  transition: all 0.3s;
+}
 
+.button4contact:hover{
+  color: white;
+  background-color: #171717;
+}
 
 
 
@@ -67,7 +83,7 @@ textarea{
     bottom: 70%;
     left: 15%;
     font-size: 0.43rem;
-    color: black;
+    color: white;
     font-weight: lighter;
 }
 button{
@@ -86,7 +102,7 @@ button{
 }
 #titlecontent{
     background: transparent;
-    color:black;
+    color:white;
     position: relative;
     margin-left:0.2rem;
     font-size: 0.15rem;

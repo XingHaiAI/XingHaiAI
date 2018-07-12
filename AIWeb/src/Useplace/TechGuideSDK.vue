@@ -1,5 +1,5 @@
 <template>
-  <body id="all">
+  <body id="all"style="min-width: 13.6rem">
   <div id="header">
     <img src="../assets/Banner.png">
   </div>
@@ -65,7 +65,7 @@
         <textarea rows="3"cols="70"disabled style="font-size: 0.18rem">在控制台，展开“SDK\联网授权SDK”这个组，并点击“SDK下载”页。</textarea>
         <p style="font-size:  0.25rem">3. 集成开发</p>
         <textarea rows="5"cols="70"disabled style="font-size: 0.18rem">下载 SDK 包文件后，您就可以根据包中的文档说明，开始集成开发了。如果您在开发过程中遇到任何问题，欢迎、在官网联系技术支持</textarea>
-        <p style="font-size:  0.25rem">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
+        <p style="font-size:  0.25rem">如有疑问请<router-link to="/ContactUs" class="linkto"> 联系我们</router-link></p>
       </div>
     </div>
   </div>

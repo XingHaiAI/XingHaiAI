@@ -1,5 +1,5 @@
 <template>
-<div class="blog_bg">
+<div class="blog_bg" style="min-width: 13.6rem">
     <div class="head_content1">
     </div>
     <div class="blog_menu" style="display: flex;min-height:10rem;">

@@ -1,7 +1,7 @@
 <!--这里是-->
 <!--AI智能的分页面-->
 <template>
-  <div id="ai">
+  <div id="ai"style="min-width: 13.6rem">
     <div id="AIhead" class="firstBackground">
       <div style="height: 1.95rem;"></div>
       <div class="table4this" style="margin-left: 14%">
@@ -23,7 +23,7 @@
     </div>
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>
-      
+
 
       <div class="card4this" style="width: 100%;">
         <div style="margin-right: auto;margin-left: 2.45rem;margin-top:0.50rem;width: 60%">

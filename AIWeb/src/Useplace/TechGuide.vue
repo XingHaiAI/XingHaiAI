@@ -1,5 +1,5 @@
 <template>
-  <body id="all">
+  <body id="all"style="min-width: 13.6rem">
   <div id="header">
     <img src="../assets/Banner.png">
   </div>
@@ -68,7 +68,7 @@
         <textarea rows="3"cols="70"disabled style="font-size: 0.18rem">完成 API Key 创建之后，您会看到页面刷新了，现在可以看到自己的账户余额和API调用量的统计。</textarea>
         <p style="font-size: 0.25rem">4. 完成</p>
         <textarea rows="2"cols="70"disabled style="font-size: 0.18rem">好了，所有需要的操作都已经完成，您现在可以跟着 API 文档，进行接入了。</textarea>
-        <p style="font-size: 0.25rem">如有疑问请<router-link to="" class="linkto"> 联系我们</router-link></p>
+        <p style="font-size: 0.25rem">如有疑问请<router-link to="/ContactUs" class="linkto"> 联系我们</router-link></p>
       </div>
     </div>
   </div>

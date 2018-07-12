@@ -3,8 +3,8 @@
     <div class="Title">现在，来体验一下吧</div>
     <div class="info">无需注册，在线就可体验所有开放内容，体验人工智能的世界</div>
 	<div class="line">
-	    <div class="btn_coloum">应用场景</div>
-	    <div class="btn_coloum">API文档</div>
+    <router-link to="/Useplace"><div class="btn_coloum">应用场景</div></router-link>
+    <router-link to="/Teaching"><div class="btn_coloum">API文档</div></router-link>
 	</div>
   </div>
 </template>
@@ -59,17 +59,18 @@ div{
 }
 
 .btn_coloum{
-    text-align: center;
-    line-height: 1.09rem;
-    font-size: 0.24rem;
-    font-weight: normal;
-    opacity: 0.7;
-    width: 3.41rem;
-    margin-left: 0.41rem;
-    margin-right: 0.41rem;
-    height: 1.09rem;
-    border: 0.01rem black solid;
-    display: inline-block;
-    cursor:pointer;
+  text-align: center;
+  line-height: 1.09rem;
+  font-size: 0.24rem;
+  font-weight: normal;
+  opacity: 0.7;
+  width: 3.41rem;
+  margin-left: 0.41rem;
+  margin-right: 0.41rem;
+  height: 1.09rem;
+  color:black;
+  border: 0.01rem black solid;
+  display: inline-block;
+  cursor:pointer;
 }
 </style>

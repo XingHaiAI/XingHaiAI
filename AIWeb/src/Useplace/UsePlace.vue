@@ -1,5 +1,5 @@
 <template>
-  <div id="UsePlace">
+  <div id="UsePlace"style="min-width: 13.6rem">
     <div class="head_line">
       <div class="pic_left"></div>
       <div class="Title">使用场景</div>
