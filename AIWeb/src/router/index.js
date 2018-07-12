@@ -47,16 +47,8 @@ import IDRecg from '../PresentDoc/IDRecg/IDRecg'
 
 import login from '@/login/login.vue'
 import signIn from '@/login/signIn.vue'
-import ConsoleSDK from '@/Console/SDK.vue'
-import ConsoleFaceRec from '@/Console/FaceRec.vue'
-import ConsolePicRec from '@/Console/PicRec.vue'
-import ConsoleWordRec from '@/Console/WordRec.vue'
-import ConsoleSpeach from '@/Console/Speach.vue'
-import ConsoleNPL from '@/Console/NPL.vue'
-import APPList from '@/Console/APPList.vue'
 import GraphicsAnalysis from '../PresentDoc/GraphicsAnalysis/GraphicsAnalysis'
 
-import ControllerIndex from '@/Controller/ControllerIndex.vue'
 import ControllerFaceAPI from '@/Controller/ControllerFaceAPI.vue'
 import ControllerNPLAPI from '@/Controller/ControllerNPLAPI.vue'
 import ControllerSpeachAPI from '@/Controller/ControllerSpeachAPI.vue'
@@ -197,27 +189,6 @@ export default new Router({
     },
     {
       path:'/signIn',name:'signIn',component:signIn
-    },
-    {
-      path:'/Console/SDK',name:'ConsoleSDK',component:ConsoleSDK
-    },
-    {
-      path:'/Console/FaceRec',name:'ConsoleFaceRec',component:ConsoleFaceRec
-    },
-    {
-      path:'/Console/PicRec',name:'ConsolePicRec',component:ConsolePicRec
-    },
-    {
-      path:'/Console/WordRec',name:'ConsoleWordRec',component:ConsoleWordRec
-    },
-    {
-      path:'/Console/Speach',name:'ConsoleSpeach',component:ConsoleSpeach
-    },
-    {
-      path:'/Console/NPL',name:'ConsoleNPL',component:ConsoleNPL
-    },
-    {
-      path:'/Console/APPList',name:'APPList',component:APPList
     },
     {
       path:'/PresentDoc/GraphicsAnalysis',component:GraphicsAnalysis
