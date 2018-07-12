@@ -50,13 +50,13 @@
           <div class="column">
             <div class="column_title">语音合成</div>
             <div class="column_pic1"></div>
-            <div class="column_word">语音合成</div>
+            <div class="column_word">语音合成服务，基于HTTP请求的REST API接口，将文本转换为可以播放的mp3文件</div>
             <el-button class="button4submit">API文档</el-button>
           </div>
           <div class="column">
             <div class="column_title">语音识别</div>
             <div class="column_pic2"></div>
-            <div class="column_word">识别语音中汉字</div>
+            <div class="column_word">将人类的语音中的词汇内容转换为计算机可读的输入<br/><br/></div>
             <el-button class="button4submit">API文档</el-button>
           </div>
         </div>
@@ -143,7 +143,7 @@
 
   .column_word{
     color: grey;
-    font-size: 0.15rem;
+    font-size: 0.14rem;
     margin-top: 0.05rem;
     margin-bottom: 0.05rem;
   }

@@ -60,8 +60,8 @@
         <div class="column">
           <div class="column_pic2"></div>
           <div class="column_right">
-            <div class="order_p">待支付订单:<span style="color: red;">1</span></div>
-            <div class="order_e">已完成订单:<span style="color: blue;">1</span></div>
+            <div class="order_p">待支付订单:<span style="color: red;margin-left: -0.01rem">1</span></div>
+            <div class="order_e">已完成订单:<span style="color: blue;margin-left: -0.01rem">1</span></div>
           </div>
         </div>
         <div class="column">
@@ -142,21 +142,24 @@
 
   .order_p{
     margin-top: 0.5rem;
+    margin-left: -5.5rem;
     font-size: 0.16rem;
   }
 
   .order_e{
     margin-top: 0.2rem;
+    margin-left: -0.5rem;
     font-size: 0.16rem;
   }
 
   .column{
-    background-color: #0000cc;
+    background-color:white;
     float: left;
     margin-left: -0.5rem;
-    width: 3.1rem !important;
+    width: 2.9rem !important;
     height: 1.8rem !important;
     margin-right: 0.6rem;
+    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.06rem 0.20rem 0 rgba(0, 0, 0, 0.10);
   }
 
   .column_title{
