@@ -277,8 +277,7 @@
     position: fixed;
     background-color: rgba(6,6,6,1);
     top:0;
-    
-    right:0;
+    left:0;
     z-index: 10;
     /*background-color: rgba(6,6,6,0);*/
     /*transition: background-color 0.7s;*/
