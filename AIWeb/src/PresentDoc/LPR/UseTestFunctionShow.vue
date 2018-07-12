@@ -36,14 +36,7 @@
                 </div>
                 <div style="height: 0.2rem"></div>
                 <div style="float: left">
-                  <el-upload
-                    class="upload-demo"
-                    action="https://jsonplaceholder.typicode.com/posts/"
-                    :on-change="handleChange"
-                    :file-list="fileList3">
-                    <el-button size="small" type="primary">本地上传</el-button>
-                    <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过2MB</div>
-                  </el-upload>
+                  <input id="input"  ref="uploadImg" type="file" accept="image/*" @change="UploadIMG($event)">
                 </div>
               </el-col>
             </el-row>
@@ -88,6 +81,32 @@ export default {
     }
   },
   methods:{
+    UploadIMG(){
+      var _this = this;
+      var showFile = event.target.files[0];
+      var reader = new FileReader();
+      reader.readAsDataURL(showFile); // 读出 base64
+      reader.onloadend = function () {
+        var keyy=reader.result.split(',');
+        _this.$data.imgURLSelect='data:image/jpg;base64,'+keyy[1]
+        _this.$data.reImg=keyy[1];
+        _this.fun();
+      };
+
+
+    },
+    fun(){
+      let _this=this;
+      this.$axios({
+        method:'post',
+        url:'http://47.94.242.44:8081/plate_recognition',
+        data:{
+          image:_this.$data.reImg,
+        }
+      }).then(function (res) {
+        _this.$data.json = res.data;
+      })
+    },
     selectPhoto(item){
       this.$data.imgURLSelect=item.src;
       let _this=this;
