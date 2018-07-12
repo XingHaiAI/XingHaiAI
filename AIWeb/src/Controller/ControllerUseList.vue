@@ -43,25 +43,118 @@
       </el-row>
     </div>
     <div id="main">
+      <el-dialog :visible.sync="dialogVisible" :modal-append-to-body="false" title="新建API" style="width: 17rem">
+        <el-form :model="formChoose" :ref="formChoose" :rules="rulesChoose">
+          <el-form-item style="width: 50%" label="应用名称：">
+            <el-input v-model="formChoose.name" style="width: 70%;"></el-input>
+          </el-form-item>
+          <el-form-item style="width: 50%" label="应用类型：">
+            <el-select v-model="formChoose.APItype" style="width: 70%;">
+              <el-option v-for="item in options" :key="item.value" :value="item.value" :label="item.name"></el-option>
+            </el-select>
+          </el-form-item>
+          <el-form-item label="付费选择：">
+            <el-select v-model="formChoose">
+              <el-option value="1" label="付费"></el-option>
+              <el-option value="2" label="免费"></el-option>
+            </el-select>
+          </el-form-item>
+        </el-form>
+        <span style="font-size: 0.25rem;font-weight: bold;margin-left: 0.03rem">接口选择：</span>
+        <div style="height: 0.1rem"></div>
+        <el-card>
+          <span style="font-size: 0.18rem;margin-left: 0.05rem">自然语言处理</span>
+          <div style="margin-top: 0.1rem">
+            <el-checkbox-group v-model="formTypes.languages">
+              <el-checkbox label="语义相似度" value="1"></el-checkbox>
+              <el-checkbox label="短文本相似度" value="2"></el-checkbox>
+              <el-checkbox label="评论观点提取" value="3"></el-checkbox>
+              <el-checkbox label="情感倾向分析" value="4"></el-checkbox>
+              <el-checkbox label="AI客服" value="5"></el-checkbox>
+            </el-checkbox-group>
+          </div>
+          <div style="height: 0.1rem"></div>
+          <span style="font-size: 0.18rem;margin-left: 0.05rem;">语音识别</span>
+          <div style="margin-top: 0.1rem">
+            <el-checkbox-group v-model="formTypes.languages">
+              <el-checkbox label="语音识别" value="6"></el-checkbox>
+              <el-checkbox label="语音合成" value="7"></el-checkbox>
+            </el-checkbox-group>
+          </div>
+          <div style="height: 0.1rem"></div>
+          <span style="font-size: 0.18rem;margin-left: 0.05rem">人脸识别</span>
+          <div style="margin-top: 0.1rem">
+            <el-checkbox-group v-model="formTypes.languages">
+              <el-checkbox label="人脸识别" value="8"></el-checkbox>
+              <el-checkbox label="人脸对比" value="9"></el-checkbox>
+              <el-checkbox label="人脸查找" value="10"></el-checkbox>
+            </el-checkbox-group>
+          </div>
+          <div style="height: 0.1rem"></div>
+          <span style="font-size: 0.18rem;margin-left: 0.05rem">文字识别</span>
+          <div style="margin-top: 0.1rem">
+            <el-checkbox-group v-model="formTypes.languages">
+              <el-checkbox label="通用文字识别" value="11"></el-checkbox>
+              <el-checkbox label="手写识别" value="12"></el-checkbox>
+              <el-checkbox label="身份证识别" value="13"></el-checkbox>
+              <el-checkbox label="银行卡识别" value="14"></el-checkbox>
+              <el-checkbox label="车牌识别" value="15"></el-checkbox>
+              <el-checkbox label="驾驶证识别" value="16"></el-checkbox>
+              <el-checkbox label="行驶证识别" value="17"></el-checkbox>
+            </el-checkbox-group>
+          </div>
+          <div style="height: 0.1rem"></div>
+          <span style="font-size: 0.18rem;margin-left: 0.05rem">图像识别</span>
+          <div style="margin-top: 0.1rem">
+            <el-checkbox-group v-model="formTypes.languages">
+              <el-checkbox label="通用图像分析" value="18"></el-checkbox>
+              <el-checkbox label="去模糊化" value="19"></el-checkbox>
+              <el-checkbox label="人像识别" value="20"></el-checkbox>
+              <el-checkbox label="车型识别" value="21"></el-checkbox>
+            </el-checkbox-group>
+          </div>
+        </el-card>
+        <div style="height: 0.1rem;"></div>
+        <span style="margin-left: 0.05rem">应用平台</span>
+          <div style="height: 0.1rem"></div>
+          <div>
+            <el-checkbox-group v-model="formTypes.servers">
+              <el-checkbox label="ANDROID" value="1"></el-checkbox>
+              <el-checkbox label="IOS" value="2"></el-checkbox>
+              <el-checkbox label="WINDOWS" value="3"></el-checkbox>
+              <el-checkbox label="HTML5" value="4"></el-checkbox>
+              <el-checkbox label="JAVA" value="5"></el-checkbox>
+              <el-checkbox label="FLASH" value="6"></el-checkbox>
+              <el-checkbox label="LINUX" value="7"></el-checkbox>
+            </el-checkbox-group>
+          </div>
+        <div style="height: 0.1rem;"></div>
+        <span  style="margin-left: 0.05rem">应用描述</span>
+          <el-input type="textarea" :rows="8" v-model="description"></el-input>
+        <div style="height: 0.15rem"></div>
+        <div style="width: 100%;text-align: center">
+          <el-button type="primary" @click="ConfirmAPI">确定</el-button>
+          <el-button type="danger" @click="CancelAPI">取消</el-button>
+        </div>
+      </el-dialog>
       <div id="search">
         <p class="route"><router-link to="" class="linkto">控制台</router-link>&gt应用列表></p>
       </div>
       <div class="line">
         <div class="line_pic"></div>
-        <el-button type="primary" class="bg_btn" id="find">创建API KEY</el-button>
+        <el-button type="primary" class="bg_btn" id="find" @click="CreateAPI">创建API KEY</el-button>
       </div>
-
       <div class="table">
         <el-table v-bind:data="manifests" highlight-current-row border height="500">
           <el-table-column prop="name" label="应用名称"></el-table-column>
-          <el-table-column prop="APIKEY" label="API KEY"></el-table-column>
-          <el-table-column prop="APIPassword" label="API密码"></el-table-column>
+          <el-table-column prop="apikey" label="API KEY"></el-table-column>
+          <el-table-column prop="apipassword" label="API密码"></el-table-column>
           <el-table-column prop="status" label="状态"></el-table-column>
-          <el-table-column inline-template label="操作">
-                        <span>
-                            <el-button type="text" size="small" v-on:click="edit(row.ID)" icon="edit">查看</el-button>
-                            <el-button type="text" size="small" v-on:click="del(row.ID)" icon="delete">删 除</el-button>
-                        </span>
+          <el-table-column label="操作">
+          <template slot-scope="scope">
+            <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
+            <el-button type="text" size="small" @click="deleteAPI(scope.$index)">删除</el-button>
+          </template>
           </el-table-column>
         </el-table>
       </div>
@@ -75,17 +168,93 @@
     name:"ControllerUseList",
     data() {
       return {
+        options:[
+          {
+            name:'游戏娱乐',
+            value:'1'
+          },
+          {
+            name:'游戏娱乐',
+            value:'2'
+          }
+        ],
         isCollapse: true,
-        manifests:[{name:'lalala',APIKEY:'121313',APIPassword:'121212',status:"启用"}]
+        total:0,
+        page:1,
+        manifests:[{name:'lalala',apikey:'121313',apipassword:'121212',status:"启用"}],
+        dialogVisible:false,
+        formChoose:{
+          APIname:'',
+          APItype:'',
+          APIFree:''
+        },
+        formTypes:{
+          languages:[],
+          servers:[]
+        },
+        description:'',
+        rulesChoose:{
+
+        }
       };
     },
     methods: {
+      ConfirmAPI(){
+
+      },
+      CancelAPI(){
+
+      },
       handleOpen(key, keyPath) {
         console.log(key, keyPath);
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
+      },
+      CreateAPI(){
+        this.$data.dialogVisible=true;
+      },
+      deleteAPI(row){
+        let _this=this;
+        this.$axios({
+          method:'get',
+          url:'/api/delete',
+          params:{
+            apikey:'6666'
+          }
+        }).then(function (response) {
+          if(response.data===true){
+            alert('删除成功！');
+            _this.$data.manifests.splice(row,1);
+          }
+        }).catch(function (error) {
+          alert('删除失败')
+        })
       }
+    },
+    created(){
+      let _this=this;
+      this.$axios({
+        method:'get',
+        url:'/api/getApi',
+        params:{
+          account:'123456',
+          page:'1'
+        }
+      }).then(function (response) {
+        _this.$data.manifests=response.data.apiVos;
+        _this.$data.total=response.data.all;
+        _this.$data.page=response.data.part;
+        for(let index=0;index<_this.$data.manifests.length;index++){
+          if(_this.$data.manifests[index].status===1){
+            _this.$data.manifests[index].status='未审核'
+          }else if(_this.$data.manifests[index].status===2){
+            _this.$data.manifests[index].status='已拒绝;'
+          }else{
+            _this.$data.manifests[index].status='已通过'
+          }
+        }
+      })
     }
   }
 </script>
