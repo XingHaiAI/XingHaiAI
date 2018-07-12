@@ -46,7 +46,7 @@
                 <div class="card4footer2">
                 </div>
                 <div class="title4card">
-                  <span>认证合一</span>
+                  <span>人证合一</span>
                 </div>
                 <div class="content4card">
                   <p style="font-size: 0.16rem;font-weight: 330">帮助您的应用自动将人脸照片与证件照片进行比对，例如护照、驾照或身份证照片。这有助于在安保场景中提高效率与准确性。</p>

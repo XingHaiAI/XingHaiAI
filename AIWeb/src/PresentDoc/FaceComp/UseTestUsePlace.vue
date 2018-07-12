@@ -6,15 +6,15 @@
 		    <div class="UseTestUsePlace_Item_Group_Item_Left">
 		        <div class="UseTestUsePlace_Item_Group_Item_Img_Left"></div>
 		        <div class="UseTestUsePlace_Item_Group_Item_Word">
-		            <div class="UseTestUsePlace_Item_Group_Item_Word_Title">人脸美颜</div>
-		            <div class="UseTestUsePlace_Item_Group_Item_Word_Content">基于五官及轮廓关键点识别，对人脸特定位置进行修饰加工，实现人脸的特效美颜、特效相机、贴片等互动娱乐功能</div>
+		            <div class="UseTestUsePlace_Item_Group_Item_Word_Title">人脸闸机</div>
+		            <div class="UseTestUsePlace_Item_Group_Item_Word_Content">帮助您的应用自动将人脸照片与数据库中的照片进行比对，这有助于在小区、安保场景中提高效率与准确性。</div>
 		        </div>
 		    </div>
 		    <div class="UseTestUsePlace_Item_Group_Item_Right">
 		        <div class="UseTestUsePlace_Item_Group_Item_Img_Right"></div>
 		        <div class="UseTestUsePlace_Item_Group_Item_Word">
-		            <div class="UseTestUsePlace_Item_Group_Item_Word_Title">人脸闸机</div>
-		            <div class="UseTestUsePlace_Item_Group_Item_Word_Content">帮助您的应用自动将人脸照片与数据库中的照片进行比对，这有助于在小区、安保场景中提高效率与准确性。</div>
+		            <div class="UseTestUsePlace_Item_Group_Item_Word_Title">人证合一</div>
+		            <div class="UseTestUsePlace_Item_Group_Item_Word_Content">帮助您的应用自动将人脸照片与证件照片进行比对，例如护照、驾照或身份证照片。这有助于在安保场景中提高效率与准确性。</div>
 		        </div>
 		    </div>
 		</div>
@@ -84,7 +84,7 @@ div{
 }
 
 .UseTestUsePlace_Item_Group_Item_Img_Left{
-    background-image: url("face/item_1.jpg");
+    background-image: url("../../assets/人脸对比/人脸闸机.png");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
@@ -92,7 +92,7 @@ div{
 }
 
 .UseTestUsePlace_Item_Group_Item_Img_Right{
-    background-image: url("face/item_2.jpg");
+    background-image: url("../../assets/人脸对比/人证合一.png");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
