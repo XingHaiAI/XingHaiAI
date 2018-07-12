@@ -28,7 +28,7 @@
         </div>
         <div style="height: 0.2rem;"></div>
         <div style="height: 15%;width: 100%;">
-          <el-row>
+          <!--<el-row>
             <el-col>
               <div style="width: 100%">
                 <el-input class="input11" placeholder="请输入图片的URL" v-model="inputUrl" style="width: 60%;float: left"></el-input>
@@ -36,23 +36,16 @@
               </div>
               <div style="height: 0.2rem"></div>
               <div style="float: left">
-                <el-upload
-                  class="upload-demo"
-                  action="https://jsonplaceholder.typicode.com/posts/"
-                  :on-change="handleChange"
-                >
-                  <el-button size="small" type="primary">本地上传</el-button>
-                  <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过2MB</div>
-                </el-upload>
+                <input id="input" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG($event)">
               </div>
             </el-col>
-          </el-row>
+          </el-row>-->
         </div>
       </el-card>
       <div style="width: 37.041%;float: right;margin-right: 2rem">
         <el-tabs type="border-card">
           <el-tab-pane label="分析结果">
-            <img :src="imgURLSelect" style="max-height:6.3rem;min-width: 100%;"class="imgResult"/>
+            <img :src="imgURLSelect" style="max-height:6.3rem;min-width: 100%" class="imgResult"/>
             <!--<div class="red_box" v-for="item in arrayPos"></div>-->
             <div class="red_box" v-for="item in a"></div>
           </el-tab-pane>
@@ -93,22 +86,88 @@
         myRight:0,
         arrayPos:[],
         a:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
-
+        reImg:'',
         json:null
       }
     },
 
     methods:{
-      handleChange(){},
+      UploadIMG(){
+        var _this = this;
+        var showFile = event.target.files[0];
+        var reader = new FileReader();
+        reader.readAsDataURL(showFile); // 读出 base64
+        reader.onloadend = function () {
+          // _this.$data.imgURLSelect=reader.result;
+          // _this.imgs.push(reader.result);
+          var keyy=reader.result.split(',');
+          _this.$data.imgURLSelect='data:image/jpg;base64,'+keyy[1]
+          _this.$data.reImg=keyy[1];
+          // console.log(keyy[1]);
+        };
+        this.$axios({
+          method:'post',
+          url:'http://47.94.242.44:8083/face_api/face_detection',
+          data:{
+            image:_this.$data.reImg,
+            degree:2
+          }
+        }).then(function (res) {
+          _this.$data.json=res.data;
+          _this.$data.arrayPos=res.data.faces;
+
+          // 图片宽度
+          var divWidth =document.getElementsByClassName('imgResult')[0].offsetWidth;//实际像素宽
+          var imgWidth =document.getElementsByClassName('imgResult')[0].naturalWidth;//原图像素宽
+          // alert(_this.$data.arrayPos[0].bounding_box.left)
+
+          for (let index = 0; index < _this.$data.arrayPos.length; index++){
+            console.log("length"+_this.$data.arrayPos.length)
+            // after getdata
+            var point1 = [_this.$data.arrayPos[index].bounding_box.left, _this.$data.arrayPos[index].bounding_box.top];
+            var point2 = [_this.$data.arrayPos[index].bounding_box.right, _this.$data.arrayPos[index].bounding_box.bottom];
+            // var point1 = [30, 39];
+            // var point2 = [77, 87];
+
+            //  计算矩形长宽
+            var _width = (point2[0] - point1[0])*divWidth/imgWidth;
+            var _height = (point2[1] - point1[1])*divWidth/imgWidth;
+
+            // 定位的距离
+            var _left = point1[0]*divWidth/imgWidth+19;
+            var _top = point1[1]*divWidth/imgWidth+20;
+
+            // 赋值
+            var box = document.getElementsByClassName('red_box')[index]
+            box.style.width = _width + 'px';
+            box.style.height = _height + 'px';
+            box.style.left = _left + 'px';
+            box.style.top = _top + 'px';
+            box.style.display = 'block';
+          }
+
+          for(let index =_this.$data.arrayPos.length;index<_this.$data.a.length;index++){
+            var box = document.getElementsByClassName('red_box')[index]
+            box.style.width = 0 + 'px';
+            box.style.height = 0 + 'px';
+            box.style.left = 0 + 'px';
+            box.style.top = 0 + 'px';
+            box.style.display = 'none';
+          }
+
+
+        })
+
+      },
       selectPhoto(item){
-        this.$data.imgURLSelect=item.src;
+        this.$data.imgURLSelect='data:image/jpg;base64,'+item.base64;
         let _this=this;
         this.$axios({
           method:'post',
           url:'http://47.94.242.44:8083/face_api/face_detection',
           data:{
             image:item.base64,
-            degree:1
+            degree:2
           }
         }).then(function (res) {
           _this.$data.json=res.data;
@@ -157,7 +216,7 @@
 
       },
     },
-    mounted(){}
+
 
   }
 </script>
