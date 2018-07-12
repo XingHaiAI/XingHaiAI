@@ -89,7 +89,7 @@
     <router-view></router-view>
 
     <div id="footer" style="margin: 0rem;padding: 0rem;width: 100%" v-if="$route.path!='/login'&&$route.path!='/signin'">
-      <img style="width: 100%;margin: 0rem;padding: 0rem" src="./assets/联系我们.jpg"/>
+      <img style="width: 100%;margin: 0rem;padding: 0rem;min-width: 13.6rem" src="./assets/联系我们.jpg"/>
     </div>
 
   </div>
@@ -267,7 +267,7 @@
   .navbar{
     width: 100%;
     height: 0.5rem;
-    min-width: 10rem;
+    min-width: 13rem;
     line-height: 0.5rem;
     position: fixed;
     background-color: rgba(6,6,6,1);

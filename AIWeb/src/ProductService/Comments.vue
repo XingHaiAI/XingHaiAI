@@ -2,7 +2,7 @@
 <!--评论观点抽取分页面-->
 
 <template>
-  <div>
+  <div style="min-width: 13.6rem">
     <div id="AIhead" class="firstBackground">
       <div style="height: 1.7rem;"></div>
       <div class="table4this" style="margin-left: 14%">

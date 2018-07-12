@@ -1,5 +1,5 @@
 <template>
-  <div id="WisedomPark">
+  <div id="WisedomPark"style="min-width: 13.6rem">
     <div class="Title">智慧园区</div>
 
     <div class="content_group">

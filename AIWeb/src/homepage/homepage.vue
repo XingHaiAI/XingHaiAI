@@ -34,7 +34,7 @@ export default {
 <style scoped>
 #homepage{
     width:100%;
-    min-width: 9rem;
+    min-width: 13.6rem;
     /*width:expression(document.body.clientWidth < 900? "900px":"auto" );*/
 }
 body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}

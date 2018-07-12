@@ -1,5 +1,5 @@
 <template>
-  <div id="ContactUs">
+  <div id="ContactUs" style="min-width: 13.6rem">
     <div class="word_head">联系我们：欢迎联系，真诚期待与您携手合作！</div>
 	<div class="line">
 	    <div class="coloum_1">
@@ -30,7 +30,7 @@ export default {
 <style scoped>
 #ContactUs{
     background-color: #383838;
-    
+
     background-size: 100% 100%;
     width: 100vw;
     height: 25vh;

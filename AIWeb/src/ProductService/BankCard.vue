@@ -2,7 +2,7 @@
 <!--银行卡识别的分页面-->
 
 <template>
-  <div>
+  <div style="min-width: 13.6rem">
     <div id="AIhead" class="firstBackground">
       <!--<img src="../assets/银行卡识别/银行卡识别.png" class="background">-->
       <!--<a id="title">银行卡识别</a>-->
@@ -28,7 +28,7 @@
     </div>
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>
-      
+
       <div class="card4this" style="width: 100%;">
         <div style="margin-right: auto;margin-left: 2.45rem;margin-top:0.50rem;width: 60%">
           <el-row :gutter="550" style="width: 13rem">

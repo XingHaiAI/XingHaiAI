@@ -1,5 +1,5 @@
 <template>
-    <div id="application">
+    <div id="application" style="min-width: 13.6rem">
         <div id="AIhead">
             <img src="../assets/应用场景/banner.png" class="background">
             <a id="title">应用场景</a>

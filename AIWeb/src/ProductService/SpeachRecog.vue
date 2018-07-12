@@ -2,7 +2,7 @@
 <!--语音分页面-->
 
 <template>
-  <div>
+  <div style="min-width: 13.6rem">
     <div id="AIhead" class="firstBackground">
       <div style="height: 1.50rem;"></div>
       <div class="table4this" style="margin-left: 34%;margin-top:2rem;">
