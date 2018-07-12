@@ -28,18 +28,18 @@
         </div>
         <div style="height: 0.2rem;"></div>
         <div style="height: 15%;width: 100%;">
-          <!--<el-row>
+          <el-row>
             <el-col>
-              <div style="width: 100%">
-                <el-input class="input11" placeholder="请输入图片的URL" v-model="inputUrl" style="width: 60%;float: left"></el-input>
-                <el-button style="margin-left: 0.2rem">检测图片</el-button>
-              </div>
+              <!--<div style="width: 100%">-->
+                <!--<el-input class="input11" placeholder="请输入图片的URL" v-model="inputUrl" style="width: 60%;float: left"></el-input>-->
+                <!--<el-button style="margin-left: 0.2rem">检测图片</el-button>-->
+              <!--</div>-->
               <div style="height: 0.2rem"></div>
               <div style="float: left">
                 <input id="input" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG($event)">
               </div>
             </el-col>
-          </el-row>-->
+          </el-row>
         </div>
       </el-card>
       <div style="width: 37.041%;float: right;margin-right: 2rem">
@@ -104,7 +104,12 @@
           _this.$data.imgURLSelect='data:image/jpg;base64,'+keyy[1]
           _this.$data.reImg=keyy[1];
           // console.log(keyy[1]);
+          _this.func()
         };
+
+      },
+      func(){
+        let _this=this;
         this.$axios({
           method:'post',
           url:'http://47.94.242.44:8083/face_api/face_detection',
