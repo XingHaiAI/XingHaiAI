@@ -50,13 +50,13 @@
         <div class="column">
           <div class="column_title">词义相似度</div>
           <div class="column_pic1"></div>
-          <div class="column_word">词义相似度</div>
+          <div class="column_word">输入两个词，得到两个词的相似度结果<br/><br/></div>
           <el-button class="button4submit">API文档</el-button>
         </div>
         <div class="column">
           <div class="column_title">短文本相似度</div>
           <div class="column_pic2"></div>
-          <div class="column_word">短文本相似度</div>
+          <div class="column_word">提供不同短文本之间相似度的技术，输出一个介于0到1之间的实数值，越大则相似度越高</div>
           <el-button class="button4submit">API文档</el-button>
         </div>
       </div>
@@ -64,20 +64,20 @@
       <div class="column">
         <div class="column_title">评论观点抽取</div>
         <div class="column_pic3"></div>
-        <div class="column_word">评论观点抽取</div>
+        <div class="column_word">提取一条评论句子的关注点和评论观点，并输出评论观点标签及评论观点极性</div>
         <el-button class="button4submit">API文档</el-button>
       </div>
       <div class="column">
         <div class="column_title">情感倾向分析</div>
         <div class="column_pic4"></div>
-        <div class="column_word">情感倾向分析</div>
+        <div class="column_word">对包含主观观点信息的文本进行情感类别（积极、消极、中性）判断，并给出相应的置信度</div>
         <el-button class="button4submit">API文档</el-button>
       </div>
     </div><div class="line">
       <div class="column">
         <div class="column_title">AI客服</div>
         <div class="column_pic5"></div>
-        <div class="column_word">AI客服</div>
+        <div class="column_word">基于用户输入的文本内容，返回场景BOT理解与应答的信息</div>
         <el-button class="button4submit">API文档</el-button>
       </div>
     </div>
@@ -141,7 +141,7 @@
   .column{
     float: left;
     width: 3.4rem !important;
-    height: 3.3rem !important;
+    height: 4rem !important;
     margin-left:5% ;
     margin-right: 5%;
   }
@@ -154,7 +154,7 @@
 
   .column_pic1{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/自然语言处理/词义相似度.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -162,7 +162,7 @@
 
   .column_pic2{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/自然语言处理/短文本相似度.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -170,7 +170,7 @@
 
   .column_pic3{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/自然语言处理/评论观点抽取.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -178,7 +178,7 @@
 
   .column_pic4{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/自然语言处理/情感倾向分析.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -186,7 +186,7 @@
 
   .column_pic5{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/自然语言处理/AI客服.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -195,7 +195,7 @@
 
   .column_word{
     color: grey;
-    font-size: 0.15rem;
+    font-size: 0.14rem;
     margin-top: 0.05rem;
     margin-bottom: 0.05rem;
   }

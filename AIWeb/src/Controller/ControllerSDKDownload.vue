@@ -130,7 +130,7 @@
   .column{
     float: left;
     width: 3.4rem !important;
-    height: 3.3rem !important;
+    height: 4rem !important;
     margin-left:5% ;
     margin-right: 5%;
   }
@@ -143,7 +143,7 @@
 
   .column_pic1{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/SDK下载/人脸检测.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -151,7 +151,7 @@
 
   .column_pic2{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/SDK下载/人脸对比.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -159,7 +159,7 @@
 
   .column_pic3{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/SDK下载/人脸查找.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -167,7 +167,7 @@
 
   .column_pic4{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/SDK下载/身份证识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -175,7 +175,7 @@
 
   .column_pic5{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/SDK下载/去模糊化.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -183,7 +183,7 @@
 
   .column_pic6{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/SDK下载/车牌识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -191,7 +191,7 @@
 
   .column_word{
     color: grey;
-    font-size: 0.15rem;
+    font-size: 0.14rem;
     margin-top: 0.05rem;
     margin-bottom: 0.05rem;
   }

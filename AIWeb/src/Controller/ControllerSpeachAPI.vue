@@ -113,7 +113,7 @@
   .column{
     float: left;
     width: 3.4rem !important;
-    height: 3.3rem !important;
+    height: 4rem !important;
     margin-left:5% ;
     margin-right: 5%;
   }
@@ -126,7 +126,7 @@
 
   .column_pic1{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/语音处理/语音合成.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -134,7 +134,7 @@
 
   .column_pic2{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/语音处理/语音识别.png") !important;
     background-position: center;
     background-size: 100% 100%;

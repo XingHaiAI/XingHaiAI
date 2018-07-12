@@ -51,13 +51,13 @@
         <div class="column">
           <div class="column_title">车型识别</div>
           <div class="column_pic1"></div>
-          <div class="column_word">车型识别</div>
+          <div class="column_word">用于检测一张车辆图片的车辆品牌及型号、演示及年份、位置信息</div>
           <el-button class="button4submit">API文档</el-button>
         </div>
         <div class="column">
           <div class="column_title">人重识别</div>
           <div class="column_pic2"></div>
-          <div class="column_word">人重识别</div>
+          <div class="column_word">识别图片中的人，并在视频中跟踪<br/><br/></div>
           <el-button class="button4submit">API文档</el-button>
         </div>
       </div>
@@ -65,13 +65,13 @@
       <div class="column">
         <div class="column_title">去模糊化</div>
         <div class="column_pic3"></div>
-        <div class="column_word">去模糊化</div>
+        <div class="column_word">将当前图片的清晰度提高<br/><br/></div>
         <el-button class="button4submit">API文档</el-button>
       </div>
       <div class="column">
         <div class="column_title">通用图像分析</div>
         <div class="column_pic4"></div>
-        <div class="column_word">通用图像分析</div>
+        <div class="column_word">该请求用于通用物体及场景识别，即对于输入的一张图片输出图片中的多个物体及场景标签</div>
         <el-button class="button4submit">API文档</el-button>
       </div>
     </div>
@@ -137,7 +137,7 @@
   .column{
     float: left;
     width: 3.4rem !important;
-    height: 3.3rem !important;
+    height: 4rem !important;
     margin-left:5% ;
     margin-right: 5%;
   }
@@ -150,7 +150,7 @@
 
   .column_pic1{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/图像识别/车型识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -158,7 +158,7 @@
 
   .column_pic2{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/图像识别/人重识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -166,7 +166,7 @@
 
   .column_pic3{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/图像识别/去模糊化.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -174,7 +174,7 @@
 
   .column_pic4{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/图像识别/通用图形分析.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -183,7 +183,7 @@
 
   .column_word{
     color: grey;
-    font-size: 0.15rem;
+    font-size: 0.14rem;
     margin-top: 0.05rem;
     margin-bottom: 0.05rem;
   }

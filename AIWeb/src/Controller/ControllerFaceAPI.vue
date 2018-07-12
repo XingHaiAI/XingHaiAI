@@ -50,13 +50,13 @@
         <div class="column">
           <div class="column_title">人脸检测</div>
           <div class="column_pic1"></div>
-          <div class="column_word">人脸检测</div>
+          <div class="column_word">检测图片中的人脸并标记出位置信息</div>
           <el-button class="button4submit">API文档</el-button>
         </div>
         <div class="column">
-          <div class="column_title">人脸识别</div>
+          <div class="column_title">人脸对比</div>
           <div class="column_pic2"></div>
-          <div class="column_word">人脸汉字</div>
+          <div class="column_word">比对两张图片中人脸的相似度，并返回相似度分值</div>
           <el-button class="button4submit">API文档</el-button>
         </div>
       </div>
@@ -64,7 +64,7 @@
         <div class="column">
           <div class="column_title">人脸查找</div>
           <div class="column_pic3"></div>
-          <div class="column_word">人脸查找</div>
+          <div class="column_word">在指定人脸集合中，找出最相似的人脸</div>
           <el-button class="button4submit">API文档</el-button>
         </div>
       </div>
@@ -128,7 +128,7 @@ textarea{
 .column{
   float: left;
   width: 3.4rem !important;
-  height: 3.3rem !important;
+  height: 4rem !important;
   margin-left:5% ;
   margin-right: 5%;
 }
@@ -141,7 +141,7 @@ textarea{
 
 .column_pic1{
   width: 3.4rem;
-  height: 2rem;
+  height: 2.5rem;
   background-image: url("../assets/控制台/人脸识别/人脸检测.png") !important;
   background-position: center;
   background-size: 100% 100%;
@@ -149,14 +149,14 @@ textarea{
 
 .column_pic2{
   width: 3.4rem;
-  height: 2rem;
+  height: 2.5rem;
   background-image: url("../assets/控制台/人脸识别/人脸对比.png") !important;
   background-position: center;
   background-size: 100% 100%;
 }
 .column_pic3{
   width: 3.4rem;
-  height: 2rem;
+  height: 2.5rem;
   background-image: url("../assets/控制台/人脸识别/人脸查找.png") !important;
   background-position: center;
   background-size: 100% 100%;

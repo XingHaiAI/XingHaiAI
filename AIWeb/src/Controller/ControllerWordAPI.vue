@@ -1,5 +1,5 @@
 <template>
-  <body id="all"style="min-width: 13.6rem">
+  <body id="all">
   <div id="header">
     <img src="../assets/控制台/banner.png">
   </div>
@@ -157,7 +157,7 @@
   .column{
     float: left;
     width: 3.4rem !important;
-    height: 3.3rem !important;
+    height: 4rem !important;
     margin-left:5% ;
     margin-right: 5%;
   }
@@ -170,7 +170,7 @@
 
   .column_pic1{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/文字识别/通用文字识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -178,7 +178,7 @@
 
   .column_pic2{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/文字识别/手写识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -186,7 +186,7 @@
 
   .column_pic3{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/文字识别/身份证识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -194,7 +194,7 @@
 
   .column_pic4{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/文字识别/银行卡识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -202,7 +202,7 @@
 
   .column_pic5{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/文字识别/车牌识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -210,7 +210,7 @@
 
   .column_pic6{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/文字识别/驾驶证识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -218,7 +218,7 @@
 
   .column_pic7{
     width: 3.4rem;
-    height: 2rem;
+    height: 2.5rem;
     background-image: url("../assets/控制台/文字识别/行驶证识别.png") !important;
     background-position: center;
     background-size: 100% 100%;
@@ -303,8 +303,9 @@
     padding: 0;
   }
   #all{
-    height: 18rem;
+    height: 23rem;
     width: 100%;
+    min-width: 13.6rem;
     margin: 0;
     padding: 0;
   }
@@ -359,7 +360,7 @@
     cursor:pointer;
   }
   .el-menu-vertical-demo{
-    height:15rem;
+    height:18rem;
   }
   span{
     font-size:0.22rem;
