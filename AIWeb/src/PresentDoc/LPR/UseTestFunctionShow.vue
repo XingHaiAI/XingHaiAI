@@ -91,15 +91,10 @@ export default {
 
 
       this.$axios({
-        headers:{
-          'Content-Type': 'application/json;charset=UTF-8',
-          "Access-Control-Allow-Origin":"*"
-        },
         method:'post',
-        url:'http://47.94.242.44/feature/get_encoding',
+        url:'http://47.94.242.44:8081/plate_recognition',
         data:{
           'image':'dafafkjke213nfnjdnonon12onoi421n4o',
-          'userCode':'13688980285'
         }
       }).then(function (response) {
         alert('111');

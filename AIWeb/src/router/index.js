@@ -229,9 +229,6 @@ export default new Router({
       path:'/PresentDoc/IDRecg',component:IDRecg
     },
     {
-      path:'/Controller/ControllerIndex',component:ControllerIndex
-    },
-    {
       path:'/Controller/ControllerFaceAPI',component:ControllerFaceAPI
     },
     {

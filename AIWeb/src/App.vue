@@ -17,9 +17,11 @@
       </div>
       <!-- 登录注册 -->
       <div class="login_sign_in">
-        <div class="login"><router-link to="/signIn" class="login_item" style="text-decoration: none">注册</router-link></div>
+        <div class="login" v-show="!UserLogin"><router-link to="/signIn" class="login_item" style="text-decoration: none">注册</router-link></div>
+        <div class="login" v-show="UserLogin"><router-link to="/Controller/ControllerSpeachAPI" class="login_item" style="text-decoration: none">控制台</router-link></div>
         <div class="divider">|</div>
-        <div class="sign_in"><router-link to="/login" class="login_item" style="text-decoration: none">登录</router-link></div>
+        <div class="sign_in" v-show="!UserLogin"><router-link to="/login" class="login_item" style="text-decoration: none">登录</router-link></div>
+        <div class="sign_in" v-show="UserLogin"><router-link to="/login" class="login_item" style="text-decoration: none">注销</router-link></div>
       </div>
 
       <div id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
@@ -66,7 +68,7 @@
         <table style="position: relative;top: 0.1rem">
           <!--<router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">入门教学</td></router-link>-->
           <!--<router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">联系我们</td></router-link>-->
-          <router-link to="/Controller/ControllerIndex" style="text-decoration: none"><td class="documentCenter">联系我们</td></router-link>
+          <router-link to="/ContactUs" style="text-decoration: none"><td class="documentCenter">联系我们</td></router-link>
           <router-link to="/TechGuideSDK" style="text-decoration: none"><td class="documentCenter">技术指南</td></router-link>
           <router-link to="/CommonProblems" style="text-decoration: none"><td class="documentCenter">常见问题</td></router-link>
           <router-link to="/Teaching" style="text-decoration: none"><td class="documentCenter">API文档</td></router-link>
@@ -100,6 +102,21 @@
 <script>
   export default {
     name: 'app',
+    data(){
+      return {
+        UserLogin: false
+      }
+    },
+    watch:{
+      $route(to,from){
+        if(from.path==='/login'){
+          if(this.$route.query.isLogin===true){
+            this.$data.UserLogin=true;
+          }
+        }
+      }
+
+    },
     methods: {
       showTechnologyMenuItemContent:function(){
         var TechnologyMenuItemContent=document.getElementById("Technology_menu_item_content");
