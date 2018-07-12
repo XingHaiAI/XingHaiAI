@@ -1,8 +1,8 @@
 <template>
-
+<body>
   <div id="app":style="{minWidth: 12 + 'rem'}">
 
-    <div class="navbar">
+    <div class="navbar" id="jmod-fixed-bar">
       <!--LOGO-->
       <div>
         <router-link to="/" class="logo"></router-link>
@@ -93,7 +93,9 @@
     </div>
 
   </div>
+ </body>
 </template>
+
 
 <script>
   export default {
@@ -151,6 +153,7 @@
 </script>
 
 <style>
+
   .documentCenter{
     display: inline-block;
     color: white;
@@ -265,14 +268,17 @@
   }
 
   .navbar{
-    width: 100%;
+    width:100%;
+    max-width:14rem;
+    max-height:0.5rem;
     height: 0.5rem;
     min-width: 13rem;
     line-height: 0.5rem;
     position: fixed;
     background-color: rgba(6,6,6,1);
     top:0;
-    left: 0;
+    
+    right:0;
     z-index: 10;
     /*background-color: rgba(6,6,6,0);*/
     /*transition: background-color 0.7s;*/
