@@ -76,13 +76,9 @@
       </div>
       <div id="present" v-on:mouseover="presentOver" v-on:mouseout="presentOut">
         <table style="position: relative;top: 0.1rem">
-
           <router-link to="/PresentDoc/FaceRecg" style="text-decoration: none"><td class="documentCenter">人脸检测</td></router-link>
-          <router-link to="/PresentDoc/WordRecg" style="text-decoration: none"><td class="documentCenter">银行卡识别</td></router-link>
-          <router-link to="/PresentDoc/IDRecg" style="text-decoration: none"><td class="documentCenter">身份证识别</td></router-link>
+          <router-link to="/PresentDoc/FaceComp" style="text-decoration: none"><td class="documentCenter">人脸对比</td></router-link>
           <router-link to="/PresentDoc/LPR" style="text-decoration: none"><td class="documentCenter">车牌识别</td></router-link>
-          <router-link to="/PresentDoc/Defuzzification" style="text-decoration: none"><td class="documentCenter">去模糊化</td></router-link>
-          <router-link to="/PresentDoc/GraphicsAnalysis" style="text-decoration: none"><td class="documentCenter">通用图形分析</td></router-link>
         </table>
       </div>
     </div>
@@ -193,8 +189,8 @@
   }
   #present{
     display: none;
-    height: 2.5rem;
-    width: 9%;
+    height: 1.55rem;
+    width: 8%;
     margin-top: 0rem;
     margin-left: 6.8rem;
     left: 51%;

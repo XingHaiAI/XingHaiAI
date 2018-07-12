@@ -9,8 +9,8 @@
           <div class="photoDisplay" style="width: 94%;height:40%;margin-left: auto;margin-right: auto;margin-top:0.2rem;">
             <span style="font-size: 0.2rem;text-align: left">选择图片：</span>
             <div style="height: 0.05rem"></div>
-           <el-card style="text-align: center">
-            <img :src="imgURLSelect"/>
+           <el-card style="text-align: center;height: 2.7rem;">
+            <img :src="imgURLSelect"style="min-height: 2.3rem;max-width: 100%"/>
            </el-card>
           </div>
         <div class="example" style="margin-top: 0.3rem;width: 94%;margin-left: auto;margin-right: auto">
@@ -18,9 +18,9 @@
         </div>
           <div class="photoSelect" style="width: 94%;height: 27%;margin-left: auto;margin-right: auto;overflow-x: scroll;overflow-y: hidden;overflow-wrap: normal;white-space: nowrap;">
             <div style="height: 0.1rem;"></div>
-            <el-row :gutter="20" style="width: 4.8rem;">
-              <el-col style="width:2.3rem" v-for="(item,index) in image" :key="index">
-                <el-card style="width: 2.1rem;">
+            <el-row :gutter="20" style="width: 9rem;">
+              <el-col style="height: 1.50rem;width:1.50rem;" v-for="(item,index) in image" :key="index">
+                <el-card style="width: 1.40rem;height: 1.48rem;">
                 <img :src="item.src" @click='selectPhoto(item)' style="width: 100%;"/>
                 </el-card>
               </el-col>

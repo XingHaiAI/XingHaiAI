@@ -21,7 +21,7 @@ import DrivingLicense from '@/ProductService/DrivingLicence.vue'
 import FaceComparison from '@/ProductService/FaceComparison.vue'
 import FaceDetection from '@/ProductService/FaceDetection.vue'
 import FaceLocating from '@/ProductService/FaceLocating.vue'
-import Defuzzification2 from '@/ProductService/Defuzzification.vue'
+import Defuzzification from '@/ProductService/Defuzzification.vue'
 import GraphicalAnalysis from '@/ProductService/GraphicalAnalysis.vue'
 import CrowdIdentification from '@/ProductService/CrowdIdentification.vue'
 import CarIdentification from '@/ProductService/CarIdentification.vue'
@@ -39,15 +39,12 @@ import CommonProblems from '@/Useplace/CommonProblems.vue'
 
 
 import FaceRecg from '@/PresentDoc/FaceRecg/FaceRecg.vue'
-import WordRecg from '@/PresentDoc/WordRecg/WordRecg.vue'
-import Defuzzification from '../PresentDoc/Defuzzification/Defuzzification'
+import FaceComp from '@/PresentDoc/FaceComp/FaceComp.vue'
 import LPR from '../PresentDoc/LPR/LPR'
-import IDRecg from '../PresentDoc/IDRecg/IDRecg'
 
 
 import login from '@/login/login.vue'
 import signIn from '@/login/signIn.vue'
-import GraphicsAnalysis from '../PresentDoc/GraphicsAnalysis/GraphicsAnalysis'
 
 import ControllerFaceAPI from '@/Controller/ControllerFaceAPI.vue'
 import ControllerNPLAPI from '@/Controller/ControllerNPLAPI.vue'
@@ -103,7 +100,7 @@ export default new Router({
       path:'/ProductService/GraphicalAnalysis',name:'GraphicalAnalysis',component:GraphicalAnalysis
     },
     {
-      path:'/ProductService/Defuzzification',name:'Defuzzification',component:Defuzzification2
+      path:'/ProductService/Defuzzification',name:'Defuzzification',component:Defuzzification
     },
     {
       path:'/ProductService/CrowdIdentification',name:'CrowdIdentification',component:CrowdIdentification
@@ -170,16 +167,12 @@ export default new Router({
       path:'/NPLAPI',name:'NPLAPI',component:NPLAPI
     }
     ,
-    {
-      path:'/PresentDoc/Defuzzification',component:Defuzzification
-    },
 
     {
       path:'/PresentDoc/FaceRecg',name:'FaceRecg',component:FaceRecg
     },
-
     {
-      path:'/PresentDoc/WordRecg',name:'WordRecg',component:WordRecg
+      path:'/PresentDoc/FaceComp',name:'FaceComp',component:FaceComp
     },
     {
       path:'/CommonProblems',name:'TechGuideSDK',component:CommonProblems
@@ -191,14 +184,9 @@ export default new Router({
       path:'/signIn',name:'signIn',component:signIn
     },
     {
-      path:'/PresentDoc/GraphicsAnalysis',component:GraphicsAnalysis
-    },
-    {
       path:'/PresentDoc/LPR',component:LPR
     },
-    {
-      path:'/PresentDoc/IDRecg',component:IDRecg
-    },
+
     {
       path:'/Controller/ControllerFaceAPI',component:ControllerFaceAPI
     },

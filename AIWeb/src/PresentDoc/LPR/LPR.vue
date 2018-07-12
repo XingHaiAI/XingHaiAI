@@ -1,5 +1,5 @@
 <template>
-  <div id="LPR">
+  <div id="LPR"style="min-width: 13.6rem">
     <UseTestFunctionShow class="content"></UseTestFunctionShow>
     <div style="height: 7.5rem"></div>
     <UseTestStartController class="content2"></UseTestStartController>
