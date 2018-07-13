@@ -10,7 +10,7 @@
         <tr style="font-size: 0.22rem">基于用户输入的文本内容，返回场景BOT</tr>
         <tr style="font-size: 0.22rem">理解与应答的信息</tr>
         <div style="height: 0.20rem;"></div>
-        <tr><el-button class="button4doc">技术文档</el-button></tr>
+        <tr><router-link to="/NPLAPI"><el-button class="button4doc">技术文档</el-button></router-link></tr>
       </div>
     </div>
     <div id="AIbodyfir">
@@ -19,7 +19,7 @@
     <div id="AIbodysec"class="secondBackground">
       <!--<img src="../assets/AI智能/AI功能介绍.png" class="background">-->
       <button class="functionButton" id="apply" @click="VerifyAcc">接口申请</button>
-      <button class="functionButton" id="download">SDK下载</button>
+      <button class="functionButton" id="download" @click="VerifyAcc2">SDK下载</button>
     </div>
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>
@@ -75,7 +75,14 @@
     methods:{
       VerifyAcc(){
         if(this.GLOBAL.token===true){
-          this.$router.push('/')
+          this.$router.push('/Controller/ControllerUseList')
+        }else{
+          this.$router.push('/login')
+        }
+      },
+      VerifyAcc2(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerSDKDownload')
         }else{
           this.$router.push('/login')
         }

@@ -11,7 +11,7 @@
         <tr style="font-size: 0.22rem">自动抽取和分析评论观点，帮助您实现舆情分析，</tr>
         <tr style="font-size: 0.22rem">用户理解，支持产品优化和营销决策</tr>
         <div style="height: 0.20rem;"></div>
-        <tr><el-button class="button4doc">技术文档</el-button></tr>
+        <tr><router-link to="/NPLAPI"><el-button class="button4doc">技术文档</el-button></router-link></tr>
       </div>
     </div>
     <div id="AIbodyfir">
@@ -20,8 +20,8 @@
     </div>
     <div id="AIbodysec"class="secondBackground">
       <!--<img src="../assets/评论抽取/功能介绍.png"class="background">-->
-      <button class="functionButton" id="apply">接口申请</button>
-      <button class="functionButton" id="download">SDK下载</button>
+      <button class="functionButton" id="apply"@click="VerifyAcc">接口申请</button>
+      <button class="functionButton" id="download"@click="VerifyAcc2">SDK下载</button>
     </div>
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>
@@ -68,6 +68,28 @@
 
   </div>
 </template>
+
+<script>
+  export default {
+    name: "GeneralWord",
+    methods:{
+      VerifyAcc(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerUseList')
+        }else{
+          this.$router.push('/login')
+        }
+      },
+      VerifyAcc2(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerSDKDownload')
+        }else{
+          this.$router.push('/login')
+        }
+      }
+    }
+  }
+</script>
 
 <style scoped>
   body{
