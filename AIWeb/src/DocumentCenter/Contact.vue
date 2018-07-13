@@ -114,7 +114,7 @@
                 </span>
               </el-dialog>
           </el-checkbox>
-            
+
         </div>
         <div style="text-align: center">
           <div style="height: 20px"></div>
@@ -139,7 +139,7 @@ export default {
         question:'',
         type:'1',
         time:''
-        
+
       },
       rulesAdvice:{
         name:[
@@ -525,7 +525,7 @@ div{
   border: none;
   padding: 0.05rem;
   font-size: 0.16rem;
-  border: black 0.015rem solid;
+  border: black 0.01rem solid;
   border-radius: 2%;
   margin-left: 0.137rem;
   height: 2.55rem;
@@ -571,9 +571,9 @@ div{
 .input::-webkit-input-placeholder { color: #B0B0B0;font-size:0.16rem;padding-left:0.068rem;}
 .privacy{
   width:8rem;
-  word-wrap: break-word; 
+  word-wrap: break-word;
   word-break: normal;
-  overflow:auto; 
+  overflow:auto;
   text-align:left;
   margin-left:0.5rem;
   height:3.5rem;
