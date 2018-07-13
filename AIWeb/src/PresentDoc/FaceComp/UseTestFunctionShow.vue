@@ -230,7 +230,7 @@
           method:'post',
           url:'http://39.105.120.189:8080/face_api/face_comparision',
           data:{
-            image_1:this.$data.imgURLSelect2.base64,
+            image_1:this.$data.imgURLSelect1.base64,
             // image_1:item.base64,
             image_2:item.base64,
             degree:1

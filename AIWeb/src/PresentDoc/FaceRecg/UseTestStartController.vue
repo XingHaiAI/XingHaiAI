@@ -3,9 +3,9 @@
     <body>
 	    <div class="UseTestStartController_Title">开始打造属于你自己的应用</div>
 	    <div class="UseTestStartController_Button_Group">
-	        <div class="UseTestStartController_Button_Left">API文档</div>
-	        <div class="UseTestStartController_Button_Center">申请接口</div>
-	        <div class="UseTestStartController_Button_Right">SDK下载</div>
+        <router-link to="/Teaching"><div class="UseTestStartController_Button_Left">API文档</div></router-link>
+	        <div class="UseTestStartController_Button_Center"@click="VerifyAcc">申请接口</div>
+	        <div class="UseTestStartController_Button_Right"@click="VerifyAcc2">SDK下载</div>
 	    </div>
 	</body>
   </div>
@@ -13,7 +13,23 @@
 
 <script>
 export default {
-  name: 'UseTestStartController'
+  name: 'UseTestStartController',
+  methods:{
+    VerifyAcc(){
+      if(this.GLOBAL.token===true){
+        this.$router.push('/Controller/ControllerUseList')
+      }else{
+        this.$router.push('/login')
+      }
+    },
+    VerifyAcc2(){
+      if(this.GLOBAL.token===true){
+        this.$router.push('/Controller/ControllerSDKDownload')
+      }else{
+        this.$router.push('/login')
+      }
+    }
+  }
 }
 </script>
 

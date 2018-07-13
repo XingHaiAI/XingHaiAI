@@ -30,10 +30,10 @@
           <div style="height: 15%;width: 100%;">
             <el-row>
               <el-col>
-                <div style="width: 100%">
-                  <el-input class="input11" placeholder="请输入图片的URL" v-model="inputUrl" style="width: 60%;float: left"></el-input>
-                  <el-button style="margin-left: 0.2rem">检测图片</el-button>
-                </div>
+                <!--<div style="width: 100%">-->
+                  <!--<el-input class="input11" placeholder="请输入图片的URL" v-model="inputUrl" style="width: 60%;float: left"></el-input>-->
+                  <!--<el-button style="margin-left: 0.2rem">检测图片</el-button>-->
+                <!--</div>-->
                 <div style="height: 0.2rem"></div>
                 <div style="float: left">
                    <a href="javascript:;" class="file">选择文件

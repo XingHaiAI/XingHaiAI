@@ -43,7 +43,7 @@
               <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/NPLAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">自然语言处理</router-link></el-menu-item>
             </el-submenu>
             <el-menu-item index="5" style="text-align: left;min-height:0.6rem">
-              <span slot="title">SDK下载</span>
+              <span slot="title" @click="VerifyAcc">SDK下载</span>
             </el-menu-item>
           </el-menu>
         </el-col>
@@ -88,6 +88,13 @@
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
+      },
+      VerifyAcc(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerSDKDownload')
+        }else{
+          this.$router.push('/login')
+        }
       }
     }
   }
