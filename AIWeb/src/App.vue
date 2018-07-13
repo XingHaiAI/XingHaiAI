@@ -98,6 +98,7 @@
 <script>
   export default {
     name: 'app',
+    token:false,
     data(){
       return {
         UserLogin: false
@@ -108,6 +109,7 @@
         if(from.path==='/login'){
           if(this.$route.query.isLogin===true){
             this.$data.UserLogin=true;
+            this.GLOBAL.token=true;
           }
         }
       }
@@ -180,7 +182,7 @@
     height: 1.9rem;
     width: 8%;
     margin-top: 0rem;
-    margin-left: 5.75rem;
+    margin-left: 5.25rem;
     left: 40%;
     top:100%;
     color: white;
@@ -192,7 +194,7 @@
     height: 1.55rem;
     width: 8%;
     margin-top: 0rem;
-    margin-left: 6.8rem;
+    margin-left: 6.3rem;
     left: 51%;
     top:100%;
     color: white;
@@ -233,7 +235,7 @@
   }
   #service{
     display: none;
-    margin-left: 0.9rem;
+    margin-left: 1.7rem;
     color: white;
     /*background-color: #2e3d4f;*/
     background-color: #060606;
@@ -301,14 +303,14 @@
 
 
   .navbar .logo{
-    margin-right: 1rem;
+    margin-right: 1.2rem;
     background-image: url("assets/pic/logo.png");
-    background-size: 100% 100%;
+    background-size: 200% 100%;
     background-position: center;
-    margin-top: 0.15rem;
-    margin-left: 0.22rem;
-    width: 2.18rem;
-    height: 0.2rem;
+    margin-top: 0.12rem;
+    margin-left: 0.3rem;
+    width: 1.4rem;
+    height: 0.27rem;
     float: left;
     font-size: 0.16rem;
     text-align: center;

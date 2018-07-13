@@ -11,7 +11,7 @@
         <tr style="font-size: 0.18rem;color:white;">识别图片中的人，并在视频中跟踪</tr>
         <tr style="font-size: 0.22rem"> </tr>
         <div style="height: 0.20rem;"></div>
-        <tr><el-button class="button4doc">技术文档</el-button></tr>
+        <tr><router-link to="/PictureAPI"><el-button class="button4doc">技术文档</el-button></router-link></tr>
       </div>
     </div>
     <div id="AIbodyfir">
@@ -63,7 +63,23 @@
 
 <script>
   export default {
-    name: "GeneralWord"
+    name: "GeneralWord",
+    methods:{
+      VerifyAcc(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerUseList')
+        }else{
+          this.$router.push('/login')
+        }
+      },
+      VerifyAcc2(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerSDKDownload')
+        }else{
+          this.$router.push('/login')
+        }
+      }
+    }
   }
 </script>
 
