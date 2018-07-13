@@ -285,7 +285,23 @@ p{
 
 }
 
-
+.privacy{
+  width:8rem;
+  word-wrap: break-word;
+  word-break: normal;
+  overflow:auto;
+  text-align:left;
+  margin-left:0.5rem;
+  height:3.5rem;
+}
+.p_content{
+  width:7rem;
+  text-align:left;
+  height: auto;
+  word-wrap:break-word;
+  word-break:break-all;
+  font-size:0.15rem;
+}
 .button4log{
   background-color: white;
   border-color: darkgray;
