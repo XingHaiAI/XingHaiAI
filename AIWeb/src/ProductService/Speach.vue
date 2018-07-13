@@ -10,7 +10,7 @@
         <tr style="font-size: 0.22rem;color:white;">语音合成服务，基于HTTP请求的REST API接</tr>
         <tr style="font-size: 0.22rem;color:white;">口，将文本转换为可以播放的MP3文件</tr>
         <div style="height: 0.20rem;"></div>
-        <tr><el-button class="button4doc">技术文档</el-button></tr>
+        <tr><router-link to="/SpeachAPI"><el-button class="button4doc">技术文档</el-button></router-link></tr>
       </div>
     </div>
     <div id="AIbodyfir">
@@ -19,8 +19,8 @@
     </div>
     <div id="AIbodysec"class="secondBackground">
       <!--<img src="../assets/语音合成/功能介绍.png"class="background">-->
-      <button class="functionButton" id="apply">接口申请</button>
-      <button class="functionButton" id="download">SDK下载</button>
+      <button class="functionButton" id="apply"@click="VerifyAcc">接口申请</button>
+      <button class="functionButton" id="download"@click="VerifyAcc2">SDK下载</button>
     </div>
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>
@@ -69,7 +69,23 @@
 
 <script>
   export default {
-    name: "Speach"
+    name: "Speach",
+    methods:{
+      VerifyAcc(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerUseList')
+        }else{
+          this.$router.push('/login')
+        }
+      },
+      VerifyAcc2(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerSDKDownload')
+        }else{
+          this.$router.push('/login')
+        }
+      }
+    }
   }
 </script>
 

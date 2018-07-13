@@ -19,8 +19,8 @@
       <a id="introducecontent">检测并定位图片中的人体，返回高精度的人体矩形框坐标</a>
     </div>
     <div id="AIbodysec"class="secondBackground">
-      <button class="functionButton" id="apply">接口申请</button>
-      <button class="functionButton" id="download">SDK下载</button>
+      <button class="functionButton" id="apply"@click="VerifyAcc">接口申请</button>
+      <button class="functionButton" id="download"@click="VerifyAcc2">SDK下载</button>
     </div>
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>

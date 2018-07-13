@@ -11,7 +11,7 @@
         <tr style="font-size: 0.22rem">对包含主观信息的文本进行情感类别(积</tr>
         <tr style="font-size: 0.22rem">极、消极、中性)判断，并给出相应的置信度</tr>
         <div style="height: 0.20rem;"></div>
-        <tr><el-button class="button4doc">技术文档</el-button></tr>
+        <tr><router-link to="/NPLAPI"><el-button class="button4doc">技术文档</el-button></router-link></tr>
       </div>
     </div>
     <div id="AIbodyfir">
@@ -20,8 +20,8 @@
     </div>
     <div id="AIbodysec"class="secondBackground">
       <!--<img src="../assets/情感倾向分析/功能介绍.png"class="background">-->
-      <button class="functionButton" id="apply">接口申请</button>
-      <button class="functionButton" id="download">SDK下载</button>
+      <button class="functionButton" id="apply"@click="VerifyAcc">接口申请</button>
+      <button class="functionButton" id="download"@click="VerifyAcc2">SDK下载</button>
     </div>
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>
@@ -67,6 +67,28 @@
 
   </div>
 </template>
+
+<script>
+  export default {
+    name: "GeneralWord",
+    methods:{
+      VerifyAcc(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerUseList')
+        }else{
+          this.$router.push('/login')
+        }
+      },
+      VerifyAcc2(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerSDKDownload')
+        }else{
+          this.$router.push('/login')
+        }
+      }
+    }
+  }
+</script>
 
 <style scoped>
   body{
