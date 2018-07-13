@@ -469,14 +469,14 @@ div{
   border: none;
   padding: 0.05rem;
   font-size: 0.16rem;
-  border: black 0.01rem solid;
+  border: black 0.015rem solid;
   border-radius: 2%;
   margin-left: 0.137rem;
   height: 2.55rem;
   width: 3.415rem;
 }
 .input_textarea:hover{
-	border:#A0A0A0 0.01rem solid;
+	border:#A0A0A0 0.015rem solid;
 	}
 .input_textarea:focus{
 	border:0px;

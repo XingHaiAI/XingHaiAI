@@ -180,7 +180,7 @@
     height: 1.9rem;
     width: 8%;
     margin-top: 0rem;
-    margin-left: 5.75rem;
+    margin-left: 5.25rem;
     left: 40%;
     top:100%;
     color: white;
@@ -192,7 +192,7 @@
     height: 1.55rem;
     width: 8%;
     margin-top: 0rem;
-    margin-left: 6.8rem;
+    margin-left: 6.3rem;
     left: 51%;
     top:100%;
     color: white;
@@ -233,7 +233,7 @@
   }
   #service{
     display: none;
-    margin-left: 0.9rem;
+    margin-left: 1.7rem;
     color: white;
     /*background-color: #2e3d4f;*/
     background-color: #060606;
@@ -303,12 +303,12 @@
   .navbar .logo{
     margin-right: 1rem;
     background-image: url("assets/pic/logo.png");
-    background-size: 100% 100%;
-    background-position: center;
-    margin-top: 0.15rem;
-    margin-left: 0.22rem;
-    width: 2.18rem;
-    height: 0.2rem;
+    background-size: 200% 100%;
+    background-position: right;
+    margin-top: 0.11rem;
+    margin-left: 0.2rem;
+    width: 1.7rem;
+    height: 0.3rem;
     float: left;
     font-size: 0.16rem;
     text-align: center;
