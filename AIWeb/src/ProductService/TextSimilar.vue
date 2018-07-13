@@ -1,5 +1,5 @@
 <!--这里是-->
-<!--车牌识别的分页面-->
+<!--短文本相似度的分页面-->
 
 <template>
   <div style="min-width: 13.6rem">
@@ -11,7 +11,7 @@
         <tr style="font-size: 0.22rem">提供不同文本之间相似度的计算，输出一个</tr>
         <tr style="font-size: 0.22rem">介于0与1之间的实数值，越大则相似度越高。</tr>
         <div style="height: 0.20rem;"></div>
-        <tr><el-button class="button4doc">技术文档</el-button></tr>
+        <tr> <router-link to="/NPLAPI"><el-button class="button4doc">技术文档</el-button></router-link></tr>
       </div>
     </div>
     <div id="AIbodyfir">
@@ -20,8 +20,8 @@
     </div>
     <div id="AIbodysec"class="secondBackground">
       <!--<img src="../assets/短文本相似度/功能介绍.png"class="background">-->
-      <button class="functionButton" id="apply">接口申请</button>
-      <button class="functionButton" id="download">SDK下载</button>
+      <button class="functionButton" id="apply"@click="VerifyAcc">接口申请</button>
+      <button class="functionButton" id="download"@click="VerifyAcc2">SDK下载</button>
     </div>
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>
@@ -66,7 +66,23 @@
 
 <script>
   export default {
-    name: "TextSimilar"
+    name: "TextSimilar",
+    methods:{
+      VerifyAcc(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerUseList')
+        }else{
+          this.$router.push('/login')
+        }
+      },
+      VerifyAcc2(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerSDKDownload')
+        }else{
+          this.$router.push('/login')
+        }
+      }
+    }
   }
 </script>
 

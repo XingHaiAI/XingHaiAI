@@ -10,7 +10,7 @@
         <div style="height: 0.20rem;color: white"></div>
         <tr style="font-size: 0.22rem;color: white;font-weight: 300">检测图片中的人脸并标记出位置信息</tr>
         <div style="height: 0.20rem;"></div>
-        <tr><el-button class="button4doc" :round="false">技术文档</el-button></tr>
+        <tr><router-link to="/FaceAPI"><el-button class="button4doc" :round="false">技术文档</el-button></router-link></tr>
       </div>
     </div>
     <div id="AIbodyfir">
@@ -18,8 +18,8 @@
       <a id="introducecontent">检测并定位图片中的人脸，返回高精度的人脸框坐标</a>
     </div>
     <div id="AIbodysec"class="secondBackground">
-      <button class="functionButton" id="apply">接口申请</button>
-      <button class="functionButton" id="download">SDK下载</button>
+      <button class="functionButton" id="apply"@click="VerifyAcc">接口申请</button>
+      <button class="functionButton" id="download"@click="VerifyAcc2">SDK下载</button>
     </div>
     <div id="AIbodythi">
       <p id="txtApp">应用场景</p>
@@ -61,7 +61,23 @@
 
 <script>
   export default {
-    name: "GeneralWord"
+    name: "GeneralWord",
+    methods:{
+      VerifyAcc(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerUseList')
+        }else{
+          this.$router.push('/login')
+        }
+      },
+      VerifyAcc2(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/Controller/ControllerSDKDownload')
+        }else{
+          this.$router.push('/login')
+        }
+      }
+    }
   }
 </script>
 
