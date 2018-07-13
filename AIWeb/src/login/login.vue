@@ -69,7 +69,12 @@
           method:'get',
           url:'/account/login?account='+this.$data.formLogin.account+'&password='+this.$data.formLogin.password,
         }).then(function (response) {
-          _this.$router.push({path:'/',query:{isLogin:true}});
+          if(response.data===true) {
+            _this.$router.push({path: '/', query: {isLogin: true}});
+          }
+          else{
+           alert('密码错误或用户名错误！请重新检查')
+          }
         })
       },
      test:function () {

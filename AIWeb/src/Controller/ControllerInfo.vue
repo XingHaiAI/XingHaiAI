@@ -72,7 +72,7 @@
 
       <div class="line">
         <div class="title">邮箱：</div>
-        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" v-model="userInfo.email" disabled placeholder="输入邮箱"/>
+        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" v-model="userInfo.email"  placeholder="输入邮箱"/>
       </div>
 
 

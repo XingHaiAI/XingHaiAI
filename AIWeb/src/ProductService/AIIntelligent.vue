@@ -18,7 +18,7 @@
     </div>
     <div id="AIbodysec"class="secondBackground">
       <!--<img src="../assets/AI智能/AI功能介绍.png" class="background">-->
-      <button class="functionButton" id="apply">接口申请</button>
+      <button class="functionButton" id="apply" @click="VerifyAcc">接口申请</button>
       <button class="functionButton" id="download">SDK下载</button>
     </div>
     <div id="AIbodythi">
@@ -71,7 +71,16 @@
 
 <script>
   export default {
-    name: "AIIntelligent"
+    name: "AIIntelligent",
+    methods:{
+      VerifyAcc(){
+        if(this.GLOBAL.token===true){
+          this.$router.push('/')
+        }else{
+          this.$router.push('/login')
+        }
+      }
+    }
   }
 </script>
 

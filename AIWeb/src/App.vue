@@ -98,6 +98,7 @@
 <script>
   export default {
     name: 'app',
+    token:false,
     data(){
       return {
         UserLogin: false
@@ -108,6 +109,7 @@
         if(from.path==='/login'){
           if(this.$route.query.isLogin===true){
             this.$data.UserLogin=true;
+            this.GLOBAL.token=true;
           }
         }
       }
@@ -301,14 +303,14 @@
 
 
   .navbar .logo{
-    margin-right: 1rem;
+    margin-right: 1.2rem;
     background-image: url("assets/pic/logo.png");
     background-size: 200% 100%;
-    background-position: right;
-    margin-top: 0.11rem;
-    margin-left: 0.2rem;
-    width: 1.7rem;
-    height: 0.3rem;
+    background-position: center;
+    margin-top: 0.12rem;
+    margin-left: 0.3rem;
+    width: 1.4rem;
+    height: 0.27rem;
     float: left;
     font-size: 0.16rem;
     text-align: center;
