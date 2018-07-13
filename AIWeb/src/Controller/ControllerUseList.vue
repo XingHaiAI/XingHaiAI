@@ -138,7 +138,7 @@
             <el-input disabled v-model="APIName" style="width: 70%;"></el-input>
           </el-form-item>
           <el-form-item label="付费选择：">
-            <el-select v-model="formChoose">
+            <el-select disabled v-model="formChoose">
               <!--<el-option value="1" label="付费"></el-option>-->
               <el-option value="2" label="免费"></el-option>
             </el-select>
@@ -149,7 +149,7 @@
         <el-card>
           <span style="font-size: 0.18rem;margin-left: 0.05rem">自然语言处理</span>
           <div style="margin-top: 0.1rem">
-            <el-checkbox-group v-model="types">
+            <el-checkbox-group disabled v-model="types">
               <el-checkbox label="语义相似度" value="1"></el-checkbox>
               <el-checkbox label="短文本相似度" value="2"></el-checkbox>
               <el-checkbox label="评论观点提取" value="3"></el-checkbox>
@@ -160,7 +160,7 @@
           <div style="height: 0.1rem"></div>
           <span style="font-size: 0.18rem;margin-left: 0.05rem;">语音识别</span>
           <div style="margin-top: 0.1rem">
-            <el-checkbox-group v-model="types">
+            <el-checkbox-group disabled v-model="types">
               <el-checkbox label="语音识别" value="6"></el-checkbox>
               <el-checkbox label="语音合成" value="7"></el-checkbox>
             </el-checkbox-group>
@@ -168,7 +168,7 @@
           <div style="height: 0.1rem"></div>
           <span style="font-size: 0.18rem;margin-left: 0.05rem">人脸识别</span>
           <div style="margin-top: 0.1rem">
-            <el-checkbox-group v-model="types">
+            <el-checkbox-group disabled  v-model="types">
               <el-checkbox label="人脸识别" value="8"></el-checkbox>
               <el-checkbox label="人脸对比" value="9"></el-checkbox>
               <el-checkbox label="人脸查找" value="10"></el-checkbox>
@@ -177,7 +177,7 @@
           <div style="height: 0.1rem"></div>
           <span style="font-size: 0.18rem;margin-left: 0.05rem">文字识别</span>
           <div style="margin-top: 0.1rem">
-            <el-checkbox-group v-model="types">
+            <el-checkbox-group disabled v-model="types">
               <el-checkbox label="通用文字识别" value="11"></el-checkbox>
               <el-checkbox label="手写识别" value="12"></el-checkbox>
               <el-checkbox label="身份证识别" value="13"></el-checkbox>
@@ -190,7 +190,7 @@
           <div style="height: 0.1rem"></div>
           <span style="font-size: 0.18rem;margin-left: 0.05rem">图像识别</span>
           <div style="margin-top: 0.1rem">
-            <el-checkbox-group v-model="types">
+            <el-checkbox-group disabled v-model="types">
               <el-checkbox label="通用图像分析" value="18"></el-checkbox>
               <el-checkbox label="去模糊化" value="19"></el-checkbox>
               <el-checkbox label="人像识别" value="20"></el-checkbox>
@@ -202,7 +202,7 @@
         <span style="margin-left: 0.05rem">应用平台</span>
         <div style="height: 0.1rem"></div>
         <div>
-          <el-checkbox-group v-model="platform">
+          <el-checkbox-group disabled v-model="platform">
             <el-checkbox label="ANDROID" value="1"></el-checkbox>
             <el-checkbox label="IOS" value="2"></el-checkbox>
             <el-checkbox label="WINDOWS" value="3"></el-checkbox>
@@ -214,11 +214,11 @@
         </div>
         <div style="height: 0.1rem;"></div>
         <span  style="margin-left: 0.05rem">应用描述</span>
-        <el-input type="textarea" :rows="8" v-model="APIdescription"></el-input>
+        <el-input type="textarea" disabled :rows="8" v-model="APIdescription"></el-input>
         <div style="height: 0.15rem"></div>
         <div style="width: 100%;text-align: center">
-          <el-button type="primary" @click="ConfirmAPI">确定</el-button>
-          <el-button type="danger" @click="CancelAPI">取消</el-button>
+
+          <el-button type="danger" @click="dialogVisible1=false">关闭</el-button>
         </div>
       </el-dialog>
       <div id="search">
@@ -301,7 +301,7 @@
           _this.$data.APIName=response.data.name;
           _this.$data.types=response.data.apitype;
           _this.$data.platform=response.data.platform;
-          _this.$data.APIdescription=response.data.describe;
+          _this.$data.APIdescription=response.data.descirbe;
           for(let index=0;index<_this.$data.types.length;index++) {
             switch (_this.$data.types[index]) {
               case 1:
