@@ -36,7 +36,9 @@
               <!--</div>-->
               <div style="height: 0.2rem"></div>
               <div style="float: left">
-                <input id="input" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG($event)">
+                <a href="javascript:;" class="file">选择文件
+                    <input id="input" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG($event)">
+                </a>
               </div>
             </el-col>
           </el-row>
@@ -234,4 +236,31 @@
     border: solid 2px red;
     display: none;
   }
+    .file {
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: #2285ea;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 30px;
+    font-size:15px;
+    cursor:pointer;
+}
+.file input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
 </style>

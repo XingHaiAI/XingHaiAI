@@ -5,8 +5,8 @@
       <span style="font-size: 0.4rem;">功能演示</span>
     </div>
     <div style="width: 100%">
-      <el-card style="width: 47.041%;height:8rem;max-height:10rem;float: left;margin-left: 1rem;">
-        <div class="photoDisplay" style="width: 44%;height:40%;margin-left: auto;margin-right: auto;margin-top:0.2rem;">
+      <el-card style="width: 47.041%;height:10rem;max-height:10rem;float: left;margin-left: 1rem;margin-bottom:0.5rem;">
+        <div class="photoDisplay" style="width: 44%;height:33%;margin-left: auto;margin-right: auto;margin-top:0.2rem;">
           <span style="font-size: 0.2rem;margin-left: -1.5rem">比较图片：</span>
           <div style="height: 0.005rem"></div>
           <el-card style="margin-left:-1.5rem;text-align: center;height: 2.7rem;width: 6rem">
@@ -22,7 +22,9 @@
           <span style="font-size: 0.2rem;">图片一：</span>
         </div>
         <div>
-          <input id="input1" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG1($event)">
+          <a href="javascript:;" class="file">选择文件
+            <input id="input1" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG1($event)">
+          </a>
         </div>
         <div class="photoSelect" style="width: 94%;height: 20%;margin-left: auto;margin-right: auto;overflow-x: scroll;overflow-y: hidden;overflow-wrap: normal;white-space: nowrap;">
           <div style="height: 0.1rem;"></div>
@@ -39,7 +41,9 @@
           <span style="font-size: 0.2rem;">图片二：</span>
         </div>
         <div>
-          <input id="input2" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG2($event)">
+          <a href="javascript:;" class="file">选择文件
+             <input id="input2" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG2($event)">
+          </a>
         </div>
         <div class="photoSelect" style="width: 94%;height: 20%;margin-left: auto;margin-right: auto;overflow-x: scroll;overflow-y: hidden;overflow-wrap: normal;white-space: nowrap;">
           <div style="height: 0.1rem;"></div>
@@ -244,5 +248,32 @@
 </script>
 
 <style lang="less">
-
+    .file {
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: #2285ea;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 30px;
+    font-size:15px;
+    cursor:pointer;
+    margin:0.1rem;
+}
+.file input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
 </style>
