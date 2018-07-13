@@ -114,10 +114,10 @@
         let _this=this;
         this.$axios({
           method:'post',
-          url:'http://47.94.242.44:8083/face_api/face_detection',
+          url:'http://39.105.120.189:8080/face_api/face_detection',
           data:{
             image:_this.$data.reImg,
-            degree:2
+            degree:1
           }
         }).then(function (res) {
           _this.$data.json=res.data;
@@ -171,10 +171,10 @@
         let _this=this;
         this.$axios({
           method:'post',
-          url:'http://47.94.242.44:8083/face_api/face_detection',
+          url:'http://39.105.120.189:8080/face_api/face_detection',
           data:{
             image:item.base64,
-            degree:2
+            degree:1
           }
         }).then(function (res) {
           _this.$data.json=res.data;

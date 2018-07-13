@@ -71,6 +71,8 @@
         }).then(function (response) {
           if(response.data===true) {
             _this.$router.push({path: '/', query: {isLogin: true}});
+            document.cookie='account='+_this.$data.formLogin.account;
+            document.cookie='password='+_this.$data.formLogin.password;
           }
           else{
            alert('密码错误或用户名错误！请重新检查')

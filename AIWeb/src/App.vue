@@ -21,7 +21,7 @@
         <div class="login" v-show="UserLogin"><router-link to="/Controller/ControllerSpeachAPI" class="login_item" style="text-decoration: none">控制台</router-link></div>
         <div class="divider">|</div>
         <div class="sign_in" v-show="!UserLogin"><router-link to="/login" class="login_item" style="text-decoration: none">登录</router-link></div>
-        <div class="sign_in" v-show="UserLogin"><router-link to="/login" class="login_item" style="text-decoration: none">注销</router-link></div>
+        <div class="sign_in" v-show="UserLogin"  @click="logout" ><router-link to="/login" class="login_item"style="text-decoration: none">注销</router-link></div>
       </div>
 
       <div id="service" v-on:mouseover="mouseOver" v-on:mouseout="mouseOut">
@@ -115,7 +115,61 @@
       }
 
     },
+    created(){
+      let _this=this;
+
+
+      let token1=document.cookie.split(';');
+      console.log(token1);
+      let account=token1[0].split('=');
+      let password=token1[1].split('=');
+
+      this.$axios({
+        method:'get',
+        url:'/account/login',
+        params:{
+          account:account[1],
+          password:password[1]
+        }
+      }).then(function (response) {
+        if(response.data===true) {
+          _this.GLOBAL.token = true;
+          _this.$data.UserLogin=true;
+          _this.$message({
+            type:'success',
+            message:'欢迎回来！'
+          })
+        }else{
+          _this.GLOBAL.token=false;
+          _this.$data.UserLogin=false;
+          _this.$router.push('/')
+        }
+
+      }).catch(function (err) {
+        _this.GLOBAL.token=false;
+        _this.$data.UserLogin=false;
+        _this.$router.push('/');
+      })
+
+
+
+
+    },
     methods: {
+      logout(){
+        var keys=document.cookie.match(/[^ =;]+(?=\=)/g);
+        if (keys)
+        {
+          for (var i = keys.length; i--;)
+          {
+            document.cookie=keys[i]+'=0;expires=' + new Date( 0).toUTCString();
+          }
+        }
+        this.GLOBAL.token=false;
+        this.$data.UserLogin=false;
+        alert('注销成功！');
+        this.$router.push('/');
+      },
       showTechnologyMenuItemContent:function(){
         var TechnologyMenuItemContent=document.getElementById("Technology_menu_item_content");
         TechnologyMenuItemContent.className="technology_menu_item_content_show";
