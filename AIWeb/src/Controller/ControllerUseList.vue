@@ -237,7 +237,7 @@
           <el-table-column label="操作">
           <template slot-scope="scope">
             <el-button @click="ForMore(scope.row)" type="text" size="small">查看</el-button>
-            <el-button type="text" size="small" @click="deleteAPI(scope.$index)">删除</el-button>
+            <el-button type="text" size="small" @click="deleteAPI(scope.row)">删除</el-button>
           </template>
           </el-table-column>
         </el-table>
@@ -568,15 +568,13 @@
           method:'get',
           url:'/api/delete',
           params:{
-            apikey:'6666'
+            apikey:row.apikey
           }
         }).then(function (response) {
-          if(response.data===true){
+
             alert('删除成功！');
             _this.$data.manifests.splice(row,1);
-          }
-        }).catch(function (error) {
-          alert('删除失败')
+
         })
       }
     },

@@ -67,27 +67,17 @@
       <div style="height: 30px;"></div>
       <div class="line">
         <div class="title">用户名：</div>
-        <input class="searchInput" v-model="userInfo.username" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;" disabled placeholder="用户名"/>
+        <input class="searchInput" v-model="userInfo.account" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;" disabled placeholder="用户名"/>
       </div>
 
       <div class="line">
         <div class="title">邮箱：</div>
-        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" v-model="userInfo.email"  placeholder="输入邮箱"/>
+        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" v-model="userInfo.email" disabled placeholder="输入邮箱"/>
       </div>
 
 
       <div class="line">
-        <div class="title">密码：</div>
-        <input class="searchInput" style="width: 70%;height:10%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;margin-top: 0.15rem;float: left" disabled placeholder="输入密码"/>
-        <el-button type="primary"  class="bg_btn" id="find" v-model="userInfo.password" style="width: 0.8rem;height: 0.4rem;margin-top: 0.13rem;background-color: #2285ea;color: white;" @click="dialogVisible=true">修改</el-button>
-      </div>
-
-      <div class="line" style="margin-top: 0.15rem !important;">
-        <div class="title">开发者类型：</div>
-        <el-radio-group v-model="radio1" style="margin-top: 0.15rem !important;">
-          <el-radio :label="3">个人开发者</el-radio>
-          <el-radio :label="9">企业</el-radio>
-        </el-radio-group>
+        <el-button type="primary"  class="bg_btn" id="find"  v-model="userInfo.password" style="width: 1.4rem;height: 0.4rem;margin-top: 0.13rem;background-color: #2285ea;color: white;" @click="dialogVisible=true">修改密码</el-button>
       </div>
 
     </div>
@@ -117,14 +107,20 @@
         }
       };
     },
-    created(){
+    mounted(){
+      let token=document.cookie.split(';');
+
+      let account=token[0].split('=')[1]
       /**
        * 获取用户的个人信息
        */
       let _this=this;
       this.$axios({
         method:'get',
-        url:''
+        url:'/adm/getAccountMore',
+        params:{
+          account:account
+        }
       }).then(function (response) {
         _this.$data.userInfo=response.data;
       })
@@ -132,18 +128,24 @@
     },
     methods: {
       confirmModify(){
+        let temp=document.cookie.split(';');
+
+        let account=temp[0].split('=')[1]
+
+
         let _this=this;
         this.$axios({
           method:'get',
           url:'/account/updatePassword',
           params:{
-            account:'123456',
+            account:account,
             oldpassword:this.$data.formModifyPassword.oldPassword,
             newpassword:this.$data.formModifyPassword.newPassword
           }
         }).then(function (response) {
           if(response.data===true){
-            alert('修改成功！')
+            alert('修改成功！');
+            _this.dialogVisible=false;
           }else{
             alert('修改失败!请检查旧密码是否输入正确')
           }
