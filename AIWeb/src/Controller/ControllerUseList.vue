@@ -5,42 +5,7 @@
   </div>
   <div id="body">
     <div id="aside">
-      <el-row class="tac">
-        <el-col :span="12" style="width:inherit">
-          <el-menu
-            default-active="2"
-            class="el-menu-vertical-demo"
-            @open="handleOpen"
-            @close="handleClose">
-            <el-submenu index="1" style="text-align: left;margin-top:0.5rem;min-height:0.6rem">
-              <template slot="title">
-                <span>功能</span>
-              </template>
-              <el-menu-item index="2-1" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerSpeachAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">语音处理</router-link></el-menu-item>
-              <el-menu-item index="2-2" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerWordAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">文字识别</router-link></el-menu-item>
-              <el-menu-item index="2-3" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerFaceAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">人脸识别</router-link></el-menu-item>
-              <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerPictureAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">图像识别</router-link></el-menu-item>
-              <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerNPLAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">自然语言处理</router-link></el-menu-item>
-            </el-submenu>
-            <el-menu-item index="2"style="text-align: left;min-height:0.6rem">
-              <span slot="title"><router-link to="/Controller/ControllerUseList" style="text-decoration: none;color: black;">应用列表</router-link></span>
-            </el-menu-item>
-            <el-menu-item index="4" style="text-align: left;min-height:0.6rem">
-              <span slot="title"><router-link to="/Controller/ControllerSDKDownload" style="text-decoration: none;color: black;">SDK下载</router-link></span>
-            </el-menu-item>
-            <el-submenu index="5" style="text-align: left;min-height:0.6rem">
-              <template slot="title">
-                <span>财务中心</span>
-              </template>
-              <el-menu-item index="1-1" class="teach" popper-append-to-body="true"><router-link to="/Controller/ControllerMoneyLeft" style="text-decoration: none;color: black;margin-left: 0.6rem;">账户余额</router-link></el-menu-item>
-              <el-menu-item index="1-2" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerOrderList" style="text-decoration: none;color: black;margin-left: 0.6rem;">我的订单</router-link></el-menu-item>
-            </el-submenu>
-            <el-menu-item index="4" style="text-align: left;min-height:0.6rem">
-              <span slot="title"><router-link to="/Controller/ControllerInfo" style="text-decoration: none;color: black;">账号信息</router-link></span>
-            </el-menu-item>
-          </el-menu>
-        </el-col>
-      </el-row>
+      <sidebar></sidebar>
     </div>
     <div id="main">
       <el-dialog :visible.sync="dialogVisible" :modal-append-to-body="false" title="新建API" style="width: 17rem">
@@ -248,8 +213,10 @@
 </template>
 
 <script>
+  import sidebar from './SideBar.vue'
   export default {
     name:"ControllerUseList",
+    components: {sidebar},
     data() {
       return {
         dialogVisible1:false,

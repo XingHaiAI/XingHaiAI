@@ -1,77 +1,48 @@
 <template>
-  <body id="all"style="min-width: 13.6rem">
-  <div id="header">
-    <img src="../assets/控制台/banner.png">
-  </div>
-  <div id="body">
-    <div id="aside">
-      <sidebar></sidebar>
-    </div>
-    <div id="main">
-      <div id="search">
-        <p class="route"><router-link to="" class="linkto">控制台</router-link>&gt<router-link to="" class="linkto">功能</router-link>&gt自然语言处理</p>
-      </div>
-      <div class="line">
-        <div class="column">
-          <div class="column_title">词义相似度</div>
-          <div class="column_pic1"></div>
-          <div class="column_word">输入两个词，得到两个词的相似度结果<br/><br/></div>
-          <el-button class="button4submit">API文档</el-button>
-        </div>
-        <div class="column">
-          <div class="column_title">短文本相似度</div>
-          <div class="column_pic2"></div>
-          <div class="column_word">提供不同短文本之间相似度的技术，输出一个介于0到1之间的实数值，越大则相似度越高</div>
-          <el-button class="button4submit">API文档</el-button>
-        </div>
-      </div>
-      <div class="line">
-      <div class="column">
-        <div class="column_title">评论观点抽取</div>
-        <div class="column_pic3"></div>
-        <div class="column_word">提取一条评论句子的关注点和评论观点，并输出评论观点标签及评论观点极性</div>
-        <el-button class="button4submit">API文档</el-button>
-      </div>
-      <div class="column">
-        <div class="column_title">情感倾向分析</div>
-        <div class="column_pic4"></div>
-        <div class="column_word">对包含主观观点信息的文本进行情感类别（积极、消极、中性）判断，并给出相应的置信度</div>
-        <el-button class="button4submit">API文档</el-button>
-      </div>
-    </div><div class="line">
-      <div class="column">
-        <div class="column_title">AI客服</div>
-        <div class="column_pic5"></div>
-        <div class="column_word">基于用户输入的文本内容，返回场景BOT理解与应答的信息</div>
-        <el-button class="button4submit">API文档</el-button>
-      </div>
-    </div>
-    </div>
-  </div>
-  </body>
+  <el-row class="tac">
+    <el-col :span="12" style="width:inherit">
+      <el-menu
+        default-active="2"
+        class="el-menu-vertical-demo"
+        @open="handleOpen"
+        @close="handleClose">
+        <el-submenu index="1" style="text-align: left;margin-top:0.5rem;min-height:0.6rem">
+          <template slot="title">
+            <span>功能</span>
+          </template>
+          <el-menu-item index="2-1" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerSpeachAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">语音处理</router-link></el-menu-item>
+          <el-menu-item index="2-2" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerWordAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">文字识别</router-link></el-menu-item>
+          <el-menu-item index="2-3" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerFaceAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">人脸识别</router-link></el-menu-item>
+          <el-menu-item index="2-4" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerPictureAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">图像识别</router-link></el-menu-item>
+          <el-menu-item index="2-5" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerNPLAPI" style="text-decoration: none;color: black;margin-left: 0.6rem;">自然语言处理</router-link></el-menu-item>
+        </el-submenu>
+        <el-menu-item index="2"style="text-align: left;min-height:0.6rem">
+          <span slot="title"><router-link to="/Controller/ControllerUseList" style="text-decoration: none;color: black;">应用列表</router-link></span>
+        </el-menu-item>
+        <el-menu-item index="4" style="text-align: left;min-height:0.6rem">
+          <span slot="title"><router-link to="/Controller/ControllerSDKDownload" style="text-decoration: none;color: black;">SDK下载</router-link></span>
+        </el-menu-item>
+        <!--<el-submenu index="5" style="text-align: left;min-height:0.6rem">-->
+          <!--<template slot="title">-->
+            <!--<span>财务中心</span>-->
+          <!--</template>-->
+          <!--<el-menu-item index="1-1" class="teach" popper-append-to-body="true"><router-link to="/Controller/ControllerMoneyLeft" style="text-decoration: none;color: black;margin-left: 0.6rem;">账户余额</router-link></el-menu-item>-->
+          <!--<el-menu-item index="1-2" class="teach"popper-append-to-body="true"><router-link to="/Controller/ControllerOrderList" style="text-decoration: none;color: black;margin-left: 0.6rem;">我的订单</router-link></el-menu-item>-->
+        <!--</el-submenu>-->
+        <el-menu-item index="4" style="text-align: left;min-height:0.6rem">
+          <span slot="title"><router-link to="/Controller/ControllerInfo" style="text-decoration: none;color: black;">账号信息</router-link></span>
+        </el-menu-item>
+      </el-menu>
+    </el-col>
+  </el-row>
 </template>
-
 <script>
-  import sidebar from './SideBar.vue'
   export default {
-    name:"ControllerNPLAPI",
-    components: {sidebar},
-    data() {
-      return {
-        isCollapse: true
-      };
-    },
-    methods: {
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-      }
-    }
+    //1.直接在components中写入子组件
+
+    methods: {},
   }
 </script>
-
 <style scoped>
   #find{
     width: 10%;
@@ -122,7 +93,7 @@
   .column_pic1{
     width: 3.4rem;
     height: 2.5rem;
-    background-image: url("../assets/控制台/自然语言处理/词义相似度.png") !important;
+    background-image: url("../assets/控制台/人脸识别/人脸检测.png") !important;
     background-position: center;
     background-size: 100% 100%;
   }
@@ -130,52 +101,35 @@
   .column_pic2{
     width: 3.4rem;
     height: 2.5rem;
-    background-image: url("../assets/控制台/自然语言处理/短文本相似度.png") !important;
+    background-image: url("../assets/控制台/人脸识别/人脸对比.png") !important;
     background-position: center;
     background-size: 100% 100%;
   }
-
   .column_pic3{
     width: 3.4rem;
     height: 2.5rem;
-    background-image: url("../assets/控制台/自然语言处理/评论观点抽取.png") !important;
+    background-image: url("../assets/控制台/人脸识别/人脸查找.png") !important;
     background-position: center;
     background-size: 100% 100%;
   }
 
-  .column_pic4{
-    width: 3.4rem;
-    height: 2.5rem;
-    background-image: url("../assets/控制台/自然语言处理/情感倾向分析.png") !important;
-    background-position: center;
-    background-size: 100% 100%;
-  }
-
-  .column_pic5{
-    width: 3.4rem;
-    height: 2.5rem;
-    background-image: url("../assets/控制台/自然语言处理/AI客服.png") !important;
-    background-position: center;
-    background-size: 100% 100%;
-  }
 
 
   .column_word{
     color: grey;
-    font-size: 0.14rem;
+    font-size: 0.15rem;
     margin-top: 0.05rem;
     margin-bottom: 0.05rem;
   }
 
   /*.column_btn{*/
-    /*width: 70%;*/
-    /*margin-left: 15%;*/
-    /*color: white;*/
-    /*font-weight: 600;*/
-    /*line-height: 0.5rem;*/
-    /*background-color: blue;*/
+  /*width: 70%;*/
+  /*margin-left: 15%;*/
+  /*color: white;*/
+  /*font-weight: 600;*/
+  /*line-height: 0.5rem;*/
+  /*background-color: blue;*/
   /*}*/
-
   .button4submit{
     color: white;
     background-color: #2285ea;
@@ -239,10 +193,6 @@
     margin: 0;
     padding: 0;
   }
-  .title{
-    text-align: left !important;
-  }
-
   #all{
     height: 18rem;
     width: 100%;
@@ -306,6 +256,7 @@
     font-size:0.22rem;
     margin-left: 0.6rem;
   }
+
   button{
     width: 1.20rem;
     height: 0.25rem;
@@ -328,6 +279,7 @@
     border-color: transparent;
     color:white;
   }
+
   .searchInput{
     font-size:0.16rem;
     padding-left:0.137rem;

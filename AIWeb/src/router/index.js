@@ -52,8 +52,8 @@ import ControllerSpeachAPI from '@/Controller/ControllerSpeachAPI.vue'
 import ControllerPictureAPI from '@/Controller/ControllerPictureAPI.vue'
 import ControllerWordAPI from '@/Controller/ControllerWordAPI.vue'
 
-import ControllerMoneyLeft from '@/Controller/ControllerMoneyLeft.vue'
-import ControllerOrderList from '@/Controller/ControllerOrderList.vue'
+// import ControllerMoneyLeft from '@/Controller/ControllerMoneyLeft.vue'
+// import ControllerOrderList from '@/Controller/ControllerOrderList.vue'
 import ControllerUseList from '@/Controller/ControllerUseList.vue'
 import ControllerSDKDownload from '@/Controller/ControllerSDKDownload.vue'
 import ControllerInfo from '@/Controller/ControllerInfo.vue'
@@ -202,12 +202,12 @@ export default new Router({
     {
       path:'/Controller/ControllerSpeachAPI',component:ControllerSpeachAPI
     },
-    {
-      path:'/Controller/ControllerMoneyLeft',component:ControllerMoneyLeft
-    },
-    {
-      path:'/Controller/ControllerOrderList',component:ControllerOrderList
-    },
+    // {
+    //   path:'/Controller/ControllerMoneyLeft',component:ControllerMoneyLeft
+    // },
+    // {
+    //   path:'/Controller/ControllerOrderList',component:ControllerOrderList
+    // },
     {
       path:'/Controller/ControllerUseList',component:ControllerUseList
     },
