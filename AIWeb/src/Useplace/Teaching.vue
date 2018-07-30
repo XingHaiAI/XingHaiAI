@@ -6,11 +6,11 @@
   <div id="body">
     <sidebar></sidebar>
     <div id="main">
-      <div id="search">
-        <div>
-        <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;" />
-        <el-button type="primary" icon="el-icon-search" id="find"></el-button>
-        </div>
+      <div id="search"style="margin-top: -0.5rem">
+        <!--<div>-->
+        <!--<input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;" />-->
+        <!--<el-button type="primary" icon="el-icon-search" id="find"></el-button>-->
+        <!--</div>-->
         <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">产品文档</router-link>&gtAPI调用规则</p>
       </div>
       <div id="text">
