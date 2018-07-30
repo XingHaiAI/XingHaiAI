@@ -22,7 +22,7 @@
           <span style="font-size: 0.2rem;">图片一：</span>
         </div>
         <div>
-          <a href="javascript:;" class="file">选择文件
+          <a class="file">选择文件
             <input id="input1" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG1($event)">
           </a>
         </div>
@@ -41,7 +41,7 @@
           <span style="font-size: 0.2rem;">图片二：</span>
         </div>
         <div>
-          <a href="javascript:;" class="file">选择文件
+          <a class="file">选择文件
              <input id="input2" ref="uploadImg" type="file" accept="image/*" @change="UploadIMG2($event)">
           </a>
         </div>

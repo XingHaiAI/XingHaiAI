@@ -36,7 +36,7 @@
                 <!--</div>-->
                 <div style="height: 0.2rem"></div>
                 <div style="float: left">
-                   <a href="javascript:;" class="file">选择文件
+                   <a  class="file">选择文件
                     <input id="input"  ref="uploadImg" type="file" accept="image/*" @change="UploadIMG($event)">
                   </a>
                 </div>
