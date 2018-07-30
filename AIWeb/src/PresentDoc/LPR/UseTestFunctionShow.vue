@@ -82,6 +82,18 @@ export default {
       }
     }
   },
+  mounted(){
+    let _this=this;
+    this.$axios({
+      method:'post',
+      url:'http://47.94.242.44:8081/plate_recognition',
+      data:{
+        image:_this.$data.image[0].base64,
+      }
+    }).then(function (res) {
+      _this.$data.json = res.data;
+    })
+  },
   methods:{
     UploadIMG(){
       var _this = this;
