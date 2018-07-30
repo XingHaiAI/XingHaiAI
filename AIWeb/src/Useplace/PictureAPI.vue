@@ -6,11 +6,11 @@
   <div id="body">
     <sidebar></sidebar>
     <div id="main">
-      <div id="search">
-        <div>
-          <input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;" />
-          <el-button type="primary" icon="el-icon-search" id="find" style="background-color: #409EFF;    border-color: #409EFF;color: #fff;"></el-button>
-        </div>
+      <div id="search"style="margin-top: -0.5rem">
+        <!--<div>-->
+          <!--<input class="searchInput" style="width: 70%;height:25%;margin-right:0.7%;border: #989898 0.01rem solid;border-radius: 0.05rem;" />-->
+          <!--<el-button type="primary" icon="el-icon-search" id="find" style="background-color: #409EFF;    border-color: #409EFF;color: #fff;"></el-button>-->
+        <!--</div>-->
         <p class="route"><router-link to="" class="linkto">文档中心</router-link>&gt<router-link to="" class="linkto">API接口</router-link>&gt图像识别</p>
       </div>
        <div class="from_group">
