@@ -114,6 +114,25 @@
     background-image: url("bg.png");
     background-size: 100% 100%;
     background-repeat: repeat-y;
+
+  .el-input__inner{
+    /*border-top: none;*/
+    /*border-left: none;*/
+    /*border-right: none;*/
+    /*border-bottom-color: darkgray;*/
+    /*border-bottom-width: 0.017rem;*/
+    border-color: darkgray;
+    border-width: 0.015rem;
+    font-size:0.16rem;
+    height:0.50rem;
+    transition:all 0.7s;
+  }
+
+
+  .el-input__inner:hover{
+    transform: scale(1.05);
+  }
+
 }
 
 
@@ -185,23 +204,6 @@
   margin-top: 1.4rem;
 }
 
-  .el-input__inner{
-    /*border-top: none;*/
-    /*border-left: none;*/
-    /*border-right: none;*/
-    /*border-bottom-color: darkgray;*/
-    /*border-bottom-width: 0.017rem;*/
-    border-color: darkgray;
-    border-width: 0.015rem;
-    font-size:0.16rem;
-    height:0.50rem;
-    transition:all 0.7s;
-  }
-
-
-  .el-input__inner:hover{
-    transform: scale(1.05);
-  }
 
   .buttons{
     margin-top: 0.40rem;

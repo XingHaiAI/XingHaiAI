@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="InfoModify">
   <div id="header"style="min-width: 13.6rem">
     <img src="../assets/控制台/banner.png">
   </div>
@@ -12,10 +12,10 @@
       <el-dialog :visible.sync="dialogVisible" :modal-append-to-body="false" title="修改密码" style="width: 8rem">
         <el-form :model="formModifyPassword" :ref="formModifyPassword" :rules="rulesModifyPassword">
           <el-form-item prop="oldPassword" label="旧密码" style="width: 2.6rem;">
-            <el-input type="password" v-model="formModifyPassword.oldPassword"></el-input>
+            <el-input type="password" style="font-size: 20px;width: 2rem" v-model="formModifyPassword.oldPassword"></el-input>
           </el-form-item>
           <el-form-item prop="newPassword" label="新密码" style="width: 2.6rem">
-            <el-input type="password" v-model="formModifyPassword.newPassword"></el-input>
+            <el-input type="password" class="k123" style="height: 0.5rem;width: 2rem;font-size: 20px;" v-model="formModifyPassword.newPassword"></el-input>
           </el-form-item>
           <el-form-item>
             <el-button @click="confirmModify" style="color: white;background-color: cornflowerblue;width: 1rem;height: 0.4rem">确定</el-button>
@@ -134,7 +134,9 @@
   }
 </script>
 
-<style scoped>
+<style scoped >
+
+
   #find{
     width: 10%;
     height: 25%;
@@ -145,11 +147,6 @@
   .linkto{
     color: #4096ff;
     text-decoration: none
-  }
-  #text{
-    text-align: center;
-    position: relative;
-
   }
   body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
   textarea{
@@ -169,91 +166,6 @@
     height: 3.5rem;
   }
 
-  .column{
-    float: left;
-    width: 3.4rem !important;
-    height: 3.3rem !important;
-    margin-left:5% ;
-    margin-right: 5%;
-  }
-
-  .column_title{
-    width: 3.4rem;
-    text-align: center;
-    margin-bottom: 0.1rem;
-  }
-
-  .column_pic1{
-    width: 3.4rem;
-    height: 2rem;
-    background-image: url("../assets/控制台/文字识别/通用文字识别.png") !important;
-    background-position: center;
-    background-size: 100% 100%;
-  }
-
-  .column_pic2{
-    width: 3.4rem;
-    height: 2rem;
-    background-image: url("../assets/控制台/文字识别/手写识别.png") !important;
-    background-position: center;
-    background-size: 100% 100%;
-  }
-
-  .column_pic3{
-    width: 3.4rem;
-    height: 2rem;
-    background-image: url("../assets/控制台/文字识别/身份证识别.png") !important;
-    background-position: center;
-    background-size: 100% 100%;
-  }
-
-  .column_pic4{
-    width: 3.4rem;
-    height: 2rem;
-    background-image: url("../assets/控制台/文字识别/银行卡识别.png") !important;
-    background-position: center;
-    background-size: 100% 100%;
-  }
-
-  .column_pic5{
-    width: 3.4rem;
-    height: 2rem;
-    background-image: url("../assets/控制台/文字识别/车牌识别.png") !important;
-    background-position: center;
-    background-size: 100% 100%;
-  }
-
-  .column_pic6{
-    width: 3.4rem;
-    height: 2rem;
-    background-image: url("../assets/控制台/文字识别/驾驶证识别.png") !important;
-    background-position: center;
-    background-size: 100% 100%;
-  }
-
-  .column_pic7{
-    width: 3.4rem;
-    height: 2rem;
-    background-image: url("../assets/控制台/文字识别/行驶证识别.png") !important;
-    background-position: center;
-    background-size: 100% 100%;
-  }
-
-  .column_word{
-    color: grey;
-    font-size: 0.15rem;
-    margin-top: 0.05rem;
-    margin-bottom: 0.05rem;
-  }
-
-  .column_btn{
-    width: 70%;
-    margin-left: 15%;
-    color: white;
-    font-weight: 600;
-    line-height: 0.5rem;
-    background-color: blue;
-  }
   .route{
     float: left;
     position: relative;
@@ -264,15 +176,6 @@
     padding-top:3%;
     padding-left: 5%;
     padding-bottom: 0;
-  }
-  .tac{
-    height: 100%;
-    width: 100%;
-  }
-  .teach{
-    width: 100%;
-    font-size: 0.15rem;
-    margin-top: 0.1rem;
   }
   #main{
     float: left;
@@ -305,65 +208,6 @@
     background-color: black;
     margin: 0;
     padding: 0;
-  }
-  #all{
-    height: 18rem;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  #end{
-    height: 2.47rem;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .from_group{
-    display: flex;
-    flex-direction: column;
-    width: 74%;
-    height: 12rem;
-  }
-  .blog{
-    margin-top:0.4rem;
-    margin-bottom:0.2rem;
-    margin-left:0.820rem;
-    width:7.92rem;
-    height:2rem;
-    box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0.02rem 0.1rem 0 rgba(0, 0, 0, 0.1);
-    cursor:default;
-  }
-  .bolg_title{
-    margin-top:0.2rem;
-    margin-bottom:0.1rem;
-    margin-left:0.137rem;
-    font-size:0.23rem;
-    letter-spacing:0.03rem;
-  }
-  .icon{
-    margin-right:0.164rem;
-    height:0.133rem;
-    width:0.133rem;
-  }
-  .outline{
-    margin-top:0.2rem;
-    margin-left:0.41rem;
-    font-size:0.15rem;
-    font-weight:900;
-    color:  #303030;
-    font-weight:450;
-    line-height:0.267rem;
-  }
-  .more{
-    margin-top:0.133rem;
-    margin-left:0.41rem;
-    font-size:0.15rem;
-    color:#3399FF;
-    letter-spacing:0.02rem;
-    cursor:pointer;
-  }
-  .el-menu-vertical-demo{
-    height:15rem;
   }
   span{
     font-size:0.22rem;

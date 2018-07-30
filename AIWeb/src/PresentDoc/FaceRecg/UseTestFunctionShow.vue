@@ -92,7 +92,61 @@
         json:null
       }
     },
+    mounted(){
+      let _this=this;
+      this.$axios({
+        method:'post',
+        url:'http://39.105.120.189:8080/face_api/face_detection',
+        data:{
+          image:_this.$data.image[0].base64,
+          degree:1
+        }
+      }).then(function (res) {
+        _this.$data.json=res.data;
+        _this.$data.arrayPos=res.data.faces;
 
+        // 图片宽度
+        var divWidth =document.getElementsByClassName('imgResult')[0].offsetWidth;//实际像素宽
+        var imgWidth =document.getElementsByClassName('imgResult')[0].naturalWidth;//原图像素宽
+        // alert(_this.$data.arrayPos[0].bounding_box.left)
+
+        for (let index = 0; index < _this.$data.arrayPos.length; index++){
+          console.log("length"+_this.$data.arrayPos.length)
+          // after getdata
+          var point1 = [_this.$data.arrayPos[index].bounding_box.left, _this.$data.arrayPos[index].bounding_box.top];
+          var point2 = [_this.$data.arrayPos[index].bounding_box.right, _this.$data.arrayPos[index].bounding_box.bottom];
+          // var point1 = [30, 39];
+          // var point2 = [77, 87];
+
+          //  计算矩形长宽
+          var _width = (point2[0] - point1[0])*divWidth/imgWidth;
+          var _height = (point2[1] - point1[1])*divWidth/imgWidth;
+
+          // 定位的距离
+          var _left = point1[0]*divWidth/imgWidth+19;
+          var _top = point1[1]*divWidth/imgWidth+20;
+
+          // 赋值
+          var box = document.getElementsByClassName('red_box')[index]
+          box.style.width = _width + 'px';
+          box.style.height = _height + 'px';
+          box.style.left = _left + 'px';
+          box.style.top = _top + 'px';
+          box.style.display = 'block';
+        }
+
+        for(let index =_this.$data.arrayPos.length;index<_this.$data.a.length;index++){
+          var box = document.getElementsByClassName('red_box')[index]
+          box.style.width = 0 + 'px';
+          box.style.height = 0 + 'px';
+          box.style.left = 0 + 'px';
+          box.style.top = 0 + 'px';
+          box.style.display = 'none';
+        }
+
+
+      })
+    },
     methods:{
       UploadIMG(){
         var _this = this;
