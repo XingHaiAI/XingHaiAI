@@ -39,7 +39,7 @@
             <router-link to="/ProductService/Emotional" style="text-decoration: none"><td class="productService">情感倾向分析</td></router-link>
             <router-link to="/ProductService/AIIntelligent" style="text-decoration: none"><td class="productService">AI客服</td></router-link>
           </tr>
-          <tr class="column column_center">
+          <tr class="column">
             <div class="productServiceHeader">文字识别</div>
             <router-link to="/ProductService/HandWritten" style="text-decoration: none"><td class="productService">手写识别</td></router-link>
             <router-link to="/ProductService/GeneralWord" style="text-decoration: none"><td class="productService">通用文字识别</td></router-link>
@@ -279,7 +279,7 @@
 
   .productService{
     color: #ffffff90;
-    font-size: 0.137rem;
+    font-size: 0.12rem;
     height: 0.23rem;
     margin-right: 0.10rem;
     margin-left: 0.10rem;
