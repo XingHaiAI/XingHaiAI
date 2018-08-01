@@ -202,7 +202,7 @@
           <el-table-column label="操作">
           <template slot-scope="scope">
             <el-button @click="ForMore(scope.row)" type="text" size="small">查看</el-button>
-            <el-button type="text" size="small" @click="deleteAPI(scope.row)">删除</el-button>
+            <el-button type="text" size="small" @click="deleteAPI(scope.row,scope.$index)">删除</el-button>
           </template>
           </el-table-column>
         </el-table>
@@ -329,7 +329,7 @@
                 _this.$data.types[index] = '去模糊化';
                 break;
               case 20:
-                _this.$data.types[index] = '人重识别';
+                _this.$data.types[index] = '人像识别';
                 break;
               case 21:
                 _this.$data.types[index] = '车型识别';
@@ -376,6 +376,10 @@
        * @constructor
        */
       ConfirmAPI(){
+        // console.log(this.$data.types);
+        // console.log(this.$data.platform);
+        // this.$data.formTypes.languages=this.$data.types;
+        // this.$data.formTypes.platform=this.$data.platform;
         let types=this.$data.formTypes;
         let stringtypes=''
         for(let index=0;index<types.languages.length;index++){
@@ -493,28 +497,64 @@
 
         let _this=this;
 
-        this.$axios({
-          method:'get',
-          url:'/api/newApi',
-          params:{
-            account:account,
-            type:'7,13',
-            name:this.$data.formChoose.name,
-            platform:'4',
-            describe:this.$data.description
-          }
-        }).then(function (response) {
-          if(response.data===true){
-            alert('提交成功！');
-            _this.dialogVisible=false;
-            _this.$router.push('/Controller/ControllerSpeachAPI')
-          }else{
-            alert('提交失败')
-          }
-        }).catch(function (err) {
-          alert('提交失败')
-        })
+        let flag=true;
 
+        if(!stringtypes){
+          flag=false;
+          this.$message({
+            type:'error',
+            message:'API类别不能为空！'
+          })
+        }
+
+        if(!stringplatform){
+          flag=false;
+          this.$message({
+            type:'error',
+            message:'平台不能为空！'
+          })
+        }
+
+        if(!this.$data.formChoose.name){
+          flag=false;
+          this.$message({
+            type:'error',
+            message:'API名称不能为空！'
+          })
+        }
+
+        if(!this.$data.description){
+          flag=false;
+          this.$message({
+            type:'error',
+            message:'API描述不能为空！'
+          })
+        }
+
+        if(flag===true) {
+          this.$axios({
+            method: 'get',
+            url: '/api/newApi',
+            params: {
+              account: account,
+              type: stringtypes,
+              name: this.$data.formChoose.name,
+              platform: stringplatform,
+              describe: this.$data.description
+            }
+          }).then(function (response) {
+            if (response.data === true) {
+              alert('提交成功！');
+              _this.dialogVisible = false;
+              _this.$router.push('/Controller/ControllerSpeachAPI')
+            } else {
+              alert('提交失败')
+            }
+          }).catch(function (err) {
+            alert('提交失败')
+          })
+
+        }
 
       },
       CancelAPI(){
@@ -529,7 +569,7 @@
       CreateAPI(){
         this.$data.dialogVisible=true;
       },
-      deleteAPI(row){
+      deleteAPI(row,id){
         let _this=this;
         this.$axios({
           method:'get',
@@ -540,7 +580,7 @@
         }).then(function (response) {
 
             alert('删除成功！');
-            _this.$data.manifests.splice(row,1);
+            _this.$data.manifests.splice(id,1);
 
         })
       }
