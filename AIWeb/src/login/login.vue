@@ -24,6 +24,7 @@
             <el-form-item prop="password">
               <el-input placeholder="请输入密码" type="password" style="width: 85%" v-model="formLogin.password"></el-input>
             </el-form-item>
+            <router-link to="/PassForget" style="color: #4096ff;font-size: 0.12rem;">忘记密码？</router-link>
           </el-form>
         </div>
         <div class="buttons">

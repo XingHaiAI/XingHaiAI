@@ -46,6 +46,7 @@ import LPR from '../PresentDoc/LPR/LPR'
 
 import login from '@/login/login.vue'
 import signIn from '@/login/signIn.vue'
+import PassForget from '@/login/PassForget.vue'
 
 import ControllerFaceAPI from '@/Controller/ControllerFaceAPI.vue'
 import ControllerNPLAPI from '@/Controller/ControllerNPLAPI.vue'
@@ -186,6 +187,9 @@ export default new Router({
     },
     {
       path:'/signIn',name:'signIn',component:signIn
+    },
+    {
+      path:'/PassForget',name:'PassForget',component:PassForget
     },
     {
       path:'/PresentDoc/LPR',component:LPR
