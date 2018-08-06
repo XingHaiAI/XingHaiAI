@@ -1,5 +1,5 @@
 <template>
-  <div id="signIn"style="min-width: 13.6rem">
+  <div id="forgetPass"style="min-width: 13.6rem">
     <div class="left_cube">
       <div class="big_word1">
         专注人工智能算法研究
@@ -31,7 +31,6 @@
                   </el-tooltip>
                 </el-button>
               </el-input>
-
             </el-form-item>
             <el-form-item prop="password" label=" " style="margin-left:-0.5rem ">
               <el-input v-model="formRegister.password" type="password" placeholder="请输入密码"></el-input>
@@ -39,7 +38,6 @@
             <el-form-item prop="passwordRepeat" label=" "style="margin-left:-0.5rem ">
               <el-input v-model="formRegister.passwordRepeat" type="password"  placeholder="请再次输入密码"></el-input>
             </el-form-item>
-
           </el-form>
 
         </div>
@@ -102,27 +100,17 @@
       }
     },
     methods:{
+
       gotoLogin(){
         this.$router.push({path:'/login'})
       },
       getCode() {
         let _this = this;
-        this.$data.formRegister.time=new Date();
-
-        let date=this.$data.formRegister.time;
-        let year=date.getFullYear();
-        let month=date.getMonth()+1;
-        let day=date.getDate();
-
-        this.$data.formRegister.time=year+'-'+month+'-'+day;
-
-        const reg=/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/
-        if (reg.test(this.$data.formRegister.email)) {
           this.$axios({
             method: 'get',
-            url: '/account/sendEmail',
+            url: '/account/findEmail',
             params: {
-              email: this.$data.formRegister.email
+              email: this.$data.formRegister.username
             }
           }).then(function (response) {
             const TIME_COUNT = 60;    //验证码获取时间间隔
@@ -143,8 +131,6 @@
           }).catch(function (err) {
             alert('验证码发送失败！请检查填写是否有错误！')
           })
-        }else{
-          alert('请输入正确的邮箱！')
         }
       },
       SignIn(){
@@ -153,13 +139,11 @@
           if(valid){
             this.$axios({
               method:'get',
-              url:'account/register',
+              url:'account/findPassword',
               params:{
                 account:this.$data.formRegister.username,
-                password:this.$data.formRegister.password,
-                email:this.$data.formRegister.email,
+                newPassword:this.$data.formRegister.password,
                 code:parseInt(this.$data.formRegister.identity),
-                time:this.$data.formRegister.time
               }
             }).then(function (response) {
               if(response.data===true){
@@ -174,19 +158,12 @@
           }
         })
       },
-      handleClose(done) {
-        this.$confirm('确认关闭？')
-          .then(_ => {
-            done();
-          })
-          .catch(_ => {});
-      }
-    }
+
   }
 </script>
 
 <style lang="less" scoped>
-  #signIn{
+  #forgetPass{
     height: 8rem;
     margin: 0;
     padding: 0;
