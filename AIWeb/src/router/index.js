@@ -40,7 +40,7 @@ import CommonProblems from '@/Useplace/CommonProblems.vue'
 
 import FaceRecg from '@/PresentDoc/FaceRecg/FaceRecg.vue'
 import FaceComp from '@/PresentDoc/FaceComp/FaceComp.vue'
-import PicComp from '@/PresentDoc/PicComp/PicComp.vue'
+// import PicComp from '@/PresentDoc/PicComp/PicComp.vue'
 import LPR from '../PresentDoc/LPR/LPR'
 
 
@@ -176,9 +176,9 @@ export default new Router({
     {
       path:'/PresentDoc/FaceComp',name:'FaceComp',component:FaceComp
     },
-    {
-      path:'/PresentDoc/PicComp',name:'PicComp',component:PicComp
-    },
+    // {
+    //   path:'/PresentDoc/PicComp',name:'PicComp',component:PicComp
+    // },
     {
       path:'/CommonProblems',name:'TechGuideSDK',component:CommonProblems
     },

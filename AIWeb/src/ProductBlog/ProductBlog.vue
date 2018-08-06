@@ -36,7 +36,7 @@
             <div v-if="total4All!==0">
               <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogAll" :key="index">
                 <div style="background-color: bisque">
-                  <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-caret-right" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
+                  <span style="font-size:0.24rem;font-weight: bold;float: left;max-width: 6.7rem" class="name"><i class="el-icon-caret-right" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
                   <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.logtype}}</a></span>
                 </div>
                 <div style="height: 0.6rem"></div>
@@ -73,7 +73,7 @@
             <div v-if="total4Update!==0">
               <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogUpdate" :key="index">
                 <div style="background-color: bisque">
-                  <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
+                  <span style="font-size:0.24rem;font-weight: bold;float: left;max-width: 6.7rem" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
                   <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.logtype}}</a></span>
                 </div>
                 <div style="height: 0.6rem"></div>
@@ -110,7 +110,7 @@
             <div v-if="total4Service!==0">
               <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogService" :key="index">
                 <div style="background-color: bisque">
-                  <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-goods" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
+                  <span style="font-size:0.24rem;font-weight: bold;float: left;max-width: 6.7rem" class="name"><i class="el-icon-goods" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
                   <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.logtype}}</a></span>
                 </div>
                 <div style="height: 0.6rem"></div>
@@ -147,7 +147,7 @@
             <div v-if="total4Discount!==0">
               <el-card style="width: 100%;margin-top: 0.3rem;" v-for="(item,index) in blogDiscount" :key="index">
                 <div style="background-color: bisque">
-                  <span style="font-size:0.24rem;font-weight: bold;float: left" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
+                  <span style="font-size:0.24rem;font-weight: bold;float: left;max-width: 6.7rem" class="name"><i class="el-icon-bell" style="color: cornflowerblue;"/> {{item.logtitle}}</span>
                   <span style="float:right;font-size:0.12rem;"><a style="color: darkgray;text-align: center;float: right;font-size: 0.15rem"><i class="el-icon-tickets"/>{{item.logtype}}</a></span>
                 </div>
                 <div style="height: 0.6rem"></div>

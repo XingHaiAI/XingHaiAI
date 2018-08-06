@@ -78,7 +78,7 @@
         <table style="position: relative;top: 0.1rem">
           <router-link to="/PresentDoc/FaceRecg" style="text-decoration: none"><td class="documentCenter">人脸检测</td></router-link>
           <router-link to="/PresentDoc/FaceComp" style="text-decoration: none"><td class="documentCenter">人脸对比</td></router-link>
-          <router-link to="/PresentDoc/PicComp" style="text-decoration: none"><td class="documentCenter">图像相似度</td></router-link>
+          <!--<router-link to="/PresentDoc/PicComp" style="text-decoration: none"><td class="documentCenter">图像相似度</td></router-link>-->
           <router-link to="/PresentDoc/LPR" style="text-decoration: none"><td class="documentCenter">车牌识别</td></router-link>
         </table>
       </div>
@@ -246,7 +246,7 @@
   }
   #present{
     display: none;
-    height: 1.9rem;
+    height: 1.5rem;
     width: 8%;
     margin-top: 0rem;
     margin-left: 6.3rem;
