@@ -42,7 +42,7 @@
 
         </div>
         <div class="buttons">
-          <el-button class="button4register" :disabled="!agree" @click="SignIn">重置密码</el-button>
+          <el-button class="button4register" @click="SignIn">重置密码</el-button>
         </div>
       </el-card>
     </div>
@@ -99,66 +99,64 @@
         }
       }
     },
-    methods:{
+    methods: {
 
-      gotoLogin(){
-        this.$router.push({path:'/login'})
+      gotoLogin() {
+        this.$router.push({path: '/login'})
       },
       getCode() {
         let _this = this;
-          this.$axios({
-            method: 'get',
-            url: '/account/findEmail',
-            params: {
-              email: this.$data.formRegister.username
-            }
-          }).then(function (response) {
-            const TIME_COUNT = 60;    //验证码获取时间间隔
-            if (!_this.timer) {
-              _this.timeCount = TIME_COUNT;
-              _this.timeShow = false;
-              _this.timer = setInterval(() => {
-                if (_this.timeCount > 0 && _this.timeCount <= TIME_COUNT) {
-                  _this.timeCount--;
-                } else {
-                  _this.timeShow = true;
-                  clearInterval(_this.timer);
-                  _this.timer = null;
-                }
-              }, 1000)
-              alert('验证码发送成功！')
-            }
-          }).catch(function (err) {
-            alert('验证码发送失败！请检查填写是否有错误！')
-          })
-        }
-      },
-      SignIn(){
-        let _this=this;
-        this.$refs['formRegister'].validate((valid)=>{
-          if(valid){
+        this.$axios({
+          method: 'get',
+          url: '/account/findEmail',
+          params: {
+            account: this.$data.formRegister.username
+          }
+        }).then(function (response) {
+          const TIME_COUNT = 60;    //验证码获取时间间隔
+          if (!_this.timer) {
+            _this.timeCount = TIME_COUNT;
+            _this.timeShow = false;
+            _this.timer = setInterval(() => {
+              if (_this.timeCount > 0 && _this.timeCount <= TIME_COUNT) {
+                _this.timeCount--;
+              } else {
+                _this.timeShow = true;
+                clearInterval(_this.timer);
+                _this.timer = null;
+              }
+            }, 1000)
+            alert('验证码发送成功！')
+          }
+        }).catch(function (err) {
+          alert('验证码发送失败！请检查填写是否有错误！')
+        })
+      }
+      ,
+      SignIn() {
+        let _this = this;
+        this.$refs['formRegister'].validate((valid) => {
+          if (valid) {
             this.$axios({
-              method:'get',
-              url:'account/findPassword',
-              params:{
-                account:this.$data.formRegister.username,
-                newPassword:this.$data.formRegister.password,
-                code:parseInt(this.$data.formRegister.identity),
+              method: 'get',
+              url: 'account/findPassword',
+              params: {
+                account: this.$data.formRegister.username,
+                newPassword: this.$data.formRegister.password,
+                code: parseInt(this.$data.formRegister.identity),
               }
             }).then(function (response) {
-              if(response.data===true){
-                alert('注册成功！');
-                _this.$router.push({path:'/login',query:{account:_this.$data.formRegister.username}})
-              }else{
+              if (response.data === true) {
+                alert('修改成功！');
+                _this.$router.push({path: '/login', query: {account: _this.$data.formRegister.username}})
+              } else {
                 alert('验证码错误！')
               }
-            }).catch(function (err) {
-              alert('该用户已存在！');
             })
           }
         })
       },
-
+    }
   }
 </script>
 
